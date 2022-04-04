@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Callable",
+        "repositoryURL": "https://github.com/ElevatedUnderdogs/Callable.git",
+        "state": {
+          "branch": null,
+          "revision": "69c49adb78c26c025aca8ef651d2189759c01bdb",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "QRCodeReader",
         "repositoryURL": "https://github.com/yannickl/QRCodeReader.swift.git",
         "state": {
