@@ -25,6 +25,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
         result.value.url?.callCodable { (deepLink: DeepLink?) in
             print(deepLink?.card as Any)
+            // If the api doesn't respond or this is not connected to the internet, then
+            // read the url and fall back on local json data, and omit the artist information because
+            // you are not connected to the internet.
         }
         dismiss(animated: true)
     }
@@ -37,9 +40,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         readerVC.delegate = self
-        readerVC.completionBlock = { (result: QRCodeReaderResult?) in
-            print(result as Any)
-        }
+        readerVC.completionBlock = { print($0 as Any) }
         readerVC.modalPresentationStyle = .formSheet
     }
 
