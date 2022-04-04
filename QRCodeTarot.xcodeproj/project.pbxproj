@@ -18,6 +18,8 @@
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
 		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
 		75D0912C27FA9F5F0037798C /* Callable in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912B27FA9F5F0037798C /* Callable */; };
+		75D0912E27FAAAB80037798C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912D27FAAAB80037798C /* Card.swift */; };
+		75D0913027FAAB080037798C /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912F27FAAB080037798C /* DeepLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75D0912D27FAAAB80037798C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		75D0912F27FAAB080037798C /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeepLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */,
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
 				7526AFEF27FA70B0009C5FE8 /* ViewController.swift */,
+				75D0912D27FAAAB80037798C /* Card.swift */,
+				75D0912F27FAAB080037798C /* DeepLink.swift */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
 				7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */,
@@ -272,7 +278,9 @@
 			files = (
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
+				75D0913027FAAB080037798C /* DeepLink.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
+				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
