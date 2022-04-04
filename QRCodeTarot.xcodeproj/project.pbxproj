@@ -16,6 +16,8 @@
 		7526B00327FA70B2009C5FE8 /* QRCodeTarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
+		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
+		75D0912C27FA9F5F0037798C /* Callable in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912B27FA9F5F0037798C /* Callable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D0912C27FA9F5F0037798C /* Callable in Frameworks */,
+				75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,10 @@
 			dependencies = (
 			);
 			name = QRCodeTarot;
+			packageProductDependencies = (
+				75D0912827FA84EB0037798C /* QRCodeReader */,
+				75D0912B27FA9F5F0037798C /* Callable */,
+			);
 			productName = QRCodeTarot;
 			productReference = 7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,10 @@
 				Base,
 			);
 			mainGroup = 7526AFDF27FA70B0009C5FE8;
+			packageReferences = (
+				75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */,
+				75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */,
+			);
 			productRefGroup = 7526AFE927FA70B0009C5FE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,6 +616,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/QRCodeReader.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.1.1;
+			};
+		};
+		75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElevatedUnderdogs/Callable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75D0912827FA84EB0037798C /* QRCodeReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */;
+			productName = QRCodeReader;
+		};
+		75D0912B27FA9F5F0037798C /* Callable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */;
+			productName = Callable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7526AFE027FA70B0009C5FE8 /* Project object */;
 }
