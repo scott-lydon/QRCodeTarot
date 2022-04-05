@@ -18,7 +18,7 @@ import Callable
 ///  https://www.tarotcardmeanings.net/tarot-playingcards.htm
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
-    lazy var localCards: Cards = { Bundle.localCards }()
+    let localCards: Cards = Bundle.localCards
 
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
@@ -28,23 +28,25 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }()
 
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
-
-        // if internet is not connected.  -->
-        result.value.url?.callCodable { [weak self] (deepLink: DeeplinkPayload?) in
-            // if web call fails {
-            //    parse the url to get the information, instead of getting the data from the backend, When we are using the
-
-            guard let key = deepLink?.cardKey,
-                  let card = self?.localCards.card(from: key) else {
-                      print("failed")
-                      return
-                  }
-            DispatchQueue.main.async {
-                self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
-            }
-            print(card as Any)
+        guard let card = localCards.card(from: result.value) else { return }
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
         }
-
+        // if internet is not connected.  -->
+//        result.value.url?.callCodable { [weak self] (deepLink: DeeplinkPayload?) in
+//            // if web call fails {
+//            //    parse the url to get the information, instead of getting the data from the backend, When we are using the
+//
+//            guard let key = deepLink?.cardKey,
+//                  let card = self?.localCards.card(from: key) else {
+//                      print("failed")
+//                      return
+//                  }
+//            DispatchQueue.main.async {
+//                self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
+//            }
+//            print(card as Any)
+//        }
         dismiss(animated: true)
     }
 
@@ -63,13 +65,5 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         present(readerVC, animated: true)
-        _ = localCards
-    }
-}
-
-extension String {
-
-    public var fileurl: URL? {
-        URL(fileURLWithPath: self)
     }
 }
