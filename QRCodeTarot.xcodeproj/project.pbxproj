@@ -25,6 +25,7 @@
 		75D0913C27FBD8900037798C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913B27FBD8900037798C /* Data.swift */; };
 		75D0913E27FBD8A80037798C /* CardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913D27FBD8A80037798C /* CardKey.swift */; };
 		75D0914027FBD8B80037798C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913F27FBD8B80037798C /* Int.swift */; };
+		75D0914427FBDE410037798C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914327FBDE410037798C /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		75D0913B27FBD8900037798C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		75D0913D27FBD8A80037798C /* CardKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardKey.swift; sourceTree = "<group>"; };
 		75D0913F27FBD8B80037798C /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		75D0914327FBDE410037798C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				75D0913327FB89140037798C /* Bundle.swift */,
 				75D0913B27FBD8900037798C /* Data.swift */,
 				75D0913F27FBD8B80037798C /* Int.swift */,
+				75D0914327FBDE410037798C /* String.swift */,
 				75D0913127FB76F50037798C /* card_data.json */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
+				75D0914427FBDE410037798C /* String.swift in Sources */,
 				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
