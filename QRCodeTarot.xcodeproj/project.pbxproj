@@ -27,6 +27,7 @@
 		75D0913C27FBD8900037798C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913B27FBD8900037798C /* Data.swift */; };
 		75D0913E27FBD8A80037798C /* CardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913D27FBD8A80037798C /* CardKey.swift */; };
 		75D0914027FBD8B80037798C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913F27FBD8B80037798C /* Int.swift */; };
+		75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914127FBDBA80037798C /* LocalCardsTests.swift */; };
 		75D0914427FBDE410037798C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914327FBDE410037798C /* String.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		75D0913B27FBD8900037798C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		75D0913D27FBD8A80037798C /* CardKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardKey.swift; sourceTree = "<group>"; };
 		75D0913F27FBD8B80037798C /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		75D0914127FBDBA80037798C /* LocalCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCardsTests.swift; sourceTree = "<group>"; };
 		75D0914327FBDE410037798C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */,
+				75D0914127FBDBA80037798C /* LocalCardsTests.swift */,
 			);
 			path = QRCodeTarotTests;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7526B00327FA70B2009C5FE8 /* QRCodeTarotTests.swift in Sources */,
+				75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
