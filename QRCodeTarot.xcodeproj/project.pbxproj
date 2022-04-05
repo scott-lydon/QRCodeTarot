@@ -22,6 +22,7 @@
 		75D0913027FAAB080037798C /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912F27FAAB080037798C /* DeepLink.swift */; };
 		75D0913227FB76F50037798C /* card_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D0913127FB76F50037798C /* card_data.json */; };
 		75D0913427FB89140037798C /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913327FB89140037798C /* Bundle.swift */; };
+		75D0913C27FBD8900037798C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913B27FBD8900037798C /* Data.swift */; };
 		75D0913E27FBD8A80037798C /* CardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913D27FBD8A80037798C /* CardKey.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		75D0912F27FAAB080037798C /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeepLink.swift; sourceTree = "<group>"; };
 		75D0913127FB76F50037798C /* card_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = card_data.json; sourceTree = "<group>"; };
 		75D0913327FB89140037798C /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		75D0913B27FBD8900037798C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		75D0913D27FBD8A80037798C /* CardKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				75D0912F27FAAB080037798C /* DeepLink.swift */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
 				75D0913327FB89140037798C /* Bundle.swift */,
+				75D0913B27FBD8900037798C /* Data.swift */,
 				75D0913127FB76F50037798C /* card_data.json */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
@@ -293,6 +296,7 @@
 				75D0913027FAAB080037798C /* DeepLink.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
+				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
