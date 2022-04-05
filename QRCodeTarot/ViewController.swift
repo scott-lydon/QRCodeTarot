@@ -32,21 +32,6 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         DispatchQueue.main.async { [weak self] in
             self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
         }
-        // if internet is not connected.  -->
-//        result.value.url?.callCodable { [weak self] (deepLink: DeeplinkPayload?) in
-//            // if web call fails {
-//            //    parse the url to get the information, instead of getting the data from the backend, When we are using the
-//
-//            guard let key = deepLink?.cardKey,
-//                  let card = self?.localCards.card(from: key) else {
-//                      print("failed")
-//                      return
-//                  }
-//            DispatchQueue.main.async {
-//                self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
-//            }
-//            print(card as Any)
-//        }
         dismiss(animated: true)
     }
 
