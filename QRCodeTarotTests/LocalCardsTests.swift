@@ -30,4 +30,12 @@ class LocalCardsTests: XCTestCase {
         XCTAssertEqual(fiveHearts?.value_int, 5)
         XCTAssertEqual(fiveHearts?.suit, .cups)
     }
+
+    func testCardFromPath() {
+        let localCards = Bundle.localCards
+        let fiveHearts = localCards.card(from: "/5/hearts/1")
+        XCTAssertNotNil(fiveHearts)
+        XCTAssertEqual(fiveHearts?.suit, .cups)
+        XCTAssertEqual(fiveHearts?.value_int, 5)
+    }
 }

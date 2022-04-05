@@ -17,6 +17,18 @@ struct Cards: Codable {
     func card(from cardKey: CardKey) -> Card? {
         cards.first { $0.matches(key: cardKey) }
     }
+
+    /// Example: /5/hearts/1 where 5 is the value, hearts is the suit and 1 is the deck version.
+    func card(from path: String?) -> Card? {
+        guard let paths = path?.components(separatedBy: "/"),
+              let value = paths.thirdToLast?.int,
+              let suit = paths.secondToLast?.lowercased(),
+              let deckVersion = paths.last?.int,
+              let symbol = CardKey.Symbol(rawValue: suit) else {
+                  return nil
+              }
+        return card(from: CardKey(symbol: symbol, number: value, deckVersion: deckVersion))
+    }
 }
 
 // MARK: - Card
@@ -59,5 +71,3 @@ enum Importance: String, Codable {
     case major
     case minor
 }
-
-
