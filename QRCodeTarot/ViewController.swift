@@ -13,7 +13,12 @@ import Callable
 /// We couldn't use a URL Scheme or the iphone camera to deep link to the
 ///  app because it automatically plugs in the address in safari.
 ///  https://stackoverflow.com/questions/71731173/how-to-make-the-iphone-camera-read-a-qr-code-and-go-to-my-app-instead-of-safari?noredirect=1#comment126767104_71731173
+///  Good Tarot info:
+///  https://en.wikipedia.org/wiki/Minor_Arcana
+///  https://www.tarotcardmeanings.net/tarot-playingcards.htm
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+
+    lazy var localCards: Cards = { Bundle.localCards }()
 
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
@@ -23,12 +28,23 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }()
 
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
-        result.value.url?.callCodable { (deepLink: DeepLink?) in
-            print(deepLink?.card as Any)
-            // If the api doesn't respond or this is not connected to the internet, then
-            // read the url and fall back on local json data, and omit the artist information because
-            // you are not connected to the internet.
+
+        // if internet is not connected.  -->
+        result.value.url?.callCodable { [weak self] (deepLink: DeeplinkPayload?) in
+            // if web call fails {
+            //    parse the url to get the information, instead of getting the data from the backend, When we are using the
+
+            guard let key = deepLink?.cardKey,
+                  let card = self?.localCards.card(from: key) else {
+                      print("failed")
+                      return
+                  }
+            DispatchQueue.main.async {
+                self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
+            }
+            print(card as Any)
         }
+
         dismiss(animated: true)
     }
 
@@ -47,5 +63,13 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         present(readerVC, animated: true)
+        _ = localCards
+    }
+}
+
+extension String {
+
+    public var fileurl: URL? {
+        URL(fileURLWithPath: self)
     }
 }

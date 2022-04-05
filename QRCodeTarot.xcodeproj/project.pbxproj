@@ -19,8 +19,16 @@
 		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
 		75D0912C27FA9F5F0037798C /* Callable in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912B27FA9F5F0037798C /* Callable */; };
 		75D0912E27FAAAB80037798C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912D27FAAAB80037798C /* Card.swift */; };
-		75D0913027FAAB080037798C /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912F27FAAB080037798C /* DeepLink.swift */; };
+		75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0912F27FAAB080037798C /* DeeplinkPayload.swift */; };
 		75D0913227FB76F50037798C /* card_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 75D0913127FB76F50037798C /* card_data.json */; };
+		75D0913427FB89140037798C /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913327FB89140037798C /* Bundle.swift */; };
+		75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913527FBD35E0037798C /* CardDetailViewController.swift */; };
+		75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */; };
+		75D0913C27FBD8900037798C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913B27FBD8900037798C /* Data.swift */; };
+		75D0913E27FBD8A80037798C /* CardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913D27FBD8A80037798C /* CardKey.swift */; };
+		75D0914027FBD8B80037798C /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0913F27FBD8B80037798C /* Int.swift */; };
+		75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914127FBDBA80037798C /* LocalCardsTests.swift */; };
+		75D0914427FBDE410037798C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914327FBDE410037798C /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +63,16 @@
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		75D0912D27FAAAB80037798C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		75D0912F27FAAB080037798C /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeepLink.swift; sourceTree = "<group>"; };
+		75D0912F27FAAB080037798C /* DeeplinkPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeeplinkPayload.swift; sourceTree = "<group>"; };
 		75D0913127FB76F50037798C /* card_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = card_data.json; sourceTree = "<group>"; };
+		75D0913327FB89140037798C /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		75D0913527FBD35E0037798C /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetailViewController.storyboard; sourceTree = "<group>"; };
+		75D0913B27FBD8900037798C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		75D0913D27FBD8A80037798C /* CardKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardKey.swift; sourceTree = "<group>"; };
+		75D0913F27FBD8B80037798C /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		75D0914127FBDBA80037798C /* LocalCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCardsTests.swift; sourceTree = "<group>"; };
+		75D0914327FBDE410037798C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +128,15 @@
 				7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */,
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
 				7526AFEF27FA70B0009C5FE8 /* ViewController.swift */,
+				75D0913527FBD35E0037798C /* CardDetailViewController.swift */,
+				75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
-				75D0912F27FAAB080037798C /* DeepLink.swift */,
+				75D0913D27FBD8A80037798C /* CardKey.swift */,
+				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
+				75D0913327FB89140037798C /* Bundle.swift */,
+				75D0913B27FBD8900037798C /* Data.swift */,
+				75D0913F27FBD8B80037798C /* Int.swift */,
+				75D0914327FBDE410037798C /* String.swift */,
 				75D0913127FB76F50037798C /* card_data.json */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
@@ -127,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */,
+				75D0914127FBDBA80037798C /* LocalCardsTests.swift */,
 			);
 			path = QRCodeTarotTests;
 			sourceTree = "<group>";
@@ -252,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
@@ -281,10 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
+				75D0914427FBDE410037798C /* String.swift in Sources */,
+				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
+				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
-				75D0913027FAAB080037798C /* DeepLink.swift in Sources */,
+				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
+				75D0914027FBD8B80037798C /* Int.swift in Sources */,
+				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
+				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7526B00327FA70B2009C5FE8 /* QRCodeTarotTests.swift in Sources */,
+				75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
