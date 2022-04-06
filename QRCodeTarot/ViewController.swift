@@ -57,26 +57,3 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         present(readerVC, animated: true)
     }
 }
-
-protocol CanAsync {
-    func async(
-        group: DispatchGroup?,
-        qos: DispatchQoS,
-        flags: DispatchWorkItemFlags,
-        execute work: @escaping @convention(block) () -> Void
-    )
-}
-
-extension DispatchQueue: CanAsync {}
-
-class MockCanAsync: CanAsync {
-
-    func async(
-        group: DispatchGroup? = nil,
-        qos: DispatchQoS = .unspecified,
-        flags: DispatchWorkItemFlags = [],
-        execute work: @escaping @convention(block) () -> Void
-    ) {
-        work()
-    }
-}
