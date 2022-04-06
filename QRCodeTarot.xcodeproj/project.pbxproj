@@ -13,9 +13,9 @@
 		7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF127FA70B0009C5FE8 /* Main.storyboard */; };
 		7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF427FA70B2009C5FE8 /* Assets.xcassets */; };
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
-		7526B00327FA70B2009C5FE8 /* QRCodeTarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
+		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		75CA56B527FC0310006D8D93 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA56B427FC0310006D8D93 /* Character.swift */; };
 		75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA56B827FC9C65006D8D93 /* Collection.swift */; };
 		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
@@ -60,10 +60,10 @@
 		7526AFF727FA70B2009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7526AFF927FA70B2009C5FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7526AFFE27FA70B2009C5FE8 /* QRCodeTarotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotTests.swift; sourceTree = "<group>"; };
 		7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		75CA56B427FC0310006D8D93 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		75CA56B827FC9C65006D8D93 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		75D0912D27FAAAB80037798C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 		7526B00127FA70B2009C5FE8 /* QRCodeTarotTests */ = {
 			isa = PBXGroup;
 			children = (
-				7526B00227FA70B2009C5FE8 /* QRCodeTarotTests.swift */,
 				75D0914127FBDBA80037798C /* LocalCardsTests.swift */,
+				756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */,
 			);
 			path = QRCodeTarotTests;
 			sourceTree = "<group>";
@@ -331,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7526B00327FA70B2009C5FE8 /* QRCodeTarotTests.swift in Sources */,
 				75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */,
+				756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
