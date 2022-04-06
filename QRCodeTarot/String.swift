@@ -9,10 +9,6 @@ import Foundation
 
 extension String {
 
-    var forgivingNumber: Int? {
-        compactMap(\.int).first ?? compactMap(\.wordInt).first
-    }
-
     var fileurl: URL? {
         URL(fileURLWithPath: self)
     }
