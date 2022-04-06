@@ -10,7 +10,7 @@ import Foundation
 // MARK: - DeepLink
 struct DeeplinkPayload: Codable {
     let applinks: Applinks
-    var cardKey: CardKey? { applinks.details.first?.card }
+  //  var cardKey: CardKey? { applinks.details.first?.card }
 }
 
 // MARK: - Applinks
@@ -23,7 +23,7 @@ struct Applinks: Codable {
 struct Detail: Codable {
     let appID: String
     let paths: [String]
-    let card: CardKey
+   // let card: CardKey
 }
 
 

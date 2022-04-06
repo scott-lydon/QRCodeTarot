@@ -19,6 +19,7 @@ import Callable
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
     let localCards: Cards = Bundle.localCards
+    var dispatcher: CanAsync = DispatchQueue.main
 
     lazy var readerVC: QRCodeReaderViewController = {
         let builder = QRCodeReaderViewControllerBuilder {
@@ -28,8 +29,13 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }()
 
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
-        guard let card = localCards.card(from: result.value) else { return }
-        DispatchQueue.main.async { [weak self] in
+        didRead(translatedQRCode: result.value)
+    }
+
+    func didRead(translatedQRCode: String) {
+        guard let card = localCards.card(from: translatedQRCode) else { return }
+        dispatcher.async(group: nil, qos: .unspecified, flags: []) {
+            [weak self] in
             self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
         }
         dismiss(animated: true)
@@ -43,12 +49,34 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         readerVC.delegate = self
-        readerVC.completionBlock = { print($0 as Any) }
         readerVC.modalPresentationStyle = .formSheet
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         present(readerVC, animated: true)
+    }
+}
+
+protocol CanAsync {
+    func async(
+        group: DispatchGroup?,
+        qos: DispatchQoS,
+        flags: DispatchWorkItemFlags,
+        execute work: @escaping @convention(block) () -> Void
+    )
+}
+
+extension DispatchQueue: CanAsync {}
+
+class MockCanAsync: CanAsync {
+
+    func async(
+        group: DispatchGroup? = nil,
+        qos: DispatchQoS = .unspecified,
+        flags: DispatchWorkItemFlags = [],
+        execute work: @escaping @convention(block) () -> Void
+    ) {
+        work()
     }
 }
