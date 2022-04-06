@@ -8,6 +8,7 @@
 import Foundation
 
 extension Data {
+    
     func codable<T: Codable>() -> T? {
         T(self)
     }
