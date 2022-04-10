@@ -57,7 +57,7 @@ class LocalCardsTests: XCTestCase {
 
     func testCardFromPath2SwordSpadev1() {
         let localCards = Bundle.localCards
-        let fiveHearts = localCards.tarotCard(from: "4/swords/4/spades/1")
+        let fiveHearts = localCards.tarotCard(from: "/4/swords/4/spades/1")
         XCTAssertNotNil(fiveHearts)
         XCTAssertEqual(fiveHearts?.suit, .swords)
         XCTAssertEqual(fiveHearts?.value_int, 4)
@@ -65,7 +65,7 @@ class LocalCardsTests: XCTestCase {
 
     func testCardFromPath2WandsSpadev1() {
         let localCards = Bundle.localCards
-        let fiveHearts = localCards.tarotCard(from: "4/wands/4/spades/1")
+        let fiveHearts = localCards.tarotCard(from: "/4/wands/4/spades/1")
         XCTAssertNotNil(fiveHearts)
         XCTAssertEqual(fiveHearts?.suit, .swords)
         XCTAssertEqual(fiveHearts?.value_int, 4)
