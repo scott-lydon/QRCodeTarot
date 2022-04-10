@@ -24,4 +24,12 @@ extension Collection {
     var thirdToLast: Element? {
         self[safe: (count - 3)]
     }
+
+    var fourthToLast: Element? {
+        self[safe: (count - 4)]
+    }
+
+    var fifthToLast: Element? {
+        self[safe: (count - 5)]
+    }
 }

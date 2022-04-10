@@ -31,5 +31,14 @@ extension CardKey {
             case .diamonds: return .pentacles
             }
         }
+
+        init(suit: Suit) {
+            switch suit {
+            case .cups: self = .hearts
+            case .pentacles: self = .diamonds
+            case .swords: self = .spades
+            case .wands: self = .clubs
+            }
+        }
     }
 }
