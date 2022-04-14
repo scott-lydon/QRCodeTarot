@@ -10,12 +10,6 @@ import AVFoundation
 import QRCodeReader
 import Callable
 
-/// We couldn't use a URL Scheme or the iphone camera to deep link to the
-///  app because it automatically plugs in the address in safari.
-///  https://stackoverflow.com/questions/71731173/how-to-make-the-iphone-camera-read-a-qr-code-and-go-to-my-app-instead-of-safari?noredirect=1#comment126767104_71731173
-///  Good Tarot info:
-///  https://en.wikipedia.org/wiki/Minor_Arcana
-///  https://www.tarotcardmeanings.net/tarot-playingcards.htm
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
     let localCards: Cards = Bundle.localCards
