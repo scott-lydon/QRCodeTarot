@@ -8,5 +8,6 @@
 import UIKit
 
 class LabelImage: NibView {
-
+    @IBOutlet var label: UILabel!
+    @IBOutlet var imageView: UIImageView!
 }
