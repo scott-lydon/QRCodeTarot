@@ -17,6 +17,8 @@
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
 		754FE8DA2808B8870051720E /* ImageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8D92808B8870051720E /* ImageLabel.swift */; };
 		754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8DE2808BE600051720E /* ImageLabel.xib */; };
+		754FE8E32808C00A0051720E /* LabelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8E22808C00A0051720E /* LabelImage.swift */; };
+		754FE8E52808C0230051720E /* LabelImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8E42808C0230051720E /* LabelImage.xib */; };
 		754FE8E82808C1BB0051720E /* ImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8E72808C1BB0051720E /* ImageContainer.swift */; };
 		754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8E92808C1CD0051720E /* ImageContainer.xib */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
@@ -72,6 +74,8 @@
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		754FE8D92808B8870051720E /* ImageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabel.swift; sourceTree = "<group>"; };
 		754FE8DE2808BE600051720E /* ImageLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabel.xib; sourceTree = "<group>"; };
+		754FE8E22808C00A0051720E /* LabelImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelImage.swift; sourceTree = "<group>"; };
+		754FE8E42808C0230051720E /* LabelImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelImage.xib; sourceTree = "<group>"; };
 		754FE8E72808C1BB0051720E /* ImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainer.swift; sourceTree = "<group>"; };
 		754FE8E92808C1CD0051720E /* ImageContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageContainer.xib; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
+				754FE8E62808C0270051720E /* LabelImage */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
@@ -190,6 +195,15 @@
 				754FE8DE2808BE600051720E /* ImageLabel.xib */,
 			);
 			path = ImageLabel;
+			sourceTree = "<group>";
+		};
+		754FE8E62808C0270051720E /* LabelImage */ = {
+			isa = PBXGroup;
+			children = (
+				754FE8E22808C00A0051720E /* LabelImage.swift */,
+				754FE8E42808C0230051720E /* LabelImage.xib */,
+			);
+			path = LabelImage;
 			sourceTree = "<group>";
 		};
 		754FE8EB2808C1D10051720E /* ImageContainer */ = {
@@ -346,6 +360,7 @@
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
+				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
@@ -389,6 +404,7 @@
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				754FE8DA2808B8870051720E /* ImageLabel.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
+				754FE8E32808C00A0051720E /* LabelImage.swift in Sources */,
 				754FE8E82808C1BB0051720E /* ImageContainer.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
