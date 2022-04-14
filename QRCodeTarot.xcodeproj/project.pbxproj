@@ -15,6 +15,8 @@
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
+		754FE8E82808C1BB0051720E /* ImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8E72808C1BB0051720E /* ImageContainer.swift */; };
+		754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8E92808C1CD0051720E /* ImageContainer.xib */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -66,6 +68,8 @@
 		7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		754FE8E72808C1BB0051720E /* ImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainer.swift; sourceTree = "<group>"; };
+		754FE8E92808C1CD0051720E /* ImageContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageContainer.xib; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
+				754FE8EB2808C1D10051720E /* ImageContainer */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
 				756A68D627FE1F2F00B76CCD /* Extensions */,
 				75D0913127FB76F50037798C /* card_data.json */,
@@ -171,6 +176,15 @@
 				7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */,
 			);
 			path = QRCodeTarotUITests;
+			sourceTree = "<group>";
+		};
+		754FE8EB2808C1D10051720E /* ImageContainer */ = {
+			isa = PBXGroup;
+			children = (
+				754FE8E72808C1BB0051720E /* ImageContainer.swift */,
+				754FE8E92808C1CD0051720E /* ImageContainer.xib */,
+			);
+			path = ImageContainer;
 			sourceTree = "<group>";
 		};
 		756A68D127FDF83A00B76CCD /* CardDetailViewController */ = {
@@ -316,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
+				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
@@ -358,6 +373,7 @@
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
+				754FE8E82808C1BB0051720E /* ImageContainer.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 			);
