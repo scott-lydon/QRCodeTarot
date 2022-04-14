@@ -13,4 +13,3 @@ extension BinaryInteger {
         self % 2 == 0
     }
 }
-
