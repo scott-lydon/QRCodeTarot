@@ -172,7 +172,6 @@
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
 				756A68D627FE1F2F00B76CCD /* Extensions */,
 				75D0913127FB76F50037798C /* card_data.json */,
-				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
 				7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */,
 				7526AFF927FA70B2009C5FE8 /* Info.plist */,
@@ -258,7 +257,7 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7526AFEF27FA70B0009C5FE8 /* ViewController.swift */,
+				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 			);
 			path = ViewControllers;
@@ -271,6 +270,15 @@
 				757EF6622808D73E000685FC /* LabelLabel.xib */,
 			);
 			path = LabelLabel;
+			sourceTree = "<group>";
+		};
+		757EF6652808DEB4000685FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7526AFEF27FA70B0009C5FE8 /* ViewController.swift */,
+				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
