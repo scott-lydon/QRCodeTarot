@@ -9,4 +9,5 @@ import UIKit
 
 class SimpleTextCell: NibView {
 
+    @IBOutlet var label: UILabel!
 }
