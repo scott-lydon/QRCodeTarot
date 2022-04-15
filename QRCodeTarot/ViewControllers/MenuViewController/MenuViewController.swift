@@ -63,8 +63,9 @@ extension MenuViewController {
                 self = .tarotQRReader
             } else if rawValue == "contact" {
                 self = .contact
+            } else {
+                return nil
             }
-            return nil
         }
 
         var rawValue: String {
