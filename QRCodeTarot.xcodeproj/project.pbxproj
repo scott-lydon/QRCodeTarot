@@ -35,6 +35,8 @@
 		757EF67228092346000685FC /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* MenuViewController.storyboard */; };
 		757EF67528094177000685FC /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67428094177000685FC /* SubMenuViewController.swift */; };
 		757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF678280941A0000685FC /* SubMenuViewController.storyboard */; };
+		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
+		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -102,6 +104,8 @@
 		757EF67128092346000685FC /* MenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		757EF67428094177000685FC /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 		757EF678280941A0000685FC /* SubMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMenuViewController.storyboard; sourceTree = "<group>"; };
+		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
+		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				754FE8E62808C0270051720E /* LabelImage */,
 				754FE8D82808B8450051720E /* SimpleTextCell */,
 				754FE8DD2808B89C0051720E /* ImageLabel */,
+				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
@@ -317,6 +322,15 @@
 			path = SubMenuViewController;
 			sourceTree = "<group>";
 		};
+		757EF68428095ABF000685FC /* DynamicDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				757EF68028095AA4000685FC /* DynamicDetailView.swift */,
+				757EF68228095ABA000685FC /* DynamicDetailView.xib */,
+			);
+			path = DynamicDetailView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +453,7 @@
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
+				757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
@@ -492,6 +507,7 @@
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
+				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
