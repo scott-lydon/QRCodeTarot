@@ -70,4 +70,8 @@ class LocalCardsTests: XCTestCase {
         XCTAssertEqual(fiveHearts?.suit, .swords)
         XCTAssertEqual(fiveHearts?.value_int, 4)
     }
+
+    func testHamburgerImage() {
+        XCTAssertNotNil(UIImage.hambugerMenu)
+    }
 }
