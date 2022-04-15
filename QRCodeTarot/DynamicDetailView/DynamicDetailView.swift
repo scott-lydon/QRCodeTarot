@@ -78,6 +78,8 @@ extension Array where Element == DynamicDetailView.ViewModel {
                     )
                 ),
                 .image(.hambugerMenu),
+                .image(.hambugerMenu),
+                .image(.hambugerMenu),
                 .labelImage(
                     LabelImage.ViewModel(
                         image: .hambugerMenu,
