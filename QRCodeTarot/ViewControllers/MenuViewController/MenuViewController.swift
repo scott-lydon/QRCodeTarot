@@ -33,7 +33,9 @@ class MenuViewController: UIViewController {
                             case .tutorialRows(let subMenuType):
                                 nextViewController = SubMenuViewController.instantiate(with: subMenuType)
                             case .tarotQRReader:
-                                nextViewController = UIViewController()
+                                // dismiss until the QRReader appears.
+                                menuViewController.navigationController?.popToFirstOf(type: ViewController())
+                                return
                             case .contact:
                                 nextViewController = UIViewController()
                             }
@@ -59,9 +61,9 @@ extension MenuViewController {
         init?(rawValue: String) {
             if let tutorialRow =  SubMenuViewController.TutorialRowType(rawValue: rawValue) {
                 self = .tutorialRows(tutorialRow)
-            } else if rawValue == "tarotQRReader" {
+            } else if rawValue == "Tarot QR Reader" {
                 self = .tarotQRReader
-            } else if rawValue == "contact" {
+            } else if rawValue == "Contact" {
                 self = .contact
             } else {
                 return nil
