@@ -33,6 +33,8 @@
 		757EF66E28091334000685FC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66D28091334000685FC /* MenuViewController.swift */; };
 		757EF67028091392000685FC /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66F28091392000685FC /* UIStoryboard.swift */; };
 		757EF67228092346000685FC /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* MenuViewController.storyboard */; };
+		757EF67528094177000685FC /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67428094177000685FC /* SubMenuViewController.swift */; };
+		757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF678280941A0000685FC /* SubMenuViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -98,6 +100,8 @@
 		757EF66D28091334000685FC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		757EF66F28091392000685FC /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		757EF67128092346000685FC /* MenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
+		757EF67428094177000685FC /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
+		757EF678280941A0000685FC /* SubMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMenuViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
+				757EF67A280941BE000685FC /* SubMenuViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +306,15 @@
 				757EF67128092346000685FC /* MenuViewController.storyboard */,
 			);
 			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		757EF67A280941BE000685FC /* SubMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				757EF67428094177000685FC /* SubMenuViewController.swift */,
+				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
+			);
+			path = SubMenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +433,7 @@
 			files = (
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
+				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
 				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
@@ -461,6 +476,7 @@
 				756A69162802571300B76CCD /* BinaryInteger.swift in Sources */,
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
+				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
