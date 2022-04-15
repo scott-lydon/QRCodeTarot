@@ -271,8 +271,7 @@
 			children = (
 				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
-				757EF66D28091334000685FC /* MenuViewController.swift */,
-				757EF67128092346000685FC /* MenuViewController.storyboard */,
+				757EF67328093382000685FC /* MenuViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -293,6 +292,15 @@
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		757EF67328093382000685FC /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				757EF66D28091334000685FC /* MenuViewController.swift */,
+				757EF67128092346000685FC /* MenuViewController.storyboard */,
+			);
+			path = MenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
