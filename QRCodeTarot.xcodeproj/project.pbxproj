@@ -30,7 +30,9 @@
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
 		757EF66C28090E11000685FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66B28090E11000685FC /* UIImage.swift */; };
+		757EF66E28091334000685FC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66D28091334000685FC /* MenuViewController.swift */; };
 		757EF67028091392000685FC /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66F28091392000685FC /* UIStoryboard.swift */; };
+		757EF67228092346000685FC /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* MenuViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -93,7 +95,9 @@
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		757EF66D28091334000685FC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		757EF66F28091392000685FC /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		757EF67128092346000685FC /* MenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 			children = (
 				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
+				757EF66D28091334000685FC /* MenuViewController.swift */,
+				757EF67128092346000685FC /* MenuViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 			files = (
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
+				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
@@ -460,6 +467,7 @@
 				757EF6612808D736000685FC /* LabelLabel.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
+				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
