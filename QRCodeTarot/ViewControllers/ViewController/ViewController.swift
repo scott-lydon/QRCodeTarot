@@ -37,7 +37,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
     func readerDidCancel(_ reader: QRCodeReaderViewController) {
         reader.stopScanning()
-        dismiss(animated: true)
+        menuTapped()
     }
 
     override func viewDidLoad() {
