@@ -17,14 +17,6 @@ typealias MenuDataSource = TableDataSource1<
 
 class MenuViewController: UIViewController {
 
-    enum Row: String, CaseIterable {
-        case MagicTricks = "Magic Tricks"
-        case games = "Games"
-        case tarotCards = "Tarot Cards"
-        case tarotQRReader = "Tarot QR Reader"
-        case contact = "Contact"
-    }
-
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
@@ -38,8 +30,8 @@ class MenuViewController: UIViewController {
                             guard let row = Row(rawValue: rowText) else { return }
                             let nextViewController: UIViewController
                             switch row {
-                            case .MagicTricks, .games, .tarotCards:
-                                nextViewController = UIViewController()
+                            case .tutorialRows(let subMenuType):
+                                nextViewController = SubMenuViewController.instantiate(with: subMenuType)
                             case .tarotQRReader:
                                 nextViewController = UIViewController()
                             case .contact:
@@ -53,5 +45,40 @@ class MenuViewController: UIViewController {
             )
         )
         return menuViewController
+    }
+}
+
+extension MenuViewController {
+
+    enum Row: CaseIterable {
+
+        case tutorialRows(SubMenuViewController.TutorialRowType)
+        case tarotQRReader
+        case contact
+
+        init?(rawValue: String) {
+            if let tutorialRow =  SubMenuViewController.TutorialRowType(rawValue: rawValue) {
+                self = .tutorialRows(tutorialRow)
+            } else if rawValue == "tarotQRReader" {
+                self = .tarotQRReader
+            } else if rawValue == "contact" {
+                self = .contact
+            } else {
+                return nil
+            }
+        }
+
+        var rawValue: String {
+            switch self {
+            case .tutorialRows(let tutorialRow): return tutorialRow.rawValue
+            case .tarotQRReader: return "Tarot QR Reader"
+            case .contact: return "Contact"
+            }
+        }
+
+        static var allCases: [MenuViewController.Row] {
+            SubMenuViewController.TutorialRowType.allCases.map { .tutorialRows($0)} +
+            [.tarotQRReader, .contact]
+        }
     }
 }

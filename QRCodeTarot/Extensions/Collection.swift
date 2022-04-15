@@ -32,4 +32,8 @@ extension Collection {
     var fifthToLast: Element? {
         self[safe: (count - 5)]
     }
+
+    func firstOfType<T>() -> T? {
+        first(where: { $0 as? T != nil }) as? T
+    }
 }
