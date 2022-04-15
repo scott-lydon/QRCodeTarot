@@ -6,8 +6,20 @@
 //
 
 import UIKit
+import TableMVVM
 
-class LabelImage: NibView {
+class LabelImage: NibView, HasViewModel {
+    typealias ViewModel = ImageLabel.ViewModel
+
+    var viewModel: ImageLabel.ViewModel = .fallBack {
+        didSet {
+            label.text = viewModel.text
+            imageView.image = viewModel.image
+        }
+    }
+
+
     @IBOutlet var label: UILabel!
     @IBOutlet var imageView: UIImageView!
 }
+
