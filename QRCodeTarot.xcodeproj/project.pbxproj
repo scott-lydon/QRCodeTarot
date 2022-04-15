@@ -42,6 +42,8 @@
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68728097AD1000685FC /* MenuViewController.Row.swift */; };
 		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
+		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
+		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -116,6 +118,8 @@
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		757EF68728097AD1000685FC /* MenuViewController.Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.Row.swift; sourceTree = "<group>"; };
 		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
+		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
+				757EF68D28097CE7000685FC /* ContactViewController.swift */,
+				757EF68F28097D23000685FC /* ContactViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
 				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
+				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
 				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
@@ -523,6 +530,7 @@
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
+				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */,
