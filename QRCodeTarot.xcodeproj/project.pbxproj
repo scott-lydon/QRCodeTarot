@@ -41,6 +41,7 @@
 		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68728097AD1000685FC /* MenuViewController.Row.swift */; };
+		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -114,6 +115,7 @@
 		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		757EF68728097AD1000685FC /* MenuViewController.Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.Row.swift; sourceTree = "<group>"; };
+		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 			children = (
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
+				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
 			);
 			path = SubMenuViewController;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			files = (
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
+				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
