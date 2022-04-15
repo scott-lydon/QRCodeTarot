@@ -39,6 +39,11 @@
 		757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67D280954E7000685FC /* DetailsViewController.storyboard */; };
 		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
 		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
+		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
+		757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68728097AD1000685FC /* MenuViewController.Row.swift */; };
+		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
+		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
+		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -110,6 +115,11 @@
 		757EF67D280954E7000685FC /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
 		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
+		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		757EF68728097AD1000685FC /* MenuViewController.Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.Row.swift; sourceTree = "<group>"; };
+		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
+		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 				756A69152802571300B76CCD /* BinaryInteger.swift */,
 				757EF66B28090E11000685FC /* UIImage.swift */,
 				757EF66F28091392000685FC /* UIStoryboard.swift */,
+				757EF68528097871000685FC /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +298,8 @@
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
+				757EF68D28097CE7000685FC /* ContactViewController.swift */,
+				757EF68F28097D23000685FC /* ContactViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -314,6 +327,7 @@
 			children = (
 				757EF66D28091334000685FC /* MenuViewController.swift */,
 				757EF67128092346000685FC /* MenuViewController.storyboard */,
+				757EF68728097AD1000685FC /* MenuViewController.Row.swift */,
 			);
 			path = MenuViewController;
 			sourceTree = "<group>";
@@ -323,6 +337,7 @@
 			children = (
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
+				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
 			);
 			path = SubMenuViewController;
 			sourceTree = "<group>";
@@ -463,6 +478,7 @@
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
 				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
+				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
 				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
@@ -499,6 +515,7 @@
 			files = (
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
+				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
@@ -510,10 +527,13 @@
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
+				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
+				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
+				757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				754FE8DA2808B8870051720E /* ImageLabel.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
