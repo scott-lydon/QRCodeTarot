@@ -37,6 +37,7 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.inject(view: tableView)
         let viewModels: [DynamicDetailView.ViewModel] = .models(from: tutorial)
         dataSource.section0.cellsViewModels = viewModels
     }

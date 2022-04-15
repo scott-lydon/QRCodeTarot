@@ -28,6 +28,7 @@ class SubMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.inject(view: tableView)
         dataSource.section0.cellsViewModels = TutorialRowType(rawValue: dataSource.section0.viewModel)!.detailViewModels
         dataSource.section0.cellTapped = { rowText, indexPath in
           //   navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: true)
