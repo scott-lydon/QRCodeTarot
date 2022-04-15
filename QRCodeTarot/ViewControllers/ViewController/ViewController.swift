@@ -44,6 +44,16 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         super.viewDidLoad()
         readerVC.delegate = self
         readerVC.modalPresentationStyle = .formSheet
+        let menuButton = UIButton(frame: .init(origin: .zero, size: CGSize(width: 50, height: 50)))
+        menuButton.addTarget(self, action: #selector(menuTapped), for: .touchUpInside)
+        menuButton.setImage(.hambugerMenu, for: .normal)
+        menuButton.tintColor = .white
+        readerVC.view.addSubview(menuButton)
+    }
+
+    @objc func menuTapped() {
+        readerVC.dismiss(animated: true)
+        navigationController?.pushViewController(MenuViewController.instantiate(), animated: true)
     }
 
     override func viewDidAppear(_ animated: Bool) {
