@@ -6,8 +6,21 @@
 //
 
 import UIKit
+import TableMVVM
 
-class SimpleTextCell: NibView {
+class SimpleTextCell: NibView, HasViewModel {
+
+    var viewModel: String = "" {
+        didSet {
+            label.text = viewModel
+        }
+    }
+
+    typealias ViewModel = String
 
     @IBOutlet var label: UILabel!
+}
+
+extension String: HasFallBack {
+    public static var fallBack: String { "" }
 }
