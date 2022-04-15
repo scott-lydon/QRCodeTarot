@@ -33,11 +33,10 @@ class MenuViewController: UIViewController {
                             case .tutorialRows(let subMenuType):
                                 nextViewController = SubMenuViewController.instantiate(with: subMenuType)
                             case .tarotQRReader:
-                                // dismiss until the QRReader appears.
                                 menuViewController.navigationController?.popToFirstOf(type: ViewController())
                                 return
                             case .contact:
-                                nextViewController = UIViewController()
+                                nextViewController = ContactViewController.instantiate()
                             }
                             menuViewController.navigationController?
                                 .pushViewController(nextViewController, animated: true)
