@@ -6,8 +6,17 @@
 //
 
 import UIKit
+import TableMVVM
 
-class ImageContainer: NibView {
+class ImageContainer: NibView, HasViewModel {
+
+    var viewModel: UIImage = .init() {
+        didSet {
+            imageView.image = viewModel
+        }
+    }
+
+    typealias ViewModel = UIImage
 
     @IBOutlet var imageView: UIImageView!
 }
