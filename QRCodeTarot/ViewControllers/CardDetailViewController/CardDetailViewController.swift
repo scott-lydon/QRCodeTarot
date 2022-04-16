@@ -17,7 +17,7 @@ class CardDetailViewController: UIViewController {
     }
 
     static func instantiate(title: String, details: String) -> CardDetailViewController {
-        let detailController: CardDetailViewController = UIStoryboard.vc()! //unttested
+        let detailController: CardDetailViewController = UIStoryboard.vc()! //unitested
         detailController.loadView()
         detailController.titleLabel.text = title
         detailController.detailsLabel.text = details
