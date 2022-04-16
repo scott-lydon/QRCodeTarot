@@ -16,10 +16,11 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     var dispatcher: CanAsync = DispatchQueue.main
 
     lazy var readerVC: QRCodeReaderViewController = {
-        let builder = QRCodeReaderViewControllerBuilder {
-            $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
-        }
-        return QRCodeReaderViewController(builder: builder)
+        QRCodeReaderViewController(
+            builder: QRCodeReaderViewControllerBuilder {
+                $0.reader = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
+            }
+        )
     }()
 
     func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
@@ -30,7 +31,10 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
         guard let card = localCards.tarotCard(from: translatedQRCode) else { return }
         dispatcher.async(group: nil, qos: .unspecified, flags: []) {
             [weak self] in
-            self?.navigationController?.pushViewController(CardDetailViewController.instantiat(card: card), animated: true)
+            self?.navigationController?.pushViewController(
+                CardDetailViewController.instantiat(card: card),
+                animated: true
+            )
         }
         dismiss(animated: true)
     }
