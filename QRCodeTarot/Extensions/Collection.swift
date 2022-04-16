@@ -34,6 +34,6 @@ extension Collection {
     }
 
     func firstOfType<T>() -> T? {
-        first(where: { $0 as? T != nil }) as? T
+        compactMap { $0 as? T }.first
     }
 }
