@@ -298,8 +298,7 @@
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
-				757EF68D28097CE7000685FC /* ContactViewController.swift */,
-				757EF68F28097D23000685FC /* ContactViewController.storyboard */,
+				757EF691280A8B57000685FC /* ContactViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -358,6 +357,15 @@
 				757EF68228095ABA000685FC /* DynamicDetailView.xib */,
 			);
 			path = DynamicDetailView;
+			sourceTree = "<group>";
+		};
+		757EF691280A8B57000685FC /* ContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				757EF68D28097CE7000685FC /* ContactViewController.swift */,
+				757EF68F28097D23000685FC /* ContactViewController.storyboard */,
+			);
+			path = ContactViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
