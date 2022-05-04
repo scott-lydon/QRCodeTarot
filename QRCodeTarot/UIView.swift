@@ -30,4 +30,9 @@ extension UIView {
             $0.isActive = true
         }
     }
+
+    var clear: UIView {
+        backgroundColor = .clear
+        return self
+    }
 }
