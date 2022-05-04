@@ -20,7 +20,8 @@ class MenuViewController: UIViewController {
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
-        menuViewController.view.inject(
+        let backgroundView = BackgroundView(frame: .zero)
+        backgroundView.inject(
             view: UITableMVVM(
                 viewModel: MenuDataSource(
                     section0: Section(
@@ -33,7 +34,7 @@ class MenuViewController: UIViewController {
                             case .tutorialRows(let subMenuType):
                                 nextViewController = SubMenuViewController.instantiate(with: subMenuType)
                             case .tarotQRReader:
-                                menuViewController.navigationController?.popToFirstOf(type: ViewController())
+                                menuViewController.navigationController?.popToFirstOf(type: QRREaderViewcontroller())
                                 return
                             case .contact:
                                 nextViewController = ContactViewController.instantiate()
@@ -43,8 +44,9 @@ class MenuViewController: UIViewController {
                         }
                     )
                 )
-            )
+            ).clear
         )
+        menuViewController.view.inject(view: backgroundView)
         return menuViewController
     }
 }
