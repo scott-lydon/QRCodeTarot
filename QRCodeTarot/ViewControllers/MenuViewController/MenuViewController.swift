@@ -22,6 +22,7 @@ class MenuViewController: UIViewController {
         menuViewController.loadView()
         
         let backgroundView = BackgroundView(frame: .zero)
+
 //        backgroundView.inject(
 //            view: UITableMVVM(
 //                viewModel: MenuDataSource(
@@ -47,7 +48,8 @@ class MenuViewController: UIViewController {
 //                )
 //            ).clear
 //        )
-        menuViewController.view.inject(view: backgroundView)
+        menuViewController.view.insertSubview(backgroundView, at: 0)
+        menuViewController.view.pinToEdges(view: backgroundView)
         return menuViewController
     }
 }

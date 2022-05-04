@@ -17,6 +17,10 @@ extension UIView {
         guard !subviews.contains(view) else { return }
         view.frame = bounds
         addSubview(view)
+        pinToEdges(view: view)
+    }
+
+    func pinToEdges(view: UIView, insets: UIEdgeInsets = .zero) {
         view.translatesAutoresizingMaskIntoConstraints = false
         [
             topAnchor.constraint(equalTo: view.topAnchor, constant: -insets.top),
