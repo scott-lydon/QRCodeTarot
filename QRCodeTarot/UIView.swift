@@ -15,9 +15,6 @@ extension UIView {
     ///   - view: The view you are injecting
     func inject(view: UIView, insets: UIEdgeInsets = .zero) {
         guard !subviews.contains(view) else { return }
-        if !subviews.isEmpty {
-            subviews.forEach { $0.removeFromSuperview() }
-        }
         view.frame = bounds
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
