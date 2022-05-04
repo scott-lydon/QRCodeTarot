@@ -15,11 +15,12 @@ extension UIView {
     ///   - view: The view you are injecting
     func inject(view: UIView, insets: UIEdgeInsets = .zero) {
         guard !subviews.contains(view) else { return }
-        if !subviews.isEmpty {
-            subviews.forEach { $0.removeFromSuperview() }
-        }
         view.frame = bounds
         addSubview(view)
+        pinToEdges(view: view)
+    }
+
+    func pinToEdges(view: UIView, insets: UIEdgeInsets = .zero) {
         view.translatesAutoresizingMaskIntoConstraints = false
         [
             topAnchor.constraint(equalTo: view.topAnchor, constant: -insets.top),
@@ -29,5 +30,10 @@ extension UIView {
         ].forEach {
             $0.isActive = true
         }
+    }
+
+    var clear: UIView {
+        backgroundColor = .clear
+        return self
     }
 }

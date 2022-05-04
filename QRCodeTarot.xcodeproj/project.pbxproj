@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
-		7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* ViewController.swift */; };
+		7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */; };
 		7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF127FA70B0009C5FE8 /* Main.storyboard */; };
 		7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF427FA70B2009C5FE8 /* Assets.xcassets */; };
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
@@ -32,6 +32,8 @@
 		757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80812822103600700990 /* OracleOfTheTarotCards.swift */; };
 		757A80872822104600700990 /* BookT.json in Resources */ = {isa = PBXBuildFile; fileRef = 757A80852822104500700990 /* BookT.json */; };
 		757A80882822104600700990 /* BookTCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80862822104600700990 /* BookTCard.swift */; };
+		757A808B28222EB900700990 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A808A28222EB900700990 /* BackgroundView.swift */; };
+		757A808D28222EC200700990 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A808C28222EC200700990 /* BackgroundView.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -89,7 +91,7 @@
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7526AFEF27FA70B0009C5FE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRREaderViewcontroller.swift; sourceTree = "<group>"; };
 		7526AFF227FA70B0009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7526AFF427FA70B2009C5FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7526AFF727FA70B2009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,8 @@
 		757A80812822103600700990 /* OracleOfTheTarotCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OracleOfTheTarotCards.swift; sourceTree = "<group>"; };
 		757A80852822104500700990 /* BookT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BookT.json; sourceTree = "<group>"; };
 		757A80862822104600700990 /* BookTCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTCard.swift; sourceTree = "<group>"; };
+		757A808A28222EB900700990 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		757A808C28222EC200700990 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 			children = (
 				7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */,
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
+				757A808A28222EB900700990 /* BackgroundView.swift */,
+				757A808C28222EC200700990 /* BackgroundView.xib */,
 				756A68D727FE1F4400B76CCD /* ViewControllers */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
@@ -357,7 +363,7 @@
 		757EF6652808DEB4000685FC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7526AFEF27FA70B0009C5FE8 /* ViewController.swift */,
+				7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 			);
 			path = ViewController;
@@ -533,6 +539,7 @@
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757A807D2822102500700990 /* PictoralKeyToTheTarot.json in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
+				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
@@ -569,13 +576,14 @@
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
-				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
+				7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
 				757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
 				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
 				756A69162802571300B76CCD /* BinaryInteger.swift in Sources */,
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
+				757A808B28222EB900700990 /* BackgroundView.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				757A807E2822102500700990 /* PictoralKeyToTheTarot.swift in Sources */,

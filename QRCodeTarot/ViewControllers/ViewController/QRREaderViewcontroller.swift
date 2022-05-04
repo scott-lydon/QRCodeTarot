@@ -46,6 +46,7 @@ class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "QR Code Reader"
         readerVC.delegate = self
         readerVC.modalPresentationStyle = .formSheet
         let menuButton = UIButton(frame: .init(origin: .zero, size: CGSize(width: 50, height: 50)))
