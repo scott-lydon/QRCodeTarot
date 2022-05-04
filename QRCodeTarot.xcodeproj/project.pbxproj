@@ -26,6 +26,8 @@
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
+		757A80822822103600700990 /* OracleOfTheTarot.json in Resources */ = {isa = PBXBuildFile; fileRef = 757A80802822103600700990 /* OracleOfTheTarot.json */; };
+		757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80812822103600700990 /* OracleOfTheTarotCards.swift */; };
 		757A80872822104600700990 /* BookT.json in Resources */ = {isa = PBXBuildFile; fileRef = 757A80852822104500700990 /* BookT.json */; };
 		757A80882822104600700990 /* BookTCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80862822104600700990 /* BookTCard.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
@@ -105,6 +107,8 @@
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
+		757A80802822103600700990 /* OracleOfTheTarot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OracleOfTheTarot.json; sourceTree = "<group>"; };
+		757A80812822103600700990 /* OracleOfTheTarotCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OracleOfTheTarotCards.swift; sourceTree = "<group>"; };
 		757A80852822104500700990 /* BookT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BookT.json; sourceTree = "<group>"; };
 		757A80862822104600700990 /* BookTCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTCard.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
 				757A80892822104900700990 /* BookTCard */,
+				757A80842822103A00700990 /* OracleOfTheTarot */,
 				756A68D627FE1F2F00B76CCD /* Extensions */,
 				75D0913127FB76F50037798C /* card_data.json */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
@@ -306,6 +311,15 @@
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		757A80842822103A00700990 /* OracleOfTheTarot */ = {
+			isa = PBXGroup;
+			children = (
+				757A80802822103600700990 /* OracleOfTheTarot.json */,
+				757A80812822103600700990 /* OracleOfTheTarotCards.swift */,
+			);
+			path = OracleOfTheTarot;
 			sourceTree = "<group>";
 		};
 		757A80892822104900700990 /* BookTCard */ = {
@@ -511,6 +525,7 @@
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
+				757A80822822103600700990 /* OracleOfTheTarot.json in Resources */,
 				7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +556,7 @@
 				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
 				7526AFF027FA70B0009C5FE8 /* ViewController.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
+				757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
 				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
 				756A69162802571300B76CCD /* BinaryInteger.swift in Sources */,
