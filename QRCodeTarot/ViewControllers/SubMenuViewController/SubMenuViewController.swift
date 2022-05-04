@@ -33,10 +33,9 @@ class SubMenuViewController: UIViewController {
         super.viewDidLoad()
         view.inject(view: tableView)
         dataSource.section0.cellsViewModels = TutorialRowType(rawValue: dataSource.section0.viewModel)!.detailViewModels
-        dataSource.section0.cellTapped = { [weak self] rowText, indexPath in
-            guard let self = self else { return }
-            self.navigationController?.pushViewController(
-                DetailsViewController.instantiate(with: self.tutorialRow.detailViewModels[indexPath.row]),
+        dataSource.section0.cellTapped = { [weak self] rowText, _ in
+            self?.navigationController?.pushViewController(
+                DetailsViewController.instantiate(with: rowText),
                 animated: true
             )
         }

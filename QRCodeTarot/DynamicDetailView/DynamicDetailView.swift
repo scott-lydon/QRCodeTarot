@@ -25,6 +25,7 @@ class DynamicDetailView: NibView, HasViewModel {
 }
 
 extension UIView {
+    
     func injectRecyclable<T: UIView>(viewModel: T.ViewModel, unused: T = .init()) where T: HasViewModel {
         if var t: T = subviews.firstOfType() {
             t.viewModel = viewModel

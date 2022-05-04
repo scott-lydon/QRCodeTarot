@@ -74,4 +74,41 @@ class LocalCardsTests: XCTestCase {
     func testHamburgerImage() {
         XCTAssertNotNil(UIImage.hambugerMenu)
     }
+
+    func testDetailsViewController() {
+        let detailsVC = DetailsViewController.instantiate(with: "magic trick 1")
+        detailsVC.loadView()
+        detailsVC.viewDidLoad()
+    }
+
+    func testSubMenuViewController() {
+        let subVC = SubMenuViewController.instantiate(with: .games)
+        subVC.loadView()
+        subVC.viewDidLoad()
+    }
+
+    func testMenuViewController() {
+        let menuViewController = MenuViewController.instantiate()
+        menuViewController.viewDidLoad()
+        if let table: UITableView = menuViewController.view.subviews.first as? UITableView {
+            table.delegate?.tableView?(table, didSelectRowAt: IndexPath(item: 0, section: 0))
+        } else {
+            XCTFail()
+        }
+    }
+
+    func testCardDetailViewController() {
+        let cardDetailViewController = CardDetailViewController.instantiate(title: "title", details: "details")
+        cardDetailViewController.loadView()
+        cardDetailViewController.viewDidLoad()
+    }
+
+
+}
+
+
+extension UIView {
+    var flattenedSubViews: [UIView] {
+        subviews + subviews.flatMap(\.flattenedSubViews)
+    }
 }

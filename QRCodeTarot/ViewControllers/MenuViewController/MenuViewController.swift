@@ -21,9 +21,9 @@ class MenuViewController: UIViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
         menuViewController.view.inject(
-            view: UITableMVVM<MenuDataSource>(
+            view: UITableMVVM(
                 viewModel: MenuDataSource(
-                    section0: .init(
+                    section0: Section(
                         headerViewModel: "Options",
                         cellsViewModels: Row.allCases.map(\.rawValue),
                         cellTapped: { rowText, indexPath in
