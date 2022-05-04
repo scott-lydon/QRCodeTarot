@@ -17,7 +17,6 @@ class LabelLabel: NibView, HasViewModel {
         }
     }
 
-
     @IBOutlet var topLabel: UILabel!
     @IBOutlet var bottomLabel: UILabel!
 }
