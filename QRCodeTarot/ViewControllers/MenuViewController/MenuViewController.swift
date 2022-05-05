@@ -10,9 +10,7 @@ import TableMVVM
 
 class MenuViewController: UIViewController {
 
-
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var choiceView: ChoiceView!
 
     var choiceViewModels: [ChoiceView.ViewModel] = [
         .init(text: "Magic Tricks", image: .magicHat),
@@ -28,7 +26,6 @@ class MenuViewController: UIViewController {
         let backgroundView = BackgroundView(frame: .zero)
         menuViewController.view.insertSubview(backgroundView, at: 0)
         menuViewController.view.pinToEdges(view: backgroundView)
-        menuViewController.choiceView.viewModel = .fallBack
         menuViewController.collectionView.delegate = menuViewController
         menuViewController.collectionView.dataSource = menuViewController
      //    menuViewController.collectionView.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
