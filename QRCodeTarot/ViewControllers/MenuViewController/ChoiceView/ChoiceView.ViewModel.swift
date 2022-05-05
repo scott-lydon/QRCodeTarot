@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import TableMVVM
 
 extension ChoiceView {
 
-    struct ViewModel {
+    struct ViewModel: HasFallBack {
 
         var text: String
         var image: UIImage

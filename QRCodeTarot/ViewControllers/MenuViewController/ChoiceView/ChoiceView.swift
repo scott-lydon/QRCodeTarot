@@ -5,10 +5,10 @@
 //  Created by Scott Lydon on 5/3/22.
 //
 
-import Foundation
 import UIKit
+import TableMVVM
 
-class ChoiceView: NibView {
+class ChoiceView: NibView, HasViewModel {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var label: UILabel!
