@@ -8,13 +8,6 @@
 import UIKit
 import TableMVVM
 
-typealias MenuDataSource = TableDataSource1<
-    Section<
-        HeaderFooter<SimpleTextCell>,
-        ViewModelCell<SimpleTextCell>
-    >
->
-
 class MenuViewController: UIViewController {
 
     static func instantiate() -> MenuViewController {
