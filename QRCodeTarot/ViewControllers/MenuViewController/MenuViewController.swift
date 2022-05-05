@@ -14,6 +14,13 @@ class MenuViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var choiceView: ChoiceView!
 
+    var choiceViewModels: [ChoiceView.ViewModel] = [
+        .init(text: "Magic Tricks", image: .magicHat),
+        .init(text: "Games", image: .gameController),
+        .init(text: "Tarot Cards", image: .gameCards),
+        .init(text: "Tarot QR Reader", image: .qrCode)
+    ]
+
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
@@ -22,24 +29,24 @@ class MenuViewController: UIViewController {
         menuViewController.view.insertSubview(backgroundView, at: 0)
         menuViewController.view.pinToEdges(view: backgroundView)
         menuViewController.choiceView.viewModel = .fallBack
+        menuViewController.collectionView.delegate = menuViewController
+        menuViewController.collectionView.dataSource = menuViewController
+     //    menuViewController.collectionView.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
         return menuViewController
     }
 }
 
-extension MenuViewController: UICollectionViewDelegate {
-
-}
+typealias ChoiceCell = ViewModelCollectionCell<ChoiceView>
 
 extension MenuViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "testcell", for: indexPath)
-        cell.backgroundColor = UIColor.red
+        let cell: ChoiceCell = collectionView.dequeueCell(for: indexPath, cell: ChoiceCell(), viewModel: choiceViewModels[indexPath.row])
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        choiceViewModels.count
     }
 }
 
@@ -50,10 +57,9 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
-        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
-        let size: CGFloat = (collectionView.frame.size.width - space) / 2.0
-        return CGSize(width: size, height: size)
+        collectionView.width
+            .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
+            .divided(by: 2)
+            .square
     }
-
 }
