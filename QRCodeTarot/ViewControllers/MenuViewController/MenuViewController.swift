@@ -28,7 +28,7 @@ class MenuViewController: UIViewController {
         menuViewController.view.pinToEdges(view: backgroundView)
         menuViewController.collectionView.delegate = menuViewController
         menuViewController.collectionView.dataSource = menuViewController
-     //    menuViewController.collectionView.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
         return menuViewController
     }
 }
