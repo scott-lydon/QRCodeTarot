@@ -41,6 +41,7 @@
 		757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */; };
 		757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */; };
 		757A80E72823ACFB00700990 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80E62823ACFB00700990 /* CGFloat.swift */; };
+		757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80EA2823B2FD00700990 /* UICollectionView.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -133,6 +134,7 @@
 		757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.ViewModel.swift; sourceTree = "<group>"; };
 		757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCollectionViewCell.swift; sourceTree = "<group>"; };
 		757A80E62823ACFB00700990 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		757A80EA2823B2FD00700990 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				75CA56B827FC9C65006D8D93 /* Collection.swift */,
 				75D0914327FBDE410037798C /* String.swift */,
 				756A69152802571300B76CCD /* BinaryInteger.swift */,
+				757A80EA2823B2FD00700990 /* UICollectionView.swift */,
 				757EF66B28090E11000685FC /* UIImage.swift */,
 				757EF66F28091392000685FC /* UIStoryboard.swift */,
 				757EF68528097871000685FC /* UINavigationController.swift */,
@@ -636,6 +639,7 @@
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
+				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
