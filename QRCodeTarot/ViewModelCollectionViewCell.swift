@@ -15,18 +15,18 @@ import TableMVVM
 /// and as a subview to a `UItableviewCell`.
 ///
 /// ViewModelCell automatically lets you inject a view into a TableViewCell
- public class ViewModelCollectionCell<View: UIView>: UICollectionViewCell, HasViewModel
+public class ViewModelCollectionCell<View: UIView>: UICollectionViewCell, HasViewModel
 where View: HasViewModel,
       View.ViewModel: HasFallBack {
 
     var view: View = .init(frame: .zero)
 
-//    /// This is used as a reuse identifier when dequeueing the cell.
-//     override public class var className: String {
-//        View.className
-//    }
-
-     public typealias ViewModel = View.ViewModel
+    /// This is used as a reuse identifier when dequeueing the cell.
+    override public class var className: String {
+        View.className
+    }
+    
+    public typealias ViewModel = View.ViewModel
 
     public var viewModel: ViewModel = .fallBack {
         didSet {

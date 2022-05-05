@@ -999,7 +999,7 @@
 			repositoryURL = "https://github.com/ElevatedUnderdogs/TableMVVM.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.1.1;
 			};
 		};
 		75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */ = {
