@@ -205,8 +205,6 @@
 			children = (
 				7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */,
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
-				757A808A28222EB900700990 /* BackgroundView.swift */,
-				757A808C28222EC200700990 /* BackgroundView.xib */,
 				756A68D727FE1F4400B76CCD /* ViewControllers */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
@@ -314,6 +312,7 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				757A80D52822635D00700990 /* BackgroundView */,
 				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
@@ -349,6 +348,15 @@
 				757A80862822104600700990 /* BookTCard.swift */,
 			);
 			path = BookTCard;
+			sourceTree = "<group>";
+		};
+		757A80D52822635D00700990 /* BackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				757A808A28222EB900700990 /* BackgroundView.swift */,
+				757A808C28222EC200700990 /* BackgroundView.xib */,
+			);
+			path = BackgroundView;
 			sourceTree = "<group>";
 		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
