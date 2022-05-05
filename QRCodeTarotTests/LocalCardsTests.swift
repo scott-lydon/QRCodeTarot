@@ -90,11 +90,6 @@ class LocalCardsTests: XCTestCase {
     func testMenuViewController() {
         let menuViewController = MenuViewController.instantiate()
         menuViewController.viewDidLoad()
-        if let table: UITableView = menuViewController.view.subviews.first as? UITableView {
-            table.delegate?.tableView?(table, didSelectRowAt: IndexPath(item: 0, section: 0))
-        } else {
-            XCTFail()
-        }
     }
 
     func testCardDetailViewController() {

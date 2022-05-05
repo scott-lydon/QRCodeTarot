@@ -8,6 +8,13 @@
 import UIKit
 import TableMVVM
 
+typealias MenuDataSource = TableDataSource1<
+    Section<
+        HeaderFooter<SimpleTextCell>,
+        ViewModelCell<SimpleTextCell>
+    >
+>
+
 class SubMenuViewController: UIViewController {
 
     var dataSource: MenuDataSource = .init() {

@@ -8,48 +8,52 @@
 import UIKit
 import TableMVVM
 
-typealias MenuDataSource = TableDataSource1<
-    Section<
-        HeaderFooter<SimpleTextCell>,
-        ViewModelCell<SimpleTextCell>
-    >
->
-
 class MenuViewController: UIViewController {
+
+
+    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var choiceView: ChoiceView!
 
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
         
         let backgroundView = BackgroundView(frame: .zero)
-
-//        backgroundView.inject(
-//            view: UITableMVVM(
-//                viewModel: MenuDataSource(
-//                    section0: Section(
-//                        headerViewModel: "Options",
-//                        cellsViewModels: Row.allCases.map(\.rawValue),
-//                        cellTapped: { rowText, indexPath in
-//                            guard let row = Row(rawValue: rowText) else { return }
-//                            let nextViewController: UIViewController
-//                            switch row {
-//                            case .tutorialRows(let subMenuType):
-//                                nextViewController = SubMenuViewController.instantiate(with: subMenuType)
-//                            case .tarotQRReader:
-//                                menuViewController.navigationController?.popToFirstOf(type: QRREaderViewcontroller())
-//                                return
-//                            case .contact:
-//                                nextViewController = ContactViewController.instantiate()
-//                            }
-//                            menuViewController.navigationController?
-//                                .pushViewController(nextViewController, animated: true)
-//                        }
-//                    )
-//                )
-//            ).clear
-//        )
         menuViewController.view.insertSubview(backgroundView, at: 0)
         menuViewController.view.pinToEdges(view: backgroundView)
+        menuViewController.choiceView.viewModel = .fallBack
         return menuViewController
     }
+}
+
+extension MenuViewController: UICollectionViewDelegate {
+
+}
+
+extension MenuViewController: UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "testcell", for: indexPath)
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        4
+    }
+}
+
+extension MenuViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+        let size: CGFloat = (collectionView.frame.size.width - space) / 2.0
+        return CGSize(width: size, height: size)
+    }
+
 }

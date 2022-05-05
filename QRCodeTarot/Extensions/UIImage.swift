@@ -15,4 +15,36 @@ extension UIImage {
             withConfiguration: UIImage.SymbolConfiguration(pointSize: 30, weight: .bold)
         )! // unit tested.
     }
+
+    static var star: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var qrCode: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var phone: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var magicHat: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var gameController: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var gameCards: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var darkColorShade: UIImage {
+        UIImage(named: #function)!
+    }
+
+    static var brightColorShade: UIImage {
+        UIImage(named: #function)!
+    }
 }
