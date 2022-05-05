@@ -40,6 +40,7 @@
 		757A80D7282264F200700990 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D6282264F200700990 /* UIColor.swift */; };
 		757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */; };
 		757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */; };
+		757A80E32823ACBC00700990 /* UICollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80E22823ACBC00700990 /* UICollectionViewFlowLayout.swift */; };
 		757A80E72823ACFB00700990 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80E62823ACFB00700990 /* CGFloat.swift */; };
 		757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80EA2823B2FD00700990 /* UICollectionView.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
@@ -133,6 +134,7 @@
 		757A80D6282264F200700990 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.ViewModel.swift; sourceTree = "<group>"; };
 		757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCollectionViewCell.swift; sourceTree = "<group>"; };
+		757A80E22823ACBC00700990 /* UICollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		757A80E62823ACFB00700990 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		757A80EA2823B2FD00700990 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				757EF66B28090E11000685FC /* UIImage.swift */,
 				757EF66F28091392000685FC /* UIStoryboard.swift */,
 				757EF68528097871000685FC /* UINavigationController.swift */,
+				757A80E22823ACBC00700990 /* UICollectionViewFlowLayout.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				757A808B28222EB900700990 /* BackgroundView.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
+				757A80E32823ACBC00700990 /* UICollectionViewFlowLayout.swift in Sources */,
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				757A807E2822102500700990 /* PictoralKeyToTheTarot.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
