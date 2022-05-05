@@ -34,8 +34,11 @@
 		757A80882822104600700990 /* BookTCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80862822104600700990 /* BookTCard.swift */; };
 		757A808B28222EB900700990 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A808A28222EB900700990 /* BackgroundView.swift */; };
 		757A808D28222EC200700990 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A808C28222EC200700990 /* BackgroundView.xib */; };
+		757A80CF282250A700700990 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80CE282250A700700990 /* ChoiceView.swift */; };
+		757A80D1282250B100700990 /* ChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A80D0282250B100700990 /* ChoiceView.xib */; };
 		757A80D42822620F00700990 /* LocalImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D32822620F00700990 /* LocalImageTests.swift */; };
 		757A80D7282264F200700990 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D6282264F200700990 /* UIColor.swift */; };
+		757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -121,8 +124,11 @@
 		757A80862822104600700990 /* BookTCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTCard.swift; sourceTree = "<group>"; };
 		757A808A28222EB900700990 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		757A808C28222EC200700990 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
+		757A80CE282250A700700990 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
+		757A80D0282250B100700990 /* ChoiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceView.xib; sourceTree = "<group>"; };
 		757A80D32822620F00700990 /* LocalImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImageTests.swift; sourceTree = "<group>"; };
 		757A80D6282264F200700990 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.ViewModel.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -356,6 +362,16 @@
 			path = BookTCard;
 			sourceTree = "<group>";
 		};
+		757A80D2282250F700700990 /* ChoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				757A80CE282250A700700990 /* ChoiceView.swift */,
+				757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */,
+				757A80D0282250B100700990 /* ChoiceView.xib */,
+			);
+			path = ChoiceView;
+			sourceTree = "<group>";
+		};
 		757A80D52822635D00700990 /* BackgroundView */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +402,7 @@
 		757EF67328093382000685FC /* MenuViewController */ = {
 			isa = PBXGroup;
 			children = (
+				757A80D2282250F700700990 /* ChoiceView */,
 				757EF66D28091334000685FC /* MenuViewController.swift */,
 				757EF67128092346000685FC /* MenuViewController.storyboard */,
 				757EF68728097AD1000685FC /* MenuViewController.Row.swift */,
@@ -553,6 +570,7 @@
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757A807D2822102500700990 /* PictoralKeyToTheTarot.json in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
+				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
@@ -588,6 +606,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
+				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
+				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
 				7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */,

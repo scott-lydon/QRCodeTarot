@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceView" customModule="QRCodeTarot" customModuleProvider="target">
+            <connections>
+                <outlet property="gradientView" destination="B0p-PK-nfB" id="moQ-os-8KK"/>
+                <outlet property="imageView" destination="r1f-F2-lnl" id="RIC-Wu-hfP"/>
+                <outlet property="label" destination="Nap-4h-ZaG" id="gxN-Zx-SIF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="171"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-PK-nfB">
+                    <rect key="frame" x="8" y="8" width="156" height="155"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-S7-cKt">
+                            <rect key="frame" x="10" y="32" width="136" height="88"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="magicHat" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-F2-lnl">
+                                    <rect key="frame" x="44" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="r1f-F2-lnl" secondAttribute="height" id="LWd-bz-gEw"/>
+                                        <constraint firstAttribute="width" constant="48" id="rEh-fN-rJ6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Magic Tricks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-4h-ZaG">
+                                    <rect key="frame" x="25" y="70" width="86" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.94901960780000005" green="0.95292955639999999" blue="0.95294207330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zYN-S7-cKt" firstAttribute="top" secondItem="B0p-PK-nfB" secondAttribute="top" constant="32" id="B25-AJ-Xez"/>
+                        <constraint firstItem="zYN-S7-cKt" firstAttribute="leading" secondItem="B0p-PK-nfB" secondAttribute="leading" constant="10" id="RhB-Ij-Xcc"/>
+                        <constraint firstItem="zYN-S7-cKt" firstAttribute="centerX" secondItem="B0p-PK-nfB" secondAttribute="centerX" id="v5K-iv-iec"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="B0p-PK-nfB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FDO-jc-Kqm"/>
+                <constraint firstItem="B0p-PK-nfB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SXa-tW-cs8"/>
+                <constraint firstItem="B0p-PK-nfB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="aYb-a9-pp8"/>
+                <constraint firstItem="B0p-PK-nfB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tf2-dM-KVy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-43.478260869565219" y="301.67410714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magicHat" width="512" height="512"/>
+    </resources>
+</document>
