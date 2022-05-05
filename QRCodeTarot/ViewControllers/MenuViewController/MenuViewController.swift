@@ -22,7 +22,6 @@ class MenuViewController: UIViewController {
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
-        
         let backgroundView = BackgroundView(frame: .zero)
         menuViewController.view.insertSubview(backgroundView, at: 0)
         menuViewController.view.pinToEdges(view: backgroundView)
@@ -58,5 +57,20 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
             .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
             .divided(by: 2)
             .square
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let choiceText = Row(rawValue: choiceViewModels[indexPath.row].text) else { return }
+        let nextViewController: UIViewController
+        switch choiceText {
+        case .tutorialRows(let subMenu):
+            nextViewController = SubMenuViewController.instantiate(with: subMenu)
+        case .tarotQRReader:
+            navigationController?.popToFirstOf(type: QRREaderViewcontroller())
+            return
+        case .contact:
+            nextViewController = ContactViewController.instantiate()
+        }
+        navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
