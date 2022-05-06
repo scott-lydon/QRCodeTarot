@@ -12,7 +12,7 @@ class BackgroundView: NibView, HasViewModel {
 
     @IBOutlet var backgroundColorShade: UIImageView!
 
-    var viewModel: UIImage = UIImage.brightColorShade {
+    var viewModel: UIImage = .brightColorShade {
         didSet {
             backgroundColorShade.image = viewModel
         }

@@ -13,15 +13,25 @@ extension MenuViewController {
 
         case tutorialRows(SubMenuViewController.TutorialRowType)
         case tarotQRReader
-        case contact
+
+        var choiceViewModel: ChoiceView.ViewModel {
+            .init(text: rawValue, image: image)
+        }
+
+        var image: UIImage {
+            switch self {
+            case .tutorialRows(let tutorialRow):
+                return tutorialRow.image
+            case .tarotQRReader:
+                return .qrCode
+            }
+        }
 
         init?(rawValue: String) {
-            if let tutorialRow =  SubMenuViewController.TutorialRowType(rawValue: rawValue) {
+            if let tutorialRow = SubMenuViewController.TutorialRowType(rawValue: rawValue) {
                 self = .tutorialRows(tutorialRow)
             } else if rawValue == "Tarot QR Reader" {
                 self = .tarotQRReader
-            } else if rawValue == "Contact" {
-                self = .contact
             } else {
                 return nil
             }
@@ -31,13 +41,12 @@ extension MenuViewController {
             switch self {
             case .tutorialRows(let tutorialRow): return tutorialRow.rawValue
             case .tarotQRReader: return "Tarot QR Reader"
-            case .contact: return "Contact"
             }
         }
 
         static var allCases: [MenuViewController.Row] {
             SubMenuViewController.TutorialRowType.allCases.map { .tutorialRows($0)} +
-            [.tarotQRReader, .contact]
+            [.tarotQRReader]
         }
     }
 }

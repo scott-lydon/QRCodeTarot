@@ -36,4 +36,13 @@ extension UIView {
         backgroundColor = .clear
         return self
     }
+
+    func set(background: UIView) {
+        insertSubview(background, at: 0)
+        pinToEdges(view: background)
+    }
+
+    static var zero: Self {
+        Self(frame: .zero)
+    }
 }

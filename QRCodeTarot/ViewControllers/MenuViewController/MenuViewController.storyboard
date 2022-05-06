@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,14 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-89-tXT" customClass="ChoiceView" customModule="QRCodeTarot" customModuleProvider="target">
-                                <rect key="frame" x="132" y="371.5" width="150" height="153"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="153" id="eeW-en-myu"/>
-                                    <constraint firstAttribute="width" constant="150" id="qQb-8K-Lua"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-4D-sQf">
                                 <rect key="frame" x="65" y="124" width="284" height="101.5"/>
                                 <subviews>
@@ -47,7 +38,7 @@
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-zu-1nO">
                                 <rect key="frame" x="26" y="320" width="362" height="576"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jZU-Xi-97a">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -72,16 +63,13 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Twx-zu-1nO" secondAttribute="trailing" constant="26" id="0an-62-Bn1"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="18I-HT-Ifj"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="65" id="6Wr-KN-Mez"/>
-                            <constraint firstItem="HKl-89-tXT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="7xa-JB-hRp"/>
                             <constraint firstItem="Twx-zu-1nO" firstAttribute="top" secondItem="kbg-4D-sQf" secondAttribute="bottom" constant="94.5" id="8V0-mu-Q5h"/>
-                            <constraint firstItem="HKl-89-tXT" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QzR-Ll-ehl"/>
                             <constraint firstItem="Twx-zu-1nO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="X3d-qW-BHJ"/>
                             <constraint firstAttribute="bottom" secondItem="Twx-zu-1nO" secondAttribute="bottom" id="YzN-Jz-MhR"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="ddk-nl-ImQ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="choiceView" destination="HKl-89-tXT" id="Ovw-HN-FQ1"/>
                         <outlet property="collectionView" destination="Twx-zu-1nO" id="Usf-iA-eR3"/>
                     </connections>
                 </viewController>
@@ -90,9 +78,4 @@
             <point key="canvasLocation" x="0.0" y="75.669642857142847"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
