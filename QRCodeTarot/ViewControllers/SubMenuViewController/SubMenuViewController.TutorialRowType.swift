@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension SubMenuViewController {
 
@@ -13,6 +14,14 @@ extension SubMenuViewController {
         case MagicTricks = "Magic Tricks"
         case games = "Games"
         case tarotCards = "Tarot Cards"
+
+        var image: UIImage {
+            switch self {
+            case .MagicTricks: return .magicHat
+            case .games: return .gameController
+            case .tarotCards: return .gameCards
+            }
+        }
 
         var detailViewModels: [String] {
             switch self {
