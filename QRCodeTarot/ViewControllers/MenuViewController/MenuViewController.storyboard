@@ -7,6 +7,14 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Menu View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -17,17 +25,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-4D-sQf">
-                                <rect key="frame" x="65" y="124" width="284" height="101.5"/>
+                                <rect key="frame" x="65" y="124" width="284" height="102.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMf-20-sQm">
-                                        <rect key="frame" x="22.5" y="0.0" width="239" height="41"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="251" height="41.5"/>
+                                        <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="34"/>
                                         <color key="textColor" red="0.94901960780000005" green="0.95292955639999999" blue="0.95294207330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to experience today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEd-3a-qDA">
-                                        <rect key="frame" x="58.5" y="63" width="167.5" height="38.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <rect key="frame" x="54.5" y="63.5" width="175.5" height="39"/>
+                                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                                         <color key="textColor" red="0.94901960780000005" green="0.95292955639999999" blue="0.95294207330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -36,8 +44,8 @@
                                     <constraint firstItem="kEd-3a-qDA" firstAttribute="width" secondItem="CMf-20-sQm" secondAttribute="width" multiplier="0.7" id="PqU-BK-Ygi"/>
                                 </constraints>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-zu-1nO">
-                                <rect key="frame" x="26" y="320" width="362" height="576"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-zu-1nO">
+                                <rect key="frame" x="0.0" y="321" width="414" height="575"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jZU-Xi-97a">
                                     <size key="itemSize" width="128" height="128"/>
@@ -60,17 +68,18 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1059808657" green="0.10964628310000001" blue="0.1254941225" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Twx-zu-1nO" secondAttribute="trailing" constant="26" id="0an-62-Bn1"/>
+                            <constraint firstAttribute="trailing" secondItem="Twx-zu-1nO" secondAttribute="trailing" id="0an-62-Bn1"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="18I-HT-Ifj"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="65" id="6Wr-KN-Mez"/>
                             <constraint firstItem="Twx-zu-1nO" firstAttribute="top" secondItem="kbg-4D-sQf" secondAttribute="bottom" constant="94.5" id="8V0-mu-Q5h"/>
-                            <constraint firstItem="Twx-zu-1nO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="X3d-qW-BHJ"/>
+                            <constraint firstItem="Twx-zu-1nO" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="X3d-qW-BHJ"/>
                             <constraint firstAttribute="bottom" secondItem="Twx-zu-1nO" secondAttribute="bottom" id="YzN-Jz-MhR"/>
                             <constraint firstItem="kbg-4D-sQf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="ddk-nl-ImQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Twx-zu-1nO" id="Usf-iA-eR3"/>
+                        <outlet property="greetingLabel" destination="CMf-20-sQm" id="bT3-7j-zz7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -21,22 +21,22 @@
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-PK-nfB">
                     <rect key="frame" x="8" y="8" width="156" height="155"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="JnP-PN-pt7">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="JnP-PN-pt7">
                             <rect key="frame" x="0.0" y="0.0" width="156" height="155"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-S7-cKt">
-                            <rect key="frame" x="10" y="32" width="136" height="88"/>
+                            <rect key="frame" x="36" y="34" width="84.5" height="87.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="magicHat" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-F2-lnl">
-                                    <rect key="frame" x="44" y="0.0" width="48" height="48"/>
+                                    <rect key="frame" x="18" y="0.0" width="48" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="r1f-F2-lnl" secondAttribute="height" id="LWd-bz-gEw"/>
                                         <constraint firstAttribute="width" constant="48" id="rEh-fN-rJ6"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Magic Tricks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-4h-ZaG">
-                                    <rect key="frame" x="25" y="70" width="86" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <rect key="frame" x="0.0" y="70" width="84.5" height="17.5"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="15"/>
                                     <color key="textColor" red="0.94901960780000005" green="0.95292955639999999" blue="0.95294207330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -46,10 +46,9 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="zYN-S7-cKt" firstAttribute="top" secondItem="B0p-PK-nfB" secondAttribute="top" constant="32" id="B25-AJ-Xez"/>
                         <constraint firstAttribute="trailing" secondItem="JnP-PN-pt7" secondAttribute="trailing" id="Cbt-ff-0XZ"/>
-                        <constraint firstItem="zYN-S7-cKt" firstAttribute="leading" secondItem="B0p-PK-nfB" secondAttribute="leading" constant="10" id="RhB-Ij-Xcc"/>
                         <constraint firstAttribute="bottom" secondItem="JnP-PN-pt7" secondAttribute="bottom" id="eHS-Mp-bva"/>
+                        <constraint firstItem="zYN-S7-cKt" firstAttribute="centerY" secondItem="B0p-PK-nfB" secondAttribute="centerY" id="s0e-ij-WAy"/>
                         <constraint firstItem="JnP-PN-pt7" firstAttribute="leading" secondItem="B0p-PK-nfB" secondAttribute="leading" id="utF-Qa-Hsb"/>
                         <constraint firstItem="zYN-S7-cKt" firstAttribute="centerX" secondItem="B0p-PK-nfB" secondAttribute="centerX" id="v5K-iv-iec"/>
                         <constraint firstItem="JnP-PN-pt7" firstAttribute="top" secondItem="B0p-PK-nfB" secondAttribute="top" id="xBq-vh-XvD"/>

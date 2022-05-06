@@ -11,6 +11,7 @@ import TableMVVM
 class MenuViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet var greetingLabel: UILabel!
 
     var rows: [MenuViewController.Row] = MenuViewController.Row.allCases
 
@@ -21,6 +22,7 @@ class MenuViewController: UIViewController {
         menuViewController.collectionView.delegate = menuViewController
         menuViewController.collectionView.dataSource = menuViewController
         menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
+        menuViewController.greetingLabel.text = Date().greeting
         return menuViewController
     }
 }

@@ -44,6 +44,21 @@
 		757A80E52823ACE300700990 /* UICollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80E42823ACE300700990 /* UICollectionViewLayout.swift */; };
 		757A80E72823ACFB00700990 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80E62823ACFB00700990 /* CGFloat.swift */; };
 		757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80EA2823B2FD00700990 /* UICollectionView.swift */; };
+		757A80FA28250A7200700990 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 757A80ED28250A7000700990 /* OFL.txt */; };
+		757A80FB28250A7200700990 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80EE28250A7000700990 /* Inter-Bold.ttf */; };
+		757A80FC28250A7200700990 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80EF28250A7100700990 /* Inter-ExtraLight.ttf */; };
+		757A80FD28250A7200700990 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F028250A7100700990 /* Inter-Regular.ttf */; };
+		757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F128250A7100700990 /* Inter-Thin.ttf */; };
+		757A80FF28250A7200700990 /* static in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F228250A7100700990 /* static */; };
+		757A810028250A7200700990 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F328250A7100700990 /* Inter-Light.ttf */; };
+		757A810128250A7200700990 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F428250A7100700990 /* Inter-Black.ttf */; };
+		757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F528250A7100700990 /* Inter-ExtraBold.ttf */; };
+		757A810328250A7200700990 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F628250A7200700990 /* README.txt */; };
+		757A810428250A7200700990 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F728250A7200700990 /* Inter-SemiBold.ttf */; };
+		757A810528250A7200700990 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F828250A7200700990 /* Inter-Medium.ttf */; };
+		757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */; };
+		757A810B28250E9000700990 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810A28250E9000700990 /* Date.swift */; };
+		757A810D28250FB600700990 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810C28250FB600700990 /* Int.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -139,6 +154,21 @@
 		757A80E42823ACE300700990 /* UICollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewLayout.swift; sourceTree = "<group>"; };
 		757A80E62823ACFB00700990 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		757A80EA2823B2FD00700990 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		757A80ED28250A7000700990 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		757A80EE28250A7000700990 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		757A80EF28250A7100700990 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		757A80F028250A7100700990 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		757A80F128250A7100700990 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		757A80F228250A7100700990 /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; path = static; sourceTree = "<group>"; };
+		757A80F328250A7100700990 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		757A80F428250A7100700990 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		757A80F528250A7100700990 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		757A80F628250A7200700990 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		757A80F728250A7200700990 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		757A80F828250A7200700990 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		757A810A28250E9000700990 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		757A810C28250FB600700990 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -234,6 +264,8 @@
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
+				757A810A28250E9000700990 /* Date.swift */,
+				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
 				757A80D6282264F200700990 /* UIColor.swift */,
@@ -241,6 +273,7 @@
 				75D0912D27FAAAB80037798C /* Card.swift */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
+				757A80EC28250A4200700990 /* Fonts */,
 				757A80892822104900700990 /* BookTCard */,
 				757A80842822103A00700990 /* OracleOfTheTarot */,
 				757A807F2822102900700990 /* PictoralKeyToTheTarot */,
@@ -394,6 +427,34 @@
 				757A808C28222EC200700990 /* BackgroundView.xib */,
 			);
 			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		757A80EC28250A4200700990 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				757A810728250A8100700990 /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		757A810728250A8100700990 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				757A80F428250A7100700990 /* Inter-Black.ttf */,
+				757A80EE28250A7000700990 /* Inter-Bold.ttf */,
+				757A80F528250A7100700990 /* Inter-ExtraBold.ttf */,
+				757A80EF28250A7100700990 /* Inter-ExtraLight.ttf */,
+				757A80F328250A7100700990 /* Inter-Light.ttf */,
+				757A80F828250A7200700990 /* Inter-Medium.ttf */,
+				757A80F028250A7100700990 /* Inter-Regular.ttf */,
+				757A80F728250A7200700990 /* Inter-SemiBold.ttf */,
+				757A80F128250A7100700990 /* Inter-Thin.ttf */,
+				757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */,
+				757A80ED28250A7000700990 /* OFL.txt */,
+				757A80F628250A7200700990 /* README.txt */,
+				757A80F228250A7100700990 /* static */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
@@ -576,7 +637,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757A80FF28250A7200700990 /* static in Resources */,
+				757A810028250A7200700990 /* Inter-Light.ttf in Resources */,
+				757A80FA28250A7200700990 /* OFL.txt in Resources */,
+				757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */,
+				757A810328250A7200700990 /* README.txt in Resources */,
 				757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */,
+				757A80FB28250A7200700990 /* Inter-Bold.ttf in Resources */,
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
 				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
@@ -586,16 +653,23 @@
 				757A807D2822102500700990 /* PictoralKeyToTheTarot.json in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
+				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
 				757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
+				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
 				757A80822822103600700990 /* OracleOfTheTarot.json in Resources */,
+				757A80FC28250A7200700990 /* Inter-ExtraLight.ttf in Resources */,
+				757A80FD28250A7200700990 /* Inter-Regular.ttf in Resources */,
+				757A810528250A7200700990 /* Inter-Medium.ttf in Resources */,
+				757A810428250A7200700990 /* Inter-SemiBold.ttf in Resources */,
 				7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */,
+				757A810128250A7200700990 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +713,7 @@
 				757A807E2822102500700990 /* PictoralKeyToTheTarot.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
+				757A810B28250E9000700990 /* Date.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				757A80882822104600700990 /* BookTCard.swift in Sources */,
@@ -661,6 +736,7 @@
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
+				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
 				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
