@@ -23,7 +23,7 @@ class SubMenuViewController: UIViewController {
         }
     }
 
-    lazy var tableView: UITableMVVM = {
+    lazy var tableView: UITableMVVM<MenuDataSource> = {
         UITableMVVM(viewModel: dataSource)
     }()
 
@@ -39,6 +39,8 @@ class SubMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.inject(view: tableView)
+        view.set(background: BackgroundView.zero)
+        tableView.backgroundColor = .clear
         dataSource.section0.cellsViewModels = TutorialRowType(rawValue: dataSource.section0.viewModel)!.detailViewModels
         dataSource.section0.cellTapped = { [weak self] rowText, _ in
             self?.navigationController?.pushViewController(
