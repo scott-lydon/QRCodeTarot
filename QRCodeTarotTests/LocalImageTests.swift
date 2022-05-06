@@ -5,7 +5,7 @@
 //  Created by Scott Lydon on 5/4/22.
 //
 
-import Foundation
+import UIKit
 import XCTest
 @testable import QRCodeTarot
 
@@ -20,5 +20,9 @@ class LocalImageTests: XCTestCase {
         XCTAssertNotNil(UIImage.gameCards)
         XCTAssertNotNil(UIImage.darkColorShade)
         XCTAssertNotNil(UIImage.brightColorShade)
+    }
+
+    func testSFSymbol() {
+        XCTAssertNotNil(UIImage.chevronRight)
     }
 }
