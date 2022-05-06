@@ -23,7 +23,15 @@ class MenuViewController: UIViewController {
         menuViewController.collectionView.dataSource = menuViewController
         menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
         menuViewController.greetingLabel.text = Date().greeting
+        (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
         return menuViewController
+    }
+}
+
+extension MenuViewController: TimeChangeListener {
+
+    func timeChanged() {
+        greetingLabel.text = Date().greeting
     }
 }
 
