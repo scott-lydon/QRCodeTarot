@@ -18,14 +18,6 @@ class ChoiceView: NibView, HasViewModel {
         didSet {
             self.imageView.image = viewModel.image
             self.label.text = viewModel.text
-
-         //   let layer0: CAGradientLayer = .subtleDarkGradientLayer
-          //  layer0.bounds = gradientView.bounds.insetForGradient
-          //  layer0.position = gradientView.center
-          //  gradientView.layer.addSublayer(layer0)
-            gradientView.layer.cornerRadius = 16
-            gradientView.layer.borderWidth = 1
-            gradientView.layer.borderColor = UIColor.offWhiteGray.cgColor
         }
     }
 }

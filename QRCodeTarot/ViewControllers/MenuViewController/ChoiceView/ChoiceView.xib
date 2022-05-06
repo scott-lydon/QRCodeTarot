@@ -21,6 +21,9 @@
                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-PK-nfB">
                     <rect key="frame" x="8" y="8" width="156" height="155"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="JnP-PN-pt7">
+                            <rect key="frame" x="0.0" y="0.0" width="156" height="155"/>
+                        </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-S7-cKt">
                             <rect key="frame" x="10" y="32" width="136" height="88"/>
                             <subviews>
@@ -44,12 +47,16 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="zYN-S7-cKt" firstAttribute="top" secondItem="B0p-PK-nfB" secondAttribute="top" constant="32" id="B25-AJ-Xez"/>
+                        <constraint firstAttribute="trailing" secondItem="JnP-PN-pt7" secondAttribute="trailing" id="Cbt-ff-0XZ"/>
                         <constraint firstItem="zYN-S7-cKt" firstAttribute="leading" secondItem="B0p-PK-nfB" secondAttribute="leading" constant="10" id="RhB-Ij-Xcc"/>
+                        <constraint firstAttribute="bottom" secondItem="JnP-PN-pt7" secondAttribute="bottom" id="eHS-Mp-bva"/>
+                        <constraint firstItem="JnP-PN-pt7" firstAttribute="leading" secondItem="B0p-PK-nfB" secondAttribute="leading" id="utF-Qa-Hsb"/>
                         <constraint firstItem="zYN-S7-cKt" firstAttribute="centerX" secondItem="B0p-PK-nfB" secondAttribute="centerX" id="v5K-iv-iec"/>
+                        <constraint firstItem="JnP-PN-pt7" firstAttribute="top" secondItem="B0p-PK-nfB" secondAttribute="top" id="xBq-vh-XvD"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="B0p-PK-nfB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FDO-jc-Kqm"/>
                 <constraint firstItem="B0p-PK-nfB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SXa-tW-cs8"/>
@@ -61,6 +68,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Rectangle" width="614" height="600"/>
         <image name="magicHat" width="512" height="512"/>
     </resources>
 </document>
