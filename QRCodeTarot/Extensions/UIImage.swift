@@ -47,4 +47,8 @@ extension UIImage {
     static var brightColorShade: UIImage {
         UIImage(named: #function)!
     }
+
+    static var chevronRight: UIImage {
+        UIImage(systemName: "chevron.right")!
+    }
 }
