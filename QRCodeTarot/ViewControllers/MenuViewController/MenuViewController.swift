@@ -24,6 +24,7 @@ class MenuViewController: UIViewController {
         menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
         menuViewController.greetingLabel.text = Date().greeting
         (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
+        menuViewController.title = "Menu"
         return menuViewController
     }
 }
