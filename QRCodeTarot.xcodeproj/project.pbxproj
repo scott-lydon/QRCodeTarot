@@ -59,6 +59,8 @@
 		757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */; };
 		757A810B28250E9000700990 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810A28250E9000700990 /* Date.swift */; };
 		757A810D28250FB600700990 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810C28250FB600700990 /* Int.swift */; };
+		757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81102825C33B00700990 /* SubMenuChoice.swift */; };
+		757A81132825C35000700990 /* SubMenuChoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81122825C35000700990 /* SubMenuChoice.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -169,6 +171,8 @@
 		757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		757A810A28250E9000700990 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		757A810C28250FB600700990 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		757A81102825C33B00700990 /* SubMenuChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuChoice.swift; sourceTree = "<group>"; };
+		757A81122825C35000700990 /* SubMenuChoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuChoice.xib; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
+				757A81102825C33B00700990 /* SubMenuChoice.swift */,
+				757A81122825C35000700990 /* SubMenuChoice.xib */,
 				757A810A28250E9000700990 /* Date.swift */,
 				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -653,6 +659,7 @@
 				757A807D2822102500700990 /* PictoralKeyToTheTarot.json in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
+				757A81132825C35000700990 /* SubMenuChoice.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
@@ -718,6 +725,7 @@
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				757A80882822104600700990 /* BookTCard.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
+				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
