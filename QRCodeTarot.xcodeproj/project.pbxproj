@@ -57,6 +57,7 @@
 		757A810428250A7200700990 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F728250A7200700990 /* Inter-SemiBold.ttf */; };
 		757A810528250A7200700990 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F828250A7200700990 /* Inter-Medium.ttf */; };
 		757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */; };
+		757A810D28250FB600700990 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810C28250FB600700990 /* Int.swift */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -165,6 +166,7 @@
 		757A80F728250A7200700990 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		757A80F828250A7200700990 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		757A810C28250FB600700990 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
+				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
 				757A80D6282264F200700990 /* UIColor.swift */,
@@ -729,6 +732,7 @@
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
+				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
 				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
