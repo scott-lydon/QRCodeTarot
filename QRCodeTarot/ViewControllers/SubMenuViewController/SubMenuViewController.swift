@@ -10,7 +10,7 @@ import TableMVVM
 
 typealias MenuDataSource = TableDataSource1<
     Section<
-        HeaderFooter<SubMenuChoice>,
+        HeaderFooter<ImageLabelNoBorder>,
         ViewModelCell<SubMenuChoice>
     >
 >
@@ -27,12 +27,12 @@ class SubMenuViewController: UIViewController {
         UITableMVVM(viewModel: dataSource)
     }()
 
-    static func instantiate(with submenuChoiceViewModels: [SubMenuChoice.ViewModel]) -> SubMenuViewController {
+    static func instantiate(with tutorialRow: SubMenuViewController.TutorialRowType) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
         subMenuViewController.dataSource = MenuDataSource(
             section0: .init(
-                headerViewModel: .fallBack,
-                cellsViewModels: submenuChoiceViewModels,
+                headerViewModel: tutorialRow.imageLabelNoBorder,
+                cellsViewModels: tutorialRow.submenuChoiceViewModels,
                 cellTapped: { [weak subMenuViewController] subMenuChoiceVM, _ in
                     subMenuViewController?.navigationController?.pushViewController(
                         DetailsViewController.instantiate(with: subMenuChoiceVM.titleText),

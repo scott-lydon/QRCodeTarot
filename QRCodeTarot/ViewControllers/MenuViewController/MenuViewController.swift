@@ -78,7 +78,7 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
     ) {
         switch rows[indexPath.row] {
         case .tutorialRows(let subMenu):
-            navigationController?.pushViewController(SubMenuViewController.instantiate(with: subMenu.submenuChoiceViewModels), animated: true)
+            navigationController?.pushViewController(SubMenuViewController.instantiate(with: subMenu), animated: true)
         case .tarotQRReader:
             navigationController?.popToFirstOf(type: QRREaderViewcontroller())
         }
