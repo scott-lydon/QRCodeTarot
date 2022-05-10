@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-VariableFont_slnt,wght.ttf">
+        <array key="Inter-Regular.ttf">
             <string>Inter-Regular</string>
         </array>
     </customFonts>
@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="409" height="127"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-zb-Meg">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG4-zb-Meg" customClass="BottomLeftToTopRightGradient" customModule="QRCodeTarot" customModuleProvider="target">
                     <rect key="frame" x="8" y="8" width="393" height="111"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-Vd-yGa">
