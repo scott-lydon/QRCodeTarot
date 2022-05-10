@@ -270,7 +270,6 @@
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
-				757A81A9282A37BF00700990 /* SubMenuChoice */,
 				757A810A28250E9000700990 /* Date.swift */,
 				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -509,6 +508,7 @@
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
 				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
+				757A81A9282A37BF00700990 /* SubMenuChoice */,
 			);
 			path = SubMenuViewController;
 			sourceTree = "<group>";
