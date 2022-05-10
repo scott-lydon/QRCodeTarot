@@ -14,6 +14,7 @@ class ImageLabel: NibView, HasViewModel {
         didSet {
             imageView.image = viewModel.image
             label.text = viewModel.text
+
         }
     }
 
@@ -27,6 +28,7 @@ extension ImageLabel {
 
         let image: UIImage
         let text: String
+
         static var fallBack: ImageLabel.ViewModel {
             .init(image: .init(), text: "")
         }
