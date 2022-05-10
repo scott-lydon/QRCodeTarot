@@ -22,8 +22,6 @@ final class BottomLeftToTopRightGradient: CommonInitView {
     override func draw(_ rect: CGRect) {
         gradient.frame = self.bounds
         gradient.colors = [gradientStartColor.cgColor, gradientEndColor.cgColor]
-      //  gradient.locations = [0.7, 1]
-
         if gradient.superlayer == nil {
             layer.insertSublayer(gradient, at: 0)
         }
