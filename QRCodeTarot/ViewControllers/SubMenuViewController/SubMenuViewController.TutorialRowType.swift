@@ -15,6 +15,10 @@ extension SubMenuViewController {
         case games = "Games"
         case tarotCards = "Tarot Cards"
 
+        var submenuChoiceViewModels: [SubMenuChoice.ViewModel] {
+            detailViewModels.map { .init(titleText: $0, detailText: "Details will go here.")}
+        }
+
         var image: UIImage {
             switch self {
             case .MagicTricks: return .magicHat
