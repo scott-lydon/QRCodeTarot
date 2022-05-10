@@ -15,6 +15,10 @@ extension SubMenuViewController {
         case games = "Games"
         case tarotCards = "Tarot Cards"
 
+        var imageLabelNoBorder: ImageLabelNoBorder.ViewModel {
+            .init(image: image, text: rawValue)
+        }
+
         var submenuChoiceViewModels: [SubMenuChoice.ViewModel] {
             detailViewModels.map { .init(titleText: $0, detailText: "Details will go here.")}
         }
