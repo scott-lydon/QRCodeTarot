@@ -51,6 +51,12 @@ extension DynamicDetailView {
 }
 
 extension Array where Element == DynamicDetailView.ViewModel {
+
+    static func tarot(_ card: Card) -> Self {
+        [
+            .image(card.image ?? .init())
+        ]
+    }
     
     static func models(from tutorial: String) -> Self {
         if tutorial == "magic trick 1" {
