@@ -80,7 +80,7 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         case .tutorialRows(let subMenu):
             navigationController?.pushViewController(SubMenuViewController.instantiate(with: subMenu), animated: true)
         case .tarotQRReader:
-            navigationController?.popToFirstOf(type: QRREaderViewcontroller())
+            navigationController?.popToFirstOf(type: QrReaderViewcontroller())
         }
     }
 }

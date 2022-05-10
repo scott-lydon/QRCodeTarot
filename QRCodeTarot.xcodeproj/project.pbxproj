@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
-		7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */; };
+		7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */; };
 		7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF127FA70B0009C5FE8 /* Main.storyboard */; };
 		7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF427FA70B2009C5FE8 /* Assets.xcassets */; };
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
@@ -121,7 +121,7 @@
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRREaderViewcontroller.swift; sourceTree = "<group>"; };
+		7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewcontroller.swift; sourceTree = "<group>"; };
 		7526AFF227FA70B0009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7526AFF427FA70B2009C5FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7526AFF727FA70B2009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -498,7 +498,7 @@
 		757EF6652808DEB4000685FC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */,
+				7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 			);
 			path = ViewController;
@@ -732,7 +732,7 @@
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
-				7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */,
+				7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
 				757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,

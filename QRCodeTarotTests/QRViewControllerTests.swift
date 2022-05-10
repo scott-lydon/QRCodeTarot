@@ -15,7 +15,7 @@ class ViewControllerTests: XCTestCase {
         let navigationController = UINavigationController()
         
         guard let viewController = UIStoryboard(name: "Main", bundle: .main)
-                .instantiateViewController(withIdentifier: "ViewController") as? QRREaderViewcontroller else {
+                .instantiateViewController(withIdentifier: "ViewController") as? QrReaderViewcontroller else {
                     XCTFail()
                     return
                 }
