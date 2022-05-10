@@ -10,8 +10,8 @@ import TableMVVM
 
 typealias MenuDataSource = TableDataSource1<
     Section<
-        HeaderFooter<SimpleTextCell>,
-        ViewModelCell<SimpleTextCell>
+        HeaderFooter<SubMenuChoice>,
+        ViewModelCell<SubMenuChoice>
     >
 >
 
@@ -27,12 +27,20 @@ class SubMenuViewController: UIViewController {
         UITableMVVM(viewModel: dataSource)
     }()
 
-    var tutorialRow: SubMenuViewController.TutorialRowType!
-
-    static func instantiate(with tutorialRow: TutorialRowType) -> SubMenuViewController {
-        let subMenuViewController: SubMenuViewController = UIStoryboard.vc()! // unitested
-        subMenuViewController.tutorialRow = tutorialRow
-        subMenuViewController.dataSource.section0.viewModel = tutorialRow.rawValue
+    static func instantiate(with submenuChoiceViewModels: [SubMenuChoice.ViewModel]) -> SubMenuViewController {
+        let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
+        subMenuViewController.dataSource = MenuDataSource(
+            section0: .init(
+                headerViewModel: .fallBack,
+                cellsViewModels: submenuChoiceViewModels,
+                cellTapped: { [weak subMenuViewController] subMenuChoiceVM, _ in
+                    subMenuViewController?.navigationController?.pushViewController(
+                        DetailsViewController.instantiate(with: subMenuChoiceVM.titleText),
+                        animated: true
+                    )
+                }
+            )
+        )
         return subMenuViewController
     }
 
@@ -41,12 +49,5 @@ class SubMenuViewController: UIViewController {
         view.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
-        dataSource.section0.cellsViewModels = TutorialRowType(rawValue: dataSource.section0.viewModel)!.detailViewModels
-        dataSource.section0.cellTapped = { [weak self] rowText, _ in
-            self?.navigationController?.pushViewController(
-                DetailsViewController.instantiate(with: rowText),
-                animated: true
-            )
-        }
     }
 }

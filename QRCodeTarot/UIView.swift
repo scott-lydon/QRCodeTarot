@@ -45,4 +45,24 @@ extension UIView {
     static var zero: Self {
         Self(frame: .zero)
     }
+
+
+    func addGradiant() {
+        let GradientLayerName = "gradientLayer"
+
+        if let oldlayer = self.layer.sublayers?.filter({$0.name == GradientLayerName}).first {
+            oldlayer.removeFromSuperlayer()
+        }
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [
+            UIColor(red: 0.02, green: 0.02, blue: 0.03, alpha: 1.00),
+            UIColor(red: 0.11, green: 0.11, blue: 0.13, alpha: 1.00)
+        ]
+        gradientLayer.startPoint = .zero
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1 )
+        gradientLayer.frame = self.bounds
+        gradientLayer.name = GradientLayerName
+
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
