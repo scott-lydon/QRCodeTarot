@@ -45,7 +45,7 @@ extension DynamicDetailView {
         case labelImage(LabelImage.ViewModel)
 
         static var fallBack: DynamicDetailView.ViewModel {
-            .imageLabel(.init(image: .init(), text: ""))
+            .imageLabel(.fallBack)
         }
     }
 }
