@@ -98,7 +98,10 @@ class LocalCardsTests: XCTestCase {
         cardDetailViewController.viewDidLoad()
     }
 
-
+    func testInt() {
+        XCTAssertEqual(9.leadingZero, "09")
+        XCTAssertEqual(12.leadingZero, "12")
+    }
 }
 
 
