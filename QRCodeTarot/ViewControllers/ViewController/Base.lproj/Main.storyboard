@@ -4,19 +4,31 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Eader Viewcontroller-->
+        <!--Qr Reader Viewcontroller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="QRREaderViewcontroller" customModule="QRCodeTarot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="QrReaderViewcontroller" customModule="QRCodeTarot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brightColorShade" translatesAutoresizingMaskIntoConstraints="NO" id="uAg-Mo-ZLq">
+                                <rect key="frame" x="-10" y="0.0" width="434" height="522"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uAg-Mo-ZLq" secondAttribute="height" multiplier="433:521" id="Rx1-PZ-WPe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uAg-Mo-ZLq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FQA-Gn-cuF"/>
+                            <constraint firstAttribute="trailing" secondItem="uAg-Mo-ZLq" secondAttribute="trailing" constant="-10" id="dyh-JJ-aKV"/>
+                            <constraint firstItem="uAg-Mo-ZLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-10" id="sjv-S3-S8F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dzH-AG-RWx"/>
                 </viewController>
@@ -45,8 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="brightColorShade" width="375" height="470"/>
     </resources>
 </document>
