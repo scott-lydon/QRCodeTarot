@@ -11,4 +11,8 @@ extension Int {
     var decimal: Decimal {
         Decimal(self)
     }
+
+    var leadingZero: String {
+        String(format: "%02d", self)
+    }
 }
