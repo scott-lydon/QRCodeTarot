@@ -31,6 +31,19 @@ extension SubMenuChoice {
         let titleText: String
         let detailText: String
 
+        init(titleText: String, detailText: String) {
+            self.titleText = titleText
+            self.detailText = detailText
+        }
+
+        init(_ game: Game) {
+            self.init(titleText: game.title, detailText: game.subTitle)
+        }
+
+        init(_ trick: MagicTrick) {
+            self.init(titleText: trick.title, detailText: trick.subTitle)
+        }
+
         static var fallBack: Self {
             .init(titleText: "-", detailText: "-")
         }
