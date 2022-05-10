@@ -270,8 +270,7 @@
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
-				757A81102825C33B00700990 /* SubMenuChoice.swift */,
-				757A81122825C35000700990 /* SubMenuChoice.xib */,
+				757A81A9282A37BF00700990 /* SubMenuChoice */,
 				757A810A28250E9000700990 /* Date.swift */,
 				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -464,6 +463,15 @@
 				757A80F228250A7100700990 /* static */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		757A81A9282A37BF00700990 /* SubMenuChoice */ = {
+			isa = PBXGroup;
+			children = (
+				757A81102825C33B00700990 /* SubMenuChoice.swift */,
+				757A81122825C35000700990 /* SubMenuChoice.xib */,
+			);
+			path = SubMenuChoice;
 			sourceTree = "<group>";
 		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
