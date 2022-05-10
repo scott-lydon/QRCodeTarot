@@ -40,11 +40,21 @@ typealias ChoiceCell = ViewModelCollectionCell<ChoiceView>
 
 extension MenuViewController: UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        collectionView.dequeueCell(for: indexPath, cell: ChoiceCell(), viewModel: rows[indexPath.row].choiceViewModel)
+    func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath
+    ) -> UICollectionViewCell {
+        collectionView.dequeueCell(
+            for: indexPath,
+               cell: ChoiceCell(),
+               viewModel: rows[indexPath.row].choiceViewModel
+        )
     }
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
         rows.count
     }
 }
@@ -62,10 +72,13 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
             .square
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
         switch rows[indexPath.row] {
         case .tutorialRows(let subMenu):
-            navigationController?.pushViewController(SubMenuViewController.instantiate(with: subMenu), animated: true)
+            navigationController?.pushViewController(SubMenuViewController.instantiate(with: subMenu.submenuChoiceViewModels), animated: true)
         case .tarotQRReader:
             navigationController?.popToFirstOf(type: QRREaderViewcontroller())
         }
