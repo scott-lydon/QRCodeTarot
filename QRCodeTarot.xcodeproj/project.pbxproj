@@ -187,6 +187,22 @@
 		757A81B3282A55D000700990 /* CardImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
 		757A81B8282B2BF600700990 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
 		757A81BA282B2C0300700990 /* TutorialStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialStepView.xib; sourceTree = "<group>"; };
+		757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		757A81C3282B306500700990 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C4282B306500700990 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C5282B306500700990 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		757A81C6282B306500700990 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		757A81C7282B306500700990 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		757A81C8282B306500700990 /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C9282B306500700990 /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		757A81CA282B306500700990 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		757A81CB282B306500700990 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		757A81CC282B306600700990 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		757A81CD282B306600700990 /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		757A81CE282B306600700990 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		757A81CF282B306600700990 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -451,6 +467,7 @@
 		757A80EC28250A4200700990 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				757A81D0282B306F00700990 /* PlayfairDisplay */,
 				757A810728250A8100700990 /* Inter */,
 			);
 			path = Fonts;
@@ -510,6 +527,37 @@
 				757A81BA282B2C0300700990 /* TutorialStepView.xib */,
 			);
 			path = TutorialStepView;
+			sourceTree = "<group>";
+		};
+		757A81BF282B306500700990 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */,
+				757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */,
+				757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */,
+				757A81C3282B306500700990 /* PlayfairDisplay-BoldItalic.ttf */,
+				757A81C4282B306500700990 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				757A81C5282B306500700990 /* PlayfairDisplay-Italic.ttf */,
+				757A81C6282B306500700990 /* PlayfairDisplay-Regular.ttf */,
+				757A81C7282B306500700990 /* PlayfairDisplay-Black.ttf */,
+				757A81C8282B306500700990 /* PlayfairDisplay-SemiBoldItalic.ttf */,
+				757A81C9282B306500700990 /* PlayfairDisplay-MediumItalic.ttf */,
+				757A81CA282B306500700990 /* PlayfairDisplay-BlackItalic.ttf */,
+				757A81CB282B306500700990 /* PlayfairDisplay-ExtraBold.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		757A81D0282B306F00700990 /* PlayfairDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				757A81CC282B306600700990 /* OFL.txt */,
+				757A81CF282B306600700990 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+				757A81CD282B306600700990 /* PlayfairDisplay-VariableFont_wght.ttf */,
+				757A81CE282B306600700990 /* README.txt */,
+				757A81BF282B306500700990 /* static */,
+			);
+			path = PlayfairDisplay;
 			sourceTree = "<group>";
 		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
