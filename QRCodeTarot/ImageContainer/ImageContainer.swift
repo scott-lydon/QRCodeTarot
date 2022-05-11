@@ -10,13 +10,11 @@ import TableMVVM
 
 class ImageContainer: NibView, HasViewModel {
 
+    typealias ViewModel = UIImage
+    @IBOutlet var imageView: UIImageView!
     var viewModel: UIImage = .init() {
         didSet {
             imageView.image = viewModel
         }
     }
-
-    typealias ViewModel = UIImage
-
-    @IBOutlet var imageView: UIImageView!
 }
