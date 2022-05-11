@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 // MARK: - Cards
@@ -63,6 +64,10 @@ struct Card: Codable {
     let meaning_rev: String
     let desc: String
     let suit: Suit?
+
+    var image: UIImage? {
+        UIImage(named: "\(value_int.leadingZero)_\(suit?.rawValue ?? "")")
+    }
 
     func matches(key: CardKey) -> Bool {
         suit == key.symbol.suit && key.number == value_int
