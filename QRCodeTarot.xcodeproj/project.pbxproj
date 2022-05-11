@@ -64,6 +64,8 @@
 		757A81A8282A338D00700990 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81A7282A338D00700990 /* GradientView.swift */; };
 		757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */; };
 		757A81AF282A3F0700700990 /* ImageLabelNoBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */; };
+		757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B8282B2BF600700990 /* TutorialStepView.swift */; };
+		757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81BA282B2C0300700990 /* TutorialStepView.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -179,6 +181,8 @@
 		757A81A7282A338D00700990 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelNoBorder.swift; sourceTree = "<group>"; };
 		757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelNoBorder.xib; sourceTree = "<group>"; };
+		757A81B8282B2BF600700990 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
+		757A81BA282B2C0300700990 /* TutorialStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialStepView.xib; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -486,6 +490,15 @@
 			path = ImageLabelNoBorder;
 			sourceTree = "<group>";
 		};
+		757A81BC282B2C0800700990 /* TutorialStepView */ = {
+			isa = PBXGroup;
+			children = (
+				757A81B8282B2BF600700990 /* TutorialStepView.swift */,
+				757A81BA282B2C0300700990 /* TutorialStepView.xib */,
+			);
+			path = TutorialStepView;
+			sourceTree = "<group>";
+		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +534,7 @@
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
 				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
+				757A81BC282B2C0800700990 /* TutorialStepView */,
 				757A81B0282A3F0B00700990 /* ImageLabelNoBorder */,
 				757A81A9282A37BF00700990 /* SubMenuChoice */,
 			);
@@ -691,6 +705,7 @@
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
 				757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */,
+				757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
@@ -727,6 +742,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */,
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
