@@ -26,7 +26,7 @@ class DetailsViewController: UIViewController {
     }
 
     lazy var tableView: UITableMVVM = {
-        UITableMVVM(viewModel: dataSource)
+        UITableMVVM(viewModel: dataSource).asClear()
     }()
 
     static func instantiate(with tutorial: String) -> DetailsViewController {
