@@ -16,7 +16,7 @@ class DynamicDetailView: NibView, HasViewModel {
             case .imageLabel(let imageLabelViewModel):
                 injectRecyclable(viewModel: imageLabelViewModel, unused: ImageLabel())
             case .image(let image):
-                injectRecyclable(viewModel: image, unused: ImageContainer())
+                injectRecyclable(viewModel: image, unused: CardImageView())
             case .labelImage(let labelImageViewModel):
                 injectRecyclable(viewModel: labelImageViewModel, unused: LabelImage())
             }

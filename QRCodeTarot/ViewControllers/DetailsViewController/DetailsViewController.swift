@@ -9,15 +9,12 @@ import UIKit
 import TableMVVM
 
 typealias DetailDataSource = TableDataSource1<
-    Section<
-        HeaderFooter<SimpleTextCell>,
+    SectionNoHeader<
         ViewModelCell<DynamicDetailView>
     >
 >
 
 class DetailsViewController: UIViewController {
-
-    var tutorial: String = ""
 
     var dataSource: DetailDataSource = .init() {
         didSet {
@@ -29,16 +26,18 @@ class DetailsViewController: UIViewController {
         UITableMVVM(viewModel: dataSource).asClear()
     }()
 
-    static func instantiate(with tutorial: String) -> DetailsViewController {
+    static func instantiate(
+        with viewModels: [DynamicDetailView.ViewModel]
+    ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-        detailsViewController.tutorial = tutorial
+        detailsViewController.dataSource = .init(
+            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
+        )
         return detailsViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.inject(view: tableView)
-        let viewModels: [DynamicDetailView.ViewModel] = .models(from: tutorial)
-        dataSource.section0.cellsViewModels = viewModels
     }
 }
