@@ -51,4 +51,8 @@ extension UIImage {
     static var chevronRight: UIImage {
         UIImage(systemName: "chevron.right")!
     }
+
+    static var cardDemo: UIImage {
+        UIImage(named: "07_swords")!
+    }
 }
