@@ -7,18 +7,28 @@
 
 import UIKit
 
-enum Activity: CaseIterable {
+enum Activity {
 
     case magicTricks([MagicTrick])
     case games([Game])
-    case tarotCards([Card])
+//
+//
+//    static var allCases: [Activity] {
+//        [
+//            .magicTricks(MagicTrick.allCases),
+//            .games(Game.allCases)
+//        ]
+//    }
 
-    static var allCases: [Activity] {
-        [
-            .magicTricks(MagicTrick.allCases),
-            .games(Game.allCases),
-            .tarotCards(Card.allCases)
-        ]
+    var imageLabelNoBorder: ImageLabelNoBorder.ViewModel {
+        .init(image: image, text: name)
+    }
+
+    var submenuChoiceViewModels: [SubMenuChoice.ViewModel] {
+        switch self {
+        case .magicTricks(let tricks): return tricks.subMenuViewModels
+        case .games(let games): return games.subMenuViewModels
+        }
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
@@ -29,7 +39,6 @@ enum Activity: CaseIterable {
         switch self {
         case .magicTricks(_): return "Magic Tricks"
         case .games(_): return "Games"
-        case .tarotCards(_): return "Tarot Cards"
         }
     }
 
@@ -37,7 +46,6 @@ enum Activity: CaseIterable {
         switch self {
         case .magicTricks(_): return .magicHat
         case .games(_): return .gameController
-        case .tarotCards(_): return .gameCards
         }
     }
 }

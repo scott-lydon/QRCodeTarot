@@ -89,6 +89,8 @@
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
 		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
+		758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */; };
+		758AE0F8282EC0C700C8F420 /* TarotCardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -232,6 +234,8 @@
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		758AE0F3282E348500C8F420 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardsViewController.swift; sourceTree = "<group>"; };
+		758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TarotCardsViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -433,6 +437,7 @@
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF6652808DEB4000685FC /* QRReaderViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
+				758AE0F9282EC5D400C8F420 /* TarotCardsViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);
@@ -651,6 +656,15 @@
 			path = ContactViewController;
 			sourceTree = "<group>";
 		};
+		758AE0F9282EC5D400C8F420 /* TarotCardsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */,
+				758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */,
+			);
+			path = TarotCardsViewController;
+			sourceTree = "<group>";
+		};
 		75BCF45E282E28920066B22D /* ActivityModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +793,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758AE0F8282EC0C700C8F420 /* TarotCardsViewController.storyboard in Resources */,
 				757A80FF28250A7200700990 /* static in Resources */,
 				757A810028250A7200700990 /* Inter-Light.ttf in Resources */,
 				757A80FA28250A7200700990 /* OFL.txt in Resources */,
@@ -876,6 +891,7 @@
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
+				758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,

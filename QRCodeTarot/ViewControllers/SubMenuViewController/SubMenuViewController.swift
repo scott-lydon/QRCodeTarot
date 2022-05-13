@@ -27,12 +27,12 @@ class SubMenuViewController: UIViewController {
         UITableMVVM(viewModel: dataSource)
     }()
 
-    static func instantiate(with tutorialRow: SubMenuViewController.TutorialRowType) -> SubMenuViewController {
+    static func instantiate(with activity: Activity) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
         subMenuViewController.dataSource = MenuDataSource(
             section0: .init(
-                headerViewModel: tutorialRow.imageLabelNoBorder,
-                cellsViewModels: tutorialRow.submenuChoiceViewModels,
+                headerViewModel: activity.imageLabelNoBorder,
+                cellsViewModels: activity.submenuChoiceViewModels,
                 cellTapped: { [weak subMenuViewController] subMenuChoiceVM, _ in
                     subMenuViewController?.navigationController?.pushViewController(
                         DetailsViewController.instantiate(with: []),
