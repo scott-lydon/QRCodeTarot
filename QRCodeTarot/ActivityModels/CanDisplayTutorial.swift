@@ -18,7 +18,7 @@ protocol HasSubTitle {
 }
 
 protocol HasSummary {
-    var summary: String { get }
+    var summary: String? { get }
 }
 
 protocol HasTutorial {

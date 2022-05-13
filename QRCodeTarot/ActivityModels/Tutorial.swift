@@ -17,8 +17,7 @@ enum TutorialItem {
 extension TutorialItem {
     struct Step {
         var image: UIImage?
-        var count: Int
-        var title: String
+        var title: String?
         var description: String
     }
 }
