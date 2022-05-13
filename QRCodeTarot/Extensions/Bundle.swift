@@ -14,4 +14,14 @@ extension Bundle {
         let url = Bundle.main.path(forResource: "card_data", ofType: "json")!.fileurl!
         return try! Data(contentsOf: url, options: .mappedIfSafe).codable()!
     }
+
+    var bookT: URL? {
+        url(forResource: "BookT", withExtension: "json")
+    }
+    var oracleOfTarot: URL? {
+        url(forResource: "OracleOfTheTarot", withExtension: "json")
+    }
+    var pictoralKeyToTheTarot: URL? {
+        url(forResource: "PictoralKeyToTheTarot", withExtension: "json")
+    }
 }
