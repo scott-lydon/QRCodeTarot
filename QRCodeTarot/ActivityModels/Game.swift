@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct Game: CanDisplayTutorial {
+struct Game: CanDisplayTutorial, CaseIterable {
     var title: String
     var subTitle: String
     var summary: String
     var tutorial: Tutorial
+
+    static var allCases: [Game] {
+        []
+    }
 }
