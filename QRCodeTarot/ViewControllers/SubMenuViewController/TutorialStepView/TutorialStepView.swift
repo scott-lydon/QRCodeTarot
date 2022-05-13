@@ -6,3 +6,41 @@
 //
 
 import Foundation
+import TableMVVM
+import UIKit
+
+class TutorialStepView: NibView, HasViewModel {
+
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var countLabel: UILabel!
+    @IBOutlet var stepLabelLabel: LabelLabel!
+
+    var viewModel: ViewModel = .init() {
+        didSet {
+            imageView.isHidden = viewModel.image == nil
+            imageView.image = viewModel.image
+            imageView.contentMode = .scaleAspectFill
+            countLabel.text = viewModel.count.string
+            stepLabelLabel.viewModel = viewModel.stepDescription
+        }
+    }
+}
+
+extension TutorialStepView {
+
+    struct ViewModel: HasFallBack {
+        var image: UIImage?
+        var count: Int = 1
+        var stepDescription: LabelLabel.ViewModel = .fallBack
+
+        static var fallBack: TutorialStepView.ViewModel {
+            .init(image: .cardDemo, count: 1, stepDescription: .fallBack)
+        }
+    }
+}
+
+extension Int {
+    var string: String {
+        String(self)
+    }
+}
