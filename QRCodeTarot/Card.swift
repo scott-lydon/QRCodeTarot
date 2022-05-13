@@ -54,7 +54,7 @@ struct Cards: Codable {
 
 
 // MARK: - Card
-struct Card: Codable {
+struct Card: Codable, CaseIterable {
     let type: Importance
     let name_short: String
     let name: String
@@ -64,6 +64,10 @@ struct Card: Codable {
     let meaning_rev: String
     let desc: String
     let suit: Suit?
+
+    static var allCases: [Card] {
+        []
+    }
 
     var image: UIImage? {
         UIImage(named: "\(value_int.leadingZero)_\(suit?.rawValue ?? "")")
