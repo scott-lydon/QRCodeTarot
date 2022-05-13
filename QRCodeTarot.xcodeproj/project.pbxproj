@@ -88,6 +88,7 @@
 		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
+		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
@@ -230,6 +231,7 @@
 		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
+		758AE0F3282E348500C8F420 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -652,6 +654,7 @@
 		75BCF45E282E28920066B22D /* ActivityModels */ = {
 			isa = PBXGroup;
 			children = (
+				758AE0F3282E348500C8F420 /* MenuItem.swift */,
 				75BCF452282E27990066B22D /* Activity.swift */,
 				75BCF454282E28060066B22D /* Array.Of.Activities.swift */,
 				75BCF456282E281A0066B22D /* MagicTrick.swift */,
@@ -893,6 +896,7 @@
 				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
 				75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */,
+				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
 				75BCF453282E27990066B22D /* Activity.swift in Sources */,
 				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
