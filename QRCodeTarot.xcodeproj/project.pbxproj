@@ -429,10 +429,10 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
+				757EF6652808DEB4000685FC /* QRReaderViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);
@@ -590,13 +590,13 @@
 			path = LabelLabel;
 			sourceTree = "<group>";
 		};
-		757EF6652808DEB4000685FC /* ViewController */ = {
+		757EF6652808DEB4000685FC /* QRReaderViewController */ = {
 			isa = PBXGroup;
 			children = (
 				7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 			);
-			path = ViewController;
+			path = QRReaderViewController;
 			sourceTree = "<group>";
 		};
 		757EF67328093382000685FC /* MenuViewController */ = {
