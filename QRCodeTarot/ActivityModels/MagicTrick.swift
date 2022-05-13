@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MagicTrick: CanDisplayTutorial {
+struct MagicTrick: CanDisplayTutorial, CaseIterable {
     var title: String
     var subTitle: String
     var summary: String
@@ -16,5 +16,9 @@ struct MagicTrick: CanDisplayTutorial {
     var videoURL: URL?
     var topDescription: LabelLabel.ViewModel {
         .init(topText: title, bottomText: subTitle)
+    }
+
+    static var allCases: [MagicTrick] {
+        []
     }
 }
