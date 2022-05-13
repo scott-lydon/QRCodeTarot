@@ -84,7 +84,6 @@
 		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
 		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
-		757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68728097AD1000685FC /* MenuViewController.Row.swift */; };
 		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
@@ -229,7 +228,6 @@
 		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
 		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
-		757EF68728097AD1000685FC /* MenuViewController.Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.Row.swift; sourceTree = "<group>"; };
 		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
@@ -610,7 +608,6 @@
 				757A80D2282250F700700990 /* ChoiceView */,
 				757EF66D28091334000685FC /* MenuViewController.swift */,
 				757EF67128092346000685FC /* MenuViewController.storyboard */,
-				757EF68728097AD1000685FC /* MenuViewController.Row.swift */,
 			);
 			path = MenuViewController;
 			sourceTree = "<group>";
@@ -897,7 +894,6 @@
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				757A80E52823ACE300700990 /* UICollectionViewLayout.swift in Sources */,
 				757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */,
-				757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				754FE8DA2808B8870051720E /* ImageLabel.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
