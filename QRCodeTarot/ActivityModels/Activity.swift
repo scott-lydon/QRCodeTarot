@@ -11,14 +11,6 @@ enum Activity {
 
     case magicTricks([MagicTrick])
     case games([Game])
-//
-//
-//    static var allCases: [Activity] {
-//        [
-//            .magicTricks(MagicTrick.allCases),
-//            .games(Game.allCases)
-//        ]
-//    }
 
     var imageLabelNoBorder: ImageLabelNoBorder.ViewModel {
         .init(image: image, text: name)
