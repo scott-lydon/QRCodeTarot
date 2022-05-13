@@ -316,8 +316,8 @@
 				754FE8D82808B8450051720E /* SimpleTextCell */,
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
-				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
+				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				757A810A28250E9000700990 /* Date.swift */,
 				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -429,10 +429,10 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF6652808DEB4000685FC /* QRReaderViewController */,
+				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);

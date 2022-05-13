@@ -13,7 +13,7 @@ class MenuViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var greetingLabel: UILabel!
 
-    var rows: [MenuViewController.Row] = MenuViewController.Row.allCases
+    var activities: [Activity] = Activity.allCases
 
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
@@ -47,7 +47,7 @@ extension MenuViewController: UICollectionViewDataSource {
         collectionView.dequeueCell(
             for: indexPath,
                cell: ChoiceCell(),
-               viewModel: rows[indexPath.row].choiceViewModel
+               viewModel: activities[indexPath.row].choiceViewModel
         )
     }
 
@@ -55,7 +55,7 @@ extension MenuViewController: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        rows.count
+        activities.count
     }
 }
 
@@ -76,14 +76,14 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         _ collectionView: UICollectionView,
         didSelectItemAt indexPath: IndexPath
     ) {
-        switch rows[indexPath.row] {
-        case .tutorialRows(let subMenu):
-            navigationController?.pushViewController(
-                SubMenuViewController.instantiate(with: subMenu),
-                animated: true
-            )
+        switch activities[indexPath.row] {
         case .tarotQRReader:
             navigationController?.popToFirstOf(type: QrReaderViewcontroller())
-        }
+        default:
+            navigationController?.pushViewController(
+                SubMenuViewController.instantiate(with: activities[indexPath.row]),
+                animated: true
+            )
+        }        
     }
 }
