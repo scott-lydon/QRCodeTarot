@@ -84,7 +84,6 @@
 		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
 		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
-		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
 		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
@@ -228,7 +227,6 @@
 		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
 		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
-		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		758AE0F3282E348500C8F420 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -617,7 +615,6 @@
 			children = (
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
-				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
 				757A81BC282B2C0800700990 /* TutorialStepView */,
 				757A81B0282A3F0B00700990 /* ImageLabelNoBorder */,
 				757A81A9282A37BF00700990 /* SubMenuChoice */,
@@ -859,7 +856,6 @@
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */,
-				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
 				75BCF459282E283A0066B22D /* Game.swift in Sources */,
 				7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
