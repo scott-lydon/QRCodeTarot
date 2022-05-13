@@ -65,6 +65,10 @@ struct Card: Codable, CaseIterable {
     let desc: String
     let suit: Suit?
 
+    var choiceViewModel: ChoiceView.ViewModel {
+        .init(text: name, image: image ?? .cardDemo)
+    }
+
     static var allCases: [Card] {
         []
     }
