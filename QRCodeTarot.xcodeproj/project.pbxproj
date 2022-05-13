@@ -309,6 +309,7 @@
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
 				757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */,
 				756A68D727FE1F4400B76CCD /* ViewControllers */,
+				757A80D52822635D00700990 /* BackgroundView */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
 				754FE8E62808C0270051720E /* LabelImage */,
@@ -428,7 +429,6 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				757A80D52822635D00700990 /* BackgroundView */,
 				757EF6652808DEB4000685FC /* ViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
