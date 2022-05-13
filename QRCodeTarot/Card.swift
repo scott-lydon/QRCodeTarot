@@ -70,7 +70,12 @@ struct Card: Codable, CaseIterable {
     }
 
     static var allCases: [Card] {
-        []
+        let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
+        let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
+        let pictoralCards: [PictoralKeyToTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
+        print(bookTs.count, oracleTCards.count, pictoralCards.count)
+
+        return []
     }
 
     var image: UIImage? {
