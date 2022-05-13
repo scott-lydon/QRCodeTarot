@@ -8,6 +8,7 @@
 import Foundation
 
 extension Int {
+
     var decimal: Decimal {
         Decimal(self)
     }
