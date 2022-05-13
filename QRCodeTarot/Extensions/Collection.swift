@@ -17,6 +17,10 @@ extension Collection {
         self[safe: index(startIndex, offsetBy: intIndex)]
     }
 
+    var third: Element? {
+        self[safe: 2]
+    }
+
     var secondToLast: Element? {
         self[safe: (count - 2)]
     }
