@@ -16,7 +16,7 @@ class DynamicDetailView: NibView, HasViewModel {
             case .imageLabel(let imageLabelViewModel):
                 injectRecyclable(viewModel: imageLabelViewModel, unused: ImageLabel())
             case .image(let image):
-                injectRecyclable(viewModel: image, unused: ImageContainer())
+                injectRecyclable(viewModel: image, unused: CardImageView())
             case .labelImage(let labelImageViewModel):
                 injectRecyclable(viewModel: labelImageViewModel, unused: LabelImage())
             }
@@ -45,12 +45,18 @@ extension DynamicDetailView {
         case labelImage(LabelImage.ViewModel)
 
         static var fallBack: DynamicDetailView.ViewModel {
-            .imageLabel(.init(image: .init(), text: ""))
+            .imageLabel(.fallBack)
         }
     }
 }
 
 extension Array where Element == DynamicDetailView.ViewModel {
+
+    static func tarot(_ card: Card) -> Self {
+        [
+            .image(card.image ?? .init())
+        ]
+    }
     
     static func models(from tutorial: String) -> Self {
         if tutorial == "magic trick 1" {

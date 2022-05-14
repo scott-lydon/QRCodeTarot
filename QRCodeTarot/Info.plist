@@ -45,6 +45,18 @@
 		<string>Inter-Regular.ttf</string>
 		<string>Inter-SemiBold.ttf</string>
 		<string>Inter-Thin.ttf</string>
+		<string>PlayfairDisplay-Bold</string>
+		<string>PlayfairDisplay-SemiBold</string>
+		<string>PlayfairDisplay-Medium</string>
+		<string>PlayfairDisplay-Boldltalic</string>
+		<string>PlayfairDisplay-ExtraBolditalic</string>
+		<string>Playfair Display-Italic</string>
+		<string>PlayfairDisplay-Regular</string>
+		<string>PlayfairDisplay-Black</string>
+		<string>PlayfairDisplay-SemiBolditalic</string>
+		<string>PlayfairDisplay-Mediumitalic</string>
+		<string>PlayfairDisplay-Blackitalic</string>
+		<string>PlayfairDisplay-ExtraBold</string>
 	</array>
 </dict>
 </plist>

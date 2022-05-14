@@ -6,7 +6,8 @@
 //
 
 import Foundation
-
+import UIKit
+import Callable
 
 // MARK: - Cards
 struct Cards: Codable {
@@ -53,7 +54,7 @@ struct Cards: Codable {
 
 
 // MARK: - Card
-struct Card: Codable {
+struct Card: Codable, CaseIterable {
     let type: Importance
     let name_short: String
     let name: String
@@ -63,6 +64,23 @@ struct Card: Codable {
     let meaning_rev: String
     let desc: String
     let suit: Suit?
+
+    var choiceViewModel: ChoiceView.ViewModel {
+        .init(text: name, image: image ?? .cardDemo)
+    }
+
+    static var allCases: [Card] {
+        let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
+        let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
+        let pictoralCards: [PictoralKeyToTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
+        print(bookTs.count, oracleTCards.count, pictoralCards.count)
+
+        return []
+    }
+
+    var image: UIImage? {
+        UIImage(named: "\(value_int.leadingZero)_\(suit?.rawValue ?? "")")
+    }
 
     func matches(key: CardKey) -> Bool {
         suit == key.symbol.suit && key.number == value_int

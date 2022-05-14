@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
-		7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */; };
+		7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */; };
 		7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF127FA70B0009C5FE8 /* Main.storyboard */; };
 		7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF427FA70B2009C5FE8 /* Assets.xcassets */; };
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
@@ -62,6 +62,14 @@
 		757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81102825C33B00700990 /* SubMenuChoice.swift */; };
 		757A81132825C35000700990 /* SubMenuChoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81122825C35000700990 /* SubMenuChoice.xib */; };
 		757A81A8282A338D00700990 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81A7282A338D00700990 /* GradientView.swift */; };
+		757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */; };
+		757A81AF282A3F0700700990 /* ImageLabelNoBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */; };
+		757A81B2282A55C300700990 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B1282A55C300700990 /* CardImageView.swift */; };
+		757A81B4282A55D000700990 /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81B3282A55D000700990 /* CardImageView.xib */; };
+		757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B8282B2BF600700990 /* TutorialStepView.swift */; };
+		757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81BA282B2C0300700990 /* TutorialStepView.xib */; };
+		757A81D2282B47F800700990 /* CollapsableLabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */; };
+		757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81D3282B480600700990 /* CollapsableLabelLabel.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
 		757EF6632808D73E000685FC /* LabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF6622808D73E000685FC /* LabelLabel.xib */; };
 		757EF6682808DFB3000685FC /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 757EF6672808DFB3000685FC /* TableMVVM */; };
@@ -76,13 +84,20 @@
 		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
 		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
-		757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68728097AD1000685FC /* MenuViewController.Row.swift */; };
-		757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
+		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
+		758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */; };
+		758AE0F8282EC0C700C8F420 /* TarotCardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */; };
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
+		75BCF453282E27990066B22D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF452282E27990066B22D /* Activity.swift */; };
+		75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF454282E28060066B22D /* Array.Of.Activities.swift */; };
+		75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF456282E281A0066B22D /* MagicTrick.swift */; };
+		75BCF459282E283A0066B22D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF458282E283A0066B22D /* Game.swift */; };
+		75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45A282E286F0066B22D /* Tutorial.swift */; };
+		75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */; };
 		75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA56B827FC9C65006D8D93 /* Collection.swift */; };
 		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
 		75D0912C27FA9F5F0037798C /* Callable in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912B27FA9F5F0037798C /* Callable */; };
@@ -119,7 +134,7 @@
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRREaderViewcontroller.swift; sourceTree = "<group>"; };
+		7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewcontroller.swift; sourceTree = "<group>"; };
 		7526AFF227FA70B0009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7526AFF427FA70B2009C5FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7526AFF727FA70B2009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -175,6 +190,30 @@
 		757A81102825C33B00700990 /* SubMenuChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuChoice.swift; sourceTree = "<group>"; };
 		757A81122825C35000700990 /* SubMenuChoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuChoice.xib; sourceTree = "<group>"; };
 		757A81A7282A338D00700990 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelNoBorder.swift; sourceTree = "<group>"; };
+		757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelNoBorder.xib; sourceTree = "<group>"; };
+		757A81B1282A55C300700990 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		757A81B3282A55D000700990 /* CardImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
+		757A81B8282B2BF600700990 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
+		757A81BA282B2C0300700990 /* TutorialStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialStepView.xib; sourceTree = "<group>"; };
+		757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		757A81C3282B306500700990 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C4282B306500700990 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C5282B306500700990 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		757A81C6282B306500700990 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		757A81C7282B306500700990 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		757A81C8282B306500700990 /* PlayfairDisplay-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		757A81C9282B306500700990 /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		757A81CA282B306500700990 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		757A81CB282B306500700990 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		757A81CC282B306600700990 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		757A81CD282B306600700990 /* PlayfairDisplay-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		757A81CE282B306600700990 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		757A81CF282B306600700990 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.swift; sourceTree = "<group>"; };
+		757A81D3282B480600700990 /* CollapsableLabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapsableLabelLabel.xib; sourceTree = "<group>"; };
 		757EF6602808D736000685FC /* LabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLabel.swift; sourceTree = "<group>"; };
 		757EF6622808D73E000685FC /* LabelLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelLabel.xib; sourceTree = "<group>"; };
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -188,13 +227,20 @@
 		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
 		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
-		757EF68728097AD1000685FC /* MenuViewController.Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.Row.swift; sourceTree = "<group>"; };
-		757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.TutorialRowType.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
+		758AE0F3282E348500C8F420 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardsViewController.swift; sourceTree = "<group>"; };
+		758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TarotCardsViewController.storyboard; sourceTree = "<group>"; };
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		75BCF452282E27990066B22D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		75BCF454282E28060066B22D /* Array.Of.Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.Of.Activities.swift; sourceTree = "<group>"; };
+		75BCF456282E281A0066B22D /* MagicTrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTrick.swift; sourceTree = "<group>"; };
+		75BCF458282E283A0066B22D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		75BCF45A282E286F0066B22D /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanDisplayTutorial.swift; sourceTree = "<group>"; };
 		75CA56B827FC9C65006D8D93 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		75D0912D27FAAAB80037798C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		75D0912F27FAAB080037798C /* DeeplinkPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeeplinkPayload.swift; sourceTree = "<group>"; };
@@ -263,15 +309,15 @@
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
 				757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */,
 				756A68D727FE1F4400B76CCD /* ViewControllers */,
+				757A80D52822635D00700990 /* BackgroundView */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
 				754FE8E62808C0270051720E /* LabelImage */,
 				754FE8D82808B8450051720E /* SimpleTextCell */,
 				754FE8DD2808B89C0051720E /* ImageLabel */,
 				757EF68428095ABF000685FC /* DynamicDetailView */,
+				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
-				757A81102825C33B00700990 /* SubMenuChoice.swift */,
-				757A81122825C35000700990 /* SubMenuChoice.xib */,
 				757A810A28250E9000700990 /* Date.swift */,
 				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -346,6 +392,8 @@
 			children = (
 				754FE8E72808C1BB0051720E /* ImageContainer.swift */,
 				754FE8E92808C1CD0051720E /* ImageContainer.xib */,
+				757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */,
+				757A81D3282B480600700990 /* CollapsableLabelLabel.xib */,
 			);
 			path = ImageContainer;
 			sourceTree = "<group>";
@@ -381,11 +429,11 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				757A80D52822635D00700990 /* BackgroundView */,
-				757EF6652808DEB4000685FC /* ViewController */,
-				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
+				757EF6652808DEB4000685FC /* QRReaderViewController */,
+				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
+				758AE0F9282EC5D400C8F420 /* TarotCardsViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);
@@ -441,6 +489,7 @@
 		757A80EC28250A4200700990 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				757A81D0282B306F00700990 /* PlayfairDisplay */,
 				757A810728250A8100700990 /* Inter */,
 			);
 			path = Fonts;
@@ -466,6 +515,73 @@
 			path = Inter;
 			sourceTree = "<group>";
 		};
+		757A81A9282A37BF00700990 /* SubMenuChoice */ = {
+			isa = PBXGroup;
+			children = (
+				757A81102825C33B00700990 /* SubMenuChoice.swift */,
+				757A81122825C35000700990 /* SubMenuChoice.xib */,
+			);
+			path = SubMenuChoice;
+			sourceTree = "<group>";
+		};
+		757A81B0282A3F0B00700990 /* ImageLabelNoBorder */ = {
+			isa = PBXGroup;
+			children = (
+				757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */,
+				757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */,
+			);
+			path = ImageLabelNoBorder;
+			sourceTree = "<group>";
+		};
+		757A81B5282A55D600700990 /* CardImageView */ = {
+			isa = PBXGroup;
+			children = (
+				757A81B1282A55C300700990 /* CardImageView.swift */,
+				757A81B3282A55D000700990 /* CardImageView.xib */,
+			);
+			path = CardImageView;
+			sourceTree = "<group>";
+		};
+		757A81BC282B2C0800700990 /* TutorialStepView */ = {
+			isa = PBXGroup;
+			children = (
+				757A81B8282B2BF600700990 /* TutorialStepView.swift */,
+				757A81BA282B2C0300700990 /* TutorialStepView.xib */,
+			);
+			path = TutorialStepView;
+			sourceTree = "<group>";
+		};
+		757A81BF282B306500700990 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */,
+				757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */,
+				757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */,
+				757A81C3282B306500700990 /* PlayfairDisplay-BoldItalic.ttf */,
+				757A81C4282B306500700990 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				757A81C5282B306500700990 /* PlayfairDisplay-Italic.ttf */,
+				757A81C6282B306500700990 /* PlayfairDisplay-Regular.ttf */,
+				757A81C7282B306500700990 /* PlayfairDisplay-Black.ttf */,
+				757A81C8282B306500700990 /* PlayfairDisplay-SemiBoldItalic.ttf */,
+				757A81C9282B306500700990 /* PlayfairDisplay-MediumItalic.ttf */,
+				757A81CA282B306500700990 /* PlayfairDisplay-BlackItalic.ttf */,
+				757A81CB282B306500700990 /* PlayfairDisplay-ExtraBold.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		757A81D0282B306F00700990 /* PlayfairDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				757A81CC282B306600700990 /* OFL.txt */,
+				757A81CF282B306600700990 /* PlayfairDisplay-Italic-VariableFont_wght.ttf */,
+				757A81CD282B306600700990 /* PlayfairDisplay-VariableFont_wght.ttf */,
+				757A81CE282B306600700990 /* README.txt */,
+				757A81BF282B306500700990 /* static */,
+			);
+			path = PlayfairDisplay;
+			sourceTree = "<group>";
+		};
 		757EF6642808D744000685FC /* LabelLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,13 +591,13 @@
 			path = LabelLabel;
 			sourceTree = "<group>";
 		};
-		757EF6652808DEB4000685FC /* ViewController */ = {
+		757EF6652808DEB4000685FC /* QRReaderViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7526AFEF27FA70B0009C5FE8 /* QRREaderViewcontroller.swift */,
+				7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */,
 				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
 			);
-			path = ViewController;
+			path = QRReaderViewController;
 			sourceTree = "<group>";
 		};
 		757EF67328093382000685FC /* MenuViewController */ = {
@@ -490,7 +606,6 @@
 				757A80D2282250F700700990 /* ChoiceView */,
 				757EF66D28091334000685FC /* MenuViewController.swift */,
 				757EF67128092346000685FC /* MenuViewController.storyboard */,
-				757EF68728097AD1000685FC /* MenuViewController.Row.swift */,
 			);
 			path = MenuViewController;
 			sourceTree = "<group>";
@@ -500,7 +615,9 @@
 			children = (
 				757EF67428094177000685FC /* SubMenuViewController.swift */,
 				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
-				757EF68928097AF8000685FC /* SubMenuViewController.TutorialRowType.swift */,
+				757A81BC282B2C0800700990 /* TutorialStepView */,
+				757A81B0282A3F0B00700990 /* ImageLabelNoBorder */,
+				757A81A9282A37BF00700990 /* SubMenuChoice */,
 			);
 			path = SubMenuViewController;
 			sourceTree = "<group>";
@@ -510,6 +627,7 @@
 			children = (
 				757EF67B280954CE000685FC /* DetailsViewController.swift */,
 				757EF67D280954E7000685FC /* DetailsViewController.storyboard */,
+				757A81B5282A55D600700990 /* CardImageView */,
 			);
 			path = DetailsViewController;
 			sourceTree = "<group>";
@@ -530,6 +648,29 @@
 				757EF68F28097D23000685FC /* ContactViewController.storyboard */,
 			);
 			path = ContactViewController;
+			sourceTree = "<group>";
+		};
+		758AE0F9282EC5D400C8F420 /* TarotCardsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */,
+				758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */,
+			);
+			path = TarotCardsViewController;
+			sourceTree = "<group>";
+		};
+		75BCF45E282E28920066B22D /* ActivityModels */ = {
+			isa = PBXGroup;
+			children = (
+				758AE0F3282E348500C8F420 /* MenuItem.swift */,
+				75BCF452282E27990066B22D /* Activity.swift */,
+				75BCF454282E28060066B22D /* Array.Of.Activities.swift */,
+				75BCF456282E281A0066B22D /* MagicTrick.swift */,
+				75BCF458282E283A0066B22D /* Game.swift */,
+				75BCF45A282E286F0066B22D /* Tutorial.swift */,
+				75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */,
+			);
+			path = ActivityModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,15 +787,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758AE0F8282EC0C700C8F420 /* TarotCardsViewController.storyboard in Resources */,
 				757A80FF28250A7200700990 /* static in Resources */,
 				757A810028250A7200700990 /* Inter-Light.ttf in Resources */,
 				757A80FA28250A7200700990 /* OFL.txt in Resources */,
 				757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */,
 				757A810328250A7200700990 /* README.txt in Resources */,
 				757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */,
+				757A81B4282A55D000700990 /* CardImageView.xib in Resources */,
 				757A80FB28250A7200700990 /* Inter-Bold.ttf in Resources */,
 				75D0913827FBD3BB0037798C /* CardDetailViewController.storyboard in Resources */,
 				754FE8EA2808C1CD0051720E /* ImageContainer.xib in Resources */,
+				757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */,
 				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
 				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
 				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
@@ -669,9 +813,11 @@
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
 				757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */,
+				757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
+				757A81AF282A3F0700700990 /* ImageLabelNoBorder.xib in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
 				757A80822822103600700990 /* OracleOfTheTarot.json in Resources */,
 				757A80FC28250A7200700990 /* Inter-ExtraLight.ttf in Resources */,
@@ -704,28 +850,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */,
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
-				757EF68A28097AF8000685FC /* SubMenuViewController.TutorialRowType.swift in Sources */,
-				7526AFF027FA70B0009C5FE8 /* QRREaderViewcontroller.swift in Sources */,
+				75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */,
+				75BCF459282E283A0066B22D /* Game.swift in Sources */,
+				7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */,
 				754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */,
 				757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
 				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
 				756A69162802571300B76CCD /* BinaryInteger.swift in Sources */,
+				757A81D2282B47F800700990 /* CollapsableLabelLabel.swift in Sources */,
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				757A808B28222EB900700990 /* BackgroundView.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
 				757A80E32823ACBC00700990 /* UICollectionViewFlowLayout.swift in Sources */,
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
+				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				757A807E2822102500700990 /* PictoralKeyToTheTarot.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
 				757A810B28250E9000700990 /* Date.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
+				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
 				757A80882822104600700990 /* BookTCard.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
@@ -733,15 +884,17 @@
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
+				758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				757A80E52823ACE300700990 /* UICollectionViewLayout.swift in Sources */,
-				757EF68828097AD1000685FC /* MenuViewController.Row.swift in Sources */,
+				757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				754FE8DA2808B8870051720E /* ImageLabel.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
 				757A81A8282A338D00700990 /* GradientView.swift in Sources */,
+				75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */,
 				754FE8E32808C00A0051720E /* LabelImage.swift in Sources */,
 				754FE8E82808C1BB0051720E /* ImageContainer.swift in Sources */,
 				757EF6612808D736000685FC /* LabelLabel.swift in Sources */,
@@ -750,6 +903,9 @@
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
+				75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */,
+				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
+				75BCF453282E27990066B22D /* Activity.swift in Sources */,
 				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,14 @@ struct PictoralKeyToTheTarotCard: Codable {
     let card: String
     let pictoralKeyToTheTarotCardDescription: String
 
+    var num: Int {
+        card.autoTarotNum
+    }
+
+    var suit: Suit {
+        card.autoSuit
+    }
+
     enum CodingKeys: String, CodingKey {
         case card
         case pictoralKeyToTheTarotCardDescription = "description"

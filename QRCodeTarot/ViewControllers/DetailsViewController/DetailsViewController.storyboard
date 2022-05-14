@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkColorShade" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-0f-DDn">
+                                <rect key="frame" x="0.0" y="-14" width="416" height="481"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gr1-0f-DDn" secondAttribute="height" multiplier="32:37" id="rA6-t1-ApP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gr1-0f-DDn" secondAttribute="trailing" constant="-2" id="SLE-bO-z9X"/>
+                            <constraint firstItem="gr1-0f-DDn" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="-14" id="T5O-lj-6oK"/>
+                            <constraint firstItem="gr1-0f-DDn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="irk-op-u5g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="76"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="darkColorShade" width="375" height="420"/>
     </resources>
 </document>

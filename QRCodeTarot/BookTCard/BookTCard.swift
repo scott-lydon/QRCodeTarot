@@ -9,7 +9,25 @@ import Foundation
 
 // MARK: - BookTCard
 struct BookTCard: Codable {
-    let card, meaning: String
+    /// "Ace of Wands"
+    let card: String
+
+    /// description
+    let meaning: String
+
+    var num: Int {
+        card.autoTarotNum
+    }
+
+    var suit: Suit {
+        card.autoSuit
+    }
 }
 
 typealias BookTCards = [BookTCard]
+
+extension String.SubSequence {
+    var string: String {
+        String(self)
+    }
+}

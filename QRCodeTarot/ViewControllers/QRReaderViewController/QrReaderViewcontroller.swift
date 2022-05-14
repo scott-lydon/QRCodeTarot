@@ -10,7 +10,7 @@ import AVFoundation
 import QRCodeReader
 import Callable
 
-class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
+class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
 
     let localCards: Cards = Bundle.localCards
     var dispatcher: CanAsync = DispatchQueue.main

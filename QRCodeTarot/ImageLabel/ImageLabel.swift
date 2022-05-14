@@ -10,15 +10,15 @@ import TableMVVM
 
 class ImageLabel: NibView, HasViewModel {
 
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var label: UILabel!
+
     var viewModel: ViewModel = .fallBack {
         didSet {
             imageView.image = viewModel.image
             label.text = viewModel.text
         }
     }
-
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var label: UILabel!
 }
 
 extension ImageLabel {
@@ -27,6 +27,7 @@ extension ImageLabel {
 
         let image: UIImage
         let text: String
+
         static var fallBack: ImageLabel.ViewModel {
             .init(image: .init(), text: "")
         }

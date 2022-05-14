@@ -10,15 +10,15 @@ import TableMVVM
 
 class LabelLabel: NibView, HasViewModel {
 
+    @IBOutlet var topLabel: UILabel!
+    @IBOutlet var bottomLabel: UILabel!
+
     var viewModel: ViewModel = .fallBack {
         didSet {
             topLabel.text = viewModel.topText
             bottomLabel.text = viewModel.bottomText
         }
     }
-
-    @IBOutlet var topLabel: UILabel!
-    @IBOutlet var bottomLabel: UILabel!
 }
 
 extension LabelLabel {

@@ -16,6 +16,14 @@ struct OracleOfTheTarotCard: Codable {
     let illDignified: String?
     let keyword: String?
 
+    var num: Int {
+        card.autoTarotNum
+    }
+
+    var suit: Suit {
+        card.autoSuit
+    }
+
     enum CodingKeys: String, CodingKey {
         case card
         case oracleOfTheTarotCardDescription = "description"
