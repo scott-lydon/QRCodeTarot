@@ -81,11 +81,11 @@ class LocalCardsTests: XCTestCase {
 //        detailsVC.viewDidLoad()
     }
 
-    func testSubMenuViewController() {
-        let subVC = SubMenuViewController.instantiate(with: .games)
-        subVC.loadView()
-        subVC.viewDidLoad()
-    }
+//    func testSubMenuViewController() {
+//        let subVC = SubMenuViewController.instantiate(with: .games)
+//        subVC.loadView()
+//        subVC.viewDidLoad()
+//    }
 
     func testMenuViewController() {
         let menuViewController = MenuViewController.instantiate()
