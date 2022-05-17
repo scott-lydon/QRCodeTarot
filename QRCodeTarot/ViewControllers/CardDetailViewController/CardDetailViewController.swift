@@ -19,6 +19,7 @@ class CardDetailViewController: UIViewController {
     static func instantiate(title: String, details: String) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()! //unitested
         detailController.loadView()
+        detailController.view.set(background: BackgroundView.zero.darkShade)
         detailController.titleLabel.text = title
         detailController.detailsLabel.text = details
         return detailController
