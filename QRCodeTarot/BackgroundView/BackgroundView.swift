@@ -17,4 +17,9 @@ class BackgroundView: NibView, HasViewModel {
             backgroundColorShade.image = viewModel
         }
     }
+
+    var darkShade: Self {
+        viewModel = .darkColorShade
+        return self
+    }
 }
