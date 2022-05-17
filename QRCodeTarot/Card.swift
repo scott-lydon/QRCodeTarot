@@ -64,6 +64,8 @@ struct Card: Codable, CaseIterable {
     let meaning_rev: String
     let desc: String
     let suit: Suit?
+    let evolved: String?
+    let unevolved: String?
 
     var choiceViewModel: ChoiceView.ViewModel {
         .init(text: name, image: image ?? .cardDemo)
@@ -73,9 +75,38 @@ struct Card: Codable, CaseIterable {
         let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
         let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
         let pictoralCards: [PictoralKeyToTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
+
+        let bookTDictionary = Dictionary(uniqueKeysWithValues: bookTs.map{ ($0.hash, $0) })
+        let oracleDictionary = Dictionary(uniqueKeysWithValues: oracleTCards.map { ($0.hash, $0)})
+        let pictoralDictionary = Dictionary(uniqueKeysWithValues: pictoralCards.map { ($0.hash, $0)})
+
         print(bookTs.count, oracleTCards.count, pictoralCards.count)
 
-        return []
+        var cards: [Card] = []
+        for suit in Suit.allCases {
+            for num in 1..<14 {
+                let hash = num.string + " " + suit.rawValue
+                let bookT = bookTDictionary[hash]
+                let oracle = oracleDictionary[hash]
+                let pictoral = pictoralDictionary[hash]
+                cards.append(
+                    Card(
+                        type: .minor,
+                        name_short: hash,
+                        name: "\(num.tarotNumberSpelledOut) of \(suit.rawValue)",
+                        value: num.tarotNumberSpelledOut,
+                        value_int: num,
+                        meaning_up: bookT?.meaning ?? "",
+                        meaning_rev: (oracle?.meaning ?? "") + " " + (oracle?.oracleOfTheTarotCardDescription ?? ""),
+                        desc: pictoral?.pictoralKeyToTheTarotCardDescription ?? "",
+                        suit: suit,
+                        evolved: oracle?.wellDignified ?? "",
+                        unevolved: oracle?.illDignified ?? ""
+                    )
+                )
+            }
+        }
+        return cards
     }
 
     var image: UIImage? {
@@ -96,10 +127,12 @@ struct Card: Codable, CaseIterable {
         case meaning_rev
         case desc
         case suit
+        case evolved
+        case unevolved
     }
 }
 
-enum Suit: String, Codable {
+enum Suit: String, Codable, CaseIterable {
     case cups
     case pentacles
     case swords
