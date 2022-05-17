@@ -17,8 +17,6 @@
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
 		754FE8D22808B5E20051720E /* SimpleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8D12808B5E20051720E /* SimpleTextCell.swift */; };
 		754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8E02808BF530051720E /* SimpleTextCell.xib */; };
-		754FE8E32808C00A0051720E /* LabelImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FE8E22808C00A0051720E /* LabelImage.swift */; };
-		754FE8E52808C0230051720E /* LabelImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754FE8E42808C0230051720E /* LabelImage.xib */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -139,8 +137,6 @@
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		754FE8D12808B5E20051720E /* SimpleTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCell.swift; sourceTree = "<group>"; };
 		754FE8E02808BF530051720E /* SimpleTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTextCell.xib; sourceTree = "<group>"; };
-		754FE8E22808C00A0051720E /* LabelImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelImage.swift; sourceTree = "<group>"; };
-		754FE8E42808C0230051720E /* LabelImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelImage.xib; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -300,7 +296,6 @@
 				757A80D52822635D00700990 /* BackgroundView */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
-				754FE8E62808C0270051720E /* LabelImage */,
 				754FE8D82808B8450051720E /* SimpleTextCell */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
@@ -351,15 +346,6 @@
 				754FE8E02808BF530051720E /* SimpleTextCell.xib */,
 			);
 			path = SimpleTextCell;
-			sourceTree = "<group>";
-		};
-		754FE8E62808C0270051720E /* LabelImage */ = {
-			isa = PBXGroup;
-			children = (
-				754FE8E22808C00A0051720E /* LabelImage.swift */,
-				754FE8E42808C0230051720E /* LabelImage.xib */,
-			);
-			path = LabelImage;
 			sourceTree = "<group>";
 		};
 		754FE8EB2808C1D10051720E /* ImageContainer */ = {
@@ -774,7 +760,6 @@
 				757A81132825C35000700990 /* SubMenuChoice.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
-				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
 				757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */,
@@ -857,7 +842,6 @@
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
 				757A81A8282A338D00700990 /* GradientView.swift in Sources */,
 				75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */,
-				754FE8E32808C00A0051720E /* LabelImage.swift in Sources */,
 				757EF6612808D736000685FC /* LabelLabel.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */,
