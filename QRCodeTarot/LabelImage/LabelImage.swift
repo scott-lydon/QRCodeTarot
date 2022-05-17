@@ -23,3 +23,17 @@ class LabelImage: NibView, HasViewModel {
     @IBOutlet var imageView: UIImageView!
 }
 
+
+
+struct ImageLabel {
+
+    struct ViewModel: HasFallBack {
+
+        let image: UIImage
+        let text: String
+
+        static var fallBack: ImageLabel.ViewModel {
+            .init(image: .init(), text: "")
+        }
+    }
+}
