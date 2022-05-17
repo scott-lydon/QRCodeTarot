@@ -22,7 +22,7 @@ class DetailsViewController: UIViewController {
         }
     }
 
-    lazy var tableView: UITableMVVM = {
+    lazy var tableView: UITableMVVM<DetailDataSource> = {
         UITableMVVM(viewModel: dataSource).asClear()
     }()
 
