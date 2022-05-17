@@ -318,8 +318,6 @@
 				757EF68428095ABF000685FC /* DynamicDetailView */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
-				757A810A28250E9000700990 /* Date.swift */,
-				757A810C28250FB600700990 /* Int.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
 				757A80D6282264F200700990 /* UIColor.swift */,
@@ -410,6 +408,8 @@
 		756A68D627FE1F2F00B76CCD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				757A810C28250FB600700990 /* Int.swift */,
+				757A810A28250E9000700990 /* Date.swift */,
 				75D0913327FB89140037798C /* Bundle.swift */,
 				757A80E62823ACFB00700990 /* CGFloat.swift */,
 				75D0913B27FBD8900037798C /* Data.swift */,
