@@ -7,17 +7,9 @@
 import Foundation
 
 // MARK: - PictoralKeyToTheTarotCard
-struct PictoralKeyToTheTarotCard: Codable {
+struct PictoralKeyToTheTarotCard: Codable, HasCardString {
     let card: String
     let pictoralKeyToTheTarotCardDescription: String
-
-    var num: Int {
-        card.autoTarotNum
-    }
-
-    var suit: Suit {
-        card.autoSuit
-    }
 
     enum CodingKeys: String, CodingKey {
         case card
