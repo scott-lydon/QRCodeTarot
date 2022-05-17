@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// TODO: Remodel. 
 class ContactViewController: UIViewController {
 
     @IBOutlet var simpleText: SimpleTextCell!

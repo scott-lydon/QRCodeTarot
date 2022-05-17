@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Used 
 class LabelLabel: NibView, HasViewModel {
 
     @IBOutlet var topLabel: UILabel!
