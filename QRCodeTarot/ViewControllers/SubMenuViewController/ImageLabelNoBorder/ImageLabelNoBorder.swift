@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Used in SubMenuViewcontroller
 class ImageLabelNoBorder: NibView, HasViewModel {
 
     @IBOutlet var imageView: UIImageView!

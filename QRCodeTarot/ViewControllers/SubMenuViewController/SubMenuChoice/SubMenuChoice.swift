@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Used in SubMenuViewController
 class SubMenuChoice: NibView, HasViewModel {
 
     @IBOutlet var title: UILabel!

@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Needs to change to table View.  (Totally revamp.) with multiple sections. dark. 
 class CardDetailViewController: UIViewController {
 
     @IBOutlet var titleLabel: UILabel!

@@ -7,7 +7,8 @@
 
 import UIKit
 
-
+/// Directly from Menu View Controller, shows a collection of tarot cards (not details).
+/// This is the Tarot card menu.  
 class TarotCardsViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!

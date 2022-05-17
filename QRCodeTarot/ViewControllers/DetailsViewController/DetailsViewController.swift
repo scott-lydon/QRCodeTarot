@@ -14,6 +14,7 @@ import TableMVVM
 //    >
 //>
 
+/// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 
 //    var dataSource: DetailDataSource = .init() {
