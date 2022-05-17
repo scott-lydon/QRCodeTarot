@@ -35,7 +35,7 @@ class SubMenuViewController: UIViewController {
                 cellsViewModels: activity.submenuChoiceViewModels,
                 cellTapped: { [weak subMenuViewController] subMenuChoiceVM, _ in
                     subMenuViewController?.navigationController?.pushViewController(
-                        DetailsViewController.instantiate(with: []),
+                        DetailsViewController.instantiate(),
                         animated: true
                     )
                 }

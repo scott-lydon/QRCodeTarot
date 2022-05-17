@@ -8,36 +8,36 @@
 import UIKit
 import TableMVVM
 
-typealias DetailDataSource = TableDataSource1<
-    SectionNoHeader<
-        ViewModelCell<DynamicDetailView>
-    >
->
+//typealias DetailDataSource = TableDataSource1<
+//    SectionNoHeader<
+//        ViewModelCell<DynamicDetailView>
+//    >
+//>
 
 class DetailsViewController: UIViewController {
 
-    var dataSource: DetailDataSource = .init() {
-        didSet {
-            tableView.viewModel = dataSource
-        }
-    }
-
-    lazy var tableView: UITableMVVM<DetailDataSource> = {
-        UITableMVVM(viewModel: dataSource).asClear()
-    }()
+//    var dataSource: DetailDataSource = .init() {
+//        didSet {
+//            tableView.viewModel = dataSource
+//        }
+//    }
+//
+//    lazy var tableView: UITableMVVM<DetailDataSource> = {
+//        UITableMVVM(viewModel: dataSource).asClear()
+//    }()
 
     static func instantiate(
-        with viewModels: [DynamicDetailView.ViewModel]
+    //    with viewModels: [DynamicDetailView.ViewModel]
     ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-        detailsViewController.dataSource = .init(
-            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
-        )
+//        detailsViewController.dataSource = .init(
+//            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
+//        )
         return detailsViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.inject(view: tableView)
+     //   view.inject(view: tableView)
     }
 }

@@ -81,8 +81,6 @@
 		757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF678280941A0000685FC /* SubMenuViewController.storyboard */; };
 		757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67B280954CE000685FC /* DetailsViewController.swift */; };
 		757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67D280954E7000685FC /* DetailsViewController.storyboard */; };
-		757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68028095AA4000685FC /* DynamicDetailView.swift */; };
-		757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68228095ABA000685FC /* DynamicDetailView.xib */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
@@ -224,8 +222,6 @@
 		757EF678280941A0000685FC /* SubMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMenuViewController.storyboard; sourceTree = "<group>"; };
 		757EF67B280954CE000685FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		757EF67D280954E7000685FC /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
-		757EF68028095AA4000685FC /* DynamicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDetailView.swift; sourceTree = "<group>"; };
-		757EF68228095ABA000685FC /* DynamicDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicDetailView.xib; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
@@ -315,7 +311,6 @@
 				754FE8E62808C0270051720E /* LabelImage */,
 				754FE8D82808B8450051720E /* SimpleTextCell */,
 				754FE8DD2808B89C0051720E /* ImageLabel */,
-				757EF68428095ABF000685FC /* DynamicDetailView */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
@@ -632,15 +627,6 @@
 			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
-		757EF68428095ABF000685FC /* DynamicDetailView */ = {
-			isa = PBXGroup;
-			children = (
-				757EF68028095AA4000685FC /* DynamicDetailView.swift */,
-				757EF68228095ABA000685FC /* DynamicDetailView.xib */,
-			);
-			path = DynamicDetailView;
-			sourceTree = "<group>";
-		};
 		757EF691280A8B57000685FC /* ContactViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -812,7 +798,6 @@
 				754FE8E52808C0230051720E /* LabelImage.xib in Resources */,
 				754FE8E12808BF530051720E /* SimpleTextCell.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
-				757EF68328095ABA000685FC /* DynamicDetailView.xib in Resources */,
 				757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */,
 				754FE8DF2808BE600051720E /* ImageLabel.xib in Resources */,
 				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
@@ -906,7 +891,6 @@
 				75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */,
 				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
 				75BCF453282E27990066B22D /* Activity.swift in Sources */,
-				757EF68128095AA4000685FC /* DynamicDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
