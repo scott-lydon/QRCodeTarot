@@ -51,7 +51,6 @@ extension UIView {
         Self(frame: .zero)
     }
 
-
     func addGradiant() {
         let GradientLayerName = "gradientLayer"
 
