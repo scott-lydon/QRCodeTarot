@@ -17,6 +17,24 @@ typealias DetailDataSource = TableDataSource3<
     >
 >
 
+extension UILabel: HasViewModel {
+
+    public var viewModel: ViewModel {
+        get {
+            .init()
+        }
+        set {
+
+        }
+    }
+
+    public struct ViewModel: HasFallBack {
+        public static var fallBack: UILabel.ViewModel {
+            .init()
+        }
+    }
+}
+
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 

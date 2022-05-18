@@ -6,37 +6,50 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Inter-VariableFont_slnt,wght.ttf">
-            <string>Inter-Regular_SemiBold</string>
-        </array>
-    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TarotSwitchView" customModule="QRCodeTarot" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TarotSwitchView" customModule="QRCodeTarot" customModuleProvider="target">
+            <connections>
+                <outlet property="evolvedButton" destination="7jO-3O-cu0" id="A9d-jp-zix"/>
+                <outlet property="sliderLeading" destination="HwL-mW-CMk" id="u8b-SF-TNF"/>
+                <outlet property="sliderTrailing" destination="MuL-5v-Ene" id="Bkf-as-81x"/>
+                <outlet property="sliderView" destination="8cR-5G-CNB" id="mZV-4v-Ep7"/>
+                <outlet property="unevolvedButton" destination="Ogt-zL-iXN" id="pO1-7o-osA"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="315" height="61"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cR-5G-CNB">
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cR-5G-CNB">
                     <rect key="frame" x="0.0" y="0.0" width="157.5" height="61"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mwa-IJ-uNX">
                     <rect key="frame" x="0.0" y="0.0" width="315" height="61"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Evolved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6In-30-y0W">
+                        <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jO-3O-cu0">
                             <rect key="frame" x="0.0" y="0.0" width="157.5" height="61"/>
-                            <fontDescription key="fontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="16"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Unevolved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acy-eK-xzy">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Evolved">
+                                <fontDescription key="titleFontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="evolvedTapped:" destination="-1" eventType="touchUpInside" id="bqo-KY-GFQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-zL-iXN">
                             <rect key="frame" x="157.5" y="0.0" width="157.5" height="61"/>
-                            <fontDescription key="fontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="16"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Unevolved">
+                                <fontDescription key="titleFontDescription" name="Inter-Regular_SemiBold" family="Inter" pointSize="16"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="unevolvedTapped:" destination="-1" eventType="touchUpInside" id="5Kg-Fd-7MY"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
@@ -44,6 +57,7 @@
             <constraints>
                 <constraint firstItem="8cR-5G-CNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2IR-RD-kmv"/>
                 <constraint firstItem="Mwa-IJ-uNX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CRD-NH-9wK"/>
+                <constraint firstAttribute="trailing" secondItem="8cR-5G-CNB" secondAttribute="trailing" priority="999" id="GjZ-WK-mfw"/>
                 <constraint firstItem="8cR-5G-CNB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HwL-mW-CMk"/>
                 <constraint firstAttribute="trailing" secondItem="Mwa-IJ-uNX" secondAttribute="trailing" id="MuL-5v-Ene"/>
                 <constraint firstAttribute="bottom" secondItem="8cR-5G-CNB" secondAttribute="bottom" id="Tov-nG-Y9d"/>

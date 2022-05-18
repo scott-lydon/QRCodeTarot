@@ -18,6 +18,8 @@
 		753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */; };
 		753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F33283499FB0008623F /* TarotSwitchView.swift */; };
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
+		753E4F392834AFEB0008623F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F382834AFEB0008623F /* VideoView.swift */; };
+		753E4F3B2834AFF80008623F /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3A2834AFF80008623F /* VideoView.xib */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -139,6 +141,8 @@
 		753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.ViewModel.swift; sourceTree = "<group>"; };
 		753E4F33283499FB0008623F /* TarotSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.swift; sourceTree = "<group>"; };
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
+		753E4F382834AFEB0008623F /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		753E4F3A2834AFF80008623F /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -347,6 +351,15 @@
 				753E4F3528349A060008623F /* TarotSwitchView.xib */,
 			);
 			path = TarotSwitchView;
+			sourceTree = "<group>";
+		};
+		753E4F3C2834AFFD0008623F /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				753E4F382834AFEB0008623F /* VideoView.swift */,
+				753E4F3A2834AFF80008623F /* VideoView.xib */,
+			);
+			path = VideoView;
 			sourceTree = "<group>";
 		};
 		754FE8EB2808C1D10051720E /* ImageContainer */ = {
@@ -590,6 +603,7 @@
 			isa = PBXGroup;
 			children = (
 				757EF67B280954CE000685FC /* DetailsViewController.swift */,
+				753E4F3C2834AFFD0008623F /* VideoView */,
 				757EF67D280954E7000685FC /* DetailsViewController.storyboard */,
 				757A81B5282A55D600700990 /* CardImageView */,
 			);
@@ -762,6 +776,7 @@
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
 				757A81132825C35000700990 /* SubMenuChoice.xib in Resources */,
 				753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */,
+				753E4F3B2834AFF80008623F /* VideoView.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
@@ -832,6 +847,7 @@
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
+				753E4F392834AFEB0008623F /* VideoView.swift in Sources */,
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
