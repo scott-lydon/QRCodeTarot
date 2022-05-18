@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Used for all the ViewControllers. 
 class BackgroundView: NibView, HasViewModel {
 
     @IBOutlet var backgroundColorShade: UIImageView!
@@ -16,5 +17,10 @@ class BackgroundView: NibView, HasViewModel {
         didSet {
             backgroundColorShade.image = viewModel
         }
+    }
+
+    var darkShade: Self {
+        viewModel = .darkColorShade
+        return self
     }
 }

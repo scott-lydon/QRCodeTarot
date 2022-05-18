@@ -21,6 +21,10 @@ extension UIColor {
         UIColor(red: 179/255.0, green: 179/255.0, blue: 179/255.0, alpha: 1)
     }
 
+    static var darkBorder: UIColor {
+        UIColor(red: 47/255.0, green: 49/255.0, blue: 55/255.0, alpha: 1)
+    }
+
     static var gradientStartGray: UIColor {
         UIColor(red: 0.02, green: 0.02, blue: 0.03, alpha: 1.00)
     }

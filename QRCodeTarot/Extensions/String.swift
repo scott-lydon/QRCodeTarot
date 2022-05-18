@@ -30,7 +30,7 @@ extension String {
         case "Nine": return 9
         case "Ten": return 10
         case "Knight", "Warrior": return 11
-        case "Knave", "Jack", "Servant", "Page": return 12
+        case "Knave", "Jack", "Servant", "Page", "Slave": return 12
         case "Queen": return 13
         case "King": return 14
         default:
@@ -42,11 +42,11 @@ extension String {
     var suit: Suit {
         switch self {
         case "Cups", "Chalices" : return .cups
-        case "Pentacles", "Coins": return .pentacles
+        case "Pentacles", "Coins", "Disks": return .pentacles
         case "Swords": return .swords
         case "Wands": return .wands
         default:
-            assertionFailure()
+            assertionFailure(self)
             return .swords
         }
     }
@@ -57,5 +57,25 @@ extension String {
 
     var autoSuit: Suit {
         split(separator: " ").map(\.string).third?.suit ?? Suit.swords
+    }
+}
+
+extension Int {
+    var tarotNumberSpelledOut: String {
+        switch self {
+        case 1: return  "Ace"
+        case 11: return "Knight"
+        case 12: return "Jack"
+        case 13: return "Queen"
+        case 14: return "King"
+        default:
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .spellOut
+            if let string = formatter.string(from: NSNumber(value: self)) {
+                return string
+            }
+            assertionFailure()
+            return "-1"
+        }
     }
 }

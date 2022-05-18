@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Might be used for the Card Details. 
 class CardImageView: NibView, HasViewModel {
 
     @IBOutlet var imageView: UIImageView!
@@ -17,5 +18,12 @@ class CardImageView: NibView, HasViewModel {
         didSet {
             imageView.image = viewModel
         }
+    }
+}
+
+
+extension UIImage: HasFallBack {
+    public static var fallBack: Self {
+        .init()
     }
 }

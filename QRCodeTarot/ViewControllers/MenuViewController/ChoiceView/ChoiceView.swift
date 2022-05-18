@@ -8,6 +8,7 @@
 import UIKit
 import TableMVVM
 
+/// Used in the MenuViewController. 
 class ChoiceView: NibView, HasViewModel {
 
     @IBOutlet var imageView: UIImageView!

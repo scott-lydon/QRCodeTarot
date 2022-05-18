@@ -8,13 +8,27 @@
 import Foundation
 
 // MARK: - BookTCard
-struct BookTCard: Codable {
+struct BookTCard: Codable, HasCardString {
     /// "Ace of Wands"
     let card: String
 
     /// description
     let meaning: String
+}
 
+typealias BookTCards = [BookTCard]
+
+extension String.SubSequence {
+    var string: String {
+        String(self)
+    }
+}
+
+protocol HasCardString: HasTarotNum, HasTarotSuit {
+    var card: String { get }
+}
+
+extension HasCardString {
     var num: Int {
         card.autoTarotNum
     }
@@ -24,10 +38,18 @@ struct BookTCard: Codable {
     }
 }
 
-typealias BookTCards = [BookTCard]
+protocol HasTarotNum {
+    var num: Int { get }
+}
 
-extension String.SubSequence {
-    var string: String {
-        String(self)
+protocol HasTarotSuit {
+    var suit: Suit { get }
+}
+
+typealias HasTarotNumAndSuit = HasTarotNum & HasTarotSuit
+
+extension HasTarotNum where Self: HasTarotSuit {
+    var hash: String {
+        num.string + " " + suit.rawValue
     }
 }

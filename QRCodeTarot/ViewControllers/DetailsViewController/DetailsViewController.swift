@@ -8,36 +8,58 @@
 import UIKit
 import TableMVVM
 
-typealias DetailDataSource = TableDataSource1<
-    SectionNoHeader<
-        ViewModelCell<DynamicDetailView>
+typealias DetailDataSource = TableDataSource3<
+    SectionNoHeader<ViewModelCell<VideoView>>,
+    SectionNoHeader<ViewModelCell<LabelLabel>>,
+    Section<
+        HeaderFooter<UILabel>,
+        ViewModelCell<TutorialStepView>
     >
 >
 
-class DetailsViewController: UIViewController {
+extension UILabel: HasViewModel {
 
-    var dataSource: DetailDataSource = .init() {
-        didSet {
-            tableView.viewModel = dataSource
+    public var viewModel: ViewModel {
+        get {
+            .init()
+        }
+        set {
+
         }
     }
 
-    lazy var tableView: UITableMVVM = {
-        UITableMVVM(viewModel: dataSource).asClear()
-    }()
+    public struct ViewModel: HasFallBack {
+        public static var fallBack: UILabel.ViewModel {
+            .init()
+        }
+    }
+}
+
+/// This is the tutorial view controller, needs a total revamp. 
+class DetailsViewController: UIViewController {
+
+//    var dataSource: DetailDataSource = .init() {
+//        didSet {
+//            tableView.viewModel = dataSource
+//        }
+//    }
+//
+//    lazy var tableView: UITableMVVM<DetailDataSource> = {
+//        UITableMVVM(viewModel: dataSource).asClear()
+//    }()
 
     static func instantiate(
-        with viewModels: [DynamicDetailView.ViewModel]
+    //    with viewModels: [DynamicDetailView.ViewModel]
     ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-        detailsViewController.dataSource = .init(
-            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
-        )
+//        detailsViewController.dataSource = .init(
+//            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
+//        )
         return detailsViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.inject(view: tableView)
+     //   view.inject(view: tableView)
     }
 }

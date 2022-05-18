@@ -8,21 +8,14 @@
 import Foundation
 
 // MARK: - OracleOfTheTarotCard
-struct OracleOfTheTarotCard: Codable {
+struct OracleOfTheTarotCard: Codable, HasCardString {
     let card: String
+    
     let oracleOfTheTarotCardDescription: String?
     let meaning: String?
     let wellDignified: String?
     let illDignified: String?
     let keyword: String?
-
-    var num: Int {
-        card.autoTarotNum
-    }
-
-    var suit: Suit {
-        card.autoSuit
-    }
 
     enum CodingKeys: String, CodingKey {
         case card
