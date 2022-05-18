@@ -15,70 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOG-WC-T7c">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-mX-tUD" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Five of Cups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8t-fg-HKf">
-                                                <rect key="frame" x="114" y="46" width="186" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMu-Fx-MfG">
-                                                <rect key="frame" x="37" y="123" width="340" height="1623"/>
-                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat magna vel consequat pellentesque. Etiam vulputate velit lacus, vel consequat massa rhoncus id. Etiam molestie mauris in eros aliquet, ac ultrices neque maximus. Nulla vitae risus nibh. Maecenas eleifend elit quis odio volutpat vulputate. In suscipit nisl venenatis augue blandit, at hendrerit mauris lacinia. Curabitur eget malesuada elit, quis finibus augue. Praesent porta, neque vel bibendum suscipit, nulla sapien suscipit purus, quis vulputate felis lacus ut felis. Duis pharetra, ligula sagittis ultrices rhoncus, erat lacus vulputate massa, ut malesuada est purus id tellus. Donec ut posuere nibh, vitae eleifend lorem. Nunc fringilla pharetra feugiat.
-
-Proin viverra gravida orci, et sodales tellus iaculis elementum. Donec urna velit, mattis ut justo non, sodales gravida lacus. Fusce non imperdiet elit, ut iaculis est. Ut iaculis lorem blandit tempor feugiat. In mattis ornare mattis. Phasellus mollis fermentum neque, ac iaculis ligula ultrices ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam ultrices in magna et ornare. Pellentesque at sodales tortor. Donec ac ornare nulla. Nulla tristique nibh eu ligula cursus, eget sollicitudin felis venenatis. Cras faucibus, urna eu rutrum congue, diam quam accumsan diam, eu accumsan enim lacus at lorem. Aliquam eu diam porttitor, pretium neque nec, cursus quam.
-
-In vitae mi neque. Nunc feugiat hendrerit interdum. Nullam quis blandit mauris. Curabitur ut lectus vel turpis scelerisque auctor quis in magna. Nunc feugiat enim non pretium rhoncus. Donec vel augue sem. Mauris et ex quis libero gravida facilisis. Etiam aliquam nulla rhoncus, laoreet lacus accumsan, tincidunt orci. Proin et cursus ex. Maecenas suscipit consectetur ipsum, vel aliquam metus volutpat ut. Ut ullamcorper turpis eu augue vulputate hendrerit. Donec vitae semper urna, eu efficitur odio. Vivamus ac lorem eget nibh tincidunt aliquet vel vel ex. Etiam viverra congue diam, id vestibulum nulla vulputate vel. Aenean facilisis erat vitae dolor posuere, nec lacinia tortor ornare. Donec dictum leo quis libero luctus, at mattis odio elementum.
-
-Donec nulla est, efficitur feugiat libero sit amet, sagittis ornare dolor. Nullam molestie est ligula, at blandit mauris aliquet sed. Sed sagittis ligula quis velit bibendum bibendum. Nullam est nunc, vestibulum non ante in, lacinia pharetra ipsum. Vivamus laoreet turpis ut convallis placerat. Nullam vehicula erat nisi. Integer pretium erat nisl, ac commodo eros laoreet id. Nunc condimentum sapien ut tempus placerat. Proin nec turpis tempus, dignissim metus nec, dictum diam. Etiam fermentum vitae risus eget maximus.
-
-Morbi sit amet lacus placerat sapien pretium euismod auctor id ipsum. Vivamus eu malesuada felis. Donec posuere, velit id mattis mattis, quam purus tempor ipsum, id tincidunt mi nibh dapibus massa. In eget nulla a urna cursus bibendum et quis mauris. Duis hendrerit mauris nibh, id rutrum nibh vehicula pharetra. Vivamus accumsan pulvinar metus, id ultricies ligula ultricies eu. Aenean venenatis tincidunt risus, et varius magna lacinia a.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="n8t-fg-HKf" firstAttribute="top" secondItem="s7y-mX-tUD" secondAttribute="top" constant="46" id="3rf-0b-Sq6"/>
-                                            <constraint firstItem="DMu-Fx-MfG" firstAttribute="top" secondItem="n8t-fg-HKf" secondAttribute="bottom" constant="35" id="GJF-SC-qRF"/>
-                                            <constraint firstAttribute="height" constant="1200" id="Sc0-BH-VcH"/>
-                                            <constraint firstItem="DMu-Fx-MfG" firstAttribute="centerX" secondItem="s7y-mX-tUD" secondAttribute="centerX" id="glU-wF-mSV"/>
-                                            <constraint firstItem="n8t-fg-HKf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="s7y-mX-tUD" secondAttribute="leading" constant="10" id="ktJ-zd-8gS"/>
-                                            <constraint firstItem="n8t-fg-HKf" firstAttribute="centerX" secondItem="s7y-mX-tUD" secondAttribute="centerX" id="loD-aQ-bTf"/>
-                                            <constraint firstItem="DMu-Fx-MfG" firstAttribute="leading" secondItem="s7y-mX-tUD" secondAttribute="leading" constant="37" id="qu7-cU-dz0"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="s7y-mX-tUD" firstAttribute="width" secondItem="rOG-WC-T7c" secondAttribute="width" id="4ID-Ae-MHd"/>
-                                    <constraint firstAttribute="bottom" secondItem="s7y-mX-tUD" secondAttribute="bottom" id="HHz-8r-seG"/>
-                                    <constraint firstItem="s7y-mX-tUD" firstAttribute="leading" secondItem="rOG-WC-T7c" secondAttribute="leading" id="VKQ-YI-wbj"/>
-                                    <constraint firstAttribute="trailing" secondItem="s7y-mX-tUD" secondAttribute="trailing" id="pzO-Ae-mYN"/>
-                                    <constraint firstItem="s7y-mX-tUD" firstAttribute="top" secondItem="rOG-WC-T7c" secondAttribute="top" id="uP9-uv-Vaa"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rOG-WC-T7c" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RE7-B3-R2u"/>
-                            <constraint firstItem="rOG-WC-T7c" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ZcT-bd-0Rr"/>
-                            <constraint firstItem="rOG-WC-T7c" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="g1P-HD-Ii3"/>
-                            <constraint firstItem="rOG-WC-T7c" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="i0h-zs-rLr"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="detailsLabel" destination="DMu-Fx-MfG" id="yJ8-Ma-OgO"/>
-                        <outlet property="titleLabel" destination="n8t-fg-HKf" id="W2p-Yf-7O4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
