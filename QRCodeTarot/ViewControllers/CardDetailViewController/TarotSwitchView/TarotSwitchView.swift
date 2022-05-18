@@ -10,7 +10,12 @@ import TableMVVM
 
 class TarotSwitchView: NibView, HasViewModel {
 
-    @IBOutlet var sliderView: UIView!
+    @IBOutlet var sliderView: UIView! {
+        didSet {
+            sliderView.layer.cornerRadius = 12
+            sliderView.layer.masksToBounds = true
+        }
+    }
     @IBOutlet var sliderLeading: NSLayoutConstraint!
     @IBOutlet var sliderTrailing: NSLayoutConstraint!
 
@@ -29,15 +34,11 @@ class TarotSwitchView: NibView, HasViewModel {
 
     var viewModel: ViewModel = .init() {
         didSet {
-            sliderLeading.isActive = viewModel.isLeft
-            sliderTrailing.isActive = !viewModel.isLeft
-            evolvedButton.setTitleColor(viewModel.leftColor, for: .normal)
-            unevolvedButton.setTitleColor(viewModel.rightColor, for: .normal)
-            evolvedButton.layer.cornerRadius = 12
-            evolvedButton.layer.masksToBounds = true
-            unevolvedButton.layer.cornerRadius = 12
-            unevolvedButton.layer.masksToBounds = true
             UIView.animate(withDuration: 0.5) {
+                self.evolvedButton.tintColor = self.viewModel.leftColor
+                self.unevolvedButton.tintColor = self.viewModel.rightColor
+                self.sliderLeading.isActive = self.viewModel.isLeft
+                self.sliderTrailing.isActive = !self.viewModel.isLeft
                 self.layoutIfNeeded()
             }
         }

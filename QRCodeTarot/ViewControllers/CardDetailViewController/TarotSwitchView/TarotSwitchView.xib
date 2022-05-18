@@ -11,7 +11,7 @@
             <connections>
                 <outlet property="evolvedButton" destination="7jO-3O-cu0" id="A9d-jp-zix"/>
                 <outlet property="sliderLeading" destination="HwL-mW-CMk" id="u8b-SF-TNF"/>
-                <outlet property="sliderTrailing" destination="MuL-5v-Ene" id="Bkf-as-81x"/>
+                <outlet property="sliderTrailing" destination="GjZ-WK-mfw" id="WrK-wH-hIB"/>
                 <outlet property="sliderView" destination="8cR-5G-CNB" id="mZV-4v-Ep7"/>
                 <outlet property="unevolvedButton" destination="Ogt-zL-iXN" id="pO1-7o-osA"/>
             </connections>
