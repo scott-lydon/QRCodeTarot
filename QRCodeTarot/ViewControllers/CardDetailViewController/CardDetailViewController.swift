@@ -8,32 +8,62 @@
 import UIKit
 import TableMVVM
 
+typealias CardImageCell = ViewModelCell<CardImageView>
+typealias CollapseTextCell = ViewModelCell<CollapsableLabelLabel>
+typealias TarotSwitchCell = ViewModelCell<TarotSwitchView>
+typealias EvolveSection = SectionNoHeader<ViewModelCell<LabelLabel>>
+
 typealias CardDetailDataSource = TableDataSource4<
-    SectionOneRow<ViewModelCell<CardImageView>>,
-    SectionOneRow<ViewModelCell<CollapsableLabelLabel>>,
-    SectionOneRow<ViewModelCell<TarotSwitchView>>,
-    SectionAlternator2<
-        SectionNoHeader<ViewModelCell<LabelLabel>>,
-        SectionNoHeader<ViewModelCell<LabelLabel>>
-    >
+    SectionOneRow<CardImageCell>,
+    SectionOneRow<CollapseTextCell>,
+    SectionOneRow<TarotSwitchCell>,
+    SectionAlternator2<EvolveSection, EvolveSection>
 >
 
 /// Needs to change to table View.  (Totally revamp.) with multiple sections. dark. 
 class CardDetailViewController: UIViewController {
 
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var detailsLabel: UILabel!
-
-    static func instantiat(card: Card) -> CardDetailViewController {
-        instantiate(title: card.name, details: card.desc)
+    var dataSource: CardDetailDataSource = .init() {
+        didSet {
+            tableView.viewModel = dataSource
+        }
     }
 
-    static func instantiate(title: String, details: String) -> CardDetailViewController {
+    lazy var tableView: UITableMVVM<CardDetailDataSource> = {
+        UITableMVVM(viewModel: dataSource).asClear()
+    }()
+
+
+    static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()! //unitested
         detailController.loadView()
         detailController.view.set(background: BackgroundView.zero.darkShade)
-        detailController.titleLabel.text = title
-        detailController.detailsLabel.text = details
+        detailController.dataSource = .init(
+            section0: SectionOneRow(cellViewModel: card.image ?? .init()),
+            section1: SectionOneRow(
+                cellViewModel: CollapsableLabelLabel.ViewModel(
+                    topText: "Description",
+                    bottomText: card.desc
+                )
+            ),
+            section2: SectionOneRow(cellViewModel: TarotSwitchView.ViewModel()),
+            section3: SectionAlternator2(
+                section1: EvolveSection(cellsViewModels: card.evolvedViewModels),
+                section2: EvolveSection(cellsViewModels: card.unevolvedViewModels),
+                alternatingLogic: nil
+            )
+        )
         return detailController
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.inject(view: tableView)
+        dataSource.section3.alternatingLogic = { [weak self] section1, section2 in
+            return self?.dataSource.section2.cellViewModel.isLeft == true ? section1 : section2
+        }
+        dataSource.section2.cellViewModel.didSwitchTo = { [weak self] isEvolved in
+            self?.tableView.reload()
+        }
     }
 }

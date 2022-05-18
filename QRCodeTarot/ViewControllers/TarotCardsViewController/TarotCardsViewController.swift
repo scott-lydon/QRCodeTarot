@@ -60,7 +60,7 @@ extension TarotCardsViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath
     ) {
         navigationController?.pushViewController(
-            CardDetailViewController.instantiat(card: cards[indexPath.row]),
+            CardDetailViewController.instantiate(card: cards[indexPath.row]),
             animated: true
         )
     }
