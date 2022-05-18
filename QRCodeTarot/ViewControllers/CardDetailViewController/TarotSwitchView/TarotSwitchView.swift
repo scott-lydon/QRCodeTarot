@@ -17,12 +17,14 @@ class TarotSwitchView: NibView, HasViewModel {
     @IBOutlet var evolvedButton: UIButton!
     @IBOutlet var unevolvedButton: UIButton!
 
-    @IBAction func evolvedTapped(_ sender: Any) {
+    @IBAction func evolvedTapped(_ sender: UIButton) {
         viewModel.isLeft = true
+        viewModel.didSwitchTo?(sender.titleLabel?.text)
     }
 
-    @IBAction func unevolvedTapped(_ sender: Any) {
+    @IBAction func unevolvedTapped(_ sender: UIButton) {
         viewModel.isLeft = false
+        viewModel.didSwitchTo?(sender.titleLabel?.text)
     }
 
     var viewModel: ViewModel = .init() {
@@ -42,7 +44,7 @@ class TarotSwitchView: NibView, HasViewModel {
     }
 }
 
-typealias StringAction = (String) -> Void
+typealias StringAction = (String?) -> Void
 
 extension TarotSwitchView {
     struct ViewModel: HasFallBack {
