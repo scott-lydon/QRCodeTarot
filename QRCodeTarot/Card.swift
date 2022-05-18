@@ -71,6 +71,14 @@ struct Card: Codable, CaseIterable {
         .init(text: name, image: image ?? .cardDemo)
     }
 
+    var evolvedViewModels: [LabelLabel.ViewModel] {
+        []
+    }
+
+    var unevolvedViewModels: [LabelLabel.ViewModel] {
+        []
+    }
+
     static var allCases: [Card] {
         let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
         let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
