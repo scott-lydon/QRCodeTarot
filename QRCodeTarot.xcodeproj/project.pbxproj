@@ -15,6 +15,9 @@
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
+		753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */; };
+		753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F33283499FB0008623F /* TarotSwitchView.swift */; };
+		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -133,6 +136,9 @@
 		7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.ViewModel.swift; sourceTree = "<group>"; };
+		753E4F33283499FB0008623F /* TarotSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.swift; sourceTree = "<group>"; };
+		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -334,10 +340,20 @@
 			path = QRCodeTarotUITests;
 			sourceTree = "<group>";
 		};
+		753E4F3728349F250008623F /* TarotSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				753E4F33283499FB0008623F /* TarotSwitchView.swift */,
+				753E4F3528349A060008623F /* TarotSwitchView.xib */,
+			);
+			path = TarotSwitchView;
+			sourceTree = "<group>";
+		};
 		754FE8EB2808C1D10051720E /* ImageContainer */ = {
 			isa = PBXGroup;
 			children = (
 				757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */,
+				753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */,
 				757A81D3282B480600700990 /* CollapsableLabelLabel.xib */,
 			);
 			path = ImageContainer;
@@ -348,6 +364,7 @@
 			children = (
 				75D0913527FBD35E0037798C /* CardDetailViewController.swift */,
 				75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */,
+				753E4F3728349F250008623F /* TarotSwitchView */,
 			);
 			path = CardDetailViewController;
 			sourceTree = "<group>";
@@ -744,6 +761,7 @@
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
 				757A81132825C35000700990 /* SubMenuChoice.xib in Resources */,
+				753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				757A80872822104600700990 /* BookT.json in Resources */,
@@ -806,6 +824,7 @@
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
 				757A810B28250E9000700990 /* Date.swift in Sources */,
+				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
@@ -816,6 +835,7 @@
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
+				753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */,
 				758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */,
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
@@ -1186,8 +1206,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ElevatedUnderdogs/TableMVVM.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.1.0;
 			};
 		};
 		75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */ = {

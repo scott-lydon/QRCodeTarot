@@ -6,6 +6,17 @@
 //
 
 import UIKit
+import TableMVVM
+
+typealias CardDetailDataSource = TableDataSource4<
+    SectionOneRow<ViewModelCell<CardImageView>>,
+    SectionOneRow<ViewModelCell<CollapsableLabelLabel>>,
+    SectionOneRow<ViewModelCell<TarotSwitchView>>,
+    SectionAlternator2<
+        SectionNoHeader<ViewModelCell<LabelLabel>>,
+        SectionNoHeader<ViewModelCell<LabelLabel>>
+    >
+>
 
 /// Needs to change to table View.  (Totally revamp.) with multiple sections. dark. 
 class CardDetailViewController: UIViewController {

@@ -18,6 +18,7 @@ class LabelLabel: NibView, HasViewModel {
         didSet {
             topLabel.text = viewModel.topText
             bottomLabel.text = viewModel.bottomText
+            bottomLabel.numberOfLines = viewModel.lineCount
         }
     }
 }
@@ -26,6 +27,7 @@ extension LabelLabel {
     struct ViewModel: HasFallBack {
         let topText: String
         let bottomText: String
+        var lineCount: Int = 0
         static var fallBack: Self {
             .init(topText: "", bottomText: "")
         }

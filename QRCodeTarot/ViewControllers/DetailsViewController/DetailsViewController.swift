@@ -8,11 +8,14 @@
 import UIKit
 import TableMVVM
 
-//typealias DetailDataSource = TableDataSource1<
-//    SectionNoHeader<
-//        ViewModelCell<DynamicDetailView>
-//    >
-//>
+typealias DetailDataSource = TableDataSource3<
+    SectionNoHeader<ViewModelCell<VideoView>>,
+    SectionNoHeader<ViewModelCell<LabelLabel>>,
+    Section<
+        HeaderFooter<UILabel>,
+        ViewModelCell<TutorialStepView>
+    >
+>
 
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {

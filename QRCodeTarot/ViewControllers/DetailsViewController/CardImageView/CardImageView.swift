@@ -20,3 +20,10 @@ class CardImageView: NibView, HasViewModel {
         }
     }
 }
+
+
+extension UIImage: HasFallBack {
+    public static var fallBack: Self {
+        .init()
+    }
+}

@@ -5,4 +5,36 @@
 //  Created by Scott Lydon on 5/10/22.
 //
 
-import Foundation
+import UIKit
+import TableMVVM
+
+class CollapsableLabelLabel: NibView, HasViewModel {
+
+    @IBOutlet var labelLabel: LabelLabel!
+    @IBOutlet var button: UIButton!
+
+    @IBAction func buttonTapped(_ sender: Any) {
+        var buffer = viewModel
+        buffer.buttonIsHidden = true
+        buffer.labelLabelViewModel.lineCount = 0
+        viewModel = buffer
+    }
+
+    var viewModel: ViewModel = .fallBack {
+        didSet {
+            labelLabel.viewModel = viewModel.labelLabelViewModel
+
+            button.setTitle(viewModel.buttonText, for: .normal)
+            button.layer.cornerRadius = 12
+            button.layer.masksToBounds = true
+            button.layer.borderColor = UIColor.darkBorder.cgColor
+            button.setTitleColor(.white, for: .normal)
+
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.image = UIImage.chevronRight.withTintColor(.white)
+            let fullString = NSMutableAttributedString(string: viewModel.buttonText + " ")
+            fullString.append(NSAttributedString(attachment: imageAttachment))
+            button.setAttributedTitle(fullString, for: .normal)
+        }
+    }
+}
