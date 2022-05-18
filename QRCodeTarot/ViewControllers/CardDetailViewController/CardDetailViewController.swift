@@ -35,9 +35,7 @@ class CardDetailViewController: UIViewController {
 
 
     static func instantiate(card: Card) -> CardDetailViewController {
-        let detailController: CardDetailViewController = UIStoryboard.vc()! //unitested
-        // detailController.loadView()
-
+        let detailController: CardDetailViewController = UIStoryboard.vc()!
         detailController.dataSource = .init(
             section0: SectionOneRow(cellViewModel: card.image ?? .init()),
             section1: SectionOneRow(
