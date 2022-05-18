@@ -29,7 +29,7 @@
             <constraints>
                 <constraint firstItem="dbN-Th-Fw2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6fm-OE-yyI"/>
                 <constraint firstItem="dbN-Th-Fw2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.374286" id="9wK-tb-fRg"/>
-                <constraint firstItem="dbN-Th-Fw2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.656371" id="EN9-Bu-2py"/>
+                <constraint firstItem="dbN-Th-Fw2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.656371" priority="999" id="EN9-Bu-2py"/>
                 <constraint firstItem="dbN-Th-Fw2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="msH-NW-lZ5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
