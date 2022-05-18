@@ -30,14 +30,14 @@ class CardDetailViewController: UIViewController {
     }
 
     lazy var tableView: UITableMVVM<CardDetailDataSource> = {
-        UITableMVVM(viewModel: dataSource).asClear()
+        UITableMVVM(viewModel: dataSource)
     }()
 
 
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()! //unitested
-        detailController.loadView()
-        detailController.view.set(background: BackgroundView.zero.darkShade)
+        // detailController.loadView()
+
         detailController.dataSource = .init(
             section0: SectionOneRow(cellViewModel: card.image ?? .init()),
             section1: SectionOneRow(
@@ -58,6 +58,8 @@ class CardDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = .clear
+        view.set(background: BackgroundView.zero.darkShade)
         view.inject(view: tableView)
         dataSource.section3.alternatingLogic = { [weak self] section1, section2 in
             return self?.dataSource.section2.cellViewModel.isLeft == true ? section1 : section2
