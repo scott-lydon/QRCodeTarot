@@ -72,11 +72,11 @@ struct Card: Codable, CaseIterable {
     }
 
     var evolvedViewModels: [LabelLabel.ViewModel] {
-        []
+        [evolved].compactMap { $0 }.map { .init(topText: "Evolved", bottomText: $0) }
     }
 
     var unevolvedViewModels: [LabelLabel.ViewModel] {
-        []
+        [unevolved].compactMap { $0 }.map { .init(topText: "Unevolved", bottomText: $0) }
     }
 
     static var allCases: [Card] {
