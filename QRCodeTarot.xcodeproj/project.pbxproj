@@ -20,6 +20,7 @@
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
 		753E4F392834AFEB0008623F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F382834AFEB0008623F /* VideoView.swift */; };
 		753E4F3B2834AFF80008623F /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3A2834AFF80008623F /* VideoView.xib */; };
+		753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */; };
 		753E4FC12835DB390008623F /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC02835DB390008623F /* UIFont.swift */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
@@ -144,6 +145,7 @@
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
 		753E4F382834AFEB0008623F /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		753E4F3A2834AFF80008623F /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
+		753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.ViewModel.swift; sourceTree = "<group>"; };
 		753E4FC02835DB390008623F /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				753E4F33283499FB0008623F /* TarotSwitchView.swift */,
+				753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */,
 				753E4F3528349A060008623F /* TarotSwitchView.xib */,
 			);
 			path = TarotSwitchView;
@@ -859,6 +862,7 @@
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
+				753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */,
 				757A80E52823ACE300700990 /* UICollectionViewLayout.swift in Sources */,
 				757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
