@@ -14,6 +14,7 @@ extension CollapsableLabelLabel {
         var labelLabelViewModel: LabelLabel.ViewModel
         var buttonText: String = "Read More"
         var buttonIsHidden: Bool = false
+        var buttonTapped: Action? 
 
         init(
             topText: String,

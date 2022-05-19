@@ -75,6 +75,11 @@ class LocalCardsTests: XCTestCase {
         XCTAssertNotNil(UIImage.hambugerMenu)
     }
 
+    func testInter() {
+        XCTAssertNotNil(UIFont.inter(size:12))
+        XCTAssertEqual(UIFont.inter(size: 16).familyName, "Inter")
+    }
+
     func testDetailsViewController() {
 //        let detailsVC = DetailsViewController.instantiate(with: "magic trick 1")
 //        detailsVC.loadView()

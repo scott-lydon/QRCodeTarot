@@ -5,13 +5,35 @@
 //  Created by Scott Lydon on 5/18/22.
 //
 
-import Foundation
 import UIKit
+import TableMVVM
 
 extension UILabel {
     /// Call this no more than once per UILabel instance.
     func setDynamicText() {
         font = font.dynamic
         adjustsFontForContentSizeCategory = true
+    }
+}
+
+extension UILabel: HasViewModel {
+
+    public var viewModel: ViewModel {
+        get {
+            return .init(color: tintColor, font: font)
+        }
+        set {
+            textColor = newValue.color
+            font = newValue.font
+        }
+    }
+
+    public struct ViewModel: HasFallBack {
+        var color: UIColor = .white
+        var font: UIFont = UIFont.inter(size: 16)
+
+        public static var fallBack: UILabel.ViewModel {
+            .init()
+        }
     }
 }

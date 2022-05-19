@@ -19,7 +19,9 @@ class CollapsableLabelLabel: NibView, HasViewModel {
         var buffer = viewModel
         buffer.buttonIsHidden = true
         buffer.labelLabelViewModel.lineCount = 0
+        // invalidateIntrinsicContentSize() <- no effect here.
         viewModel = buffer
+        viewModel.buttonTapped?()
     }
 
     var viewModel: ViewModel = .fallBack {

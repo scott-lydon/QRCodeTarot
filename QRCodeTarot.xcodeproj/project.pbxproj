@@ -25,6 +25,8 @@
 		753E4FC32835DEB80008623F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC22835DEB80008623F /* UILabel.swift */; };
 		753E4FC62835E6A60008623F /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC52835E6A60008623F /* CommonExtensions */; };
 		753E4FC92835E6B90008623F /* CommonUIKitExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC82835E6B90008623F /* CommonUIKitExtensions */; };
+		753E4FCB28360FCE0008623F /* Array.TutorialStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */; };
+		753E4FCD283619860008623F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FCC283619860008623F /* UITableView.swift */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -151,6 +153,8 @@
 		753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.ViewModel.swift; sourceTree = "<group>"; };
 		753E4FC02835DB390008623F /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		753E4FC22835DEB80008623F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.TutorialStepViewModel.swift; sourceTree = "<group>"; };
+		753E4FCC283619860008623F /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -314,11 +318,13 @@
 				757EF6642808D744000685FC /* LabelLabel */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
+				753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
 				757A80D6282264F200700990 /* UIColor.swift */,
 				753E4FC02835DB390008623F /* UIFont.swift */,
 				753E4FC22835DEB80008623F /* UILabel.swift */,
+				753E4FCC283619860008623F /* UITableView.swift */,
 				757A81A7282A338D00700990 /* GradientView.swift */,
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
@@ -836,6 +842,7 @@
 				757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */,
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
+				753E4FCB28360FCE0008623F /* Array.TutorialStepViewModel.swift in Sources */,
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */,
@@ -849,6 +856,7 @@
 				75D0913427FB89140037798C /* Bundle.swift in Sources */,
 				757A808B28222EB900700990 /* BackgroundView.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
+				753E4FCD283619860008623F /* UITableView.swift in Sources */,
 				757A80E32823ACBC00700990 /* UICollectionViewFlowLayout.swift in Sources */,
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
@@ -1259,7 +1267,7 @@
 			repositoryURL = "https://github.com/ElevatedUnderdogs/TableMVVM.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 2.1.0;
+				minimumVersion = 2.2.1;
 			};
 		};
 		75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */ = {

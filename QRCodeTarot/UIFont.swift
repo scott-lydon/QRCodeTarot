@@ -9,6 +9,10 @@ import UIKit
 
 extension UIFont {
 
+    static func inter(size: CGFloat) -> UIFont {
+        UIFont(name: "Inter", size: 16)!
+    }
+
     /// Provides a dynamic version of the current font.
     var dynamic: UIFont {
         UIFontMetrics(forTextStyle: .init(size: pointSize)).scaledFont(for: self)

@@ -14,9 +14,12 @@ class TutorialStepView: NibView, HasViewModel {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var countLabel: UILabel!
     @IBOutlet var stepLabelLabel: LabelLabel!
+    @IBOutlet var countContainer: UIView!
 
     var viewModel: ViewModel = .init() {
         didSet {
+            countContainer.roundCorners(constant: 12)
+            imageView.roundCorners(constant: 12)
             imageView.isHidden = viewModel.image == nil
             imageView.image = viewModel.image
             imageView.contentMode = .scaleAspectFill
@@ -30,7 +33,8 @@ extension TutorialStepView {
 
     struct ViewModel: HasFallBack {
         var image: UIImage?
-        var count: Int = 1
+        /// Sometimes this is given by the context.  
+        var count: Int? = 1
         var stepDescription: LabelLabel.ViewModel = .fallBack
 
         static var fallBack: TutorialStepView.ViewModel {
