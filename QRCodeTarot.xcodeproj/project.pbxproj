@@ -616,8 +616,8 @@
 			isa = PBXGroup;
 			children = (
 				757EF67B280954CE000685FC /* DetailsViewController.swift */,
-				753E4F3C2834AFFD0008623F /* VideoView */,
 				757EF67D280954E7000685FC /* DetailsViewController.storyboard */,
+				753E4F3C2834AFFD0008623F /* VideoView */,
 				757A81B5282A55D600700990 /* CardImageView */,
 			);
 			path = DetailsViewController;
