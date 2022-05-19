@@ -11,6 +11,24 @@
         }
       },
       {
+        "package": "CommonExtensions",
+        "repositoryURL": "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
+        "state": {
+          "branch": "main",
+          "revision": "273c5368f84d56676e01f0a8fe64b62c0d2db6c3",
+          "version": null
+        }
+      },
+      {
+        "package": "CommonUIKitExtensions",
+        "repositoryURL": "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git",
+        "state": {
+          "branch": null,
+          "revision": "0c1202d0723147547fa0fde739949f04b2eb797e",
+          "version": "0.1.1"
+        }
+      },
+      {
         "package": "QRCodeReader",
         "repositoryURL": "https://github.com/yannickl/QRCodeReader.swift.git",
         "state": {
