@@ -65,8 +65,8 @@ class CardDetailViewController: UIViewController {
             self?.dataSource.section1.cellViewModel.labelLabelViewModel.lineCount = 0
             self?.dataSource.section1.cellViewModel.buttonIsHidden = true
         }
-        dataSource.section2.cellViewModel.didSwitchTo = { [weak self] isEvolved in
-            self?.tableView.reloadRows(at: self?.tableView.indices(in: 3) ?? [], with: .automatic)
+        dataSource.section2.cellViewModel.switchedToLeft = { [weak self] isEvolved in
+            self?.tableView.reloadRows(at: self?.tableView.indices(inSection: 3) ?? [], with: .automatic)
         }
         dataSource.section3.alternatingLogic = { [weak self] section1, section2 in
             return self?.dataSource.section2.cellViewModel.isLeft == true ? section1 : section2
