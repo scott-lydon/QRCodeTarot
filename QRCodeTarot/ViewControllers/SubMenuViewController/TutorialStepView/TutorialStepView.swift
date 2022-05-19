@@ -19,6 +19,7 @@ class TutorialStepView: NibView, HasViewModel {
     var viewModel: ViewModel = .init() {
         didSet {
             countContainer.roundCorners(constant: 12)
+            imageView.roundCorners(constant: 12)
             imageView.isHidden = viewModel.image == nil
             imageView.image = viewModel.image
             imageView.contentMode = .scaleAspectFill
