@@ -33,7 +33,8 @@ extension TutorialStepView {
 
     struct ViewModel: HasFallBack {
         var image: UIImage?
-        var count: Int = 1
+        /// Sometimes this is given by the context.  
+        var count: Int? = 1
         var stepDescription: LabelLabel.ViewModel = .fallBack
 
         static var fallBack: TutorialStepView.ViewModel {
