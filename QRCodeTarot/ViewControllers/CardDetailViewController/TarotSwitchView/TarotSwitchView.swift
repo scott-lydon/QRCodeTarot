@@ -19,8 +19,25 @@ class TarotSwitchView: NibView, HasViewModel {
     @IBOutlet var sliderLeading: NSLayoutConstraint!
     @IBOutlet var sliderTrailing: NSLayoutConstraint!
 
-    @IBOutlet var evolvedButton: UIButton!
-    @IBOutlet var unevolvedButton: UIButton!
+    @IBOutlet var backgroundView: UIView! {
+        didSet {
+            backgroundView.backgroundColor = .darkBackground
+            backgroundView.layer.cornerRadius = 12
+            backgroundView.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet var evolvedButton: UIButton! {
+        didSet {
+            evolvedButton.titleLabel?.font = evolvedButton.titleLabel?.font.dynamic
+            evolvedButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
+    }
+    @IBOutlet var unevolvedButton: UIButton! {
+        didSet {
+            unevolvedButton.titleLabel?.font = unevolvedButton.titleLabel?.font.dynamic
+            unevolvedButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
+    }
 
     @IBAction func evolvedTapped(_ sender: UIButton) {
         viewModel.isLeft = true
