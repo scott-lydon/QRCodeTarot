@@ -14,6 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialStepView" customModule="QRCodeTarot" customModuleProvider="target">
             <connections>
+                <outlet property="countContainer" destination="9WN-cc-orN" id="2UX-ed-pJP"/>
                 <outlet property="countLabel" destination="ekN-8v-G3c" id="qqm-le-Ah3"/>
                 <outlet property="imageView" destination="GuY-Hb-Suo" id="RLB-VW-ipm"/>
                 <outlet property="stepLabelLabel" destination="l1h-gH-HRQ" id="r7p-r9-TQi"/>
@@ -51,7 +52,9 @@
                                         <constraint firstItem="ekN-8v-G3c" firstAttribute="centerY" secondItem="9WN-cc-orN" secondAttribute="centerY" id="9sL-tE-75u"/>
                                         <constraint firstAttribute="bottom" secondItem="ekN-8v-G3c" secondAttribute="bottom" constant="4" id="aWH-FT-yDR"/>
                                         <constraint firstAttribute="width" secondItem="9WN-cc-orN" secondAttribute="height" id="edx-sr-Nkt"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hCX-PQ-OTd"/>
                                         <constraint firstAttribute="trailing" secondItem="ekN-8v-G3c" secondAttribute="trailing" constant="4" id="jnm-Hy-3Bm"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="kxJ-0S-6Uh"/>
                                         <constraint firstItem="ekN-8v-G3c" firstAttribute="centerX" secondItem="9WN-cc-orN" secondAttribute="centerX" id="uaT-sZ-ymh"/>
                                     </constraints>
                                 </view>
