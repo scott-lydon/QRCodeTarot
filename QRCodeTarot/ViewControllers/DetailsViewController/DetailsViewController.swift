@@ -9,61 +9,45 @@ import UIKit
 import TableMVVM
 
 typealias DetailDataSource = TableDataSource3<
-    SectionNoHeader<ViewModelCell<VideoView>>,
-    SectionNoHeader<ViewModelCell<LabelLabel>>,
+    SectionOneRow<ViewModelCell<VideoView>>,
+    SectionOneRow<ViewModelCell<LabelLabel>>,
     Section<
         HeaderFooter<UILabel>,
         ViewModelCell<TutorialStepView>
     >
 >
 
-extension UILabel: HasViewModel {
-
-    public var viewModel: ViewModel {
-        get {
-            return .init(color: tintColor, font: font)
-        }
-        set {
-            textColor = newValue.color
-            font = newValue.font
-        }
-    }
-
-    public struct ViewModel: HasFallBack {
-        var color: UIColor = .white
-        var font: UIFont = UIFont.inter(size: 16)
-
-        public static var fallBack: UILabel.ViewModel {
-            .init()
-        }
-    }
-}
-
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 
-//    var dataSource: DetailDataSource = .init() {
-//        didSet {
-//            tableView.viewModel = dataSource
-//        }
-//    }
-//
-//    lazy var tableView: UITableMVVM<DetailDataSource> = {
-//        UITableMVVM(viewModel: dataSource).asClear()
-//    }()
+    var dataSource: DetailDataSource = .init() {
+        didSet {
+            tableView.viewModel = dataSource
+        }
+    }
+
+    lazy var tableView: UITableMVVM<DetailDataSource> = {
+        UITableMVVM(viewModel: dataSource).asClear()
+    }()
 
     static func instantiate(
-    //    with viewModels: [DynamicDetailView.ViewModel]
+        details: LabelLabel.ViewModel,
+        tutorialSteps: [TutorialStepView.ViewModel]
     ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-//        detailsViewController.dataSource = .init(
-//            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
-//        )
+        detailsViewController.dataSource = TableDataSource3(
+            section0: .init(cellViewModel: VideoView.ViewModel()),
+            section1: .init(cellViewModel: details),
+            section2: .init(
+                headerViewModel: UILabel.ViewModel(color: .white, font: .inter(size: 16)),
+                cellsViewModels: tutorialSteps.correctlyNumbered
+            )
+        )
         return detailsViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   view.inject(view: tableView)
+        view.inject(view: tableView)
     }
 }
