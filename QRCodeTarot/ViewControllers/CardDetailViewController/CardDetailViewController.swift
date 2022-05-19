@@ -33,6 +33,7 @@ class CardDetailViewController: UIViewController {
         UITableMVVM(viewModel: dataSource)
     }()
 
+    var card: Card! // unit tested.
 
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
@@ -51,6 +52,7 @@ class CardDetailViewController: UIViewController {
                 alternatingLogic: nil
             )
         )
+        detailController.card = card
         return detailController
     }
 
