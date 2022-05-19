@@ -11,8 +11,16 @@ import TableMVVM
 /// Used 
 class LabelLabel: NibView, HasViewModel {
 
-    @IBOutlet var topLabel: UILabel!
-    @IBOutlet var bottomLabel: UILabel!
+    @IBOutlet var topLabel: UILabel! {
+        didSet {
+            topLabel.setDynamicText()
+        }
+    }
+    @IBOutlet var bottomLabel: UILabel! {
+        didSet {
+            bottomLabel.setDynamicText()
+        }
+    }
 
     var viewModel: ViewModel = .fallBack {
         didSet {
