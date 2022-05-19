@@ -13,7 +13,7 @@ extension UITableView {
         indexPath.section < self.numberOfSections && indexPath.row < self.numberOfRows(inSection: indexPath.section)
     }
 
-    func indices(in section: Int) -> [IndexPath] {
+    func indices(inSection section: Int) -> [IndexPath] {
         let rowcount = numberOfRows(inSection: section)
         guard rowcount > 0 else { return [] }
         return (0..<rowcount).map { IndexPath(row: $0, section: section)}
