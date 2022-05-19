@@ -32,4 +32,8 @@ extension UIColor {
     static var gradientEndGray: UIColor {
         UIColor(red: 0.11, green: 0.11, blue: 0.13, alpha: 1.00)
     }
+
+    static var darkBackground: UIColor {
+        UIColor(red: 0.08, green: 0.09, blue: 0.10, alpha: 1.00)
+    }
 }
