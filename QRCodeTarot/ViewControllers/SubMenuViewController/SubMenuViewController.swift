@@ -27,23 +27,17 @@ class SubMenuViewController: UIViewController {
         UITableMVVM(viewModel: dataSource)
     }()
 
+    var activity: Activity!
+
     static func instantiate(with activity: Activity) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
         subMenuViewController.dataSource = MenuDataSource(
             section0: .init(
                 headerViewModel: activity.imageLabelNoBorder,
-                cellsViewModels: activity.submenuChoiceViewModels,
-                cellTapped: { [weak subMenuViewController] subMenuChoiceVM, _ in
-                    subMenuViewController?.navigationController?.pushViewController(
-                        DetailsViewController.instantiate(
-                            details: .fallBack,
-                            tutorialSteps: []
-                        ),
-                        animated: true
-                    )
-                }
+                cellsViewModels: activity.submenuChoiceViewModels
             )
         )
+        subMenuViewController.activity = activity
         return subMenuViewController
     }
 
@@ -52,5 +46,15 @@ class SubMenuViewController: UIViewController {
         view.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
+        dataSource.section0.cellTapped = { [weak self] subMenuChoice, indexPath in
+            guard let self = self else { return }
+            self.navigationController?.pushViewController(
+                DetailsViewController.instantiate(
+                    details: self.activity.details(for: indexPath.row) ?? .fallBack,
+                    tutorialSteps: self.activity.tutorialSteps(for: indexPath.row) ?? []
+                ),
+                animated: true
+            )
+        }
     }
 }
