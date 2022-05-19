@@ -42,12 +42,12 @@ class TarotSwitchView: NibView, HasViewModel {
 
     @IBAction func evolvedTapped(_ sender: UIButton) {
         viewModel.isLeft = true
-        viewModel.didSwitchTo?(sender.titleLabel?.text)
+        viewModel.switchedToLeft?(true)
     }
 
     @IBAction func unevolvedTapped(_ sender: UIButton) {
         viewModel.isLeft = false
-        viewModel.didSwitchTo?(sender.titleLabel?.text)
+        viewModel.switchedToLeft?(false)
     }
 
     var viewModel: ViewModel = .init() {

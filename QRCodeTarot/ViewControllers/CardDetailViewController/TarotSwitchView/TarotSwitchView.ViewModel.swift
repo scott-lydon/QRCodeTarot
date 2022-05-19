@@ -8,7 +8,7 @@
 import UIKit
 import TableMVVM
 
-typealias StringAction = (String?) -> Void
+typealias BoolAction = (Bool) -> Void
 
 extension TarotSwitchView {
     struct ViewModel: HasFallBack {
@@ -17,7 +17,7 @@ extension TarotSwitchView {
         }
 
         var isLeft: Bool = true
-        var didSwitchTo: StringAction?
+        var switchedToLeft: BoolAction?
 
         var leftColor: UIColor {
             isLeft ? .black : .white
