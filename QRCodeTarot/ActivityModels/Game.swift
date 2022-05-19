@@ -13,6 +13,10 @@ struct Game: CanDisplayTutorial, CaseIterable {
     var summary: String?
     var tutorial: Tutorial
 
+    var topDesription: LabelLabel.ViewModel {
+        .init(topText: title, bottomText: subTitle)
+    }
+
     static var allCases: [Game] {
         [
             Game(
