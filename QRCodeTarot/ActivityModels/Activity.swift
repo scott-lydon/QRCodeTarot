@@ -12,6 +12,24 @@ enum Activity {
     case magicTricks([MagicTrick])
     case games([Game])
 
+    func details(for row: Int) -> LabelLabel.ViewModel? {
+        switch self {
+        case .magicTricks(let tricks):
+            return tricks[safe: row]?.topDescription
+        case .games(let games):
+            return games[safe: row]?.topDesription
+        }
+    }
+
+    func tutorialSteps(for row: Int) -> [TutorialStepView.ViewModel]? {
+        switch self {
+        case .magicTricks(let tricks):
+            return tricks[safe: row]?.tutorial.map(\.viewModel).correctlyNumbered
+        case .games(let games):
+            return games[safe: row]?.tutorial.map(\.viewModel).correctlyNumbered
+        }
+    }
+
     var imageLabelNoBorder: ImageLabelNoBorder.ViewModel {
         .init(image: image, text: name)
     }
