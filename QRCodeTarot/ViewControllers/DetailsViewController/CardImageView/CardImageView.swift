@@ -20,6 +20,8 @@ class CardImageView: NibView, HasViewModel {
     var viewModel: UIImage = .cardDemo {
         didSet {
             imageView.image = viewModel
+            imageView.roundCorners(constant: 12)
+            imageView.contentMode = .scaleAspectFill
         }
     }
 }
