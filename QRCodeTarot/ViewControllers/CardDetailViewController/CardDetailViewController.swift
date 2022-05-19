@@ -37,7 +37,7 @@ class CardDetailViewController: UIViewController {
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
         detailController.dataSource = .init(
-            section0: SectionOneRow(cellViewModel: card.image ?? .init()),
+            section0: SectionOneRow(cellViewModel: card.image ?? .cardDemo),
             section1: SectionOneRow(
                 cellViewModel: CollapsableLabelLabel.ViewModel(
                     topText: "Description",
