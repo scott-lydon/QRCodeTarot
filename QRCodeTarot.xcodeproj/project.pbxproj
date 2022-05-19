@@ -20,6 +20,11 @@
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
 		753E4F392834AFEB0008623F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F382834AFEB0008623F /* VideoView.swift */; };
 		753E4F3B2834AFF80008623F /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3A2834AFF80008623F /* VideoView.xib */; };
+		753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */; };
+		753E4FC12835DB390008623F /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC02835DB390008623F /* UIFont.swift */; };
+		753E4FC32835DEB80008623F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC22835DEB80008623F /* UILabel.swift */; };
+		753E4FC62835E6A60008623F /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC52835E6A60008623F /* CommonExtensions */; };
+		753E4FC92835E6B90008623F /* CommonUIKitExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC82835E6B90008623F /* CommonUIKitExtensions */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		756A69162802571300B76CCD /* BinaryInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A69152802571300B76CCD /* BinaryInteger.swift */; };
@@ -143,6 +148,9 @@
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
 		753E4F382834AFEB0008623F /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		753E4F3A2834AFF80008623F /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
+		753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.ViewModel.swift; sourceTree = "<group>"; };
+		753E4FC02835DB390008623F /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		753E4FC22835DEB80008623F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		756A69152802571300B76CCD /* BinaryInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryInteger.swift; sourceTree = "<group>"; };
@@ -249,7 +257,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753E4FC92835E6B90008623F /* CommonUIKitExtensions in Frameworks */,
 				757EF6682808DFB3000685FC /* TableMVVM in Frameworks */,
+				753E4FC62835E6A60008623F /* CommonExtensions in Frameworks */,
 				75D0912C27FA9F5F0037798C /* Callable in Frameworks */,
 				75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */,
 			);
@@ -307,6 +317,8 @@
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
 				757A80D6282264F200700990 /* UIColor.swift */,
+				753E4FC02835DB390008623F /* UIFont.swift */,
+				753E4FC22835DEB80008623F /* UILabel.swift */,
 				757A81A7282A338D00700990 /* GradientView.swift */,
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
@@ -348,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				753E4F33283499FB0008623F /* TarotSwitchView.swift */,
+				753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */,
 				753E4F3528349A060008623F /* TarotSwitchView.xib */,
 			);
 			path = TarotSwitchView;
@@ -603,8 +616,8 @@
 			isa = PBXGroup;
 			children = (
 				757EF67B280954CE000685FC /* DetailsViewController.swift */,
-				753E4F3C2834AFFD0008623F /* VideoView */,
 				757EF67D280954E7000685FC /* DetailsViewController.storyboard */,
+				753E4F3C2834AFFD0008623F /* VideoView */,
 				757A81B5282A55D600700990 /* CardImageView */,
 			);
 			path = DetailsViewController;
@@ -662,6 +675,8 @@
 				75D0912827FA84EB0037798C /* QRCodeReader */,
 				75D0912B27FA9F5F0037798C /* Callable */,
 				757EF6672808DFB3000685FC /* TableMVVM */,
+				753E4FC52835E6A60008623F /* CommonExtensions */,
+				753E4FC82835E6B90008623F /* CommonUIKitExtensions */,
 			);
 			productName = QRCodeTarot;
 			productReference = 7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */;
@@ -739,6 +754,8 @@
 				75D0912727FA84EB0037798C /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */,
 				75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */,
 				757EF6662808DFB3000685FC /* XCRemoteSwiftPackageReference "TableMVVM" */,
+				753E4FC42835E6A60008623F /* XCRemoteSwiftPackageReference "CommonExtensions" */,
+				753E4FC72835E6B80008623F /* XCRemoteSwiftPackageReference "CommonUIKitExtensions" */,
 			);
 			productRefGroup = 7526AFE927FA70B0009C5FE8 /* Products */;
 			projectDirPath = "";
@@ -856,6 +873,7 @@
 				75D0913027FAAB080037798C /* DeeplinkPayload.swift in Sources */,
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
+				753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */,
 				757A80E52823ACE300700990 /* UICollectionViewLayout.swift in Sources */,
 				757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
@@ -868,7 +886,9 @@
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
+				753E4FC12835DB390008623F /* UIFont.swift in Sources */,
 				75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */,
+				753E4FC32835DEB80008623F /* UILabel.swift in Sources */,
 				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
 				75BCF453282E27990066B22D /* Activity.swift in Sources */,
 			);
@@ -1218,6 +1238,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		753E4FC42835E6A60008623F /* XCRemoteSwiftPackageReference "CommonExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElevatedUnderdogs/CommonExtensions.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		753E4FC72835E6B80008623F /* XCRemoteSwiftPackageReference "CommonUIKitExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		757EF6662808DFB3000685FC /* XCRemoteSwiftPackageReference "TableMVVM" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ElevatedUnderdogs/TableMVVM.git";
@@ -1245,6 +1281,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		753E4FC52835E6A60008623F /* CommonExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 753E4FC42835E6A60008623F /* XCRemoteSwiftPackageReference "CommonExtensions" */;
+			productName = CommonExtensions;
+		};
+		753E4FC82835E6B90008623F /* CommonUIKitExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 753E4FC72835E6B80008623F /* XCRemoteSwiftPackageReference "CommonUIKitExtensions" */;
+			productName = CommonUIKitExtensions;
+		};
 		757EF6672808DFB3000685FC /* TableMVVM */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 757EF6662808DFB3000685FC /* XCRemoteSwiftPackageReference "TableMVVM" */;

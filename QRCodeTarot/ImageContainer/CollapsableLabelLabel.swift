@@ -7,6 +7,8 @@
 
 import UIKit
 import TableMVVM
+import CommonExtensions
+import CommonUIKitExtensions
 
 class CollapsableLabelLabel: NibView, HasViewModel {
 
@@ -34,7 +36,9 @@ class CollapsableLabelLabel: NibView, HasViewModel {
             imageAttachment.image = UIImage.chevronRight.withTintColor(.white)
             let fullString = NSMutableAttributedString(string: viewModel.buttonText + " ")
             fullString.append(NSAttributedString(attachment: imageAttachment))
+            fullString.set(color: .white)
             button.setAttributedTitle(fullString, for: .normal)
+            button.isHidden = viewModel.buttonIsHidden
         }
     }
 }
