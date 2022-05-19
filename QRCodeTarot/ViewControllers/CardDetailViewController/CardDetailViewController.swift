@@ -61,7 +61,7 @@ class CardDetailViewController: UIViewController {
             self?.dataSource.section1.cellViewModel.buttonIsHidden = true
         }
         dataSource.section2.cellViewModel.switchedToLeft = { [weak self] isEvolved in
-            print(self?.dataSource.section2.cellViewModel.isLeft)
+            print(self?.dataSource.section2.cellViewModel.isLeft as Any)
             self?.tableView.updateViewModelWithoutTableUpdate { [weak self] in
                 guard let self = self else { return }
                 self.dataSource.section2.cellViewModel.isLeft = isEvolved
