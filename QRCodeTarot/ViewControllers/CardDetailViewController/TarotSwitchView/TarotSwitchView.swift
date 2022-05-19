@@ -10,14 +10,15 @@ import TableMVVM
 
 class TarotSwitchView: NibView, HasViewModel {
 
+    @IBOutlet var sliderLeading: NSLayoutConstraint!
+    @IBOutlet var sliderTrailing: NSLayoutConstraint!
+
     @IBOutlet var sliderView: UIView! {
         didSet {
             sliderView.layer.cornerRadius = 12
             sliderView.layer.masksToBounds = true
         }
     }
-    @IBOutlet var sliderLeading: NSLayoutConstraint!
-    @IBOutlet var sliderTrailing: NSLayoutConstraint!
 
     @IBOutlet var backgroundView: UIView! {
         didSet {
@@ -26,16 +27,16 @@ class TarotSwitchView: NibView, HasViewModel {
             backgroundView.layer.masksToBounds = true
         }
     }
+
     @IBOutlet var evolvedButton: UIButton! {
         didSet {
-            evolvedButton.titleLabel?.font = evolvedButton.titleLabel?.font.dynamic
-            evolvedButton.titleLabel?.adjustsFontForContentSizeCategory = true
+            evolvedButton.titleLabel?.setDynamicText()
         }
     }
+
     @IBOutlet var unevolvedButton: UIButton! {
         didSet {
-            unevolvedButton.titleLabel?.font = unevolvedButton.titleLabel?.font.dynamic
-            unevolvedButton.titleLabel?.adjustsFontForContentSizeCategory = true
+            unevolvedButton.titleLabel?.setDynamicText()
         }
     }
 
