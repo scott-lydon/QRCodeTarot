@@ -59,11 +59,16 @@ class CardDetailViewController: UIViewController {
         tableView.backgroundColor = .clear
         view.set(background: BackgroundView.zero.darkShade)
         view.inject(view: tableView)
+        dataSource.section1.cellViewModel.buttonTapped = { [weak self] in
+            self?.dataSource.section1.cellViewModel.labelLabelViewModel.lineCount = 0
+            self?.dataSource.section1.cellViewModel.buttonIsHidden = true
+        }
         dataSource.section2.cellViewModel.didSwitchTo = { [weak self] isEvolved in
-            self?.tableView.reload()
+            self?.tableView.reloadRows(at: self?.tableView.indices(in: 3) ?? [], with: .automatic)
         }
         dataSource.section3.alternatingLogic = { [weak self] section1, section2 in
             return self?.dataSource.section2.cellViewModel.isLeft == true ? section1 : section2
         }
     }
 }
+
