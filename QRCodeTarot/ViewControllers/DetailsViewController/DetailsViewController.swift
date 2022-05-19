@@ -21,14 +21,18 @@ extension UILabel: HasViewModel {
 
     public var viewModel: ViewModel {
         get {
-            .init()
+            return .init(color: tintColor, font: font)
         }
         set {
-
+            textColor = newValue.color
+            font = newValue.font
         }
     }
 
     public struct ViewModel: HasFallBack {
+        var color: UIColor = .white
+        var font: UIFont = UIFont.inter(size: 16)
+
         public static var fallBack: UILabel.ViewModel {
             .init()
         }
