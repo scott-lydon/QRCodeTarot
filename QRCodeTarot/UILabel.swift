@@ -13,6 +13,8 @@ extension UILabel {
     func setDynamicText() {
         font = font.dynamic
         adjustsFontForContentSizeCategory = true
+        setContentCompressionResistancePriority(.required, for: .horizontal)
+        setContentCompressionResistancePriority(.required, for: .vertical)
     }
 }
 

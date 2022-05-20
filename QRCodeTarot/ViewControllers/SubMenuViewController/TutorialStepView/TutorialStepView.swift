@@ -12,7 +12,11 @@ import UIKit
 class TutorialStepView: NibView, HasViewModel {
 
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var countLabel: UILabel!
+    @IBOutlet var countLabel: UILabel! {
+        didSet {
+            countLabel.setDynamicText()
+        }
+    }
     @IBOutlet var stepLabelLabel: LabelLabel!
     @IBOutlet var countContainer: UIView!
 
