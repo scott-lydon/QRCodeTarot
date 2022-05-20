@@ -25,7 +25,9 @@ class LabelLabel: NibView, HasViewModel {
     var viewModel: ViewModel = .fallBack {
         didSet {
             topLabel.text = viewModel.topText
+            topLabel.isHidden = viewModel.topText == nil
             bottomLabel.text = viewModel.bottomText
+            bottomLabel.isHidden = viewModel.bottomText == nil
             bottomLabel.numberOfLines = viewModel.lineCount
         }
     }
@@ -33,8 +35,8 @@ class LabelLabel: NibView, HasViewModel {
 
 extension LabelLabel {
     struct ViewModel: HasFallBack {
-        let topText: String
-        let bottomText: String
+        let topText: String?
+        let bottomText: String?
         var lineCount: Int = 0
         static var fallBack: Self {
             .init(topText: "", bottomText: "")
