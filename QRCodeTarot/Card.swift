@@ -138,14 +138,3 @@ struct Card: Codable, CaseIterable {
         case unevolved
     }
 }
-
-enum Suit: String, Codable, CaseIterable {
-    case cups
-    case pentacles
-    case swords
-    case wands
-
-    var symbol: CardKey.Symbol {
-        .init(suit: self)
-    }
-}
