@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
         "state": {
           "branch": "main",
-          "revision": "273c5368f84d56676e01f0a8fe64b62c0d2db6c3",
+          "revision": "123a74a6f80db649d0dd86ceb4a6bda3a6116a8a",
           "version": null
         }
       },
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/ElevatedUnderdogs/TableMVVM.git",
         "state": {
           "branch": null,
-          "revision": "efce23712f1473280a78b3262ca1789feed50426",
-          "version": "2.2.1"
+          "revision": "30501d27de73860e7df680c8d8170e87c955723d",
+          "version": "2.2.2"
         }
       }
     ]
