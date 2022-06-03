@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75194FD8284A5C8F0060175C /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD7284A5C8F0060175C /* Cards.swift */; };
 		75194FDA284A5CA30060175C /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD9284A5CA30060175C /* Suit.swift */; };
 		75194FDC284A5CB90060175C /* Importance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FDB284A5CB90060175C /* Importance.swift */; };
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
@@ -135,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75194FD7284A5C8F0060175C /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		75194FD9284A5CA30060175C /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		75194FDB284A5CB90060175C /* Importance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importance.swift; sourceTree = "<group>"; };
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,6 +333,7 @@
 				753E4FCC283619860008623F /* UITableView.swift */,
 				757A81A7282A338D00700990 /* GradientView.swift */,
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
+				75194FD7284A5C8F0060175C /* Cards.swift */,
 				75D0912D27FAAAB80037798C /* Card.swift */,
 				75194FD9284A5CA30060175C /* Suit.swift */,
 				75194FDB284A5CB90060175C /* Importance.swift */,
@@ -876,6 +879,7 @@
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
 				757A80882822104600700990 /* BookTCard.swift in Sources */,
+				75194FD8284A5C8F0060175C /* Cards.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
