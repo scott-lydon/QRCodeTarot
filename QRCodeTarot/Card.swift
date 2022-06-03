@@ -149,8 +149,3 @@ enum Suit: String, Codable, CaseIterable {
         .init(suit: self)
     }
 }
-
-enum Importance: String, Codable {
-    case major
-    case minor
-}
