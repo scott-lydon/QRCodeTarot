@@ -21,7 +21,7 @@ struct TutorialItem {
                 image: image,
                 count: nil,
                 stepDescription: LabelLabel.ViewModel(
-                    topText: title ?? "-",
+                    topText: title,
                     bottomText: description
                 )
             )

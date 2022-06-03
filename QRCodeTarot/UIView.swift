@@ -17,7 +17,7 @@ extension UIView {
         guard !subviews.contains(view) else { return }
         view.frame = bounds
         addSubview(view)
-        pinToEdges(view: view)
+        pinToEdges(view: view, insets: insets)
     }
 
     func pinToEdges(view: UIView, insets: UIEdgeInsets = .zero) {
