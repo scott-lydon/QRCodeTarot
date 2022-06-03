@@ -47,7 +47,7 @@ struct Card: Codable, CaseIterable {
 
         var cards: [Card] = []
         for suit in Suit.allCases {
-            for num in 1..<14 {
+            for num in 1..<15 {
                 let hash = num.string + " " + suit.rawValue
                 let bookT = bookTDictionary[hash]
                 let oracle = oracleDictionary[hash]
