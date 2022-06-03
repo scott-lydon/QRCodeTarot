@@ -10,7 +10,7 @@ import UIKit
 extension UIFont {
 
     static func inter(size: CGFloat) -> UIFont {
-        UIFont(name: "Inter", size: 16)!
+        UIFont(name: "Inter", size: size)!
     }
 
     /// Provides a dynamic version of the current font.
