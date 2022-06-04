@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import CommonExtensions
 
 typealias CardImageCell = ViewModelCell<CardImageView>
 typealias CollapseTextCell = ViewModelCell<CollapsableLabelLabel>
@@ -50,7 +51,11 @@ class CardDetailViewController: UIViewController {
             section2: SectionOneRow(
                 cellViewModel: CollapsableLabelLabel.ViewModel(
                     topText: "Description",
-                    bottomText: card.desc
+                    bottomText: card.desc,
+                    lineCutoff: 4,
+                    actualLineCount: UILabel.zero
+                        .with(text: card.desc)
+                        .lineCount(withWidth: detailController.view.frame.width.int)
                 )
             ),
             section3: SectionOneRow(cellViewModel: TarotSwitchView.ViewModel()),

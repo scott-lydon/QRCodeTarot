@@ -27,6 +27,8 @@ class CollapsableLabelLabel: NibView, HasViewModel {
     var viewModel: ViewModel = .fallBack {
         didSet {
             labelLabel.viewModel = viewModel.labelLabelViewModel
+            labelLabel.bottomLabel.setContentCompressionResistancePriority(.required, for: .vertical)
+            labelLabel.bottomLabel.setContentHuggingPriority(.required, for: .vertical)
 
             button.setTitle(viewModel.buttonText, for: .normal)
             button.layer.cornerRadius = 12
