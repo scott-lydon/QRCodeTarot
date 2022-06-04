@@ -7,24 +7,47 @@
 
 import Foundation
 import TableMVVM
+import CommonExtensions
 
 extension CollapsableLabelLabel {
 
     struct ViewModel: HasFallBack {
         var labelLabelViewModel: LabelLabel.ViewModel
         var buttonText: String = "Read More"
+
         var buttonIsHidden: Bool = false
         var buttonTapped: Action? 
 
         init(
+            topText: String = "Description",
+            bottomText: String,
+            buttonText: String = "Read More",
+            lineCutoff: Int = 4,
+            actualLineCount: Int
+        ) {
+            self.init(
+                topText: topText,
+                bottomText: bottomText,
+                lineCount: actualLineCount > lineCutoff ? lineCutoff : 0,
+                buttonText: buttonText,
+                buttonIsHidden: actualLineCount < (lineCutoff + 1)
+            )
+        }
+
+        init(
             topText: String,
             bottomText: String,
-            startLineCount: Int = 4,
-            buttonText: String = "Read More"
+            lineCount: Int = 5,
+            buttonText: String = "Read More",
+            buttonIsHidden: Bool = false
         ) {
-            self.labelLabelViewModel = .init(topText: topText, bottomText: bottomText, lineCount: startLineCount)
+            self.labelLabelViewModel = .init(
+                topText: topText,
+                bottomText: bottomText,
+                lineCount: lineCount
+            )
             self.buttonText = buttonText
-            buttonIsHidden = false
+            self.buttonIsHidden = buttonIsHidden
         }
 
         static var fallBack: CollapsableLabelLabel.ViewModel {

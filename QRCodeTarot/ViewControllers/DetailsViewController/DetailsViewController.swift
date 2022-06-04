@@ -49,5 +49,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.inject(view: tableView)
+      //  tableView.contentInset = .init(top: 0, left: 24, bottom: 0, right: -24) // right side seems to have no effect.
+      //  tableView.contentInsetAdjustmentBehavior = .never
     }
 }
