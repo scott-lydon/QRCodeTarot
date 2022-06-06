@@ -14,14 +14,20 @@ extension ChoiceView {
 
         var text: String
         var image: UIImage
+        var ratio: CGFloat
 
-        init(text: String, image: UIImage) {
+        init(text: String, image: UIImage, ratio: CGFloat = 1) {
             self.text = text
             self.image = image
+            self.ratio = ratio
         }
 
         init(_ card: Card) {
-            self.init(text: card.name, image: card.image ?? .init())
+            self.init(
+                text: card.name,
+                image: card.image ?? .init(),
+                ratio: .cardRatio
+            )
         }
 
         static var fallBack: Self {
