@@ -23,7 +23,7 @@ struct Card: Codable, CaseIterable {
     let unevolved: String?
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name, image: image ?? .cardDemo)
+        .init(text: name.capitalized, image: image ?? .cardDemo)
     }
 
     var evolvedViewModels: [LabelLabel.ViewModel] {
