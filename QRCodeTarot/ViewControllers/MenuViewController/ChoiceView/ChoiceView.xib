@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceView" customModule="QRCodeTarot" customModuleProvider="target">
             <connections>
@@ -25,17 +30,17 @@
                             <rect key="frame" x="0.0" y="0.0" width="156" height="155"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zYN-S7-cKt">
-                            <rect key="frame" x="36" y="34" width="84.5" height="87.5"/>
+                            <rect key="frame" x="33.5" y="33.5" width="89.5" height="88.5"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="magicHat" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-F2-lnl">
-                                    <rect key="frame" x="18" y="0.0" width="48" height="48"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="magicHat" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-F2-lnl">
+                                    <rect key="frame" x="20.5" y="0.0" width="48" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="r1f-F2-lnl" secondAttribute="height" id="LWd-bz-gEw"/>
                                         <constraint firstAttribute="width" constant="48" id="rEh-fN-rJ6"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Magic Tricks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-4h-ZaG">
-                                    <rect key="frame" x="0.0" y="70" width="84.5" height="17.5"/>
+                                    <rect key="frame" x="0.0" y="70" width="89.5" height="18.5"/>
                                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="15"/>
                                     <color key="textColor" red="0.94901960780000005" green="0.95292955639999999" blue="0.95294207330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>

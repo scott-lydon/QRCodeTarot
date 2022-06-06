@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import CommonUIKitExtensions
 
 /// Used in the MenuViewController. 
 class ChoiceView: NibView, HasViewModel {
@@ -18,6 +19,7 @@ class ChoiceView: NibView, HasViewModel {
     var viewModel: ViewModel = .fallBack {
         didSet {
             self.imageView.image = viewModel.image
+            self.imageView.roundCorners(constant: 10)
             self.label.text = viewModel.text
         }
     }
