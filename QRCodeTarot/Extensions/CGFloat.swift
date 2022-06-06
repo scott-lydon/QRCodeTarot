@@ -20,4 +20,8 @@ extension CGFloat {
     var square: CGSize {
         CGSize(width: self, height: self)
     }
+
+    static var cardRatio: CGFloat {
+        1440/1900
+    }
 }
