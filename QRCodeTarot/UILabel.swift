@@ -8,17 +8,6 @@
 import UIKit
 import TableMVVM
 
-extension UILabel {
-    /// Call this no more than once per UILabel instance.
-    func setDynamicText() {
-        font = font.dynamic
-
-        adjustsFontForContentSizeCategory = true
-        setContentCompressionResistancePriority(.required, for: .horizontal)
-        setContentCompressionResistancePriority(.required, for: .vertical)
-    }
-}
-
 extension UILabel: HasViewModel {
 
     public var viewModel: ViewModel {
@@ -52,5 +41,13 @@ extension UILabel: HasViewModel {
     func with(lineCount: Int) -> Self {
         self.numberOfLines = lineCount
         return self
+    }
+
+    /// Call this no more than once per UILabel instance.
+    func setDynamicText() {
+        font = font.dynamic
+        adjustsFontForContentSizeCategory = true
+        setContentCompressionResistancePriority(.required, for: .horizontal)
+        setContentCompressionResistancePriority(.required, for: .vertical)
     }
 }
