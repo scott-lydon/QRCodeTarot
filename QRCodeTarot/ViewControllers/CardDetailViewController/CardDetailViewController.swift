@@ -68,7 +68,7 @@ class CardDetailViewController: UIViewController {
                 )
             ),
             section3: .init(cellViewModel: .init(insets: .standard, viewModel: TarotSwitchView.ViewModel())),
-            section4: .init(cellsViewModels: card.evolvedViewModels.map { .init(insets: .standard, viewModel: $0)})
+            section4: .init(cellsViewModels: [card.evolvedViewModel].map { .init(insets: .standard, viewModel: $0)})
         )
         detailController.card = card
         return detailController
@@ -87,7 +87,7 @@ class CardDetailViewController: UIViewController {
             self?.tableView.updateViewModelWithoutTableUpdate { [weak self] in
                 guard let self = self else { return }
                 self.dataSource.section3.cellViewModel.viewModel.isLeft = isEvolved
-                self.dataSource.section4.cellsViewModels = (isEvolved ? self.card.evolvedViewModels : self.card.unevolvedViewModels).map { .init(insets: .standard, viewModel: $0)}
+                self.dataSource.section4.cellsViewModels = (isEvolved ? [self.card.evolvedViewModel] : [self.card.unevolvedViewModel]).map { .init(insets: .standard, viewModel: $0)}
             }
             guard let self = self else { return }
             self.tableView.reloadRows(at: self.tableView.indices(inSection: 3), with: .automatic)

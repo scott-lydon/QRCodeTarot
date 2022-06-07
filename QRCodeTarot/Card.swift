@@ -26,12 +26,21 @@ struct Card: Codable, CaseIterable {
         .init(text: name.capitalized, image: image ?? .cardDemo, ratio: .cardRatio, cornerRadius: 10)
     }
 
-    var evolvedViewModels: [LabelLabel.ViewModel] {
-        [evolved].compactMap { $0 }.map { .init(topText: "Evolved", bottomText: $0) }
+    var evolvedSwitchViewModel: EvolvedWithText.ViewModel {
+        .init(
+            labelLeftModel: evolvedViewModel,
+            labelRightModel: unevolvedViewModel,
+            switchViewModel: TarotSwitchView.ViewModel(isLeft: true, switchedToLeft: nil),
+            switchedToLeft: nil
+        )
     }
 
-    var unevolvedViewModels: [LabelLabel.ViewModel] {
-        [unevolved].compactMap { $0 }.map { .init(topText: "Unevolved", bottomText: $0) }
+    var evolvedViewModel: LabelLabel.ViewModel {
+        .init(topText: "Evolved", bottomText: evolved)
+    }
+
+    var unevolvedViewModel: LabelLabel.ViewModel {
+        .init(topText: "Unevolved", bottomText: unevolved)
     }
 
     static var allCases: [Card] {
