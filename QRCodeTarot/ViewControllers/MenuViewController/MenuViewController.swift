@@ -26,6 +26,10 @@ class MenuViewController: UIViewController {
         (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
         return menuViewController
     }
+
+    deinit {
+        (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = nil
+    }
 }
 
 extension MenuViewController: TimeChangeListener {
