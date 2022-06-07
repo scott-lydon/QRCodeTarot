@@ -35,6 +35,11 @@ class CardDetailViewController: UIViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
         // Initializing or reading the view causes this rendering issue!!!!!
         // don't do this: detailController.view
+        let lineCount = UILabel
+            .with(width: UIScreen.main.bounds.width - 48)
+            .with(lineCount: 0)
+            .with(text: card.desc)
+            .actualLineCount
         detailController.dataSource = CardDetailDataSource(
             section0: .init(
                 cellViewModel: .init(
@@ -55,14 +60,10 @@ class CardDetailViewController: UIViewController {
                         labelLabelViewModel: LabelLabel.ViewModel(
                             topText: "Description",
                             bottomText: card.desc,
-                            lineCount: 4
+                            lineCount: lineCount < 6 ? 0 : 4
                         ),
                         buttonText: "Read More",
-                        buttonIsHidden: UILabel
-                            .with(width: UIScreen.main.bounds.width - 48)
-                            .with(lineCount: 0)
-                            .with(text: card.desc)
-                            .actualLineCount < 6
+                        buttonIsHidden: lineCount < 6
                     )
                 )
             ),
