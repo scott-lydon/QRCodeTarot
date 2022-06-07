@@ -97,6 +97,7 @@
 		758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FBF2808A9AB00B37D60 /* NibView.swift */; };
 		758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC12808A9E600B37D60 /* CommonInit.swift */; };
 		758F5FC42808AA4300B37D60 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758F5FC32808AA4300B37D60 /* UIView.swift */; };
+		759B1710284EDD49006E8BB1 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759B170F284EDD49006E8BB1 /* UIEdgeInsets.swift */; };
 		75BCF453282E27990066B22D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF452282E27990066B22D /* Activity.swift */; };
 		75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF454282E28060066B22D /* Array.Of.Activities.swift */; };
 		75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF456282E281A0066B22D /* MagicTrick.swift */; };
@@ -243,6 +244,7 @@
 		758F5FBF2808A9AB00B37D60 /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		758F5FC12808A9E600B37D60 /* CommonInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInit.swift; sourceTree = "<group>"; };
 		758F5FC32808AA4300B37D60 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		759B170F284EDD49006E8BB1 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		75BCF452282E27990066B22D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		75BCF454282E28060066B22D /* Array.Of.Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.Of.Activities.swift; sourceTree = "<group>"; };
 		75BCF456282E281A0066B22D /* MagicTrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTrick.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				753E4FC02835DB390008623F /* UIFont.swift */,
 				753E4FC22835DEB80008623F /* UILabel.swift */,
 				753E4FCC283619860008623F /* UITableView.swift */,
+				759B170F284EDD49006E8BB1 /* UIEdgeInsets.swift */,
 				757A81A7282A338D00700990 /* GradientView.swift */,
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
 				75194FD7284A5C8F0060175C /* Cards.swift */,
@@ -902,6 +905,7 @@
 				75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */,
 				757EF6612808D736000685FC /* LabelLabel.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
+				759B1710284EDD49006E8BB1 /* UIEdgeInsets.swift in Sources */,
 				757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 				757A810D28250FB600700990 /* Int.swift in Sources */,
