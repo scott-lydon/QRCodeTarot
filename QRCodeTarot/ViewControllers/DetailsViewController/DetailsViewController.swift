@@ -8,40 +8,28 @@
 import UIKit
 import TableMVVM
 
-typealias DetailDataSource = TableDataSource3<
+typealias DetailDataSource = TableDataSource4<
     SectionOneRow<ViewModelCell<VideoView>>,
     SectionOneRow<ViewModelCell<LabelLabel>>,
-    Section<
-        HeaderFooter<UILabel>,
-        ViewModelCell<TutorialStepView>
-    >
+    SectionOneRow<ViewModelCell<UILabel>>,
+    SectionNoHeader<ViewModelCell<TutorialStepView>>
 >
 
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 
-    var dataSource: DetailDataSource = .init() {
-        didSet {
-            tableView.viewModel = dataSource
-        }
-    }
-
-    lazy var tableView: UITableMVVM<DetailDataSource> = {
-        UITableMVVM(viewModel: dataSource).asClear()
-    }()
+    lazy var tableView: UITableMVVM<DetailDataSource> = UITableMVVM(viewModel: .init()).asClear()
 
     static func instantiate(
         details: LabelLabel.ViewModel,
         tutorialSteps: [TutorialStepView.ViewModel]
     ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-        detailsViewController.dataSource = TableDataSource3(
+        detailsViewController.tableView.viewModel = TableDataSource4(
             section0: .init(cellViewModel: VideoView.ViewModel()),
             section1: .init(cellViewModel: details),
-            section2: .init(
-                headerViewModel: UILabel.ViewModel(color: .white, font: .inter(size: 16)),
-                cellsViewModels: tutorialSteps.correctlyNumbered
-            )
+            section2: .init(cellViewModel: UILabel.ViewModel(color: .white, font: .inter(size: 16))),
+            section3: .init(cellsViewModels: tutorialSteps.correctlyNumbered)
         )
         return detailsViewController
     }
