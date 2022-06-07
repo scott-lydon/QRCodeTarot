@@ -43,4 +43,14 @@ extension UILabel: HasViewModel {
             .init()
         }
     }
+
+    func with(text: String) -> Self {
+        self.text = text
+        return self
+    }
+
+    func with(lineCount: Int) -> Self {
+        self.numberOfLines = lineCount
+        return self
+    }
 }
