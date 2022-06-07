@@ -8,11 +8,9 @@
 import UIKit
 import TableMVVM
 
-typealias MenuDataSource = TableDataSource1<
-    Section<
-        HeaderFooter<ImageLabelNoBorder>,
-        ViewModelCell<SubMenuChoice>
-    >
+typealias MenuDataSource = TableDataSource2<
+    SectionOneRow<ViewModelCell<ImageLabelNoBorder>>,
+    SectionNoHeader<ViewModelCell<SubMenuChoice>>
 >
 
 class SubMenuViewController: UIViewController {
@@ -23,10 +21,8 @@ class SubMenuViewController: UIViewController {
     static func instantiate(with activity: Activity) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
         subMenuViewController.tableView.viewModel = MenuDataSource(
-            section0: .init(
-                headerViewModel: activity.imageLabelNoBorder,
-                cellsViewModels: activity.submenuChoiceViewModels
-            )
+            section0: .init(cellViewModel: activity.imageLabelNoBorder),
+            section1: .init(cellsViewModels: activity.submenuChoiceViewModels)
         )
         subMenuViewController.activity = activity
         return subMenuViewController
@@ -37,7 +33,7 @@ class SubMenuViewController: UIViewController {
         view.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
-        tableView.viewModel?.section0.cellTapped = { [weak self] subMenuChoice, indexPath in
+        tableView.viewModel?.section1.cellTapped = { [weak self] subMenuChoice, indexPath in
             guard let self = self else { return }
             self.navigationController?.pushViewController(
                 DetailsViewController.instantiate(
