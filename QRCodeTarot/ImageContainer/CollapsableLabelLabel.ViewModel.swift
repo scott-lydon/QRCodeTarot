@@ -16,19 +16,8 @@ extension CollapsableLabelLabel {
         var buttonIsHidden: Bool = false
         var buttonTapped: Action? 
 
-        init(
-            topText: String,
-            bottomText: String,
-            startLineCount: Int = 4,
-            buttonText: String = "Read More"
-        ) {
-            self.labelLabelViewModel = .init(topText: topText, bottomText: bottomText, lineCount: startLineCount)
-            self.buttonText = buttonText
-            buttonIsHidden = false
-        }
-
         static var fallBack: CollapsableLabelLabel.ViewModel {
-            .init(topText: "-", bottomText: "-")
+            .init(labelLabelViewModel: .init(topText: "-", bottomText: "-"))
         }
     }
 }
