@@ -17,21 +17,12 @@ typealias MenuDataSource = TableDataSource1<
 
 class SubMenuViewController: UIViewController {
 
-    var dataSource: MenuDataSource = .init() {
-        didSet {
-            tableView.viewModel = dataSource
-        }
-    }
-
-    lazy var tableView: UITableMVVM<MenuDataSource> = {
-        UITableMVVM(viewModel: dataSource)
-    }()
-
+    var tableView = UITableMVVM<MenuDataSource>(viewModel: .init())
     var activity: Activity!
 
     static func instantiate(with activity: Activity) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
-        subMenuViewController.dataSource = MenuDataSource(
+        subMenuViewController.tableView.viewModel = MenuDataSource(
             section0: .init(
                 headerViewModel: activity.imageLabelNoBorder,
                 cellsViewModels: activity.submenuChoiceViewModels
@@ -46,7 +37,7 @@ class SubMenuViewController: UIViewController {
         view.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
-        dataSource.section0.cellTapped = { [weak self] subMenuChoice, indexPath in
+        tableView.viewModel?.section0.cellTapped = { [weak self] subMenuChoice, indexPath in
             guard let self = self else { return }
             self.navigationController?.pushViewController(
                 DetailsViewController.instantiate(
