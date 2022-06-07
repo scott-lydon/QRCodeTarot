@@ -18,6 +18,8 @@ extension TarotSwitchView {
 
         var isLeft: Bool = true
         var switchedToLeft: BoolAction?
+        var leftText: String = "Evolved"
+        var rightText: String = "Unevolved"
 
         var leftColor: UIColor {
             isLeft ? .black : .white

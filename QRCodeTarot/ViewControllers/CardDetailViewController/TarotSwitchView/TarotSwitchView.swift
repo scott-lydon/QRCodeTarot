@@ -52,6 +52,8 @@ class TarotSwitchView: NibView, HasViewModel {
 
     var viewModel: ViewModel = .init() {
         didSet {
+            evolvedButton.setTitle(viewModel.leftText)
+            unevolvedButton.setTitle(viewModel.rightText)
             UIView.animate(withDuration: 0.5) {
                 self.evolvedButton.tintColor = self.viewModel.leftColor
                 self.unevolvedButton.tintColor = self.viewModel.rightColor
