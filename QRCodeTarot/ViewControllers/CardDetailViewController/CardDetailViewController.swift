@@ -7,6 +7,8 @@
 
 import UIKit
 import TableMVVM
+import CommonUIKitExtensions
+import CommonExtensions
 
 typealias CardDetailDataSource = TableDataSource5<
     SectionOneRow<ViewModelCell<Container<UILabel>>>,
@@ -40,8 +42,17 @@ class CardDetailViewController: UIViewController {
                 cellViewModel: .init(
                     insets: .standard,
                     viewModel: CollapsableLabelLabel.ViewModel(
-                        topText: "Description",
-                        bottomText: card.desc
+                        labelLabelViewModel: LabelLabel.ViewModel(
+                            topText: "Description",
+                            bottomText: card.desc,
+                            lineCount: 4
+                        ),
+                        buttonText: "Read More",
+                        buttonIsHidden: UILabel
+                            .with(width: detailController.view.frame.width)
+                            .with(lineCount: 0)
+                            .with(text: card.desc)
+                            .actualLineCount < 6
                     )
                 )
             ),
@@ -57,6 +68,7 @@ class CardDetailViewController: UIViewController {
         tableView.backgroundColor = .clear
         view.set(background: BackgroundView.zero.darkShade)
         view.inject(view: tableView)
+        print(tableView.viewModel?.section2.cellViewModel.viewModel)
         tableView.viewModel?.section2.cellViewModel.viewModel.buttonTapped = { [weak self] in
             self?.tableView.viewModel?.section2.cellViewModel.viewModel.labelLabelViewModel.lineCount = 0
             self?.tableView.viewModel?.section2.cellViewModel.viewModel.buttonIsHidden = true
