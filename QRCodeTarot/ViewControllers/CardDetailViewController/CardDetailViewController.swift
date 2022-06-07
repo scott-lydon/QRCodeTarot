@@ -9,11 +9,11 @@ import UIKit
 import TableMVVM
 
 typealias CardDetailDataSource = TableDataSource5<
-    SectionOneRow<ViewModelCell<UILabel>>,
-    SectionOneRow<ViewModelCell<CardImageView>>,
-    SectionOneRow<ViewModelCell<CollapsableLabelLabel>>,
-    SectionOneRow<ViewModelCell<TarotSwitchView>>,
-    SectionNoHeader<ViewModelCell<LabelLabel>>
+    SectionOneRow<ViewModelCell<Container<UILabel>>>,
+    SectionOneRow<ViewModelCell<Container<CardImageView>>>,
+    SectionOneRow<ViewModelCell<Container<CollapsableLabelLabel>>>,
+    SectionOneRow<ViewModelCell<Container<TarotSwitchView>>>,
+    SectionNoHeader<ViewModelCell<Container<LabelLabel>>>
 >
 
 class CardDetailViewController: UIViewController {
@@ -24,23 +24,29 @@ class CardDetailViewController: UIViewController {
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
         detailController.tableView.viewModel = CardDetailDataSource(
-            section0: SectionOneRow(
+            section0: .init(
                 cellViewModel: .init(
-                    text: card.name,
-                    color: .white,
-                    font: .inter(size: 30),
-                    alignment: .center
+                    insets: .standard,
+                    viewModel: .init(
+                        text: card.name,
+                        color: .white,
+                        font: .inter(size: 30),
+                        alignment: .center
+                    )
                 )
             ),
-            section1: SectionOneRow(cellViewModel: card.image ?? .cardDemo),
+            section1: .init(cellViewModel: .init(insets: .standard, viewModel: card.image ?? .cardDemo)),
             section2: SectionOneRow(
-                cellViewModel: CollapsableLabelLabel.ViewModel(
-                    topText: "Description",
-                    bottomText: card.desc
+                cellViewModel: .init(
+                    insets: .standard,
+                    viewModel: CollapsableLabelLabel.ViewModel(
+                        topText: "Description",
+                        bottomText: card.desc
+                    )
                 )
             ),
-            section3: SectionOneRow(cellViewModel: TarotSwitchView.ViewModel()),
-            section4: SectionNoHeader(cellsViewModels: card.evolvedViewModels)
+            section3: .init(cellViewModel: .init(insets: .standard, viewModel: TarotSwitchView.ViewModel())),
+            section4: .init(cellsViewModels: card.evolvedViewModels.map { .init(insets: .standard, viewModel: $0)})
         )
         detailController.card = card
         return detailController
@@ -51,15 +57,15 @@ class CardDetailViewController: UIViewController {
         tableView.backgroundColor = .clear
         view.set(background: BackgroundView.zero.darkShade)
         view.inject(view: tableView)
-        tableView.viewModel?.section2.cellViewModel.buttonTapped = { [weak self] in
-            self?.tableView.viewModel?.section2.cellViewModel.labelLabelViewModel.lineCount = 0
-            self?.tableView.viewModel?.section2.cellViewModel.buttonIsHidden = true
+        tableView.viewModel?.section2.cellViewModel.viewModel.buttonTapped = { [weak self] in
+            self?.tableView.viewModel?.section2.cellViewModel.viewModel.labelLabelViewModel.lineCount = 0
+            self?.tableView.viewModel?.section2.cellViewModel.viewModel.buttonIsHidden = true
         }
-        tableView.viewModel?.section3.cellViewModel.switchedToLeft = { [weak self] isEvolved in
+        tableView.viewModel?.section3.cellViewModel.viewModel.switchedToLeft = { [weak self] isEvolved in
             self?.tableView.updateViewModelWithoutTableUpdate { [weak self] in
                 guard let self = self else { return }
-                self.tableView.viewModel?.section3.cellViewModel.isLeft = isEvolved
-                self.tableView.viewModel?.section4.cellsViewModels = isEvolved ? self.card.evolvedViewModels : self.card.unevolvedViewModels
+                self.tableView.viewModel?.section3.cellViewModel.viewModel.isLeft = isEvolved
+                self.tableView.viewModel?.section4.cellsViewModels = (isEvolved ? self.card.evolvedViewModels : self.card.unevolvedViewModels).map { .init(insets: .standard, viewModel: $0)}
             }
             guard let self = self else { return }
             self.tableView.reloadRows(at: self.tableView.indices(inSection: 3), with: .automatic)
