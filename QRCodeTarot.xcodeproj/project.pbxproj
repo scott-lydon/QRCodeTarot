@@ -1271,7 +1271,7 @@
 			repositoryURL = "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.2;
 			};
 		};
 		757EF6662808DFB3000685FC /* XCRemoteSwiftPackageReference "TableMVVM" */ = {
