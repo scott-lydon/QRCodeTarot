@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import TableMVVM
 
 extension EvolvedWithText {
+    
     struct ViewModel: HasFallBack {
-        var labelLeftModel: UILabel.ViewModel?
-        var labelRightModel: UILabel.ViewModel?
+        var labelLeftModel: LabelLabel.ViewModel?
+        var labelRightModel: LabelLabel.ViewModel?
         var switchViewModel: TarotSwitchView.ViewModel
         var switchedToLeft: BoolAction?
 
@@ -18,29 +20,21 @@ extension EvolvedWithText {
             labelLeftModel == nil || labelRightModel == nil
         }
 
-        var title: String {
-            currentLabelModel.text
-        }
-
-        var titleViewModel: UILabel.ViewModel {
-            .init(text: title, color: .white, font: .inter(size: 15), alignment: .left)
-        }
-
-        var hideTitle: Bool {
+        var hideLabelLabel: Bool {
             (labelLeftModel == nil) == (labelRightModel == nil)
         }
 
-        var hideLabel: Bool {
-            labelLeftModel == nil && labelRightModel == nil
-        }
-
-
-        var currentLabelModel: UILabel.ViewModel {
-            (switchViewModel.isLeft ? labelLeftModel : labelRightModel) ?? .init()
+        var currentLabelModel: LabelLabel.ViewModel {
+            (switchViewModel.isLeft ? labelLeftModel : labelRightModel) ?? .init(topText: "-", bottomText: "-")
         }
 
         static var fallBack: EvolvedWithText.ViewModel {
-            .init(labelLeftModel: .init(), labelRightModel: .init(), switchViewModel: .init())
+            .init(
+                labelLeftModel: .init(topText: "-", bottomText: "-"),
+                labelRightModel: .init(topText: "-", bottomText: "-"),
+                switchViewModel: .init(),
+                switchedToLeft: nil
+            )
         }
     }
 }

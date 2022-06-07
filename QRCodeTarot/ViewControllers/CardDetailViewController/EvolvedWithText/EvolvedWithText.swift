@@ -11,17 +11,14 @@ import TableMVVM
 class EvolvedWithText: NibView, HasViewModel {
 
     @IBOutlet var switchView: TarotSwitchView!
-    @IBOutlet var title: UILabel!
-    @IBOutlet var label: UILabel!
+    @IBOutlet var labelLabel: LabelLabel!
 
     var viewModel: ViewModel = .fallBack {
         didSet {
             switchView.viewModel = viewModel.switchViewModel
-            title.viewModel = viewModel.titleViewModel
-            label.viewModel = viewModel.currentLabelModel
+            labelLabel.viewModel = viewModel.currentLabelModel
             switchView.isHidden = viewModel.hideSwitch
-            title.isHidden = viewModel.hideTitle
-            label.isHidden = viewModel.hideLabel
+            labelLabel.isHidden = viewModel.hideLabelLabel
             switchView.viewModel.switchedToLeft = { [weak self] toLeft in
                 guard let self = self else { return }
                 var buffer = self.viewModel
