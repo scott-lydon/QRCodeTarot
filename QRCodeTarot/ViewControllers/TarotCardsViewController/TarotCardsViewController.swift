@@ -35,8 +35,10 @@ class TarotCardsViewController: UIViewController {
 }
 
 extension UIView {
+
     func addGradient(toTop: NSNumber = 0.05) {
         let gradient = CAGradientLayer()
+        assert(superview != nil, "make sure you add the view to the superview before adding the gradient.")
         gradient.frame = superview?.bounds
             .increasedWidth(by: 50) // idk why, but this prevents the chop off on the right side issue.
         ?? CGRect.null
@@ -48,7 +50,12 @@ extension UIView {
 
 extension CGRect {
     func increasedWidth(by amount: CGFloat) -> CGRect {
-        .init(x: self.minX, y: self.minY, width: self.width + amount, height: self.height)
+        .init(
+            x: self.minX,
+            y: self.minY,
+            width: self.width + amount,
+            height: self.height
+        )
     }
 }
 
