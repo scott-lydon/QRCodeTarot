@@ -24,7 +24,27 @@ class TarotCardsViewController: UIViewController {
         TarotCardsViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
         TarotCardsViewController.title = "Tarot Cards"
         TarotCardsViewController.cards = cards
+        TarotCardsViewController.viewDidLoad()
         return TarotCardsViewController
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let gradient = CAGradientLayer()
+
+        gradient.frame = collectionView.superview?.bounds ?? CGRect.null
+        gradient.colors = [
+            UIColor.clear.cgColor,
+            UIColor.clear.cgColor,
+            UIColor.black.cgColor,
+            UIColor.black.cgColor,
+            UIColor.black.cgColor,
+            UIColor.black.cgColor
+        ]
+        gradient.locations = [0.0, 0.05, 0.07, 0.75, 0.95, 1.0]
+        collectionView.superview?.layer.mask = gradient
+
+        // collectionView.backgroundColor = UIColor.clear
     }
 }
 
