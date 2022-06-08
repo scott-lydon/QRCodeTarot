@@ -9,7 +9,7 @@ import UIKit
 import TableMVVM
 
 extension EvolvedWithText {
-    
+
     struct ViewModel: HasFallBack {
         var labelLeftModel: LabelLabel.ViewModel?
         var labelRightModel: LabelLabel.ViewModel?
@@ -21,7 +21,7 @@ extension EvolvedWithText {
         }
 
         var hideLabelLabel: Bool {
-            (labelLeftModel == nil) == (labelRightModel == nil)
+            labelLeftModel == nil && labelRightModel == nil
         }
 
         var currentLabelModel: LabelLabel.ViewModel {
