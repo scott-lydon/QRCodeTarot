@@ -15,13 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBE-ea-7Fc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dBE-ea-7Fc" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="743-Eh-h0g"/>
+                            <constraint firstItem="dBE-ea-7Fc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8G7-fT-wFu"/>
+                            <constraint firstItem="dBE-ea-7Fc" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="IyM-Ln-ncc"/>
+                            <constraint firstAttribute="bottom" secondItem="dBE-ea-7Fc" secondAttribute="bottom" id="wZR-dR-TA7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableContainer" destination="dBE-ea-7Fc" id="h38-4r-Ovf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="76"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>

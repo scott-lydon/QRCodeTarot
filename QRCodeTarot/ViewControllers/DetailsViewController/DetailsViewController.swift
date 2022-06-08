@@ -18,6 +18,7 @@ typealias DetailDataSource = TableDataSource4<
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet var tableContainer: UIView!
     lazy var tableView: UITableMVVM<DetailDataSource> = UITableMVVM(viewModel: .init()).asClear()
 
     static func instantiate(
@@ -36,6 +37,7 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.inject(view: tableView)
+        tableContainer.inject(view: tableView)
+        tableView.addGradient(toTop: 0.05)
     }
 }

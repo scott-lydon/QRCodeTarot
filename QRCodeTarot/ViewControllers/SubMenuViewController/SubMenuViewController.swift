@@ -17,6 +17,7 @@ class SubMenuViewController: UIViewController {
 
     var tableView = UITableMVVM<MenuDataSource>(viewModel: .init())
     var activity: Activity!
+    @IBOutlet var tableContainer: UIView!
 
     static func instantiate(with activity: Activity) -> SubMenuViewController {
         let subMenuViewController: SubMenuViewController = UIStoryboard.vc()!//ut
@@ -30,9 +31,11 @@ class SubMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.inject(view: tableView)
+        tableContainer.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
+        tableView.addGradient(toTop: 0.05)
+        tableView.showsVerticalScrollIndicator = false
         tableView.viewModel?.section1.cellTapped = { [weak self] subMenuChoice, indexPath in
             guard let self = self else { return }
             self.navigationController?.pushViewController(

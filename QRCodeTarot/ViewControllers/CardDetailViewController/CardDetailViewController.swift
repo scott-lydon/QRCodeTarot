@@ -9,12 +9,11 @@ import UIKit
 import TableMVVM
 import CommonUIKitExtensions
 
-typealias CardDetailDataSource = TableDataSource5<
+typealias CardDetailDataSource = TableDataSource4<
     SectionOneRow<ViewModelCell<Container<UILabel>>>,
     SectionOneRow<ViewModelCell<Container<CardImageView>>>,
     SectionOneRow<ViewModelCell<Container<CollapsableLabelLabel>>>,
-    SectionOneRow<ViewModelCell<Container<TarotSwitchView>>>,
-    SectionNoHeader<ViewModelCell<Container<LabelLabel>>>
+    SectionOneRow<ViewModelCell<Container<EvolvedWithText>>>
 >
 
 class CardDetailViewController: UIViewController {
@@ -30,6 +29,7 @@ class CardDetailViewController: UIViewController {
     }()
 
     var card: Card! // unit tested.
+    @IBOutlet var tableContainer: UIView!
 
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
@@ -45,7 +45,7 @@ class CardDetailViewController: UIViewController {
                 cellViewModel: .init(
                     insets: .standard,
                     viewModel: .init(
-                        text: card.name,
+                        text: card.name.capitalized,
                         color: .white,
                         font: .inter(size: 30),
                         alignment: .center
@@ -67,8 +67,7 @@ class CardDetailViewController: UIViewController {
                     )
                 )
             ),
-            section3: .init(cellViewModel: .init(insets: .standard, viewModel: TarotSwitchView.ViewModel())),
-            section4: .init(cellsViewModels: [card.evolvedViewModel].map { .init(insets: .standard, viewModel: $0)})
+            section3: .init(cellViewModel: .init(insets: .standard, viewModel: card.evolvedSwitchViewModel))
         )
         detailController.card = card
         return detailController
@@ -78,19 +77,11 @@ class CardDetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.backgroundColor = .clear
         view.set(background: BackgroundView.zero.darkShade)
-        view.inject(view: tableView)
+        tableContainer.inject(view: tableView)
+        tableView.addGradient(toTop: 0.05)
         dataSource.section2.cellViewModel.viewModel.buttonTapped = { [weak self] in
             self?.dataSource.section2.cellViewModel.viewModel.labelLabelViewModel.lineCount = 0
             self?.dataSource.section2.cellViewModel.viewModel.buttonIsHidden = true
-        }
-        dataSource.section3.cellViewModel.viewModel.switchedToLeft = { [weak self] isEvolved in
-            self?.tableView.updateViewModelWithoutTableUpdate { [weak self] in
-                guard let self = self else { return }
-                self.dataSource.section3.cellViewModel.viewModel.isLeft = isEvolved
-                self.dataSource.section4.cellsViewModels = (isEvolved ? [self.card.evolvedViewModel] : [self.card.unevolvedViewModel]).map { .init(insets: .standard, viewModel: $0)}
-            }
-            guard let self = self else { return }
-            self.tableView.reloadRows(at: self.tableView.indices(inSection: 3), with: .automatic)
         }
     }
 }
