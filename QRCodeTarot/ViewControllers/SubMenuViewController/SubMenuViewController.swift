@@ -34,6 +34,8 @@ class SubMenuViewController: UIViewController {
         tableContainer.inject(view: tableView)
         view.set(background: BackgroundView.zero)
         tableView.backgroundColor = .clear
+        tableView.addGradient(toTop: 0.05)
+        tableView.showsVerticalScrollIndicator = false
         tableView.viewModel?.section1.cellTapped = { [weak self] subMenuChoice, indexPath in
             guard let self = self else { return }
             self.navigationController?.pushViewController(

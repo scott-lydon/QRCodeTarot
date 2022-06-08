@@ -76,6 +76,7 @@ class CardDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .clear
+        tableView.addGradient(toTop: 0.05)
         view.set(background: BackgroundView.zero.darkShade)
         tableContainer.inject(view: tableView)
         dataSource.section2.cellViewModel.viewModel.buttonTapped = { [weak self] in

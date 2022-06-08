@@ -37,6 +37,7 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.addGradient(toTop: 0.05)
         tableContainer.inject(view: tableView)
     }
 }

@@ -30,21 +30,25 @@ class TarotCardsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.addGradient(toTop: 0.05)
+    }
+}
+
+extension UIView {
+    func addGradient(toTop: NSNumber = 0.05) {
         let gradient = CAGradientLayer()
+        gradient.frame = superview?.bounds
+            .increasedWidth(by: 50) // idk why, but this prevents the chop off on the right side issue.
+        ?? CGRect.null
+        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradient.locations = [0.0, toTop]
+        superview?.layer.mask = gradient
+    }
+}
 
-        gradient.frame = collectionView.superview?.bounds ?? CGRect.null
-        gradient.colors = [
-            UIColor.clear.cgColor,
-            UIColor.clear.cgColor,
-            UIColor.black.cgColor,
-            UIColor.black.cgColor,
-            UIColor.black.cgColor,
-            UIColor.black.cgColor
-        ]
-        gradient.locations = [0.0, 0.05, 0.07, 0.75, 0.95, 1.0]
-        collectionView.superview?.layer.mask = gradient
-
-        // collectionView.backgroundColor = UIColor.clear
+extension CGRect {
+    func increasedWidth(by amount: CGFloat) -> CGRect {
+        .init(x: self.minX, y: self.minY, width: self.width + amount, height: self.height)
     }
 }
 
