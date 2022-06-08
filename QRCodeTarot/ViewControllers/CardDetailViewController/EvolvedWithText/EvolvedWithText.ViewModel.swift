@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import CommonExtensions
 
 extension EvolvedWithText {
 
@@ -16,12 +17,20 @@ extension EvolvedWithText {
         var switchViewModel: TarotSwitchView.ViewModel
         var switchedToLeft: BoolAction?
 
+        var leftText: String? {
+            labelLeftModel?.bottomText
+        }
+
+        var rightText: String? {
+            labelRightModel?.bottomText
+        }
+
         var hideSwitch: Bool {
-            labelLeftModel == nil || labelRightModel == nil
+            leftText.isEmpty || rightText.isEmpty
         }
 
         var hideLabelLabel: Bool {
-            labelLeftModel == nil && labelRightModel == nil
+            leftText.isEmpty && rightText.isEmpty
         }
 
         var currentLabelModel: LabelLabel.ViewModel {
@@ -36,5 +45,17 @@ extension EvolvedWithText {
                 switchedToLeft: nil
             )
         }
+    }
+}
+
+public extension Optional where Wrapped: ExpressibleByArrayLiteral, Wrapped: Equatable {
+    var isEmpty: Bool {
+        self == [] || self == nil
+    }
+}
+
+public extension Optional where Wrapped == String {
+    var isEmpty: Bool {
+        map { $0.count == 0 } ?? true
     }
 }
