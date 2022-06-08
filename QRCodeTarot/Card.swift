@@ -30,7 +30,10 @@ struct Card: Codable, CaseIterable {
         .init(
             labelLeftModel: evolvedViewModel,
             labelRightModel: unevolvedViewModel,
-            switchViewModel: TarotSwitchView.ViewModel(isLeft: true, switchedToLeft: nil),
+            switchViewModel: TarotSwitchView.ViewModel(
+                isLeft: !evolvedViewModel.bottomText.isEmpty,
+                switchedToLeft: nil
+            ),
             switchedToLeft: nil
         )
     }
