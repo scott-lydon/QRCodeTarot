@@ -29,6 +29,7 @@ class CardDetailViewController: UIViewController {
     }()
 
     var card: Card! // unit tested.
+    @IBOutlet var tableContainer: UIView!
 
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
@@ -76,7 +77,7 @@ class CardDetailViewController: UIViewController {
         super.viewDidLoad()
         tableView.backgroundColor = .clear
         view.set(background: BackgroundView.zero.darkShade)
-        view.inject(view: tableView)
+        tableContainer.inject(view: tableView)
         dataSource.section2.cellViewModel.viewModel.buttonTapped = { [weak self] in
             self?.dataSource.section2.cellViewModel.viewModel.labelLabelViewModel.lineCount = 0
             self?.dataSource.section2.cellViewModel.viewModel.buttonIsHidden = true

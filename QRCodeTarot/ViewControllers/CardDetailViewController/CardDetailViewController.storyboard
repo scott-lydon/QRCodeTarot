@@ -15,9 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJ0-uN-nxy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mJ0-uN-nxy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="060-Y3-3NT"/>
+                            <constraint firstItem="mJ0-uN-nxy" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Ljg-hJ-oaN"/>
+                            <constraint firstAttribute="bottom" secondItem="mJ0-uN-nxy" secondAttribute="bottom" id="xNO-qG-4XN"/>
+                            <constraint firstItem="mJ0-uN-nxy" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="xeg-ZW-QqI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableContainer" destination="mJ0-uN-nxy" id="NBx-3q-57a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

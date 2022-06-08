@@ -21,15 +21,26 @@
                                     <constraint firstAttribute="width" secondItem="gr1-0f-DDn" secondAttribute="height" multiplier="32:37" id="rA6-t1-ApP"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bx-ej-awX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Bx-ej-awX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1a7-2c-PfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="6Bx-ej-awX" secondAttribute="trailing" id="Dug-rW-Vlt"/>
                             <constraint firstAttribute="trailing" secondItem="gr1-0f-DDn" secondAttribute="trailing" constant="-2" id="SLE-bO-z9X"/>
                             <constraint firstItem="gr1-0f-DDn" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="-14" id="T5O-lj-6oK"/>
+                            <constraint firstAttribute="bottom" secondItem="6Bx-ej-awX" secondAttribute="bottom" id="boL-Cb-j68"/>
+                            <constraint firstItem="6Bx-ej-awX" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="imt-QS-ULN"/>
                             <constraint firstItem="gr1-0f-DDn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="irk-op-u5g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableContainer" destination="6Bx-ej-awX" id="PHY-Qc-xwv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
