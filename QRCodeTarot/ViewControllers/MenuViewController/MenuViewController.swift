@@ -15,6 +15,9 @@ class MenuViewController: UIViewController {
 
     var menuItems: [MenuItem] = MenuItem.allCases
 
+    @IBOutlet var stackTop: NSLayoutConstraint!
+    @IBOutlet var stackBottom: NSLayoutConstraint!
+
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
         menuViewController.loadView()
@@ -26,7 +29,16 @@ class MenuViewController: UIViewController {
         DispatchQueue.main.async {
             (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
         }
+        menuViewController.viewDidLoad()
         return menuViewController
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if UIScreen.main.bounds.height < 600 {
+            stackTop.constant = 10
+            stackBottom.constant = 10
+        }
     }
 
     deinit {
