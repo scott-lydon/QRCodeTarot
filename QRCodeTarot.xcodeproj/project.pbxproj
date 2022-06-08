@@ -144,7 +144,7 @@
 		75194FD7284A5C8F0060175C /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		75194FD9284A5CA30060175C /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		75194FDB284A5CB90060175C /* Importance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importance.swift; sourceTree = "<group>"; };
-		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7526AFE827FA70B0009C5FE8 /* Pointy Hat Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pointy Hat Tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewcontroller.swift; sourceTree = "<group>"; };
@@ -315,7 +315,7 @@
 		7526AFE927FA70B0009C5FE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */,
+				7526AFE827FA70B0009C5FE8 /* Pointy Hat Tarot.app */,
 				7526AFFE27FA70B2009C5FE8 /* QRCodeTarotTests.xctest */,
 				7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */,
 			);
@@ -717,7 +717,7 @@
 				753E4FC82835E6B90008623F /* CommonUIKitExtensions */,
 			);
 			productName = QRCodeTarot;
-			productReference = 7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */;
+			productReference = 7526AFE827FA70B0009C5FE8 /* Pointy Hat Tarot.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7526AFFD27FA70B2009C5FE8 /* QRCodeTarotTests */ = {
@@ -1133,9 +1133,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.QRCodeTarot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pointy Hat Tarot";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1163,9 +1163,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.QRCodeTarot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pointy Hat Tarot";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
