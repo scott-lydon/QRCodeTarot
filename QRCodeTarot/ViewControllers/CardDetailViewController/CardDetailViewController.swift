@@ -45,7 +45,7 @@ class CardDetailViewController: UIViewController {
                 cellViewModel: .init(
                     insets: .standard,
                     viewModel: .init(
-                        text: card.name,
+                        text: card.name.capitalized,
                         color: .white,
                         font: .inter(size: 30),
                         alignment: .center
