@@ -28,7 +28,7 @@ class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
     }
 
     func didRead(translatedQRCode: String) {
-        guard let card = localCards.tarotCard(from: translatedQRCode) else { return }
+        guard let card: Card = localCards.tarotCard(from: translatedQRCode) else { return }
         dispatcher.async(group: nil, qos: .unspecified, flags: []) {
             [weak self] in
             self?.navigationController?.pushViewController(
