@@ -7,6 +7,7 @@
 
 import UIKit
 import Callable
+import ARKit
 
 // MARK: - Card
 struct Card: Codable, CaseIterable {
@@ -46,6 +47,15 @@ struct Card: Codable, CaseIterable {
         .init(topText: "Unevolved", bottomText: unevolved)
     }
 
+    init?(imageName: String) {
+        let components = imageName.components(separatedBy: "_")
+        guard let number = components.first,
+              let suit = components[safe: 1],
+              let matchingCard = Card.allCases
+            .first(where: { $0.value_int == number.int && $0.suit.string == suit }) else { return nil }
+        self = matchingCard
+    }
+
     static var allCases: [Card] {
         let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
         let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
@@ -82,6 +92,13 @@ struct Card: Codable, CaseIterable {
             }
         }
         return cards
+    }
+
+    var referenceImage: ARReferenceImage? {
+        guard let cgImage = image?.cgImage else { return nil }
+        let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.1)
+        referenceImage.name = name
+        return referenceImage
     }
 
     var image: UIImage? {
