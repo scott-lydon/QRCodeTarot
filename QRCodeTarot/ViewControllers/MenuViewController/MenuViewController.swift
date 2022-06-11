@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import ARKit
 
 class MenuViewController: UIViewController {
 
@@ -35,6 +36,14 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.set(background: BackgroundView.zero)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
+        greetingLabel.text = Date().greeting
+        DispatchQueue.main.async {
+            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = self
+        }
         if UIScreen.main.bounds.height < 600 {
             stackTop.constant = 10
             stackBottom.constant = 10
@@ -97,7 +106,8 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
     ) {
         switch menuItems[indexPath.row] {
         case .tarotQRReader:
-            navigationController?.popToFirstOf(type: QrReaderViewcontroller())
+            guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
+            navigationController?.pushViewController(tarotViewController, animated: true)
         case .activity(let activity):
             navigationController?.pushViewController(
                 SubMenuViewController.instantiate(with: activity),

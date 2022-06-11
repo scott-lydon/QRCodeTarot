@@ -12,8 +12,6 @@
 		75194FDC284A5CB90060175C /* Importance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FDB284A5CB90060175C /* Importance.swift */; };
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
-		7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */; };
-		7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF127FA70B0009C5FE8 /* Main.storyboard */; };
 		7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF427FA70B2009C5FE8 /* Assets.xcassets */; };
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
@@ -83,7 +81,7 @@
 		757EF66C28090E11000685FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66B28090E11000685FC /* UIImage.swift */; };
 		757EF66E28091334000685FC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66D28091334000685FC /* MenuViewController.swift */; };
 		757EF67028091392000685FC /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66F28091392000685FC /* UIStoryboard.swift */; };
-		757EF67228092346000685FC /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* MenuViewController.storyboard */; };
+		757EF67228092346000685FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* Main.storyboard */; };
 		757EF67528094177000685FC /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67428094177000685FC /* SubMenuViewController.swift */; };
 		757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF678280941A0000685FC /* SubMenuViewController.storyboard */; };
 		757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67B280954CE000685FC /* DetailsViewController.swift */; };
@@ -149,8 +147,6 @@
 		7526AFE827FA70B0009C5FE8 /* Pointy Hat Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pointy Hat Tarot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReaderViewcontroller.swift; sourceTree = "<group>"; };
-		7526AFF227FA70B0009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7526AFF427FA70B2009C5FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7526AFF727FA70B2009C5FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7526AFF927FA70B2009C5FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -236,7 +232,7 @@
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		757EF66D28091334000685FC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		757EF66F28091392000685FC /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
-		757EF67128092346000685FC /* MenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
+		757EF67128092346000685FC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		757EF67428094177000685FC /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 		757EF678280941A0000685FC /* SubMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMenuViewController.storyboard; sourceTree = "<group>"; };
 		757EF67B280954CE000685FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -454,7 +450,6 @@
 				75BD9B8C2852DDD20026B3FD /* TarotRecognizerViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
-				757EF6652808DEB4000685FC /* QRReaderViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				758AE0F9282EC5D400C8F420 /* TarotCardsViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
@@ -614,21 +609,12 @@
 			path = LabelLabel;
 			sourceTree = "<group>";
 		};
-		757EF6652808DEB4000685FC /* QRReaderViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */,
-				7526AFF127FA70B0009C5FE8 /* Main.storyboard */,
-			);
-			path = QRReaderViewController;
-			sourceTree = "<group>";
-		};
 		757EF67328093382000685FC /* MenuViewController */ = {
 			isa = PBXGroup;
 			children = (
 				757A80D2282250F700700990 /* ChoiceView */,
 				757EF66D28091334000685FC /* MenuViewController.swift */,
-				757EF67128092346000685FC /* MenuViewController.storyboard */,
+				757EF67128092346000685FC /* Main.storyboard */,
 			);
 			path = MenuViewController;
 			sourceTree = "<group>";
@@ -839,7 +825,7 @@
 				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
 				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
 				759B1750284FF769006E8BB1 /* EvolvedWithText.xib in Resources */,
-				757EF67228092346000685FC /* MenuViewController.storyboard in Resources */,
+				757EF67228092346000685FC /* Main.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757A807D2822102500700990 /* PictoralKeyToTheTarot.json in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
@@ -860,7 +846,6 @@
 				757A80FD28250A7200700990 /* Inter-Regular.ttf in Resources */,
 				757A810528250A7200700990 /* Inter-Medium.ttf in Resources */,
 				757A810428250A7200700990 /* Inter-SemiBold.ttf in Resources */,
-				7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */,
 				75BD9B8B2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard in Resources */,
 				757A810128250A7200700990 /* Inter-Black.ttf in Resources */,
 			);
@@ -896,7 +881,6 @@
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
 				75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */,
 				75BCF459282E283A0066B22D /* Game.swift in Sources */,
-				7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */,
 				75194FDC284A5CB90060175C /* Importance.swift in Sources */,
 				757A80832822103600700990 /* OracleOfTheTarotCards.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
@@ -993,14 +977,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7526AFF127FA70B0009C5FE8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7526AFF227FA70B0009C5FE8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
