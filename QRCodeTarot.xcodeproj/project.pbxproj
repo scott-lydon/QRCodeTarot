@@ -108,6 +108,9 @@
 		75BCF459282E283A0066B22D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF458282E283A0066B22D /* Game.swift */; };
 		75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45A282E286F0066B22D /* Tutorial.swift */; };
 		75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */; };
+		75BD9B892852DD820026B3FD /* TarotRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD9B882852DD820026B3FD /* TarotRecognizerViewController.swift */; };
+		75BD9B8B2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BD9B8A2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard */; };
+		75BD9BC92853DD510026B3FD /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 75BD9BC82853DD510026B3FD /* Experience.rcproject */; };
 		75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CA56B827FC9C65006D8D93 /* Collection.swift */; };
 		75D0912927FA84EB0037798C /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912827FA84EB0037798C /* QRCodeReader */; };
 		75D0912C27FA9F5F0037798C /* Callable in Frameworks */ = {isa = PBXBuildFile; productRef = 75D0912B27FA9F5F0037798C /* Callable */; };
@@ -259,6 +262,9 @@
 		75BCF458282E283A0066B22D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		75BCF45A282E286F0066B22D /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanDisplayTutorial.swift; sourceTree = "<group>"; };
+		75BD9B882852DD820026B3FD /* TarotRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotRecognizerViewController.swift; sourceTree = "<group>"; };
+		75BD9B8A2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TarotRecognizerViewController.storyboard; sourceTree = "<group>"; };
+		75BD9BC82853DD510026B3FD /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		75CA56B827FC9C65006D8D93 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		75D0912D27FAAAB80037798C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		75D0912F27FAAB080037798C /* DeeplinkPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeeplinkPayload.swift; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 				7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */,
 				7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */,
 				757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */,
+				75BD9BC82853DD510026B3FD /* Experience.rcproject */,
 				756A68D727FE1F4400B76CCD /* ViewControllers */,
 				757A80D52822635D00700990 /* BackgroundView */,
 				754FE8EB2808C1D10051720E /* ImageContainer */,
@@ -447,6 +454,7 @@
 		756A68D727FE1F4400B76CCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				75BD9B8C2852DDD20026B3FD /* TarotRecognizerViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
 				757EF67A280941BE000685FC /* SubMenuViewController */,
 				757EF6652808DEB4000685FC /* QRReaderViewController */,
@@ -693,6 +701,15 @@
 			path = ActivityModels;
 			sourceTree = "<group>";
 		};
+		75BD9B8C2852DDD20026B3FD /* TarotRecognizerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75BD9B882852DD820026B3FD /* TarotRecognizerViewController.swift */,
+				75BD9B8A2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard */,
+			);
+			path = TarotRecognizerViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -847,6 +864,7 @@
 				757A810528250A7200700990 /* Inter-Medium.ttf in Resources */,
 				757A810428250A7200700990 /* Inter-SemiBold.ttf in Resources */,
 				7526AFF327FA70B0009C5FE8 /* Main.storyboard in Resources */,
+				75BD9B8B2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard in Resources */,
 				757A810128250A7200700990 /* Inter-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -875,6 +893,7 @@
 				757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */,
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
+				75BD9B892852DD820026B3FD /* TarotRecognizerViewController.swift in Sources */,
 				753E4FCB28360FCE0008623F /* Array.TutorialStepViewModel.swift in Sources */,
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
@@ -893,6 +912,7 @@
 				753E4FCD283619860008623F /* UITableView.swift in Sources */,
 				757A80E32823ACBC00700990 /* UICollectionViewFlowLayout.swift in Sources */,
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
+				75BD9BC92853DD510026B3FD /* Experience.rcproject in Sources */,
 				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				757A807E2822102500700990 /* PictoralKeyToTheTarot.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
