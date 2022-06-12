@@ -30,7 +30,7 @@ enum MenuItem: CaseIterable {
         switch self {
         case .activity(let activity): return activity.name
         case .tarotCards(_): return "Tarot Cards"
-        case .tarotQRReader: return "Tarot QR Reader"
+        case .tarotQRReader: return "Tarot Reader"
         }
     }
 
