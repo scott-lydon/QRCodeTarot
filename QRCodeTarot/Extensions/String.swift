@@ -9,14 +9,6 @@ import Foundation
 
 extension String {
 
-    var fileurl: URL? {
-        URL(fileURLWithPath: self)
-    }
-
-    var int: Int? {
-        Int(self)
-    }
-
     var tarotNumber: Int {
         switch self {
         case "Ace": return 1

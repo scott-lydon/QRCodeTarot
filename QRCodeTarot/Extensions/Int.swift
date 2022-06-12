@@ -9,14 +9,6 @@ import Foundation
 
 extension Int {
 
-    var decimal: Decimal {
-        Decimal(self)
-    }
-
-    var leadingZero: String {
-        String(format: "%02d", self)
-    }
-
     var tarotNumberSpelledOut: String {
         switch self {
         case 1: return  "Ace"

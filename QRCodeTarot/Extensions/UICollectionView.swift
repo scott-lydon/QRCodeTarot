@@ -31,8 +31,4 @@ import TableMVVM
         cell.viewModel = viewModel
         return cell
     }
-
-    var width: CGFloat {
-        frame.size.width
-    }
 }

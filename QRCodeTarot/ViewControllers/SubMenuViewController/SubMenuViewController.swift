@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import CommonUIKitExtensions
 
 typealias MenuDataSource = TableDataSource2<
     SectionOneRow<ViewModelCell<ImageLabelNoBorder>>,
