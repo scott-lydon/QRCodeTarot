@@ -21,6 +21,10 @@ struct Card: Codable, CaseIterable {
     let suit: Suit?
     let evolved: String?
     let unevolved: String?
+    
+    var hasNoEvolutionContent: Bool {
+        evolved.isEmpty && unevolved.isEmpty
+    }
 
     var choiceViewModel: ChoiceView.ViewModel {
         .init(text: name.capitalized, image: image ?? .cardDemo, ratio: .cardRatio, cornerRadius: 10)
