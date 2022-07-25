@@ -28,29 +28,23 @@ class CardDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.topItem?.title = ""
+        title = card.name.capitalized
         let lineCount = UILabel
             .with(width: UIScreen.main.bounds.width - 48)
             .with(lineCount: 0)
             .with(text: card.desc)
             .actualLineCount
         
-        titleLabel.viewModel = .init(
-            text: card.name.capitalized,
-            color: .white,
-            font: .inter(size: 30),
-            alignment: .center
-        )
-        
         cardImageView.viewModel = card.image ?? .cardDemo
         collapsibleLabel.viewModel = .init(
             labelLabelViewModel: LabelLabel.ViewModel(
                 topText: "Description",
                 bottomText: card.desc,
-                lineCount: lineCount < 6 ? 0 : 4
+                lineCount: lineCount < 6 || card.hasNoEvolutionContent ? 0 : 4
             ),
             buttonText: "Read More",
-            buttonIsHidden: lineCount < 6
+            buttonIsHidden: lineCount < 6 || card.hasNoEvolutionContent
         )
         evolvedWithText.viewModel = card.evolvedSwitchViewModel
         view.set(background: BackgroundView.zero.darkShade)
