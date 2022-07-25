@@ -11,7 +11,6 @@ import CommonUIKitExtensions
 
 class CardDetailViewController: UIViewController {
     
-    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var cardImageView: CardImageView!
     @IBOutlet var collapsibleLabel: CollapsableLabelLabel!
     @IBOutlet var evolvedWithText: EvolvedWithText!
@@ -20,8 +19,6 @@ class CardDetailViewController: UIViewController {
 
     static func instantiate(card: Card) -> CardDetailViewController {
         let detailController: CardDetailViewController = UIStoryboard.vc()!
-        // Initializing or reading the view causes this rendering issue!!!!!
-        // don't do this: detailController.view
         detailController.card = card
         return detailController
     }
