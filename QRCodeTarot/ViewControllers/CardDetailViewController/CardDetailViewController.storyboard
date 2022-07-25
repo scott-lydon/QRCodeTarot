@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEf-KS-N0J" userLabel="contentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-5N-BS7">
-                                                <rect key="frame" x="24" y="0.0" width="366" height="765"/>
+                                                <rect key="frame" x="24" y="0.0" width="366" height="798"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGX-48-m6f" customClass="CardImageView" customModule="QRCodeTarot" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="58" width="366" height="253"/>
@@ -40,13 +40,15 @@
                                                             <constraint firstAttribute="height" constant="174" placeholder="YES" id="C8m-gw-EJS"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wez-BV-mey" userLabel="spacer">
-                                                        <rect key="frame" x="-24" y="548" width="414" height="2"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wez-BV-mey" userLabel="spacer">
+                                                        <rect key="frame" x="-24" y="565" width="414" height="1"/>
+                                                        <color key="backgroundColor" red="0.10980392156862745" green="0.11372549019607843" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="EUP-rg-WZX"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-CR-2y9" customClass="EvolvedWithText" customModule="QRCodeTarot" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="565" width="366" height="200"/>
+                                                        <rect key="frame" x="0.0" y="598" width="366" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="cTV-I4-hkb"/>
@@ -57,13 +59,16 @@
                                                 <constraints>
                                                     <constraint firstItem="LGX-48-m6f" firstAttribute="top" secondItem="SgB-5N-BS7" secondAttribute="top" constant="58" id="2s5-70-sSF"/>
                                                     <constraint firstItem="gjv-CR-2y9" firstAttribute="leading" secondItem="SgB-5N-BS7" secondAttribute="leading" id="77n-bz-sVK"/>
-                                                    <constraint firstItem="gjv-CR-2y9" firstAttribute="top" secondItem="Zia-qe-bxT" secondAttribute="bottom" constant="32" id="Ecw-Px-v8t"/>
+                                                    <constraint firstItem="wez-BV-mey" firstAttribute="leading" secondItem="SgB-5N-BS7" secondAttribute="leading" constant="-24" id="97w-hL-iq3"/>
+                                                    <constraint firstItem="gjv-CR-2y9" firstAttribute="top" secondItem="wez-BV-mey" secondAttribute="bottom" constant="32" id="QSN-jA-7Z7"/>
                                                     <constraint firstItem="Zia-qe-bxT" firstAttribute="top" secondItem="LGX-48-m6f" secondAttribute="bottom" constant="48" id="Ssk-Tx-OUZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="gjv-CR-2y9" secondAttribute="bottom" id="Trh-eH-XIv"/>
                                                     <constraint firstAttribute="trailing" secondItem="LGX-48-m6f" secondAttribute="trailing" id="WTC-za-1tv"/>
                                                     <constraint firstItem="LGX-48-m6f" firstAttribute="leading" secondItem="SgB-5N-BS7" secondAttribute="leading" id="Xo3-I9-Rok"/>
                                                     <constraint firstAttribute="trailing" secondItem="Zia-qe-bxT" secondAttribute="trailing" id="abY-Qa-kYe"/>
                                                     <constraint firstItem="Zia-qe-bxT" firstAttribute="leading" secondItem="SgB-5N-BS7" secondAttribute="leading" id="hX2-qV-zFI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wez-BV-mey" secondAttribute="trailing" constant="-24" id="l4B-Xx-FbO"/>
+                                                    <constraint firstItem="wez-BV-mey" firstAttribute="top" secondItem="Zia-qe-bxT" secondAttribute="bottom" constant="32" id="mWl-Os-dz3"/>
                                                     <constraint firstAttribute="trailing" secondItem="gjv-CR-2y9" secondAttribute="trailing" id="n2g-fy-2Up"/>
                                                 </constraints>
                                             </view>
