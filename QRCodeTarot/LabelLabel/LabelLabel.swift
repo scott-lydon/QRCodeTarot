@@ -26,8 +26,14 @@ class LabelLabel: NibView, HasViewModel {
         didSet {
             topLabel.text = viewModel.topText
             topLabel.isHidden = viewModel.topText == nil
-            bottomLabel.text = viewModel.bottomText
+            
             bottomLabel.isHidden = viewModel.bottomText == nil
+            let attributedString = NSMutableAttributedString(string: viewModel.bottomText ?? "")
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.minimumLineHeight = viewModel.lineHeight
+            paragraphStyle.maximumLineHeight = viewModel.lineHeight
+            attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+            bottomLabel.attributedText = attributedString
             bottomLabel.numberOfLines = viewModel.lineCount
         }
     }
@@ -38,6 +44,7 @@ extension LabelLabel {
         let topText: String?
         let bottomText: String?
         var lineCount: Int = 0
+        var lineHeight: CGFloat = 24
         static var fallBack: Self {
             .init(topText: "", bottomText: "")
         }

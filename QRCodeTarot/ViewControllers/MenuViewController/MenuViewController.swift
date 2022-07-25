@@ -35,6 +35,7 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = .init(title: "", style: .plain, target: nil, action: nil)
         if UIScreen.main.bounds.height < 600 {
             stackTop.constant = 10
             stackBottom.constant = 10

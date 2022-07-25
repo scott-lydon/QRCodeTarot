@@ -19,7 +19,6 @@ class CollapsableLabelLabel: NibView, HasViewModel {
         var buffer = viewModel
         buffer.buttonIsHidden = true
         buffer.labelLabelViewModel.lineCount = 0
-        // invalidateIntrinsicContentSize() <- no effect here.
         viewModel = buffer
         viewModel.buttonTapped?()
     }
@@ -32,6 +31,7 @@ class CollapsableLabelLabel: NibView, HasViewModel {
             button.layer.cornerRadius = 12
             button.layer.masksToBounds = true
             button.layer.borderColor = UIColor.darkBorder.cgColor
+            button.layer.borderWidth = 1
             button.setTitleColor(.white, for: .normal)
 
             let imageAttachment = NSTextAttachment()
