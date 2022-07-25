@@ -40,6 +40,11 @@
                                                             <constraint firstAttribute="height" constant="174" placeholder="YES" id="C8m-gw-EJS"/>
                                                         </constraints>
                                                     </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wez-BV-mey" userLabel="spacer">
+                                                        <rect key="frame" x="-24" y="548" width="414" height="2"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
                                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-CR-2y9" customClass="EvolvedWithText" customModule="QRCodeTarot" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="565" width="366" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
