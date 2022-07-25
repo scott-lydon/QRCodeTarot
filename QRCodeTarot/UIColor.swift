@@ -24,6 +24,11 @@ extension UIColor {
     static var darkBorder: UIColor {
         UIColor(red: 47/255.0, green: 49/255.0, blue: 55/255.0, alpha: 1)
     }
+    
+    /// Set gray border for the card detail view.
+    static var grayBorder: UIColor {
+        UIColor(red: 0.18, green: 0.19, blue: 0.22, alpha: 1.00)
+    }
 
     static var gradientStartGray: UIColor {
         UIColor(red: 0.02, green: 0.02, blue: 0.03, alpha: 1.00)
