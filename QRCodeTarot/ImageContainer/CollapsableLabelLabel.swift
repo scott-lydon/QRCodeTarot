@@ -31,6 +31,7 @@ class CollapsableLabelLabel: NibView, HasViewModel {
             button.layer.cornerRadius = 12
             button.layer.masksToBounds = true
             button.layer.borderColor = UIColor.darkBorder.cgColor
+            button.layer.borderWidth = 1
             button.setTitleColor(.white, for: .normal)
 
             let imageAttachment = NSTextAttachment()
