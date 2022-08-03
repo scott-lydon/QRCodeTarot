@@ -52,4 +52,8 @@ extension HasTarotNum where Self: HasTarotSuit {
     var hash: String {
         num.string + " " + suit.rawValue
     }
+    
+    var numSuitName: String {
+        "\(num.tarotNumberSpelledOut) of \(suit.rawValue)"
+    }
 }
