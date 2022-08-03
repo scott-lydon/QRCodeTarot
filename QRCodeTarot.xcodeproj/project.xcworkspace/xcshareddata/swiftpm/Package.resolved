@@ -1,52 +1,50 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Callable",
-        "repositoryURL": "https://github.com/ElevatedUnderdogs/Callable.git",
-        "state": {
-          "branch": null,
-          "revision": "e7fb2fa3e95b4f94af6813f74fc4926a66bb3bc1",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "CommonExtensions",
-        "repositoryURL": "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
-        "state": {
-          "branch": "main",
-          "revision": "123a74a6f80db649d0dd86ceb4a6bda3a6116a8a",
-          "version": null
-        }
-      },
-      {
-        "package": "CommonUIKitExtensions",
-        "repositoryURL": "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git",
-        "state": {
-          "branch": null,
-          "revision": "4a35d1632d3022ed0c4cbe67f3d75130afe165bb",
-          "version": "0.2.2"
-        }
-      },
-      {
-        "package": "QRCodeReader",
-        "repositoryURL": "https://github.com/yannickl/QRCodeReader.swift.git",
-        "state": {
-          "branch": null,
-          "revision": "5020b5a47199d8ba80c83a4b4fafd70e9dc9dc7f",
-          "version": "10.1.1"
-        }
-      },
-      {
-        "package": "TableMVVM",
-        "repositoryURL": "https://github.com/ElevatedUnderdogs/TableMVVM.git",
-        "state": {
-          "branch": null,
-          "revision": "30501d27de73860e7df680c8d8170e87c955723d",
-          "version": "2.2.2"
-        }
+  "pins" : [
+    {
+      "identity" : "callable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ElevatedUnderdogs/Callable.git",
+      "state" : {
+        "revision" : "e7fb2fa3e95b4f94af6813f74fc4926a66bb3bc1",
+        "version" : "1.0.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "commonextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "123a74a6f80db649d0dd86ceb4a6bda3a6116a8a"
+      }
+    },
+    {
+      "identity" : "commonuikitextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git",
+      "state" : {
+        "revision" : "4a35d1632d3022ed0c4cbe67f3d75130afe165bb",
+        "version" : "0.2.2"
+      }
+    },
+    {
+      "identity" : "qrcodereader.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yannickl/QRCodeReader.swift.git",
+      "state" : {
+        "revision" : "5020b5a47199d8ba80c83a4b4fafd70e9dc9dc7f",
+        "version" : "10.1.1"
+      }
+    },
+    {
+      "identity" : "tablemvvm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ElevatedUnderdogs/TableMVVM.git",
+      "state" : {
+        "revision" : "63c2a3a0346988862dda86dbeca9ea229969ae0d",
+        "version" : "2.2.8"
+      }
+    }
+  ],
+  "version" : 2
 }
