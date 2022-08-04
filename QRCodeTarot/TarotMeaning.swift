@@ -57,18 +57,47 @@ extension TarotMeaning: HasTarotSuit {
 extension TarotMeaning: Comparable {
     
     static func < (lhs: TarotMeaning, rhs: TarotMeaning) -> Bool {
-        if lhs.suit < rhs.suit {
-            return true
-        } else if lhs.suit > rhs.suit {
-            return false
-        } else {
-            if lhs.num < rhs.num {
-                return true
-            } else if lhs.num > rhs.num {
-                return false
-            } else {
-                return false
-            }
-        }
+        lhs.suit < rhs.suit || (lhs.suit == rhs.suit && lhs.num < rhs.num)
+    }
+}
+
+
+extension String.SubSequence {
+    var string: String {
+        String(self)
+    }
+}
+
+protocol HasCardString: HasTarotNum, HasTarotSuit {
+    var card: String { get }
+}
+
+extension HasCardString {
+    var num: Int {
+        card.autoTarotNum
+    }
+
+    var suit: Suit {
+        card.autoSuit
+    }
+}
+
+protocol HasTarotNum {
+    var num: Int { get }
+}
+
+protocol HasTarotSuit {
+    var suit: Suit { get }
+}
+
+typealias HasTarotNumAndSuit = HasTarotNum & HasTarotSuit
+
+extension HasTarotNum where Self: HasTarotSuit {
+    var hash: String {
+        num.string + " " + suit.rawValue
+    }
+
+    var numSuitName: String {
+        "\(num.tarotNumberSpelledOut) of \(suit.rawValue)"
     }
 }
