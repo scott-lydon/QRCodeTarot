@@ -33,10 +33,10 @@ extension String {
 
     var suit: Suit {
         switch self {
-        case "Cups", "Chalices" : return .cups
-        case "Pentacles", "Coins", "Disks": return .pentacles
-        case "Swords": return .swords
-        case "Wands": return .wands
+        case "Cups", "Chalices", "cu" : return .cups
+        case "Pentacles", "Coins", "Disks", "cr": return .pentacles
+        case "Swords", "wo": return .swords
+        case "Wands", "wa": return .wands
         default:
             assertionFailure(self)
             return .swords

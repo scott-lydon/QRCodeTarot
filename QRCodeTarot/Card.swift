@@ -23,6 +23,10 @@ struct Card: Codable, CaseIterable {
     let suit: Suit?
     let evolved: String?
     let unevolved: String?
+    
+    var hasNoEvolutionContent: Bool {
+        evolved.isEmpty && unevolved.isEmpty
+    }
 
     init(
         type: Importance,
@@ -84,41 +88,8 @@ struct Card: Codable, CaseIterable {
     }
 
     static var allCases: [Card] {
-        let bookTs: [BookTCard] = try! Bundle.main.bookT?.localCodable() ?? []
-        let oracleTCards: [OracleOfTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
-        let pictoralCards: [PictoralKeyToTheTarotCard] = try! Bundle.main.oracleOfTarot?.localCodable() ?? []
-
-        let bookTDictionary = Dictionary(uniqueKeysWithValues: bookTs.map{ ($0.hash, $0) })
-        let oracleDictionary = Dictionary(uniqueKeysWithValues: oracleTCards.map { ($0.hash, $0)})
-        let pictoralDictionary = Dictionary(uniqueKeysWithValues: pictoralCards.map { ($0.hash, $0)})
-
-        print(bookTs.count, oracleTCards.count, pictoralCards.count)
-
-        var cards: [Card] = []
-        for suit in Suit.allCases {
-            for num in 1..<15 {
-                let hash = num.string + " " + suit.rawValue
-                let bookT = bookTDictionary[hash]
-                let oracle = oracleDictionary[hash]
-                let pictoral = pictoralDictionary[hash]
-                cards.append(
-                    Card(
-                        type: .minor,
-                        name_short: hash,
-                        name: "\(num.tarotNumberSpelledOut) of \(suit.rawValue)",
-                        value: num.tarotNumberSpelledOut,
-                        value_int: num,
-                        meaning_up: bookT?.meaning ?? "",
-                        meaning_rev: (oracle?.meaning ?? "") + " " + (oracle?.oracleOfTheTarotCardDescription ?? ""),
-                        desc: pictoral?.pictoralKeyToTheTarotCardDescription ?? "",
-                        suit: suit,
-                        evolved: oracle?.wellDignified ?? "",
-                        unevolved: oracle?.illDignified ?? ""
-                    )
-                )
-            }
-        }
-        return cards
+        let tarotMeanings: [TarotMeaning] = try! Bundle.main.tarotMeaning?.localCodable() ?? []
+        return tarotMeanings.cards
     }
 
     var referenceImage: ARReferenceImage? {

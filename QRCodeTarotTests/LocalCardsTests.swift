@@ -108,6 +108,10 @@ class LocalCardsTests: XCTestCase {
         XCTAssertEqual(9.leadingZero, "09")
         XCTAssertEqual(12.leadingZero, "12")
     }
+    
+    func testCards() {
+        XCTAssertEqual(Card.allCases.count, 56)
+    }
 }
 
 
