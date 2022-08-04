@@ -91,6 +91,8 @@
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
+		75851830289A7CD2001BF8CA /* TarotMeaning.json in Resources */ = {isa = PBXBuildFile; fileRef = 7585182F289A7CD2001BF8CA /* TarotMeaning.json */; };
+		75851832289AEBC8001BF8CA /* TarotMeaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851831289AEBC8001BF8CA /* TarotMeaning.swift */; };
 		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
 		758AE0F6282EC08500C8F420 /* TarotCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */; };
 		758AE0F8282EC0C700C8F420 /* TarotCardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */; };
@@ -242,6 +244,8 @@
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
+		7585182F289A7CD2001BF8CA /* TarotMeaning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TarotMeaning.json; sourceTree = "<group>"; };
+		75851831289AEBC8001BF8CA /* TarotMeaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotMeaning.swift; sourceTree = "<group>"; };
 		758AE0F3282E348500C8F420 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		758AE0F5282EC08500C8F420 /* TarotCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCardsViewController.swift; sourceTree = "<group>"; };
 		758AE0F7282EC0C700C8F420 /* TarotCardsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TarotCardsViewController.storyboard; sourceTree = "<group>"; };
@@ -355,6 +359,8 @@
 				757A80842822103A00700990 /* OracleOfTheTarot */,
 				757A807F2822102900700990 /* PictoralKeyToTheTarot */,
 				756A68D627FE1F2F00B76CCD /* Extensions */,
+				7585182F289A7CD2001BF8CA /* TarotMeaning.json */,
+				75851831289AEBC8001BF8CA /* TarotMeaning.swift */,
 				75D0913127FB76F50037798C /* card_data.json */,
 				7526AFF427FA70B2009C5FE8 /* Assets.xcassets */,
 				7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */,
@@ -815,6 +821,7 @@
 				757A80FF28250A7200700990 /* static in Resources */,
 				757A810028250A7200700990 /* Inter-Light.ttf in Resources */,
 				757A80FA28250A7200700990 /* OFL.txt in Resources */,
+				75851830289A7CD2001BF8CA /* TarotMeaning.json in Resources */,
 				757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */,
 				757A810328250A7200700990 /* README.txt in Resources */,
 				757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */,
@@ -907,6 +914,7 @@
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
 				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
 				757EF67028091392000685FC /* UIStoryboard.swift in Sources */,
+				75851832289AEBC8001BF8CA /* TarotMeaning.swift in Sources */,
 				753E4F392834AFEB0008623F /* VideoView.swift in Sources */,
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,

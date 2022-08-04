@@ -21,6 +21,9 @@ extension Bundle {
     var oracleOfTarot: URL? {
         url(forResource: "OracleOfTheTarot", withExtension: "json")
     }
+    var tarotMeaning: URL? {
+        url(forResource: "TarotMeaning", withExtension: "json")
+    }
     var pictoralKeyToTheTarot: URL? {
         url(forResource: "PictoralKeyToTheTarot", withExtension: "json")
     }
