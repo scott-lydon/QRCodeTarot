@@ -108,6 +108,7 @@
 		75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914127FBDBA80037798C /* LocalCardsTests.swift */; };
 		75D0914427FBDE410037798C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D0914327FBDE410037798C /* String.swift */; };
 		75F6A67D289BB2E5002C40F7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F6A67C289BB2E5002C40F7 /* Date.swift */; };
+		75F6A680289BB5C5002C40F7 /* TableMVVM in Frameworks */ = {isa = PBXBuildFile; productRef = 75F6A67F289BB5C5002C40F7 /* TableMVVM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,7 @@
 				753E4FC92835E6B90008623F /* CommonUIKitExtensions in Frameworks */,
 				753E4FC62835E6A60008623F /* CommonExtensions in Frameworks */,
 				75D0912C27FA9F5F0037798C /* Callable in Frameworks */,
+				75F6A680289BB5C5002C40F7 /* TableMVVM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +654,7 @@
 				75D0912B27FA9F5F0037798C /* Callable */,
 				753E4FC52835E6A60008623F /* CommonExtensions */,
 				753E4FC82835E6B90008623F /* CommonUIKitExtensions */,
+				75F6A67F289BB5C5002C40F7 /* TableMVVM */,
 			);
 			productName = QRCodeTarot;
 			productReference = 7526AFE827FA70B0009C5FE8 /* Pointy Hat Tarot.app */;
@@ -729,6 +732,7 @@
 				75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */,
 				753E4FC42835E6A60008623F /* XCRemoteSwiftPackageReference "CommonExtensions" */,
 				753E4FC72835E6B80008623F /* XCRemoteSwiftPackageReference "CommonUIKitExtensions" */,
+				75F6A67E289BB5C5002C40F7 /* XCRemoteSwiftPackageReference "TableMVVM" */,
 			);
 			productRefGroup = 7526AFE927FA70B0009C5FE8 /* Products */;
 			projectDirPath = "";
@@ -1228,6 +1232,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		75F6A67E289BB5C5002C40F7 /* XCRemoteSwiftPackageReference "TableMVVM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElevatedUnderdogs/TableMVVM.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.2.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1245,6 +1257,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75D0912A27FA9F5F0037798C /* XCRemoteSwiftPackageReference "Callable" */;
 			productName = Callable;
+		};
+		75F6A67F289BB5C5002C40F7 /* TableMVVM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75F6A67E289BB5C5002C40F7 /* XCRemoteSwiftPackageReference "TableMVVM" */;
+			productName = TableMVVM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

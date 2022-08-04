@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/TableMVVM.git",
       "state" : {
-        "revision" : "30501d27de73860e7df680c8d8170e87c955723d",
-        "version" : "2.2.2"
+        "revision" : "63c2a3a0346988862dda86dbeca9ea229969ae0d",
+        "version" : "2.2.8"
       }
     }
   ],
