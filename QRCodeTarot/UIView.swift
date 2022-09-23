@@ -73,4 +73,15 @@ extension UIView {
 
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
+
+    func addGradient(toTop: NSNumber = 0.05) {
+        let gradient = CAGradientLayer()
+        assert(superview != nil, "make sure you add the view to the superview before adding the gradient.")
+        gradient.frame = superview?.bounds
+            .increasedWidth(by: 50) // idk why, but this prevents the chop off on the right side issue.
+        ?? CGRect.null
+        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradient.locations = [0.0, toTop]
+        superview?.layer.mask = gradient
+    }
 }

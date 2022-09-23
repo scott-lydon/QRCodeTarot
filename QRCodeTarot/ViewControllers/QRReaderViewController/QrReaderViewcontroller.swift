@@ -32,7 +32,7 @@ class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
         dispatcher.async(group: nil, qos: .unspecified, flags: []) {
             [weak self] in
             self?.navigationController?.pushViewController(
-                CardDetailViewController.instantiate(card: card),
+                CardDetailViewController.instantiate(payload: card),
                 animated: true
             )
         }

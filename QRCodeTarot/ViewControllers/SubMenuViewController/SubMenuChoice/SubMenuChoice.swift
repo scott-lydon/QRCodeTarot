@@ -28,6 +28,7 @@ class SubMenuChoice: NibView, HasViewModel {
 }
 
 extension SubMenuChoice {
+    
     struct ViewModel: HasFallBack {
         let titleText: String
         let detailText: String
