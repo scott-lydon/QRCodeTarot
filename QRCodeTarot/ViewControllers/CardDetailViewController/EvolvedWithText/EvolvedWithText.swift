@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import SwiftUI
 
 class EvolvedWithText: NibView, HasViewModel {
 

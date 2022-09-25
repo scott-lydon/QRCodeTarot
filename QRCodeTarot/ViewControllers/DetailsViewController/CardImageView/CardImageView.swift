@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import SwiftUI
 
 /// Might be used for the Card Details.
 /// The constraints were throwing errors in interface builder because it is expected
@@ -30,5 +31,18 @@ class CardImageView: NibView, HasViewModel {
 extension UIImage: HasFallBack {
     public static var fallBack: Self {
         .init()
+    }
+}
+
+struct CardViewImage: UIViewRepresentable {
+    
+    @Binding var image: UIImage
+    
+    func makeUIView(context: Context) -> some UIView {
+        CardImageView()
+    }
+
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        (uiView as? CardImageView)?.viewModel = image
     }
 }

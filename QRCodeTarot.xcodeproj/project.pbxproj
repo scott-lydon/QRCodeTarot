@@ -10,6 +10,11 @@
 		75194FD8284A5C8F0060175C /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD7284A5C8F0060175C /* Cards.swift */; };
 		75194FDA284A5CA30060175C /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD9284A5CA30060175C /* Suit.swift */; };
 		75194FDC284A5CB90060175C /* Importance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FDB284A5CB90060175C /* Importance.swift */; };
+		752380F528DE24C300F24B88 /* AdapterWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F428DE24C300F24B88 /* AdapterWrapper.swift */; };
+		752380F728DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F628DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift */; };
+		752380F928DE3ACE00F24B88 /* HasViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */; };
+		752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380FC28DE962C00F24B88 /* CardDetailView.swift */; };
+		752380FF28DEB3C200F24B88 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */; };
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
 		7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */; };
@@ -142,6 +147,11 @@
 		75194FD7284A5C8F0060175C /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		75194FD9284A5CA30060175C /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		75194FDB284A5CB90060175C /* Importance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importance.swift; sourceTree = "<group>"; };
+		752380F428DE24C300F24B88 /* AdapterWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterWrapper.swift; sourceTree = "<group>"; };
+		752380F628DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabelAdapter.swift; sourceTree = "<group>"; };
+		752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasViewModelAdapter.swift; sourceTree = "<group>"; };
+		752380FC28DE962C00F24B88 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -330,6 +340,7 @@
 				757EF6642808D744000685FC /* LabelLabel */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
+				752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */,
 				753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				758F5FC32808AA4300B37D60 /* UIView.swift */,
@@ -347,6 +358,7 @@
 				75194FDB284A5CB90060175C /* Importance.swift */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
+				752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */,
 				757A80EC28250A4200700990 /* Fonts */,
 				756A68D627FE1F2F00B76CCD /* Extensions */,
 				7585182F289A7CD2001BF8CA /* TarotMeaning.json */,
@@ -402,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */,
+				752380F628DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift */,
 				753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */,
 				757A81D3282B480600700990 /* CollapsableLabelLabel.xib */,
 			);
@@ -412,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				75D0913527FBD35E0037798C /* CardDetailViewController.swift */,
+				752380FC28DE962C00F24B88 /* CardDetailView.swift */,
 				75DB2DF828DE226C00C8F6AA /* HasPayload.swift */,
 				75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */,
 				759B1751284FF76E006E8BB1 /* EvolvedWithText */,
@@ -525,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				757A81B1282A55C300700990 /* CardImageView.swift */,
+				752380F428DE24C300F24B88 /* AdapterWrapper.swift */,
 				757A81B3282A55D000700990 /* CardImageView.xib */,
 			);
 			path = CardImageView;
@@ -867,6 +882,7 @@
 				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
+				752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */,
 				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
 				75194FD8284A5C8F0060175C /* Cards.swift in Sources */,
 				75CA56B927FC9C65006D8D93 /* Collection.swift in Sources */,
@@ -891,21 +907,25 @@
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
 				757A81A8282A338D00700990 /* GradientView.swift in Sources */,
+				752380F928DE3ACE00F24B88 /* HasViewModelAdapter.swift in Sources */,
 				75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */,
 				757EF6612808D736000685FC /* LabelLabel.swift in Sources */,
 				75DB2DF728DE21EC00C8F6AA /* CGRect.swift in Sources */,
 				75D0913627FBD35E0037798C /* CardDetailViewController.swift in Sources */,
 				759B1710284EDD49006E8BB1 /* UIEdgeInsets.swift in Sources */,
+				752380F728DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift in Sources */,
 				757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */,
 				75D0913C27FBD8900037798C /* Data.swift in Sources */,
 				757A810D28250FB600700990 /* Int.swift in Sources */,
 				757EF66E28091334000685FC /* MenuViewController.swift in Sources */,
 				759B1753284FFFB6006E8BB1 /* EvolvedWithText.ViewModel.swift in Sources */,
+				752380FF28DEB3C200F24B88 /* NSMutableAttributedString.swift in Sources */,
 				753E4FC12835DB390008623F /* UIFont.swift in Sources */,
 				75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */,
 				753E4FC32835DEB80008623F /* UILabel.swift in Sources */,
 				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
 				75BCF453282E27990066B22D /* Activity.swift in Sources */,
+				752380F528DE24C300F24B88 /* AdapterWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

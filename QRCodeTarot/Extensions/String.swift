@@ -58,4 +58,8 @@ extension String {
     var autoSuit: Suit {
         split(separator: " ").map(\.string).third?.suit ?? Suit.swords
     }
+    
+    static var darkColorShade: String {
+        "darkColorShade"
+    }
 }
