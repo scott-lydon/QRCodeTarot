@@ -10,6 +10,7 @@ import Callable
 
 // MARK: - Card
 struct Card: Codable, CaseIterable {
+    
     let type: Importance
     let name_short: String
     let name: String
