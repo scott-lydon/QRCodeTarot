@@ -47,7 +47,7 @@ struct CardDetailView: View {
                         Text(String.lorem + String.lorem + String.lorem)
                             .lineLimit(readMoreShow ? 4 : nil)
                             .foregroundColor(.white)
-                        Spacer(minLength: 20)
+                            .padding(.bottom, 20)
                         if readMoreShow {
                             Button {
                                 readMoreShow = false
@@ -65,9 +65,9 @@ struct CardDetailView: View {
                                     .stroke(.white, lineWidth: 1.0)
                             )
                         }
-                        //Color.gray
-//                            .frame(height: 1)
-//                            .padding(.top, 15)
+                        Color.gray
+                            .frame(height: 1)
+                            .padding(.top, 15)
                     
                         Picker("What is your favorite color?", selection: $favoriteColor) {
                             Text("Evolved").tag(0)
