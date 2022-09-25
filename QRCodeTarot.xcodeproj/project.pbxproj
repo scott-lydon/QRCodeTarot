@@ -15,6 +15,7 @@
 		752380F928DE3ACE00F24B88 /* HasViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */; };
 		752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380FC28DE962C00F24B88 /* CardDetailView.swift */; };
 		752380FF28DEB3C200F24B88 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */; };
+		7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523814628DFEFF300F24B88 /* CustomSegmentedControl.swift */; };
 		7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */; };
 		7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */; };
 		7526AFF027FA70B0009C5FE8 /* QrReaderViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526AFEF27FA70B0009C5FE8 /* QrReaderViewcontroller.swift */; };
@@ -152,6 +153,7 @@
 		752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasViewModelAdapter.swift; sourceTree = "<group>"; };
 		752380FC28DE962C00F24B88 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		7523814628DFEFF300F24B88 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		7526AFE827FA70B0009C5FE8 /* QRCodeTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526AFEB27FA70B0009C5FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7526AFED27FA70B0009C5FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 			children = (
 				75D0913527FBD35E0037798C /* CardDetailViewController.swift */,
 				752380FC28DE962C00F24B88 /* CardDetailView.swift */,
+				7523814628DFEFF300F24B88 /* CustomSegmentedControl.swift */,
 				75DB2DF828DE226C00C8F6AA /* HasPayload.swift */,
 				75D0913727FBD3BB0037798C /* CardDetailViewController.storyboard */,
 				759B1751284FF76E006E8BB1 /* EvolvedWithText */,
@@ -878,6 +881,7 @@
 				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
+				7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */,
 				757A810B28250E9000700990 /* Date.swift in Sources */,
 				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
