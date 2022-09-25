@@ -40,6 +40,7 @@ class LabelLabel: NibView, HasViewModel {
 }
 
 extension LabelLabel {
+    
     struct ViewModel: HasFallBack {
         let topText: String?
         let bottomText: String?
