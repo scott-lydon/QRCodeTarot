@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 /// Directly from Menu View Controller, shows a collection of tarot cards (not details).
 /// This is the Tarot card menu.  
@@ -66,7 +67,8 @@ extension TarotCardsViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath
     ) {
         navigationController?.pushViewController(
-            CardDetailViewController.instantiate(payload: cards[indexPath.row]),
+            UIHostingController(rootView: CardDetailView(card: cards[indexPath.row])),
+            // CardDetailViewController.instantiate(payload: cards[indexPath.row]),
             animated: true
         )
     }
