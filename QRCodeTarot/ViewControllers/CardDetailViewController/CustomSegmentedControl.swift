@@ -88,7 +88,9 @@ struct SegmentedPicker: View {
                 .shadow(color: ShadowColor, radius: SegmentedPicker.ShadowRadius)
                 .frame(width: self.segmentSize.width, height: height)
                 .offset(x: self.horizontalOffset(), y: 0)
-                .animation(Animation.linear(duration: SegmentedPicker.AnimationDuration))
+               // .animation(.linear, value: SegmentedPicker.AnimationDuration) // doesn't animate.
+               // .animation(Animation.linear(duration: SegmentedPicker.AnimationDuration))
+                .animation(Animation.spring(blendDuration: SegmentedPicker.AnimationDuration))
                 .eraseToAnyView()
     }
     
