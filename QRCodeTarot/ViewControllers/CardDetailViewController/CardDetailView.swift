@@ -32,7 +32,7 @@ struct CardDetailView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                             .padding(.bottom, 30)
-                            .padding(.top, 10)
+                            .padding(.top, 5)
                         Image(uiImage: card.image!)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -100,21 +100,11 @@ struct CardDetailView: View {
                 .mask(
                     LinearGradient(
                         gradient: Gradient(
-                           colors: [
-                            Color.black.opacity(0),
-                            Color.black,
-                            Color.black,
-                            Color.black,
-                            Color.black,
-                            Color.black,
-                            Color.black,
-                            Color.black
-                           ]
-//                                stops: [
-//                                    .init(color: .white, location: 0),
-//                                    .init(color: .white, location: 0.1),
-//                                    .init(color: Color.white.opacity(0), location: 0.11)
-//                                ]
+                                stops: [
+                                    .init(color: Color.white.opacity(0), location: 0),
+                                    .init(color: .white, location: 0.1),
+                                    .init(color: .white, location: 0.11)
+                                ]
                         ),
                         startPoint: .top,
                         endPoint: .center
