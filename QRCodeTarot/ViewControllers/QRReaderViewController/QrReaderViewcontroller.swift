@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import QRCodeReader
 import Callable
+import SwiftUI
 
 class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
 
@@ -32,7 +33,8 @@ class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
         dispatcher.async(group: nil, qos: .unspecified, flags: []) {
             [weak self] in
             self?.navigationController?.pushViewController(
-                CardDetailViewController.instantiate(payload: card),
+                UIHostingController(rootView: CardDetailView(card: card)),
+               // CardDetailViewController.instantiate(payload: card),
                 animated: true
             )
         }
