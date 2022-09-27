@@ -32,6 +32,7 @@ struct CardDetailView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                             .padding(.bottom, 30)
+                            .padding(.top, 10)
                         Image(uiImage: card.image!)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -89,14 +90,40 @@ struct CardDetailView: View {
                             .font(ui: .inter(size: 17).dynamic)
                             .foregroundColor(Color(uiColor: .gentleText))
                     }
-                    .padding([.leading, .trailing], 25)
+                    .padding([.leading, .trailing, .bottom], 25)
+                    .edgesIgnoringSafeArea(.bottom)
                     .onAppear {
                         UINavigationBar.appearance().barTintColor = .clear
                         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-                    }
+                    } // VStack
                 } // Scroll View
+                .mask(
+                    LinearGradient(
+                        gradient: Gradient(
+                           colors: [
+                            Color.black.opacity(0),
+                            Color.black,
+                            Color.black,
+                            Color.black,
+                            Color.black,
+                            Color.black,
+                            Color.black,
+                            Color.black
+                           ]
+//                                stops: [
+//                                    .init(color: .white, location: 0),
+//                                    .init(color: .white, location: 0.1),
+//                                    .init(color: Color.white.opacity(0), location: 0.11)
+//                                ]
+                        ),
+                        startPoint: .top,
+                        endPoint: .center
+                    )
+                )
+                .clipped()
             } // ZStack
         } // Geometry reader
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
