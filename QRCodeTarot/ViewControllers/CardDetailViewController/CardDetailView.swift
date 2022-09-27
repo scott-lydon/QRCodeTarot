@@ -36,7 +36,7 @@ struct CardDetailView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 200)
-                            .cornerRadius(15.0)
+                            .cornerRadius(12.0)
                             .padding(.bottom, 20)
                         HStack {
                             Text("Description")
@@ -64,14 +64,13 @@ struct CardDetailView: View {
                             }
                             .frame(width: geometry.size.width - uipaddingBoth, height: 50)
                             .overlay(
-                                RoundedRectangle(cornerRadius: 20.0)
+                                RoundedRectangle(cornerRadius: 16.0)
                                     .stroke(.white, lineWidth: 1.0)
                             )
                         }
                         Color.gray
                             .frame(height: 1)
                             .padding(.top, 15)
-                        
                         SegmentedPicker(
                             items: ["Evolved", "Unevolved"],
                             minHeight: 50,
@@ -91,9 +90,13 @@ struct CardDetailView: View {
                             .foregroundColor(Color(uiColor: .gentleText))
                     }
                     .padding([.leading, .trailing], 25)
-                }
-            }
-        }
+                    .onAppear {
+                        UINavigationBar.appearance().barTintColor = .clear
+                        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+                    }
+                } // Scroll View
+            } // ZStack
+        } // Geometry reader
     }
 }
 
