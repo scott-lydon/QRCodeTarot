@@ -34,7 +34,6 @@ class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
             [weak self] in
             self?.navigationController?.pushViewController(
                 UIHostingController(rootView: CardDetailView(card: card)),
-               // CardDetailViewController.instantiate(payload: card),
                 animated: true
             )
         }
