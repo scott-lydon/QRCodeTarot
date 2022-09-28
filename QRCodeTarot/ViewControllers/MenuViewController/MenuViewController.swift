@@ -86,10 +86,7 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        collectionView.width
-            .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
-            .divided(by: 2)
-            .square
+        collectionView.gridCellSize(perRow: 2)
     }
 
     func collectionView(

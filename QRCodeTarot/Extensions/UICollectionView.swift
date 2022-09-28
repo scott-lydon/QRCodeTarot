@@ -35,4 +35,12 @@ import TableMVVM
     var width: CGFloat {
         frame.size.width
     }
+     
+     func gridCellSize(perRow: Int) -> CGSize {
+         width
+             .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
+             .divided(by: CGFloat(perRow))
+             .rounded(.down)
+             .square
+     }
 }
