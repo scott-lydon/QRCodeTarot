@@ -7,16 +7,24 @@
 
 import UIKit
 import TableMVVM
+import CommonUIKitExtensions
 
 class VideoView: NibView, HasViewModel {
 
+    @IBOutlet var button: UIButton!
+
+    @IBAction func buttonTapped() {
+        viewModel.buttonTapped?()
+    }
 
     var viewModel: ViewModel = .init() {
         didSet {
-            
+            button.roundCorners(constant: 12)
         }
     }
 }
+
+typealias Action = () -> Void
 
 extension VideoView {
     struct ViewModel: HasFallBack {
@@ -24,6 +32,7 @@ extension VideoView {
             .init()
         }
 
+        var buttonTapped: Action?
 
     }
 }

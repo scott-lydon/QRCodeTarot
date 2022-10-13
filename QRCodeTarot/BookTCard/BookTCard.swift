@@ -18,12 +18,6 @@ struct BookTCard: Codable, HasCardString {
 
 typealias BookTCards = [BookTCard]
 
-extension String.SubSequence {
-    var string: String {
-        String(self)
-    }
-}
-
 protocol HasCardString: HasTarotNum, HasTarotSuit {
     var card: String { get }
 }

@@ -8,58 +8,36 @@
 import UIKit
 import TableMVVM
 
-typealias DetailDataSource = TableDataSource3<
-    SectionNoHeader<ViewModelCell<VideoView>>,
-    SectionNoHeader<ViewModelCell<LabelLabel>>,
-    Section<
-        HeaderFooter<UILabel>,
-        ViewModelCell<TutorialStepView>
-    >
+typealias DetailDataSource = TableDataSource4<
+    SectionOneRow<ViewModelCell<Container<VideoView>>>,
+    SectionOneRow<ViewModelCell<Container<LabelLabel>>>,
+    SectionOneRow<ViewModelCell<Container<UILabel>>>,
+    SectionNoHeader<ViewModelCell<Container<TutorialStepView>>>
 >
-
-extension UILabel: HasViewModel {
-
-    public var viewModel: ViewModel {
-        get {
-            .init()
-        }
-        set {
-
-        }
-    }
-
-    public struct ViewModel: HasFallBack {
-        public static var fallBack: UILabel.ViewModel {
-            .init()
-        }
-    }
-}
 
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
 
-//    var dataSource: DetailDataSource = .init() {
-//        didSet {
-//            tableView.viewModel = dataSource
-//        }
-//    }
-//
-//    lazy var tableView: UITableMVVM<DetailDataSource> = {
-//        UITableMVVM(viewModel: dataSource).asClear()
-//    }()
+    @IBOutlet var tableContainer: UIView!
+    lazy var tableView: UITableMVVM<DetailDataSource> = UITableMVVM(viewModel: .init()).asClear()
 
     static func instantiate(
-    //    with viewModels: [DynamicDetailView.ViewModel]
+        details: LabelLabel.ViewModel,
+        tutorialSteps: [TutorialStepView.ViewModel]
     ) -> DetailsViewController {
         let detailsViewController: DetailsViewController = UIStoryboard.vc()!
-//        detailsViewController.dataSource = .init(
-//            section0: .init(cellsViewModels: viewModels, cellTapped: nil)
-//        )
+        detailsViewController.tableView.viewModel = TableDataSource4(
+            section0: .init(cellViewModel: .init(insets: .standard, viewModel: VideoView.ViewModel())),
+            section1: .init(cellViewModel: .init(insets: .standard, viewModel: details)),
+            section2: .init(cellViewModel: .init(insets: .standard, viewModel: UILabel.ViewModel(color: .white, font: .inter(size: 16)))),
+            section3: .init(cellsViewModels: tutorialSteps.correctlyNumbered.map { .init(insets: .standard, viewModel: $0)})
+        )
         return detailsViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   view.inject(view: tableView)
+        tableContainer.inject(view: tableView)
+        tableView.addGradient(toTop: 0.05)
     }
 }

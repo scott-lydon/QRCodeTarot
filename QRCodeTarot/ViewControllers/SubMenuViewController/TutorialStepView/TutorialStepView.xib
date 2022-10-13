@@ -14,6 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialStepView" customModule="QRCodeTarot" customModuleProvider="target">
             <connections>
+                <outlet property="countContainer" destination="9WN-cc-orN" id="2UX-ed-pJP"/>
                 <outlet property="countLabel" destination="ekN-8v-G3c" id="qqm-le-Ah3"/>
                 <outlet property="imageView" destination="GuY-Hb-Suo" id="RLB-VW-ipm"/>
                 <outlet property="stepLabelLabel" destination="l1h-gH-HRQ" id="r7p-r9-TQi"/>
@@ -25,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="lfW-0q-fsB">
-                    <rect key="frame" x="0.0" y="0.0" width="342" height="392"/>
+                    <rect key="frame" x="0.0" y="0.0" width="342" height="360"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Hb-Suo">
                             <rect key="frame" x="0.0" y="0.0" width="342" height="214.5"/>
@@ -33,13 +34,13 @@
                                 <constraint firstAttribute="width" secondItem="GuY-Hb-Suo" secondAttribute="height" multiplier="327:205" id="tJ7-5U-t3i"/>
                             </constraints>
                         </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-jb-HWu">
-                            <rect key="frame" x="0.0" y="233.5" width="342" height="158.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-jb-HWu">
+                            <rect key="frame" x="0.0" y="233.5" width="342" height="126.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WN-cc-orN">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekN-8v-G3c">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekN-8v-G3c">
                                             <rect key="frame" x="4" y="4" width="42" height="42"/>
                                             <fontDescription key="fontDescription" name="PlayfairDisplay-Regular" family="Playfair Display" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,12 +52,14 @@
                                         <constraint firstItem="ekN-8v-G3c" firstAttribute="centerY" secondItem="9WN-cc-orN" secondAttribute="centerY" id="9sL-tE-75u"/>
                                         <constraint firstAttribute="bottom" secondItem="ekN-8v-G3c" secondAttribute="bottom" constant="4" id="aWH-FT-yDR"/>
                                         <constraint firstAttribute="width" secondItem="9WN-cc-orN" secondAttribute="height" id="edx-sr-Nkt"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="hCX-PQ-OTd"/>
                                         <constraint firstAttribute="trailing" secondItem="ekN-8v-G3c" secondAttribute="trailing" constant="4" id="jnm-Hy-3Bm"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="kxJ-0S-6Uh"/>
                                         <constraint firstItem="ekN-8v-G3c" firstAttribute="centerX" secondItem="9WN-cc-orN" secondAttribute="centerX" id="uaT-sZ-ymh"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1h-gH-HRQ" customClass="LabelLabel" customModule="QRCodeTarot" customModuleProvider="target">
-                                    <rect key="frame" x="66" y="0.0" width="276" height="134.5"/>
+                                    <rect key="frame" x="66" y="0.0" width="276" height="126.5"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                             </subviews>
@@ -66,7 +69,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="lfW-0q-fsB" secondAttribute="bottom" id="NT0-m2-6ca"/>
+                <constraint firstAttribute="bottom" secondItem="lfW-0q-fsB" secondAttribute="bottom" constant="32" id="NT0-m2-6ca"/>
                 <constraint firstItem="lfW-0q-fsB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X49-DZ-RYn"/>
                 <constraint firstAttribute="trailing" secondItem="lfW-0q-fsB" secondAttribute="trailing" id="peu-Ht-SRK"/>
                 <constraint firstItem="lfW-0q-fsB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sTI-e5-Usj"/>

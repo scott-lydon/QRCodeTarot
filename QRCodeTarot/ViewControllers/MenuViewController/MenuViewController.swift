@@ -7,6 +7,7 @@
 
 import UIKit
 import TableMVVM
+import ARKit
 
 class MenuViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class MenuViewController: UIViewController {
     @IBOutlet var greetingLabel: UILabel!
 
     var menuItems: [MenuItem] = MenuItem.allCases
+
+    @IBOutlet var stackTop: NSLayoutConstraint!
+    @IBOutlet var stackBottom: NSLayoutConstraint!
 
     static func instantiate() -> MenuViewController {
         let menuViewController: MenuViewController = UIStoryboard.vc()!
@@ -23,9 +27,34 @@ class MenuViewController: UIViewController {
         menuViewController.collectionView.dataSource = menuViewController
         menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
         menuViewController.greetingLabel.text = Date().greeting
-        (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
-        menuViewController.title = "Menu"
+        DispatchQueue.main.async {
+            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
+        }
+        menuViewController.viewDidLoad()
         return menuViewController
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.set(background: BackgroundView.zero)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
+        greetingLabel.text = Date().greeting
+        DispatchQueue.main.async {
+            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = self
+        }
+        self.navigationItem.backBarButtonItem = .init(title: "", style: .plain, target: nil, action: nil)
+        if UIScreen.main.bounds.height < 600 {
+            stackTop.constant = 10
+            stackBottom.constant = 10
+        }
+    }
+
+    deinit {
+        DispatchQueue.main.async {
+            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = nil
+        }
     }
 }
 
@@ -78,7 +107,8 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
     ) {
         switch menuItems[indexPath.row] {
         case .tarotQRReader:
-            navigationController?.popToFirstOf(type: QrReaderViewcontroller())
+            guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
+            navigationController?.pushViewController(tarotViewController, animated: true)
         case .activity(let activity):
             navigationController?.pushViewController(
                 SubMenuViewController.instantiate(with: activity),

@@ -13,6 +13,10 @@ struct Game: CanDisplayTutorial, CaseIterable {
     var summary: String?
     var tutorial: Tutorial
 
+    var topDesription: LabelLabel.ViewModel {
+        .init(topText: title, bottomText: subTitle)
+    }
+
     static var allCases: [Game] {
         [
             Game(
@@ -20,19 +24,19 @@ struct Game: CanDisplayTutorial, CaseIterable {
                 subTitle: "a Game of Bluffing",
                 summary: nil,
                 tutorial: [
-                    .step(TutorialItem.Step(
+                    TutorialItem.Step(
                         title: "What You Need",
                         description: "To play BS you will need: 3 or more people, A deck of 52 playing cards, with or without jokers Sunglasses(optional)-You'll see why later!"
-                    )),
-                    .step(TutorialItem.Step(
+                    ),
+                    TutorialItem.Step(
                         title: "Preparation",
                         description: "The very first thing you need to do is take out the Jokers of the deck if you are playing the normal version.(More on that later) Once you have done this, shuffle the deck very well. You want the deck to be mixed up! Depending on how many people you have, start dealing the cards out to each individual. Continue until you have dealt all of the cards. You are now ready to begin!"
-                    )),
-                    .step(TutorialItem.Step(
+                    ),
+                    TutorialItem.Step(
                         title: "Choosing Who Goes First",
                         description: "In the traditional rules, whoever has the ace of spades goes first. They would place that card down, along with any other aces they have."
-                    )),
-                    .step(TutorialItem.Step(
+                    ),
+                    TutorialItem.Step(
                         title: "The Rules of the Game and Organizing Cards",
                         description:
                             """
@@ -53,15 +57,15 @@ struct Game: CanDisplayTutorial, CaseIterable {
 
                             All of the side notes on the pictures aren't showing up, but if you click on the picture, you can see the notes.
                             """
-                    )),
-                    .step(TutorialItem.Step(
+                    ),
+                    TutorialItem.Step(
                         title: "Winning the Game",
                         description: "To win the game, get rid of all your cards. If you have more than three people, you can also play for first place, second place, third place, etc...It can be advantageous to always call a bluff whenever a player puts their last card(s) down. The winner now has earned bragging rights."
-                    )),
-                    .step(TutorialItem.Step(
+                    ),
+                    TutorialItem.Step(
                         title: "Advanced Play",
                         description: "More experienced players can enjoy some variations, such as adding in Jokers. A Joker counts as any card at all, and can lead to some interesting bluffs. Another variation is adding an extra deck or two into play, which is especially useful when playing large rounds. Tournaments are also another possibility. The list is endless!"
-                    ))
+                    )
                 ]
             )
         ]

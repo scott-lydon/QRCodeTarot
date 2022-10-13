@@ -9,15 +9,7 @@ import UIKit
 
 extension CGFloat {
 
-    func minus(_ number: Self) -> Self {
-        self - number
-    }
-
-    func divided(by denominator: Self) -> Self {
-        self / denominator
-    }
-
-    var square: CGSize {
-        CGSize(width: self, height: self)
+    static var cardRatio: CGFloat {
+        1440/1900
     }
 }

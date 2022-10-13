@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import QRCodeTarot
+// import CommonExtensions
 
 class LocalCardsTests: XCTestCase {
 
@@ -75,6 +76,11 @@ class LocalCardsTests: XCTestCase {
         XCTAssertNotNil(UIImage.hambugerMenu)
     }
 
+    func testInter() {
+        XCTAssertNotNil(UIFont.inter(size:12))
+        XCTAssertEqual(UIFont.inter(size: 16).familyName, "Inter")
+    }
+
     func testDetailsViewController() {
 //        let detailsVC = DetailsViewController.instantiate(with: "magic trick 1")
 //        detailsVC.loadView()
@@ -101,6 +107,10 @@ class LocalCardsTests: XCTestCase {
     func testInt() {
         XCTAssertEqual(9.leadingZero, "09")
         XCTAssertEqual(12.leadingZero, "12")
+    }
+    
+    func testCards() {
+        XCTAssertEqual(Card.allCases.count, 56)
     }
 }
 

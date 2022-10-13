@@ -7,17 +7,24 @@
 
 import UIKit
 
-typealias Tutorial = [TutorialItem]
+typealias Tutorial = [TutorialItem.Step]
 
-enum TutorialItem {
-    case image(UIImage)
-    case step(TutorialItem.Step)
-}
-
-extension TutorialItem {
+struct TutorialItem {
     struct Step {
+
         var image: UIImage?
         var title: String?
         var description: String
+
+        var viewModel: TutorialStepView.ViewModel {
+            .init(
+                image: image,
+                count: nil,
+                stepDescription: LabelLabel.ViewModel(
+                    topText: title,
+                    bottomText: description
+                )
+            )
+        }
     }
 }
