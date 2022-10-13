@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import QRCodeTarot
+// import CommonExtensions
 
 class LocalCardsTests: XCTestCase {
 

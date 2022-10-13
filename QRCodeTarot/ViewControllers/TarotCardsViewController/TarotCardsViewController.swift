@@ -16,16 +16,16 @@ class TarotCardsViewController: UIViewController {
     var cards: [Card] = []
 
     static func instantiate(with cards: [Card]) -> TarotCardsViewController {
-        let TarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()!//ut
-        TarotCardsViewController.loadView()
-        TarotCardsViewController.view.set(background: BackgroundView.zero)
-        TarotCardsViewController.collectionView.delegate = TarotCardsViewController
-        TarotCardsViewController.collectionView.dataSource = TarotCardsViewController
-        TarotCardsViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
-        TarotCardsViewController.title = "Tarot Cards"
-        TarotCardsViewController.cards = cards
-        TarotCardsViewController.viewDidLoad()
-        return TarotCardsViewController
+        let tarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()! //ut
+        tarotCardsViewController.loadView()
+        tarotCardsViewController.view.set(background: BackgroundView.zero)
+        tarotCardsViewController.collectionView.delegate = tarotCardsViewController
+        tarotCardsViewController.collectionView.dataSource = tarotCardsViewController
+        tarotCardsViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
+        tarotCardsViewController.title = "Tarot Cards"
+        tarotCardsViewController.cards = cards
+        tarotCardsViewController.viewDidLoad()
+        return tarotCardsViewController
     }
 
     override func viewDidLoad() {
@@ -34,30 +34,6 @@ class TarotCardsViewController: UIViewController {
     }
 }
 
-extension UIView {
-
-    func addGradient(toTop: NSNumber = 0.05) {
-        let gradient = CAGradientLayer()
-        assert(superview != nil, "make sure you add the view to the superview before adding the gradient.")
-        gradient.frame = superview?.bounds
-            .increasedWidth(by: 50) // idk why, but this prevents the chop off on the right side issue.
-        ?? CGRect.null
-        gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
-        gradient.locations = [0.0, toTop]
-        superview?.layer.mask = gradient
-    }
-}
-
-extension CGRect {
-    func increasedWidth(by amount: CGFloat) -> CGRect {
-        .init(
-            x: self.minX,
-            y: self.minY,
-            width: self.width + amount,
-            height: self.height
-        )
-    }
-}
 
 extension TarotCardsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

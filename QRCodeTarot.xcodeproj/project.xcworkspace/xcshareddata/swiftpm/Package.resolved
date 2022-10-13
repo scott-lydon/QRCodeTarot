@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "123a74a6f80db649d0dd86ceb4a6bda3a6116a8a"
+        "revision" : "50892aeb0e855e9bbf674dcc4a33284071f4f95e",
+        "version" : "1.0.1"
       }
     },
     {
@@ -23,17 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git",
       "state" : {
-        "revision" : "4a35d1632d3022ed0c4cbe67f3d75130afe165bb",
-        "version" : "0.2.2"
-      }
-    },
-    {
-      "identity" : "qrcodereader.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/yannickl/QRCodeReader.swift.git",
-      "state" : {
-        "revision" : "5020b5a47199d8ba80c83a4b4fafd70e9dc9dc7f",
-        "version" : "10.1.1"
+        "revision" : "1324aee3c4de8c3a26be353b4235f400b480a3e6",
+        "version" : "0.3.0"
       }
     },
     {
