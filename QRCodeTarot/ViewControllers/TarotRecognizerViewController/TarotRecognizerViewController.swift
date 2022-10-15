@@ -44,7 +44,7 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
         dispatcher.async(group: nil, qos: .unspecified, flags: []) { [weak self] in
             self?.dismiss(animated: true)
             self?.navigationController?.pushViewController(
-                CardDetailViewController.instantiate(payload: card),
+                UIHostingController(rootView: CardDetailView(card: card)),
                 animated: true
             )
         }
