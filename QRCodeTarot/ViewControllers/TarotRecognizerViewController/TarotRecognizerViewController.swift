@@ -8,11 +8,13 @@
 import UIKit
 import SceneKit
 import ARKit
+import SwiftUI
 
 class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
 
     var sceneView = ARSCNView.zero
     var dispatcher: CanAsync = DispatchQueue.main
+    var pendingNavigation: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,7 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
         sceneView.debugOptions = [.showFeaturePoints] // happens to look really cool, with yellow dots
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         sceneView.delegate = self
+        pendingNavigation = false
     }
 
     /// called when we detected an image.
@@ -40,9 +43,12 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
     ) {
         guard let imageAnchor = anchor as? ARImageAnchor,
               let imageName = imageAnchor.referenceImage.name,
-              let card: Card = Card(imageName: imageName) else { return }
-        dispatcher.async(group: nil, qos: .unspecified, flags: []) { [weak self] in
-            self?.dismiss(animated: true)
+              let card: Card = Card(imageName: imageName),
+              // Prevents double navigation when multiple cards are detected at the same time.
+              // Also prevents the transition to the wrong card after multiple.
+              !pendingNavigation else { return }
+        pendingNavigation = true
+        dispatcher.async { [weak self] in
             self?.navigationController?.pushViewController(
                 UIHostingController(rootView: CardDetailView(card: card)),
                 animated: true
