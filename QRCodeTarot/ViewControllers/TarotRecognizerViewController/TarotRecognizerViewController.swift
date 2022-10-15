@@ -25,8 +25,6 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARWorldTrackingConfiguration()
         guard let arImages: Set<ARReferenceImage> = ARReferenceImage
             .referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
-        print(arImages.count)
-        print(arImages.map(\.name))
         configuration.detectionImages = arImages
         configuration.planeDetection = .horizontal
         sceneView.debugOptions = [.showFeaturePoints] // happens to look really cool, with yellow dots
