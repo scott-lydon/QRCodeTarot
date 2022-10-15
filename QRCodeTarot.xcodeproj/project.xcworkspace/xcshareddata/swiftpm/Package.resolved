@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/Callable.git",
       "state" : {
-        "revision" : "e7fb2fa3e95b4f94af6813f74fc4926a66bb3bc1",
-        "version" : "1.0.1"
+        "revision" : "92ee233f6a65f2e96fddf7e894577c28e00ddda5",
+        "version" : "1.4.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/CommonExtensions.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "123a74a6f80db649d0dd86ceb4a6bda3a6116a8a"
+        "revision" : "3be79adde90f538898f88852ca9af8f9ab92f5ed",
+        "version" : "1.4.0"
       }
     },
     {
@@ -23,17 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ElevatedUnderdogs/CommonUIKitExtensions.git",
       "state" : {
-        "revision" : "4a35d1632d3022ed0c4cbe67f3d75130afe165bb",
-        "version" : "0.2.2"
-      }
-    },
-    {
-      "identity" : "qrcodereader.swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/yannickl/QRCodeReader.swift.git",
-      "state" : {
-        "revision" : "5020b5a47199d8ba80c83a4b4fafd70e9dc9dc7f",
-        "version" : "10.1.1"
+        "revision" : "1324aee3c4de8c3a26be353b4235f400b480a3e6",
+        "version" : "0.3.0"
       }
     },
     {

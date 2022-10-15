@@ -7,6 +7,8 @@
 
 import UIKit
 import Callable
+import ARKit
+import CommonExtensions
 
 // MARK: - Card
 struct Card: Codable, CaseIterable {
@@ -25,6 +27,41 @@ struct Card: Codable, CaseIterable {
     
     var hasNoEvolutionContent: Bool {
         evolved.isEmpty && unevolved.isEmpty
+    }
+
+    init(
+        type: Importance,
+        name_short: String,
+        name: String,
+        value: String,
+        value_int: Int,
+        meaning_up: String,
+        meaning_rev: String,
+        desc: String,
+        suit: Suit?,
+        evolved: String?,
+        unevolved: String?
+    ) {
+        self.type = type
+        self.name_short = name_short
+        self.name = name
+        self.value = value
+        self.value_int = value_int
+        self.meaning_up = meaning_up
+        self.meaning_rev = meaning_rev
+        self.desc = desc
+        self.suit = suit
+        self.evolved = evolved
+        self.unevolved = unevolved
+    }
+
+    init?(imageName: String) {
+        let components = imageName.components(separatedBy: "_")
+        guard let number = components.first,
+              let suit = components[safe: 1],
+              let matchingCard = Card.allCases
+            .first(where: { $0.value_int == number.int && $0.suit.string == suit }) else { return nil }
+        self = matchingCard
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
@@ -54,6 +91,13 @@ struct Card: Codable, CaseIterable {
     static var allCases: [Card] {
         let tarotMeanings: [TarotMeaning] = try! Bundle.main.tarotMeaning?.localCodable() ?? []
         return tarotMeanings.cards
+    }
+
+    var referenceImage: ARReferenceImage? {
+        guard let cgImage = image?.cgImage else { return nil }
+        let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.1)
+        referenceImage.name = name
+        return referenceImage
     }
 
     var image: UIImage? {

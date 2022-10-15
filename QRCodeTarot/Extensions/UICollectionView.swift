@@ -9,7 +9,7 @@
 import UIKit
 import TableMVVM
 
- extension UICollectionView {
+extension UICollectionView {
 
     /// Convenience function for reloading data on the main thread.
     /// - Parameter queue: defualt is main.

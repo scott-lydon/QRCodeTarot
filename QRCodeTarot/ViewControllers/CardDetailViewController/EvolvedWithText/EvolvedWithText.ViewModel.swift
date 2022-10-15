@@ -47,15 +47,3 @@ extension EvolvedWithText {
         }
     }
 }
-
-public extension Optional where Wrapped: ExpressibleByArrayLiteral, Wrapped: Equatable {
-    var isEmpty: Bool {
-        self == [] || self == nil
-    }
-}
-
-public extension Optional where Wrapped == String {
-    var isEmpty: Bool {
-        map { $0.count == 0 } ?? true
-    }
-}
