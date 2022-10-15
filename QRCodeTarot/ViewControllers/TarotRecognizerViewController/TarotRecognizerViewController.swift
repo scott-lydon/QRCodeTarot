@@ -24,6 +24,7 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // When not in view did load, a bug appears after a view cycles, where nothing is recognized. 
         let configuration = ARWorldTrackingConfiguration()
         guard let arImages: Set<ARReferenceImage> = ARReferenceImage
             .referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
