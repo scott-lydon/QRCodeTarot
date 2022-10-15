@@ -17,6 +17,12 @@ protocol CanAsync {
     )
 }
 
+extension CanAsync {
+    func async(execute work: @escaping @convention(block) () -> Void) {
+        self.async(group: nil, qos: .unspecified, flags: [], execute: work)
+    }
+}
+
 extension DispatchQueue: CanAsync {}
 
 class MockCanAsync: CanAsync {
