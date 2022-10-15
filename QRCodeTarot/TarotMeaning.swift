@@ -49,8 +49,7 @@ extension TarotMeaning: HasTarotNum {
 
 extension TarotMeaning: HasTarotSuit {
     var suit: Suit {
-        print(name.components(separatedBy: "_"))
-        return name.components(separatedBy: "_").last!.suit // unit tested.
+        name.components(separatedBy: "_").last!.suit // unit tested.
     }
 }
 
