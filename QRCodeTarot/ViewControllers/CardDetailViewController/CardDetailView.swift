@@ -44,6 +44,10 @@ struct CardDetailView: View {
                                 .font(.title)
                                 .foregroundColor(.white)
                             Spacer()
+                            ShareButton(
+                                activityItems: card.activityItems,
+                                color: .white
+                            )
                         }
                         .padding(.bottom, 5)
                         Text(card.desc)
