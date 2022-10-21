@@ -36,10 +36,10 @@ extension UICollectionView {
         frame.size.width
     }
      
-     func gridCellSize(perRow: Int) -> CGSize {
+     func gridCellSize(perRow count: Int) -> CGSize {
          width
              .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
-             .divided(by: CGFloat(perRow))
+             .divided(by: count.cgFloat)
              .rounded(.down)
              .square
      }
