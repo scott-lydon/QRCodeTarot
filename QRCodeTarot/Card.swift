@@ -28,6 +28,12 @@ struct Card: Codable, CaseIterable {
     var hasNoEvolutionContent: Bool {
         evolved.isEmpty && unevolved.isEmpty
     }
+    
+    var activityItems: [Any] {
+        [
+            name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
+        ]
+    }
 
     init(
         type: Importance,
