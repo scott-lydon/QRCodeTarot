@@ -75,7 +75,7 @@ extension MenuViewController: UICollectionViewDataSource {
     ) -> UICollectionViewCell {
         collectionView.dequeueCell(
             for: indexPath,
-               cell: ChoiceCell(),
+            cell: ChoiceCell.self,
                viewModel: menuItems[indexPath.row].choiceViewModel
         )
     }

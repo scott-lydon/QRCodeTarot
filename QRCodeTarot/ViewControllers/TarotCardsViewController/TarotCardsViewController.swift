@@ -39,8 +39,8 @@ extension TarotCardsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         collectionView.dequeueCell(
             for: indexPath,
-               cell: ChoiceCell(),
-               viewModel: cards[indexPath.row].choiceViewModel
+            cell: ChoiceCell.self,
+            viewModel: cards[indexPath.row].choiceViewModel
         )
     }
 

@@ -24,7 +24,7 @@ extension UICollectionView {
     ///   - viewModel: The view model to be assigned to the cell.
     /// - Returns: returns a `UITableViewCell`
     public func dequeueCell<T: UICollectionViewCell>(
-        for indexPath: IndexPath, cell: T, viewModel: T.ViewModel?) -> T
+        for indexPath: IndexPath, cell: T.Type, viewModel: T.ViewModel?) -> T
     where T: HasViewModel {
         guard var cell = dequeueReusableCell(withReuseIdentifier: T.className, for: indexPath) as? T,
               let viewModel = viewModel else { return .init() }
