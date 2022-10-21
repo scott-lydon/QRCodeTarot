@@ -22,6 +22,7 @@
 		7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7526AFF627FA70B2009C5FE8 /* LaunchScreen.storyboard */; };
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
+		752ED6AB29024B4000CC978C /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752ED6AA29024B4000CC978C /* ShareButton.swift */; };
 		753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */; };
 		753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F33283499FB0008623F /* TarotSwitchView.swift */; };
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
@@ -154,6 +155,7 @@
 		7526B00827FA70B2009C5FE8 /* QRCodeTarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeTarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		752ED6AA29024B4000CC978C /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.ViewModel.swift; sourceTree = "<group>"; };
 		753E4F33283499FB0008623F /* TarotSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.swift; sourceTree = "<group>"; };
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				752380FC28DE962C00F24B88 /* CardDetailView.swift */,
+				752ED6AA29024B4000CC978C /* ShareButton.swift */,
 				7523814628DFEFF300F24B88 /* CustomSegmentedControl.swift */,
 				75DB2DF828DE226C00C8F6AA /* HasPayload.swift */,
 				759B1751284FF76E006E8BB1 /* EvolvedWithText */,
@@ -850,6 +853,7 @@
 				7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */,
 				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
 				758F5FC02808A9AB00B37D60 /* NibView.swift in Sources */,
+				752ED6AB29024B4000CC978C /* ShareButton.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */,
 				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
