@@ -66,12 +66,13 @@ struct CardDetailView: View {
                                     Image(systemName: "chevron.right")
                                         .foregroundColor(.white)
                                 }
+                                .frame(width: geometry.size.width - uipaddingBoth, height: 50)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 16.0)
+                                        .stroke(.white, lineWidth: 1.0)
+                                )
                             }
-                            .frame(width: geometry.size.width - uipaddingBoth, height: 50)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 16.0)
-                                    .stroke(.white, lineWidth: 1.0)
-                            )
+                            
                         }
                         Color.gray
                             .frame(height: 1)
