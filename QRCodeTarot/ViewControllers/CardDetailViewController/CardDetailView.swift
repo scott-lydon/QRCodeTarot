@@ -33,7 +33,7 @@ struct CardDetailView: View {
                             .foregroundColor(.white)
                             .padding(.bottom, 30)
                             .padding(.top, 5)
-                        Image(uiImage: card.image!)
+                        Image(uiImage: card.image)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 200)

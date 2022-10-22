@@ -102,14 +102,14 @@ struct Card: Codable, CaseIterable {
     }
 
     var referenceImage: ARReferenceImage? {
-        guard let cgImage = image?.cgImage else { return nil }
+        guard let cgImage = image.cgImage else { return nil }
         let referenceImage = ARReferenceImage(cgImage, orientation: .up, physicalWidth: 0.1)
         referenceImage.name = name
         return referenceImage
     }
 
-    var image: UIImage? {
-        UIImage(named: "\(value_int.leadingZero)_\(suit?.rawValue ?? "")")
+    var image: UIImage {
+        UIImage(named: "\(value_int.leadingZero)_\(suit?.rawValue ?? "")") ?? UIImage()
     }
 
     func matches(key: CardKey) -> Bool {
