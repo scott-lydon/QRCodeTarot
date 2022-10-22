@@ -11,22 +11,22 @@ struct ShareButton: View {
     
     var activityItems: [Any]
     var color: Color
-    var height: CGFloat = 36
+    var height: CGFloat = 30
     
     var body: some View {
         Button {
-            var activityController = UIActivityViewController(
-                activityItems: activityItems,
-                applicationActivities: nil
-            )
-            activityController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook
-            ]
             UIApplication
                 .shared
                 .windows
                 .first?
                 .rootViewController?
-                .present(activityController, animated: true)
+                .present(
+                    UIActivityViewController(
+                        activityItems: activityItems,
+                        applicationActivities: nil
+                    ),
+                    animated: true
+                )
         } label: {
             Image(systemName: "square.and.arrow.up")
                 .resizable()

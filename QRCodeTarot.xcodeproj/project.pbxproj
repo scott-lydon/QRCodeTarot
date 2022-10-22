@@ -323,6 +323,7 @@
 				754FE8EB2808C1D10051720E /* ImageContainer */,
 				757EF6642808D744000685FC /* LabelLabel */,
 				75BCF45E282E28920066B22D /* ActivityModels */,
+				752ED6AA29024B4000CC978C /* ShareButton.swift */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */,
 				753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */,
@@ -403,7 +404,6 @@
 			isa = PBXGroup;
 			children = (
 				752380FC28DE962C00F24B88 /* CardDetailView.swift */,
-				752ED6AA29024B4000CC978C /* ShareButton.swift */,
 				7523814628DFEFF300F24B88 /* CustomSegmentedControl.swift */,
 				75DB2DF828DE226C00C8F6AA /* HasPayload.swift */,
 				759B1751284FF76E006E8BB1 /* EvolvedWithText */,
