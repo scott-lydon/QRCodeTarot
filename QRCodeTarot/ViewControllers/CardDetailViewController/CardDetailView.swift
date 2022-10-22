@@ -127,29 +127,3 @@ struct CardDetailView_Previews: PreviewProvider {
             .allPreviews()
     }
 }
-
-
-extension View {
-    
-    @inlinable public func font(ui: UIFont) -> some View {
-        font(Font(uiFont: ui))
-    }
-    
-    @inlinable func allPreviews() -> some View {
-        Group {
-            previewDevice("iPhone 14 Pro Max")
-            previewInterfaceOrientation(.landscapeLeft)
-                .previewDevice("iPhone 14 Pro Max")
-            previewInterfaceOrientation(.portrait)
-                .previewDevice("iPhone SE (3rd generation)")
-            previewInterfaceOrientation(.landscapeLeft)
-                .previewDevice("iPhone SE (3rd generation)")
-        }
-    }
-}
-
-public extension Font {
-    init(uiFont: UIFont) {
-        self = Font(uiFont as CTFont)
-    }
-}

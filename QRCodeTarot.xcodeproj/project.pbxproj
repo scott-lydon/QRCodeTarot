@@ -23,6 +23,7 @@
 		7526B00D27FA70B2009C5FE8 /* QRCodeTarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */; };
 		7526B00F27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */; };
 		752ED6AB29024B4000CC978C /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752ED6AA29024B4000CC978C /* ShareButton.swift */; };
+		752ED6AD2902608300CC978C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752ED6AC2902608300CC978C /* View.swift */; };
 		753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */; };
 		753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F33283499FB0008623F /* TarotSwitchView.swift */; };
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
@@ -156,6 +157,7 @@
 		7526B00C27FA70B2009C5FE8 /* QRCodeTarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITests.swift; sourceTree = "<group>"; };
 		7526B00E27FA70B2009C5FE8 /* QRCodeTarotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeTarotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		752ED6AA29024B4000CC978C /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
+		752ED6AC2902608300CC978C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.ViewModel.swift; sourceTree = "<group>"; };
 		753E4F33283499FB0008623F /* TarotSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.swift; sourceTree = "<group>"; };
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				75194FD9284A5CA30060175C /* Suit.swift */,
 				75194FDB284A5CB90060175C /* Importance.swift */,
 				75D0913D27FBD8A80037798C /* CardKey.swift */,
+				752ED6AC2902608300CC978C /* View.swift */,
 				75D0912F27FAAB080037798C /* DeeplinkPayload.swift */,
 				752380FE28DEB3C200F24B88 /* NSMutableAttributedString.swift */,
 				757A80EC28250A4200700990 /* Fonts */,
@@ -849,6 +852,7 @@
 				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
+				752ED6AD2902608300CC978C /* View.swift in Sources */,
 				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
 				7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */,
 				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
