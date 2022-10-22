@@ -30,9 +30,11 @@ struct Card: Codable, CaseIterable {
     }
     
     var activityItems: [Any] {
-        [
-            name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
-        ]
+        let shareText = name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
+        if Data(shareText.utf8).count < 2000 {
+            return [shareText]
+        }
+        return [name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "")]
     }
 
     init(
