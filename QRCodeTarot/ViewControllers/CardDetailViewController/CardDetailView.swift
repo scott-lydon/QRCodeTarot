@@ -117,20 +117,7 @@ struct CardDetailView: View {
                         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
                     } // VStack
                 } // Scroll View
-                .mask(
-                    LinearGradient(
-                        gradient: Gradient(
-                            stops: [
-                                .init(color: Color.white.opacity(0), location: 0),
-                                .init(color: .white, location: 0.1),
-                                .init(color: .white, location: 0.11)
-                            ]
-                        ),
-                        startPoint: .top,
-                        endPoint: .center
-                    )
-                )
-                .clipped()
+                .maskedGradient()
             } // ZStack
         } // Geometry reader
         .edgesIgnoringSafeArea(.bottom)
