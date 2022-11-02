@@ -64,7 +64,6 @@ struct CardDetailView: View {
                                 .lineSpacing(6.0)
                                 .foregroundColor(Color.white)
                                 .padding(.bottom, 20)
-                            // Fallback on earlier versions
                         }
                         if readMoreShow {
                             Button {
@@ -82,7 +81,6 @@ struct CardDetailView: View {
                                         .stroke(.white, lineWidth: 1.0)
                                 )
                             }
-                            
                         }
                         Color.gray
                             .frame(height: 1)
@@ -110,7 +108,6 @@ struct CardDetailView: View {
                                 .lineSpacing(6.0)
                                 .font(ui: .inter(size: 17).dynamic)
                                 .foregroundColor(Color.white)
-                            // Fallback on earlier versions
                         }
                     }
                     .padding([.leading, .trailing, .bottom], 25)
