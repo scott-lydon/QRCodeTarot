@@ -36,12 +36,17 @@ extension View {
     @inlinable func allPreviews() -> some View {
         Group {
             previewDevice("iPhone 14 Pro Max")
-            previewInterfaceOrientation(.landscapeLeft)
-                .previewDevice("iPhone 14 Pro Max")
-            previewInterfaceOrientation(.portrait)
-                .previewDevice("iPhone SE (3rd generation)")
-            previewInterfaceOrientation(.landscapeLeft)
-                .previewDevice("iPhone SE (3rd generation)")
+            if #available(iOS 15.0, *) {
+                previewInterfaceOrientation(.landscapeLeft)
+                    .previewDevice("iPhone 14 Pro Max")
+                previewInterfaceOrientation(.portrait)
+                    .previewDevice("iPhone SE (3rd generation)")
+                previewInterfaceOrientation(.landscapeLeft)
+                    .previewDevice("iPhone SE (3rd generation)")
+            } else {
+                // Fallback on earlier versions
+            }
+            
         }
     }
 }

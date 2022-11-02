@@ -50,12 +50,22 @@ struct CardDetailView: View {
                             )
                         }
                         .padding(.bottom, 5)
-                        Text(card.desc)
-                            .lineLimit(readMoreShow ? 4 : nil)
-                            .font(ui: .inter(size: 17).dynamic)
-                            .lineSpacing(6.0)
-                            .foregroundColor(Color(uiColor: .gentleText))
-                            .padding(.bottom, 20)
+                        if #available(iOS 15.0, *) {
+                            Text(card.desc)
+                                .lineLimit(readMoreShow ? 4 : nil)
+                                .font(ui: .inter(size: 17).dynamic)
+                                .lineSpacing(6.0)
+                                .foregroundColor(Color(uiColor: .gentleText))
+                                .padding(.bottom, 20)
+                        } else {
+                            Text(card.desc)
+                                .lineLimit(readMoreShow ? 4 : nil)
+                                .font(ui: .inter(size: 17).dynamic)
+                                .lineSpacing(6.0)
+                                .foregroundColor(Color.white)
+                                .padding(.bottom, 20)
+                            // Fallback on earlier versions
+                        }
                         if readMoreShow {
                             Button {
                                 readMoreShow = false
@@ -90,10 +100,18 @@ struct CardDetailView: View {
                             Spacer()
                         }
                         .padding(.bottom, 5)
-                        Text(evolved == 0 ? card.evolved! : card.unevolved!)
-                            .lineSpacing(6.0)
-                            .font(ui: .inter(size: 17).dynamic)
-                            .foregroundColor(Color(uiColor: .gentleText))
+                        if #available(iOS 15.0, *) {
+                            Text(evolved == 0 ? card.evolved! : card.unevolved!)
+                                .lineSpacing(6.0)
+                                .font(ui: .inter(size: 17).dynamic)
+                                .foregroundColor(Color(uiColor: .gentleText))
+                        } else {
+                            Text(evolved == 0 ? card.evolved! : card.unevolved!)
+                                .lineSpacing(6.0)
+                                .font(ui: .inter(size: 17).dynamic)
+                                .foregroundColor(Color.white)
+                            // Fallback on earlier versions
+                        }
                     }
                     .padding([.leading, .trailing, .bottom], 25)
                     .edgesIgnoringSafeArea(.bottom)
