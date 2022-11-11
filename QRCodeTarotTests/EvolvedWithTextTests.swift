@@ -7,7 +7,7 @@
 
 import Foundation
 import XCTest
-@testable import QRCodeTarot
+@testable import Pointy_Hat_Tarot
 
 class EvolvedWithTextTests: XCTestCase {
 

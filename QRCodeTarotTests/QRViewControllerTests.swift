@@ -6,8 +6,7 @@
 //
 
 import XCTest
-import QRCodeReader
-@testable import QRCodeTarot
+@testable import Pointy_Hat_Tarot
 
 class ViewControllerTests: XCTestCase {
 

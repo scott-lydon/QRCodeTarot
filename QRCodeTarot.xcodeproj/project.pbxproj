@@ -727,7 +727,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					7526AFE727FA70B0009C5FE8 = {
@@ -1140,7 +1140,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeTarot.app/QRCodeTarot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pointy Hat Tarot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pointy Hat Tarot";
 			};
 			name = Debug;
 		};
@@ -1160,7 +1160,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeTarot.app/QRCodeTarot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pointy Hat Tarot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pointy Hat Tarot";
 			};
 			name = Release;
 		};

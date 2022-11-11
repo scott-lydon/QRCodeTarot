@@ -7,7 +7,7 @@
 
 
 import XCTest
-@testable import QRCodeTarot
+@testable import Pointy_Hat_Tarot
 // import CommonExtensions
 
 class LocalCardsTests: XCTestCase {
