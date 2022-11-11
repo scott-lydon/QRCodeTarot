@@ -93,10 +93,7 @@ class LocalCardsTests: XCTestCase {
 //        subVC.viewDidLoad()
 //    }
 
-    func testMenuViewController() {
-        let menuViewController = MenuViewController.instantiate()
-        menuViewController.viewDidLoad()
-    }
+
 
     func testCardDetailViewController() {
 //        let cardDetailViewController = CardDetailViewController.instantiate(title: "title", details: "details")

@@ -19,21 +19,6 @@ class MenuViewController: UIViewController {
     @IBOutlet var stackTop: NSLayoutConstraint!
     @IBOutlet var stackBottom: NSLayoutConstraint!
 
-    static func instantiate() -> MenuViewController {
-        let menuViewController: MenuViewController = UIStoryboard.vc()!
-        menuViewController.loadView()
-        menuViewController.view.set(background: BackgroundView.zero)
-        menuViewController.collectionView.delegate = menuViewController
-        menuViewController.collectionView.dataSource = menuViewController
-        menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
-        menuViewController.greetingLabel.text = Date().greeting
-        DispatchQueue.main.async {
-            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
-        }
-        menuViewController.viewDidLoad()
-        return menuViewController
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.set(background: BackgroundView.zero)
