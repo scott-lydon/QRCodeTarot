@@ -41,7 +41,6 @@
 		757A808D28222EC200700990 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A808C28222EC200700990 /* BackgroundView.xib */; };
 		757A80CF282250A700700990 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80CE282250A700700990 /* ChoiceView.swift */; };
 		757A80D1282250B100700990 /* ChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A80D0282250B100700990 /* ChoiceView.xib */; };
-		757A80D42822620F00700990 /* LocalImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D32822620F00700990 /* LocalImageTests.swift */; };
 		757A80D7282264F200700990 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D6282264F200700990 /* UIColor.swift */; };
 		757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DA282268D000700990 /* ChoiceView.ViewModel.swift */; };
 		757A80DF282398FF00700990 /* ViewModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80DE282398FF00700990 /* ViewModelCollectionViewCell.swift */; };
@@ -84,6 +83,7 @@
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
+		75817240291E27AE00F61FE3 /* LocalImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A80D32822620F00700990 /* LocalImageTests.swift */; };
 		75851830289A7CD2001BF8CA /* TarotMeaning.json in Resources */ = {isa = PBXBuildFile; fileRef = 7585182F289A7CD2001BF8CA /* TarotMeaning.json */; };
 		75851832289AEBC8001BF8CA /* TarotMeaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75851831289AEBC8001BF8CA /* TarotMeaning.swift */; };
 		758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758AE0F3282E348500C8F420 /* MenuItem.swift */; };
@@ -905,8 +905,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757A80D42822620F00700990 /* LocalImageTests.swift in Sources */,
 				75D0914227FBDBA80037798C /* LocalCardsTests.swift in Sources */,
+				75817240291E27AE00F61FE3 /* LocalImageTests.swift in Sources */,
 				759B175A28501C40006E8BB1 /* EvolvedWithTextTests.swift in Sources */,
 				756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */,
 			);
