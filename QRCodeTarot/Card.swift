@@ -73,7 +73,7 @@ struct Card: Codable, CaseIterable {
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name.capitalized, image: image ?? .cardDemo, ratio: .cardRatio, cornerRadius: 10)
+        .init(text: name.capitalized, image: image, ratio: .cardRatio, cornerRadius: 10)
     }
 
     var evolvedSwitchViewModel: EvolvedWithText.ViewModel {

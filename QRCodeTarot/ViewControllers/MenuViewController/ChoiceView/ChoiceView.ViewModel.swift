@@ -27,7 +27,7 @@ extension ChoiceView {
         init(_ card: Card) {
             self.init(
                 text: card.name,
-                image: card.image ?? .init(),
+                image: card.image,
                 ratio: .cardRatio,
                 cornerRadius: 10
             )
