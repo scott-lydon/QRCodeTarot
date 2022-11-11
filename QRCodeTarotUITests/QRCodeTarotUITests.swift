@@ -30,41 +30,6 @@ class QRCodeTarotUITests: XCTestCase {
         firstTableCell(with: "Mind Reading")?.tap()
     }
     
-    /*
-     
-     //XCUIApplication().collectionViews.children(matching: .cell).element(boundBy: 3).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.tap()
-     for index in 0..<100 {
-         let element = XCUIApplication().collectionViews.children(matching: .cell).element(boundBy: index)
-         guard element.exists else { continue }
-         if element.debugDescription.lowercased().contains("Games".lowercased()) {
-             print("win")
-         } else {
-             print("loss")
-         }
-     }
-     
-     //  XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["The Mind Reading Card Trick"]/*[[".cells.staticTexts[\"The Mind Reading Card Trick\"]",".staticTexts[\"The Mind Reading Card Trick\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-      // XCTAssertTrue(XCUIApplication().tables.firstMatch.exists)
-      for cell in  XCUIApplication().tables.firstMatch.cells.allElementsBoundByIndex {
-          if cell.debugDescription.lowercased().contains("Mind Reading".lowercased()) {
-              cell.tap()
-          }
-      }
-      //  XCUIApplication().tables.firstMatch.cells.element(boundBy: 0).tap()
-      // XCUIApplication().tables.firstMatch.children(matching: .tableRow).element(boundBy: 0).tap()
-     //   XCUIApplication().tables.firstMatch.cells.children(matching: .tableRow).element(boundBy: 0).tap()
-      // cells.element(boundBy: 0).tap()
-      sleep(500)
-      // XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["A prediction in a sealed envelope matches a card chosen by your spectator."]/*[[".cells.staticTexts[\"A prediction in a sealed envelope matches a card chosen by your spectator.\"]",".staticTexts[\"A prediction in a sealed envelope matches a card chosen by your spectator.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-                      
-//        let mindReading = cellContaining(strings: ["Mind Reading"])
-//        mindReading?.tap()
-//        sleep(3000)
-      // Use recording to get started writing UI tests.
-      // Use XCTAssert and related functions to verify your tests produce the correct results.
-     */
-    
-    
     /// A non checked simple cell matcher, that returns the first cell that matches the criteria.
     /// - Parameter matchString: String to see if the cell contains
     /// - Returns: returns the cell.
@@ -130,7 +95,6 @@ class QRCodeTarotUITests: XCTestCase {
         }
         return elements.first
     }
-
 }
 
 extension NSObject {
