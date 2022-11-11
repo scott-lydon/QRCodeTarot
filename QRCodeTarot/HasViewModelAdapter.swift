@@ -12,10 +12,6 @@ struct HasViewmodelAdapter<View: UIView>: UIViewRepresentable where View: HasVie
     
     @Binding var viewModel: View.ViewModel
     
-//    init(viewModel: Binding<View.ViewModel>, type: View.Type) {
-//        self._viewModel = viewModel
-//    }
-    
     func makeUIView(context: Context) -> some UIView {
         var view = View.zero
         view.viewModel = viewModel
