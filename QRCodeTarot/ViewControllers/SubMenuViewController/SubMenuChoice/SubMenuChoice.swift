@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/6/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 /// Used in SubMenuViewController
 class SubMenuChoice: NibView, HasViewModel {
-
     @IBOutlet var title: UILabel!
     @IBOutlet var details: UILabel!
     @IBOutlet var viewToGradient: BottomLeftToTopRightGradient!
@@ -28,7 +27,6 @@ class SubMenuChoice: NibView, HasViewModel {
 }
 
 extension SubMenuChoice {
-    
     struct ViewModel: HasFallBack {
         let titleText: String
         let detailText: String

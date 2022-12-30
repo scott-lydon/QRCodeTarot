@@ -8,7 +8,6 @@
 import UIKit
 
 class CommonInitView: UIView {
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

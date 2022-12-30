@@ -8,7 +8,6 @@
 import UIKit
 
 extension NSMutableAttributedString {
-    
     static var readMore: NSMutableAttributedString {
         let imageAttachment = NSTextAttachment()
         imageAttachment.image = UIImage.chevronRight.withTintColor(.white)

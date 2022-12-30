@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/3/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 /// Used for all the ViewControllers. 
 class BackgroundView: NibView, HasViewModel {
-
     @IBOutlet var backgroundColorShade: UIImageView!
 
     var viewModel: UIImage = .brightColorShade {

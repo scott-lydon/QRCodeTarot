@@ -5,8 +5,8 @@
 //  Created by Scott Lydon on 5/18/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 typealias BoolAction = (Bool) -> Void
 
@@ -16,7 +16,7 @@ extension TarotSwitchView {
             .init()
         }
 
-        var isLeft: Bool = true
+        var isLeft = true
         var switchedToLeft: BoolAction?
         var leftText: String = "Evolved"
         var rightText: String = "Unevolved"

@@ -1,4 +1,3 @@
-
 //
 //  UICollectionView.swift
 //  QRCodeTarot
@@ -6,11 +5,10 @@
 //  Created by Scott Lydon on 5/4/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 extension UICollectionView {
-
     /// Convenience function for reloading data on the main thread.
     /// - Parameter queue: defualt is main.
     public func reload(on queue: DispatchQueueType = DispatchQueue.main) {
@@ -27,7 +25,7 @@ extension UICollectionView {
         for indexPath: IndexPath, cell: T.Type, viewModel: T.ViewModel?) -> T
     where T: HasViewModel {
         guard var cell = dequeueReusableCell(withReuseIdentifier: T.className, for: indexPath) as? T,
-              let viewModel = viewModel else { return .init() }
+              let viewModel else { return .init() }
         cell.viewModel = viewModel
         return cell
     }
@@ -35,7 +33,7 @@ extension UICollectionView {
     var width: CGFloat {
         frame.size.width
     }
-     
+
      func gridCellSize(perRow count: Int) -> CGSize {
          width
              .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)

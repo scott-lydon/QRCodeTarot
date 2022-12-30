@@ -22,14 +22,13 @@ struct SizePreferenceKey: PreferenceKey {
 struct BackgroundGeometryReader: View {
     var body: some View {
         GeometryReader { geometry in
-            return Color
+            Color
                     .clear
                     .preference(key: SizePreferenceKey.self, value: geometry.size)
         }
     }
 }
 struct SizeAwareViewModifier: ViewModifier {
-
     @Binding private var viewSize: CGSize
 
     init(viewSize: Binding<CGSize>) {
@@ -39,18 +38,18 @@ struct SizeAwareViewModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(BackgroundGeometryReader())
-            .onPreferenceChange(SizePreferenceKey.self, perform: { if self.viewSize != $0 { self.viewSize = $0 }})
+            .onPreferenceChange(SizePreferenceKey.self, perform: { if self.viewSize != $0 { self.viewSize = $0 } })
     }
 }
 
 struct PillColors {
     var foreground: UIColor
     var background: UIColor
-    
+
     static var selection: Self {
         .init(foreground: .black, background: .nearWhite)
     }
-    
+
     static var background: Self {
         .init(foreground: .deselectedGray, background: .darkBackground)
     }
@@ -59,20 +58,20 @@ struct PillColors {
 struct SegmentedPicker: View {
     private let ActiveSegmentColor: Color// = Color(.tertiarySystemBackground) // pill color
     private let BackgroundColor: Color// = Color(.secondarySystemBackground)
-    private let ShadowColor: Color = Color.black.opacity(0.2)
-    private let TextColor: Color //= Color(.secondaryLabel)
+    private let ShadowColor = Color.black.opacity(0.2)
+    private let TextColor: Color // = Color(.secondaryLabel)
     private let SelectedTextColor: Color //  = Color(.label)
 
     private static let TextFont: Font = .system(size: 12)
-    
+
     private static let SegmentCornerRadius: CGFloat = 12
     private static let ShadowRadius: CGFloat = 4
     private static let SegmentXPadding: CGFloat = 16
     private static let SegmentYPadding: CGFloat = 8
     private static let PickerPadding: CGFloat = 4
-    
+
     private static let AnimationDuration: Double = 0.35
-    
+
     // Stores the size of a segment, used to create the active segment rect
     @State private var segmentSize: CGSize = .zero
     let height: CGFloat
@@ -83,20 +82,20 @@ struct SegmentedPicker: View {
         let isInitialized: Bool = segmentSize != .zero
         if !isInitialized { return EmptyView().eraseToAnyView() }
         return
-            RoundedRectangle(cornerRadius: SegmentedPicker.SegmentCornerRadius)
+            RoundedRectangle(cornerRadius: Self.SegmentCornerRadius)
                 .foregroundColor(ActiveSegmentColor)
-                .shadow(color: ShadowColor, radius: SegmentedPicker.ShadowRadius)
+                .shadow(color: ShadowColor, radius: Self.ShadowRadius)
                 .frame(width: self.segmentSize.width, height: height)
                 .offset(x: self.horizontalOffset(), y: 0)
                // .animation(.linear, value: SegmentedPicker.AnimationDuration) // doesn't animate.
                // .animation(Animation.linear(duration: SegmentedPicker.AnimationDuration))
-                .animation(Animation.spring(blendDuration: SegmentedPicker.AnimationDuration))
+                .animation(Animation.spring(blendDuration: Self.AnimationDuration))
                 .eraseToAnyView()
     }
-    
+
     @Binding private var selection: Int
     private let items: [String]
-    
+
     init(
         items: [String],
         minHeight: CGFloat,
@@ -113,7 +112,6 @@ struct SegmentedPicker: View {
         self.TextColor = Color(backgroundPill.foreground)
     }
 
-    
     var body: some View {
         // Align the ZStack to the leading edge to make calculating offset on activeSegmentView easier
         ZStack(alignment: .leading) {
@@ -125,14 +123,14 @@ struct SegmentedPicker: View {
                 }
             }
         }
-        .padding(SegmentedPicker.PickerPadding)
+        .padding(Self.PickerPadding)
         .background(BackgroundColor)
-        .clipShape(RoundedRectangle(cornerRadius: SegmentedPicker.SegmentCornerRadius))
+        .clipShape(RoundedRectangle(cornerRadius: Self.SegmentCornerRadius))
     }
 
     // Helper method to compute the offset based on the selected index
     private func horizontalOffset() -> CGFloat {
-        CGFloat(self.selection) * (self.segmentSize.width + SegmentedPicker.SegmentXPadding / 2)
+        CGFloat(self.selection) * (self.segmentSize.width + Self.SegmentXPadding / 2)
     }
 
     // Gets text view for the segment
@@ -144,10 +142,10 @@ struct SegmentedPicker: View {
         return
             Text(self.items[index])
                 // Dark test for selected segment
-                .foregroundColor(isSelected ? SelectedTextColor: TextColor)
+                .foregroundColor(isSelected ? SelectedTextColor : TextColor)
                 .lineLimit(1)
-                .padding(.vertical, SegmentedPicker.SegmentYPadding)
-                .padding(.horizontal, SegmentedPicker.SegmentXPadding)
+                .padding(.vertical, Self.SegmentYPadding)
+                .padding(.horizontal, Self.SegmentXPadding)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 // Watch for the size of the
                 .modifier(SizeAwareViewModifier(viewSize: self.$segmentSize))
@@ -164,11 +162,10 @@ struct SegmentedPicker: View {
     }
 }
 
-
 struct PreviewView: View {
     @State var selection: Int = 0
     private let items: [String] = ["M", "T", "W", "T", "F"]
-    
+
     var body: some View {
         SegmentedPicker(items: self.items, minHeight: 100, selection: self.$selection)
             .padding()

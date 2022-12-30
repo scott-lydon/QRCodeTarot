@@ -5,14 +5,13 @@
 //  Created by Scott Lydon on 5/10/22.
 //
 
-import UIKit
-import TableMVVM
 import CommonExtensions
 import CommonUIKitExtensions
 import SwiftUI
+import TableMVVM
+import UIKit
 
 class CollapsableLabelLabel: NibView, HasViewModel {
-
     @IBOutlet var labelLabel: LabelLabel!
     @IBOutlet var button: UIButton!
 

@@ -5,14 +5,13 @@
 //  Created by Scott Lydon on 4/3/22.
 //
 
-import UIKit
-import Callable
 import ARKit
+import Callable
 import CommonExtensions
+import UIKit
 
 // MARK: - Card
 struct Card: Codable, CaseIterable {
-    
     let type: Importance
     let name_short: String
     let name: String
@@ -24,14 +23,14 @@ struct Card: Codable, CaseIterable {
     let suit: Suit?
     let evolved: String?
     let unevolved: String?
-    
+
     var hasNoEvolutionContent: Bool {
         evolved.isEmpty && unevolved.isEmpty
     }
-    
+
     var activityItems: [Any] {
         let shareText = name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
-        if Data(shareText.utf8).count < 2000 {
+        if Data(shareText.utf8).count < 2_000 {
             return [shareText]
         }
         return [name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "")]
@@ -67,7 +66,7 @@ struct Card: Codable, CaseIterable {
         let components = imageName.components(separatedBy: "_")
         guard let number = components.first,
               let suit = components[safe: 1],
-              let matchingCard = Card.allCases
+              let matchingCard = Self.allCases
             .first(where: { $0.value_int == number.int && $0.suit.string == suit }) else { return nil }
         self = matchingCard
     }

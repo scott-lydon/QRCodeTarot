@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 4/14/22.
 //
 
-import UIKit
-import TableMVVM
 import ARKit
+import TableMVVM
+import UIKit
 
 class MenuViewController: UIViewController {
-
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var greetingLabel: UILabel!
 
@@ -44,7 +43,6 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: TimeChangeListener {
-
     func timeChanged() {
         greetingLabel.text = Date().greeting
     }
@@ -53,7 +51,6 @@ extension MenuViewController: TimeChangeListener {
 typealias ChoiceCell = ViewModelCollectionCell<ChoiceView>
 
 extension MenuViewController: UICollectionViewDataSource {
-
     func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
@@ -74,7 +71,6 @@ extension MenuViewController: UICollectionViewDataSource {
 }
 
 extension MenuViewController: UICollectionViewDelegateFlowLayout {
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
@@ -91,11 +87,13 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         case .tarotQRReader:
             guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
             navigationController?.pushViewController(tarotViewController, animated: true)
+
         case .activity(let activity):
             navigationController?.pushViewController(
                 SubMenuViewController.instantiate(with: activity),
                 animated: true
             )
+
         case .tarotCards(let cards):
             navigationController?.pushViewController(
                 TarotCardsViewController.instantiate(with: cards),

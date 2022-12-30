@@ -5,11 +5,10 @@
 //  Created by Scott Lydon on 10/21/22.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 extension View {
-    
     func maskedGradient(
         startPoint: UnitPoint = .top,
         endPoint: UnitPoint = .center
@@ -28,11 +27,11 @@ extension View {
             )
         )
     }
-    
+
     @inlinable public func font(ui: UIFont) -> some View {
         font(Font(uiFont: ui))
     }
-    
+
     @inlinable func allPreviews() -> some View {
         Group {
             previewDevice("iPhone 14 Pro Max")
@@ -46,7 +45,6 @@ extension View {
             } else {
                 // Fallback on earlier versions
             }
-            
         }
     }
 }

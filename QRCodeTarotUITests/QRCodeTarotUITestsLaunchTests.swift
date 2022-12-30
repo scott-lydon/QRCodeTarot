@@ -8,7 +8,6 @@
 import XCTest
 
 class QRCodeTarotUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

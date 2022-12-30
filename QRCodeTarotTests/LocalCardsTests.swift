@@ -5,13 +5,11 @@
 //  Created by Scott Lydon on 4/4/22.
 //
 
-
-import XCTest
 @testable import Pointy_Hat_Tarot
+import XCTest
 // import CommonExtensions
 
 class LocalCardsTests: XCTestCase {
-
     func testCardFromCardKey() {
         let localCards = Bundle.localCards
         XCTAssertNotNil(localCards)
@@ -22,7 +20,7 @@ class LocalCardsTests: XCTestCase {
                 deckVersion: 1
             )
         )
-        XCTAssertTrue(localCards.cards.contains(where: { $0.suit == .cups}))
+        XCTAssertTrue(localCards.cards.contains(where: { $0.suit == .cups }))
         XCTAssertTrue(
             localCards.cards.contains(where: { $0.value_int == 5 }),
             "\(localCards.cards.map(\.value_int))"
@@ -77,7 +75,7 @@ class LocalCardsTests: XCTestCase {
     }
 
     func testInter() {
-        XCTAssertNotNil(UIFont.inter(size:12))
+        XCTAssertNotNil(UIFont.inter(size: 12))
         XCTAssertEqual(UIFont.inter(size: 16).familyName, "Inter")
     }
 
@@ -93,8 +91,6 @@ class LocalCardsTests: XCTestCase {
 //        subVC.viewDidLoad()
 //    }
 
-
-
     func testCardDetailViewController() {
 //        let cardDetailViewController = CardDetailViewController.instantiate(title: "title", details: "details")
 //        cardDetailViewController.loadView()
@@ -105,12 +101,11 @@ class LocalCardsTests: XCTestCase {
         XCTAssertEqual(9.leadingZero, "09")
         XCTAssertEqual(12.leadingZero, "12")
     }
-    
+
     func testCards() {
         XCTAssertEqual(Card.allCases.count, 56)
     }
 }
-
 
 extension UIView {
     var flattenedSubViews: [UIView] {

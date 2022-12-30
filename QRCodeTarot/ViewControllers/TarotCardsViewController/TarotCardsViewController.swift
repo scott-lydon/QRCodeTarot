@@ -5,19 +5,18 @@
 //  Created by Scott Lydon on 5/13/22.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 /// Directly from Menu View Controller, shows a collection of tarot cards (not details).
 /// This is the Tarot card menu.  
 class TarotCardsViewController: UIViewController {
-
     @IBOutlet var collectionView: UICollectionView!
 
     var cards: [Card] = []
 
     static func instantiate(with cards: [Card]) -> TarotCardsViewController {
-        let tarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()! //ut
+        let tarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()! // ut
         tarotCardsViewController.loadView()
         tarotCardsViewController.view.set(background: BackgroundView.zero)
         tarotCardsViewController.collectionView.delegate = tarotCardsViewController
@@ -50,7 +49,6 @@ extension TarotCardsViewController: UICollectionViewDataSource {
 }
 
 extension TarotCardsViewController: UICollectionViewDelegateFlowLayout {
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,

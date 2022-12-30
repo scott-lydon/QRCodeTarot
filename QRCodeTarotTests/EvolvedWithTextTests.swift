@@ -6,11 +6,10 @@
 //
 
 import Foundation
-import XCTest
 @testable import Pointy_Hat_Tarot
+import XCTest
 
 class EvolvedWithTextTests: XCTestCase {
-
     func testOnlyUnevolved() {
         let evolvedViewModel = EvolvedWithText.ViewModel(
             labelLeftModel: nil,

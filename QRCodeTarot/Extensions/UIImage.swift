@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIImage {
-
     static var hambugerMenu: UIImage {
         UIImage(
             systemName: "line.3.horizontal",

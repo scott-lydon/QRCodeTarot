@@ -11,7 +11,6 @@ typealias Tutorial = [TutorialItem.Step]
 
 struct TutorialItem {
     struct Step {
-
         var image: UIImage?
         var title: String?
         var description: String

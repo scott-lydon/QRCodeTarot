@@ -9,7 +9,6 @@ import UIKit
 
 /// TODO: Remodel. 
 class ContactViewController: UIViewController {
-
     static func instantiate() -> ContactViewController {
         let viewController: ContactViewController = UIStoryboard.vc()!
         viewController.loadView()

@@ -8,7 +8,6 @@
 import Foundation
 
 extension Bundle {
-
     static var localCards: Cards {
         // unit tested.
         let url = Bundle.main.path(forResource: "card_data", ofType: "json")!.fileurl!

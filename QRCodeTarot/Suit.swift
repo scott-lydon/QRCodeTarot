@@ -8,7 +8,6 @@
 import Foundation
 
 enum Suit: String, Codable, CaseIterable, Comparable {
-    
     case cups
     case pentacles
     case swords
@@ -17,7 +16,7 @@ enum Suit: String, Codable, CaseIterable, Comparable {
     var symbol: CardKey.Symbol {
         .init(suit: self)
     }
-    
+
     static func < (lhs: Suit, rhs: Suit) -> Bool {
         lhs.rawValue < rhs.rawValue
     }

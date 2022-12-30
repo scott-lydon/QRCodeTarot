@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/17/22.
 //
 
-import UIKit
-import TableMVVM
 import CommonUIKitExtensions
+import TableMVVM
+import UIKit
 
 class TarotSwitchView: NibView, HasViewModel {
-
     @IBOutlet var sliderLeading: NSLayoutConstraint!
     @IBOutlet var sliderTrailing: NSLayoutConstraint!
 

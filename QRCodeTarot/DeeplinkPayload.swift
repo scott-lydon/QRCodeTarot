@@ -26,8 +26,6 @@ struct Detail: Codable {
    // let card: CardKey
 }
 
-
-
 /*
  https://mocki.io/v1/40942a92-d1d3-404a-a0c3-a56bfc8db988
  // {"applinks":{"apps":[],"details":[{"appID":"8L7Z3WU967.com.QRCodeTarot","paths":[" * "]}]}}

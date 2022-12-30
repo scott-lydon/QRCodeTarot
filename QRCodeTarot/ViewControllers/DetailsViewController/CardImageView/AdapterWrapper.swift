@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct AdapterWrapper: View {
-    
     @State var viewModel: CollapsableLabelLabel.ViewModel = .init(
         labelLabelViewModel: LabelLabel.ViewModel(
             topText: "Hello",
             bottomText: .lorem
         )
     )
-    
+
     var body: some View {
         CollapsableLabelLabelAdapter(viewModel: $viewModel)
             .background(Color.black)
@@ -27,4 +26,3 @@ struct AdapterWrapper_Previews: PreviewProvider {
         AdapterWrapper()
     }
 }
-

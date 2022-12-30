@@ -58,7 +58,7 @@ extension UIView {
     func addGradiant() {
         let GradientLayerName = "gradientLayer"
 
-        if let oldlayer = self.layer.sublayers?.filter({$0.name == GradientLayerName}).first {
+        if let oldlayer = self.layer.sublayers?.filter({ $0.name == GradientLayerName }).first {
             oldlayer.removeFromSuperlayer()
         }
         let gradientLayer = CAGradientLayer()

@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/4/22.
 //
 
+@testable import Pointy_Hat_Tarot
 import UIKit
 import XCTest
-@testable import Pointy_Hat_Tarot
 
 class LocalImageTests: XCTestCase {
-
     func testImages() {
         XCTAssertNotNil(UIImage.star)
         XCTAssertNotNil(UIImage.qrCode)

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 extension Array where Element == MagicTrick {
     var subMenuViewModels: [SubMenuChoice.ViewModel] {
         map(SubMenuChoice.ViewModel.init)

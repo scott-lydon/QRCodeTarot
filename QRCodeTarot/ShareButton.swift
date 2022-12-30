@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ShareButton: View {
-    
     var activityItems: [Any]
     var color: Color
     var height: CGFloat = 30
-    
+
     var body: some View {
         Button {
             UIApplication

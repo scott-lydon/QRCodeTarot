@@ -13,7 +13,6 @@ protocol HasPayload: UIViewController {
 }
 
 extension HasPayload {
-    
     static func instantiate(payload: Payload) -> Self {
         let viewController: Self = UIStoryboard.vc()!
         viewController.payload = payload

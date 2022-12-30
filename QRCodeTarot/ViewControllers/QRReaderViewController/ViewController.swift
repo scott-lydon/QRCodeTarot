@@ -5,13 +5,12 @@
 //  Created by Scott Lydon on 4/3/22.
 //
 
-import UIKit
 import AVFoundation
-import QRCodeReader
 import Callable
+import QRCodeReader
+import UIKit
 
 class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
-
     let localCards: Cards = Bundle.localCards
     var dispatcher: CanAsync = DispatchQueue.main
 

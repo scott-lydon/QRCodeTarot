@@ -22,7 +22,6 @@ import UIKit
 /// a subclass of `MyCustomView` in the identity inspector, only the file Owner.
 /// 4. MAKE SURE THE `.xib` and `.swift` name match the class declaration.
 @IBDesignable class NibView: CommonInitView {
-    
     var view: UIView!
 
     override func commonInit() {
@@ -36,12 +35,11 @@ import UIKit
     }
 
     private func loadNib() -> UIView? {
-
         // INFINITE LOOP RISK:
         // If you encounter an infinite loop here, you may have set a view
         // to the the view name, instead of or in addition to as the owner
         // in interface builder.
-        type(of: self).description().components(separatedBy: ".").last.flatMap {
+        Self.description().components(separatedBy: ".").last.flatMap {
             UINib(nibName: $0, bundle: Bundle(for: type(of: self)))
                 .instantiate(withOwner: self, options: nil).first as? UIView
         }

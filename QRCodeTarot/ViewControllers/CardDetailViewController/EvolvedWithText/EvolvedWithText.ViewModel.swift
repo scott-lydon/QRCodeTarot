@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 6/7/22.
 //
 
-import UIKit
-import TableMVVM
 import CommonExtensions
+import TableMVVM
+import UIKit
 
 extension EvolvedWithText {
-
     struct ViewModel: HasFallBack {
         var labelLeftModel: LabelLabel.ViewModel?
         var labelRightModel: LabelLabel.ViewModel?

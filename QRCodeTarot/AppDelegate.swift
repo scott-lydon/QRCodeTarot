@@ -9,7 +9,6 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var timeTracker: TimeChangeListener?
 
     func applicationSignificantTimeChange(_ application: UIApplication) {

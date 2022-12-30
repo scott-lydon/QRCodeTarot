@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 4/14/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 /// Used 
 class LabelLabel: NibView, HasViewModel {
-
     @IBOutlet var topLabel: UILabel! {
         didSet {
             topLabel.setDynamicText()
@@ -26,13 +25,13 @@ class LabelLabel: NibView, HasViewModel {
         didSet {
             topLabel.text = viewModel.topText
             topLabel.isHidden = viewModel.topText == nil
-            
+
             bottomLabel.isHidden = viewModel.bottomText == nil
             let attributedString = NSMutableAttributedString(string: viewModel.bottomText ?? "")
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.minimumLineHeight = viewModel.lineHeight
             paragraphStyle.maximumLineHeight = viewModel.lineHeight
-            attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+            attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: attributedString.length))
             bottomLabel.attributedText = attributedString
             bottomLabel.numberOfLines = viewModel.lineCount
         }
@@ -40,7 +39,6 @@ class LabelLabel: NibView, HasViewModel {
 }
 
 extension LabelLabel {
-    
     struct ViewModel: HasFallBack {
         let topText: String?
         let bottomText: String?

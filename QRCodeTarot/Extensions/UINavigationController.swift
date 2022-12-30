@@ -8,7 +8,6 @@
 import UIKit
 
 extension UINavigationController {
-
     func popToFirstOf<T: UIViewController>(type: T = .init()) {
         guard let t: T = viewControllers.firstOfType() else { return }
         print(String(describing: t))

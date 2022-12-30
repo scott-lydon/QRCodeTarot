@@ -16,7 +16,6 @@ struct CardKey: Codable {
 }
 
 extension CardKey {
-
     enum Symbol: String, Codable {
         case hearts
         case clubs

@@ -11,13 +11,12 @@ var uipadding: CGFloat = 25
 var uipaddingBoth: CGFloat { uipadding * 2 }
 
 struct CardDetailView: View {
-    
     @State var card: Card
-    
-    @State var readMoreShow: Bool = true
+
+    @State var readMoreShow = true
     @State var switchmodel: TarotSwitchView.ViewModel = .fallBack
     @State var evolved: Int = 0
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
