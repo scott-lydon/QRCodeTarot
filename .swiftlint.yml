@@ -139,16 +139,15 @@ custom_rules:
     message: "If you would like to create a protocol with more than one function and or variable, then cretae separate protocols with one function or variable each, then combine them with a typealias. For example, typealias = firstProtocol & secondProtocol"
     severity: error
   unnecessary_class:
-    name: "Class doesn't need to exist"
-    regex: 'class(?!.*(XC|UI|[Mm]odel|[Mm]ock))'
-#    'class(?!(.*XC)|(.*UI)|(.*Model)|(.*model))'
-    message: "A new class should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new class."
+    name: "Class or struct doesn't need to exist"
+    regex: '(class(?!.*(model|Model|Codable|UI|[mM]ock|var|XC)))|(struct(?!.*(model|Model|Codable|View)))'
+    message: "A new class or struct should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new class or struct."
     severity: error
-  unnecessary_struct:
-    name: "Struct doesn't need to exist"
-    regex: 'struct(?!(.*View)|(.*view)|(.*UI)|(.*model)|(.*Model)|(.*Codable))'
-    message: "A new struct should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new struct."
-    severity: error
+#  unnecessary_struct:
+#    name: "Struct doesn't need to exist"
+#    regex: 'struct(?!(.*View)|(.*view)|(.*UI)|(.*model)|(.*Model)|(.*Codable))'
+#    message: "A new struct should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new struct."
+#    severity: error
 
 #  one_type_per_file:
 #    name: "Only use one type per file."
