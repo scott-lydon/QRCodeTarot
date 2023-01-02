@@ -9,6 +9,7 @@ import UIKit
 
 protocol HasPayload: UIViewController {
     associatedtype Payload
+
     var payload: Payload! { get set }
 }
 

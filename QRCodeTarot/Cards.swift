@@ -24,8 +24,8 @@ struct Cards: Codable {
               let suit = paths.secondToLast?.lowercased(),
               let deckVersion = paths.last?.int,
               let symbol = CardKey.Symbol(rawValue: suit) else {
-                  return nil
-              }
+            return nil
+        }
         return card(from: CardKey(symbol: symbol, number: value, deckVersion: deckVersion))
     }
 
@@ -41,8 +41,8 @@ struct Cards: Codable {
             guard let tarotSuit: String = paths.fourthToLast,
                   let tarotNumber: Int = paths.fifthToLast?.int,
                   let tarotSuit: CardKey.Symbol = Suit(rawValue: tarotSuit)?.symbol else {
-                      return nil
-                  }
+                return nil
+            }
             return card(from: CardKey(symbol: tarotSuit, number: tarotNumber, deckVersion: deckVersion))
         }
         return card(from: CardKey(symbol: symbol, number: value, deckVersion: deckVersion))
