@@ -12,7 +12,7 @@ opt_in_rules:
     - closure_spacing
     - collection_alignment
     - comma_inheritance
-    - conditional_returns_on_newline
+#    - conditional_returns_on_newline
     - contains_over_filter_count
     - contains_over_filter_is_empty
     - contains_over_first_not_nil
@@ -30,11 +30,11 @@ opt_in_rules:
     - empty_xctest_method
     - enum_case_associated_values_count
     - expiring_todo
-    - explicit_acl
+#    - explicit_acl
     - explicit_enum_raw_value
     - explicit_init
     - explicit_self
-    - explicit_top_level_acl
+#    - explicit_top_level_acl
     - explicit_type_interface
     - extension_access_modifier
     - fallthrough
@@ -83,15 +83,15 @@ opt_in_rules:
     - override_in_extension
     - pattern_matching_keywords
     - period_spacing
-    - prefer_nimble
+#    - prefer_nimble
     - prefer_self_in_static_references
     - prefer_self_type_over_type_of_self
     - prefer_zero_over_explicit_init
     - prefixed_toplevel_constant
     - private_action
-    - private_outlet
+#    - private_outlet
     - private_subject
-    - prohibited_interface_builder
+#    - prohibited_interface_builder
     - prohibited_super_call
     - quick_discouraged_call
     - quick_discouraged_focused_test
@@ -100,7 +100,7 @@ opt_in_rules:
     - reduce_into
     - redundant_nil_coalescing
     - redundant_type_annotation
-    - required_deinit
+#    - required_deinit
     - required_enum_case
     - return_value_from_void_function
     - self_binding
@@ -111,7 +111,7 @@ opt_in_rules:
     - static_operator
     - strict_fileprivate
     - strong_iboutlet
-    - switch_case_on_newline
+#    - switch_case_on_newline
     - test_case_accessibility
     - toggle_bool
     - trailing_closure
@@ -131,3 +131,27 @@ opt_in_rules:
     - weak_delegate
     - xct_specific_matcher
     - yoda_condition
+
+custom_rules:
+  protocol_single_responsibility_violation:
+    name: "Protocol with more than one function and or variable"
+    regex: 'protocol.*\{\n.*(func|var).*\n.*(func|var).*\n\}'
+    message: "If you would like to create a protocol with more than one function and or variable, then cretae separate protocols with one function or variable each, then combine them with a typealias. For example, typealias = firstProtocol & secondProtocol"
+    severity: error
+  unnecessary_class:
+    name: "Class doesn't need to exist"
+    regex: 'class(?!.*(XC|UI|[Mm]odel|[Mm]ock))'
+#    'class(?!(.*XC)|(.*UI)|(.*Model)|(.*model))'
+    message: "A new class should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new class."
+    severity: error
+  unnecessary_struct:
+    name: "Struct doesn't need to exist"
+    regex: 'struct(?!(.*View)|(.*view)|(.*UI)|(.*model)|(.*Model)|(.*Codable))'
+    message: "A new struct should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new struct."
+    severity: error
+
+#  one_type_per_file:
+#    name: "Only use one type per file."
+#    regex: '((\n)|.)*(class|struct|enum)((\n)|.)*(class|struct|enum)'
+#    message: "Please only create one type per file."
+#    severity: error
