@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIFont {
-
     static func inter(size: CGFloat) -> UIFont {
         UIFont(name: "Inter", size: size)!
     }

@@ -8,7 +8,6 @@
 import Foundation
 
 extension String {
-
     var tarotNumber: Int {
         switch self {
         case "Ace": return 1
@@ -25,6 +24,7 @@ extension String {
         case "Knave", "Jack", "Servant", "Page", "Slave": return 12
         case "Queen": return 13
         case "King": return 14
+
         default:
             assertionFailure()
             return -1
@@ -33,10 +33,11 @@ extension String {
 
     var suit: Suit {
         switch self {
-        case "Cups", "Chalices", "cu" : return .cups
+        case "Cups", "Chalices", "cu": return .cups
         case "Pentacles", "Coins", "Disks", "cr": return .pentacles
         case "Swords", "wo": return .swords
         case "Wands", "wa": return .wands
+
         default:
             assertionFailure(self)
             return .swords
@@ -49,5 +50,9 @@ extension String {
 
     var autoSuit: Suit {
         split(separator: " ").map(\.string).third?.suit ?? Suit.swords
+    }
+
+    static var darkColorShade: String {
+        "darkColorShade"
     }
 }

@@ -8,9 +8,10 @@
 import AVFoundation
 import Callable
 import QRCodeReader
+import SwiftUI
 import UIKit
 
-class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
+class QrReaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelegate {
     let localCards: Cards = Bundle.localCards
     var dispatcher: CanAsync = DispatchQueue.main
 
@@ -31,7 +32,7 @@ class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
         dispatcher.async(group: nil, qos: .unspecified, flags: []) {
             [weak self] in
             self?.navigationController?.pushViewController(
-                CardDetailViewController.instantiat(card: card),
+                UIHostingController(rootView: CardDetailView(card: card)),
                 animated: true
             )
         }
@@ -45,6 +46,7 @@ class QRREaderViewcontroller: UIViewController, QRCodeReaderViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "QR Code Reader"
         readerVC.delegate = self
         readerVC.modalPresentationStyle = .formSheet
         let menuButton = UIButton(frame: .init(origin: .zero, size: CGSize(width: 50, height: 50)))

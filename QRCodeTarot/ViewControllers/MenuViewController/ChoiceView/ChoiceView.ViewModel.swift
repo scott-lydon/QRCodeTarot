@@ -5,13 +5,11 @@
 //  Created by Scott Lydon on 5/4/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 extension ChoiceView {
-
     struct ViewModel: HasFallBack {
-
         var text: String
         var image: UIImage
         var ratio: CGFloat
@@ -27,7 +25,7 @@ extension ChoiceView {
         init(_ card: Card) {
             self.init(
                 text: card.name,
-                image: card.image ?? .init(),
+                image: card.image,
                 ratio: .cardRatio,
                 cornerRadius: 10
             )

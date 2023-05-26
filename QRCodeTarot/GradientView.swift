@@ -8,7 +8,6 @@
 import UIKit
 
 final class BottomLeftToTopRightGradient: CommonInitView {
-
     private let gradient = CAGradientLayer()
     private let gradientStartColor: UIColor = .gradientStartGray
     private let gradientEndColor: UIColor = .gradientEndGray

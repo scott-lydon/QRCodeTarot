@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/17/22.
 //
 
-import UIKit
-import TableMVVM
 import CommonUIKitExtensions
+import TableMVVM
+import UIKit
 
 class VideoView: NibView, HasViewModel {
-
     @IBOutlet var button: UIButton!
 
     @IBAction func buttonTapped() {
@@ -33,6 +32,5 @@ extension VideoView {
         }
 
         var buttonTapped: Action?
-
     }
 }

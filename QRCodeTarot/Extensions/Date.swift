@@ -14,7 +14,7 @@ extension Date {
     }
 
     var greeting: String {
-        let thisTime =  time()
+        let thisTime = time()
         if thisTime >= 2 && thisTime < 12 {
             return "Good Morning"
         } else if thisTime >= 12 && thisTime < 18 {

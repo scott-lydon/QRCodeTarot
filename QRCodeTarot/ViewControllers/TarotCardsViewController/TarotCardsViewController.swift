@@ -5,18 +5,18 @@
 //  Created by Scott Lydon on 5/13/22.
 //
 
+import SwiftUI
 import UIKit
 
 /// Directly from Menu View Controller, shows a collection of tarot cards (not details).
 /// This is the Tarot card menu.  
 class TarotCardsViewController: UIViewController {
-
     @IBOutlet var collectionView: UICollectionView!
 
     var cards: [Card] = []
 
     static func instantiate(with cards: [Card]) -> TarotCardsViewController {
-        let tarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()! //ut
+        let tarotCardsViewController: TarotCardsViewController = UIStoryboard.vc()! // ut
         tarotCardsViewController.loadView()
         tarotCardsViewController.view.set(background: BackgroundView.zero)
         tarotCardsViewController.collectionView.delegate = tarotCardsViewController
@@ -34,13 +34,12 @@ class TarotCardsViewController: UIViewController {
     }
 }
 
-
 extension TarotCardsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         collectionView.dequeueCell(
             for: indexPath,
-               cell: ChoiceCell(),
-               viewModel: cards[indexPath.row].choiceViewModel
+            cell: ChoiceCell.self,
+            viewModel: cards[indexPath.row].choiceViewModel
         )
     }
 
@@ -50,16 +49,12 @@ extension TarotCardsViewController: UICollectionViewDataSource {
 }
 
 extension TarotCardsViewController: UICollectionViewDelegateFlowLayout {
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        collectionView.width
-            .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
-            .divided(by: 2)
-            .square
+        collectionView.gridCellSize(perRow: 2)
     }
 
     func collectionView(
@@ -67,7 +62,8 @@ extension TarotCardsViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath
     ) {
         navigationController?.pushViewController(
-            CardDetailViewController.instantiate(card: cards[indexPath.row]),
+            UIHostingController(rootView: CardDetailView(card: cards[indexPath.row])),
+            // CardDetailViewController.instantiate(payload: cards[indexPath.row]),
             animated: true
         )
     }

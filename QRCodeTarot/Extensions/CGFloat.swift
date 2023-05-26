@@ -8,8 +8,7 @@
 import UIKit
 
 extension CGFloat {
-
     static var cardRatio: CGFloat {
-        1440/1900
+        1_440 / 1_900
     }
 }

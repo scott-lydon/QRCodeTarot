@@ -5,8 +5,8 @@
 //  Created by Scott Lydon on 4/15/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 typealias DetailDataSource = TableDataSource4<
     SectionOneRow<ViewModelCell<Container<VideoView>>>,
@@ -17,7 +17,6 @@ typealias DetailDataSource = TableDataSource4<
 
 /// This is the tutorial view controller, needs a total revamp. 
 class DetailsViewController: UIViewController {
-
     @IBOutlet var tableContainer: UIView!
     lazy var tableView: UITableMVVM<DetailDataSource> = UITableMVVM(viewModel: .init()).asClear()
 
@@ -30,7 +29,7 @@ class DetailsViewController: UIViewController {
             section0: .init(cellViewModel: .init(insets: .standard, viewModel: VideoView.ViewModel())),
             section1: .init(cellViewModel: .init(insets: .standard, viewModel: details)),
             section2: .init(cellViewModel: .init(insets: .standard, viewModel: UILabel.ViewModel(color: .white, font: .inter(size: 16)))),
-            section3: .init(cellsViewModels: tutorialSteps.correctlyNumbered.map { .init(insets: .standard, viewModel: $0)})
+            section3: .init(cellsViewModels: tutorialSteps.correctlyNumbered.map { .init(insets: .standard, viewModel: $0) })
         )
         return detailsViewController
     }

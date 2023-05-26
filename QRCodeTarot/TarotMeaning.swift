@@ -7,11 +7,10 @@
 
 import Foundation
 
-
 // MARK: - TarotMeaning
 struct TarotMeaning: Codable {
     let name, desription, evolved, unevolved: String
-    
+
     var card: Card {
         .init(
             type: .minor,
@@ -35,7 +34,6 @@ struct TarotMeaning: Codable {
 }
 
 extension Array where Element == TarotMeaning {
-    
     var cards: [Card] {
         sorted().map(\.card)
     }
@@ -49,18 +47,15 @@ extension TarotMeaning: HasTarotNum {
 
 extension TarotMeaning: HasTarotSuit {
     var suit: Suit {
-        print(name.components(separatedBy: "_"))
-        return name.components(separatedBy: "_").last!.suit // unit tested.
+        name.components(separatedBy: "_").last!.suit // unit tested.
     }
 }
 
 extension TarotMeaning: Comparable {
-    
     static func < (lhs: TarotMeaning, rhs: TarotMeaning) -> Bool {
         lhs.suit < rhs.suit || (lhs.suit == rhs.suit && lhs.num < rhs.num)
     }
 }
-
 
 extension String.SubSequence {
     var string: String {

@@ -5,11 +5,11 @@
 //  Created by Scott Lydon on 6/7/22.
 //
 
-import UIKit
+import SwiftUI
 import TableMVVM
+import UIKit
 
 class EvolvedWithText: NibView, HasViewModel {
-
     @IBOutlet var switchView: TarotSwitchView!
     @IBOutlet var labelLabel: LabelLabel!
 
@@ -20,7 +20,7 @@ class EvolvedWithText: NibView, HasViewModel {
             switchView.isHidden = viewModel.hideSwitch
             labelLabel.isHidden = viewModel.hideLabelLabel
             switchView.viewModel.switchedToLeft = { [weak self] toLeft in
-                guard let self = self else { return }
+                guard let self else { return }
                 var buffer = self.viewModel
                 buffer.switchViewModel.isLeft = toLeft
                 self.viewModel = buffer

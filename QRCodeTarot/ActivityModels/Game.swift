@@ -19,7 +19,7 @@ struct Game: CanDisplayTutorial, CaseIterable {
 
     static var allCases: [Game] {
         [
-            Game(
+            Self(
                 title: "BS",
                 subTitle: "a Game of Bluffing",
                 summary: nil,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MagicTrick:  CaseIterable {
+struct MagicTrick: CaseIterable {
     var title: String
     var subTitle: String
     var summary: String
@@ -34,7 +34,6 @@ struct MagicTrick:  CaseIterable {
                     TutorialItem.Step(description: "To do this, look up from the deck of cards and begin recapping how you used a regular deck of cards that was fairly shuffled. Remind your volunteer that they could have cut anywhere but chose to “cut here.”"),
                     TutorialItem.Step(description: "As you say “cut here” pick up the sideways top half and then point to the top card of the bottom half (the Ten of Hearts) and say “and you selected this card.”"),
                     TutorialItem.Step(description: "Have the volunteer turn over the selected card and then reveal it matches your prediction!")
-
                 ],
                 videoURL: nil
             ),

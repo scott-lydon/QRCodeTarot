@@ -8,7 +8,6 @@
 import UIKit
 
 enum Activity {
-
     case magicTricks([MagicTrick])
     case games([Game])
 
@@ -16,6 +15,7 @@ enum Activity {
         switch self {
         case .magicTricks(let tricks):
             return tricks[safe: row]?.topDescription
+
         case .games(let games):
             return games[safe: row]?.topDesription
         }
@@ -25,6 +25,7 @@ enum Activity {
         switch self {
         case .magicTricks(let tricks):
             return tricks[safe: row]?.tutorial.map(\.viewModel).correctlyNumbered
+
         case .games(let games):
             return games[safe: row]?.tutorial.map(\.viewModel).correctlyNumbered
         }
@@ -47,15 +48,15 @@ enum Activity {
 
     var name: String {
         switch self {
-        case .magicTricks(_): return "Magic Tricks"
-        case .games(_): return "Games"
+        case .magicTricks: return "Magic Tricks"
+        case .games: return "Games"
         }
     }
 
     var image: UIImage {
         switch self {
-        case .magicTricks(_): return .magicHat
-        case .games(_): return .gameController
+        case .magicTricks: return .magicHat
+        case .games: return .gameController
         }
     }
 }

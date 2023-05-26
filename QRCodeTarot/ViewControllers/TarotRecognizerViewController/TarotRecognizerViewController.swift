@@ -5,14 +5,15 @@
 //  Created by Scott Lydon on 6/9/22.
 //
 
-import UIKit
-import SceneKit
 import ARKit
+import SceneKit
+import SwiftUI
+import UIKit
 
 class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
-
     var sceneView = ARSCNView.zero
     var dispatcher: CanAsync = DispatchQueue.main
+    var pendingNavigation = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +23,16 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // When not in view did load, a bug appears after a view cycles, where nothing is recognized. 
         let configuration = ARWorldTrackingConfiguration()
         guard let arImages: Set<ARReferenceImage> = ARReferenceImage
             .referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
-        print(arImages.count)
-        print(arImages.map(\.name))
         configuration.detectionImages = arImages
         configuration.planeDetection = .horizontal
-        sceneView.debugOptions = [.showFeaturePoints]
+        sceneView.debugOptions = [.showFeaturePoints] // happens to look really cool, with yellow dots
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         sceneView.delegate = self
+        pendingNavigation = false
     }
 
     /// called when we detected an image.
@@ -42,11 +43,14 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
     ) {
         guard let imageAnchor = anchor as? ARImageAnchor,
               let imageName = imageAnchor.referenceImage.name,
-              let card: Card = Card(imageName: imageName) else { return }
-        dispatcher.async(group: nil, qos: .unspecified, flags: []) { [weak self] in
-            self?.dismiss(animated: true)
+              let card = Card(imageName: imageName),
+              // Prevents double navigation when multiple cards are detected at the same time.
+              // Also prevents the transition to the wrong card after multiple.
+              !pendingNavigation else { return }
+        pendingNavigation = true
+        dispatcher.async { [weak self] in
             self?.navigationController?.pushViewController(
-                CardDetailViewController.instantiate(card: card),
+                UIHostingController(rootView: CardDetailView(card: card)),
                 animated: true
             )
         }

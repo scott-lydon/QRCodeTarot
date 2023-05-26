@@ -9,7 +9,6 @@ import TableMVVM
 import UIKit
 
 class TutorialStepView: NibView, HasViewModel {
-
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var countLabel: UILabel! {
         didSet {
@@ -33,7 +32,6 @@ class TutorialStepView: NibView, HasViewModel {
 }
 
 extension TutorialStepView {
-
     struct ViewModel: HasFallBack {
         var image: UIImage?
         /// Sometimes this is given by the context.  

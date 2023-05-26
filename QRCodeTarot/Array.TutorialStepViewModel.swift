@@ -8,7 +8,6 @@
 import Foundation
 
 extension Array where Element == TutorialStepView.ViewModel {
-
     var correctlyNumbered: Self {
         enumerated().map { .init(image: $1.image, count: $0 + 1, stepDescription: $1.stepDescription) }
     }

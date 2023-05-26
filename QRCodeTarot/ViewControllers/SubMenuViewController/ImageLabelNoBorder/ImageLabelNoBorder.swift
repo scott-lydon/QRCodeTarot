@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 5/9/22.
 //
 
-import UIKit
 import TableMVVM
+import UIKit
 
 /// Used in SubMenuViewcontroller
 class ImageLabelNoBorder: NibView, HasViewModel {
-
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var label: UILabel!
 
@@ -22,11 +21,8 @@ class ImageLabelNoBorder: NibView, HasViewModel {
     }
 }
 
-
 struct ImageLabel {
-
     struct ViewModel: HasFallBack {
-
         let image: UIImage
         let text: String
 

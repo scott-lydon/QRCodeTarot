@@ -8,7 +8,6 @@
 import Foundation
 
 protocol CanAsync {
-    
     func async(
         group: DispatchGroup?,
         qos: DispatchQoS,
@@ -17,10 +16,15 @@ protocol CanAsync {
     )
 }
 
+extension CanAsync {
+    func async(execute work: @escaping @convention(block) () -> Void) {
+        self.async(group: nil, qos: .unspecified, flags: [], execute: work)
+    }
+}
+
 extension DispatchQueue: CanAsync {}
 
 class MockCanAsync: CanAsync {
-
     func async(
         group: DispatchGroup? = nil,
         qos: DispatchQoS = .unspecified,

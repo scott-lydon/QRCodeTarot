@@ -9,12 +9,11 @@ import Foundation
 import TableMVVM
 
 extension CollapsableLabelLabel {
-
     struct ViewModel: HasFallBack {
         var labelLabelViewModel: LabelLabel.ViewModel
         var buttonText: String = "Read More"
-        var buttonIsHidden: Bool = false
-        var buttonTapped: Action? 
+        var buttonIsHidden = false
+        var buttonTapped: Action?
 
         static var fallBack: CollapsableLabelLabel.ViewModel {
             .init(labelLabelViewModel: .init(topText: "-", bottomText: "-"))

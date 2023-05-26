@@ -5,12 +5,11 @@
 //  Created by Scott Lydon on 4/14/22.
 //
 
-import UIKit
-import TableMVVM
 import ARKit
+import TableMVVM
+import UIKit
 
 class MenuViewController: UIViewController {
-
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var greetingLabel: UILabel!
 
@@ -18,21 +17,6 @@ class MenuViewController: UIViewController {
 
     @IBOutlet var stackTop: NSLayoutConstraint!
     @IBOutlet var stackBottom: NSLayoutConstraint!
-
-    static func instantiate() -> MenuViewController {
-        let menuViewController: MenuViewController = UIStoryboard.vc()!
-        menuViewController.loadView()
-        menuViewController.view.set(background: BackgroundView.zero)
-        menuViewController.collectionView.delegate = menuViewController
-        menuViewController.collectionView.dataSource = menuViewController
-        menuViewController.collectionView.register(ChoiceCell.self, forCellWithReuseIdentifier: ChoiceCell.className)
-        menuViewController.greetingLabel.text = Date().greeting
-        DispatchQueue.main.async {
-            (UIApplication.shared.delegate as? AppDelegate)?.timeTracker = menuViewController
-        }
-        menuViewController.viewDidLoad()
-        return menuViewController
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +43,6 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: TimeChangeListener {
-
     func timeChanged() {
         greetingLabel.text = Date().greeting
     }
@@ -68,14 +51,13 @@ extension MenuViewController: TimeChangeListener {
 typealias ChoiceCell = ViewModelCollectionCell<ChoiceView>
 
 extension MenuViewController: UICollectionViewDataSource {
-
     func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         collectionView.dequeueCell(
             for: indexPath,
-               cell: ChoiceCell(),
+            cell: ChoiceCell.self,
                viewModel: menuItems[indexPath.row].choiceViewModel
         )
     }
@@ -89,16 +71,12 @@ extension MenuViewController: UICollectionViewDataSource {
 }
 
 extension MenuViewController: UICollectionViewDelegateFlowLayout {
-
     func collectionView(
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        collectionView.width
-            .minus(collectionViewLayout.asFlowLayout?.leftRightAndInteritem ?? 0)
-            .divided(by: 2)
-            .square
+        collectionView.gridCellSize(perRow: 2)
     }
 
     func collectionView(
@@ -109,11 +87,13 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         case .tarotQRReader:
             guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
             navigationController?.pushViewController(tarotViewController, animated: true)
+
         case .activity(let activity):
             navigationController?.pushViewController(
                 SubMenuViewController.instantiate(with: activity),
                 animated: true
             )
+
         case .tarotCards(let cards):
             navigationController?.pushViewController(
                 TarotCardsViewController.instantiate(with: cards),
