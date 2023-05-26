@@ -140,9 +140,13 @@ custom_rules:
     severity: error
   unnecessary_class:
     name: "Class or struct doesn't need to exist"
-    regex: '(class(?!.*(model|Model|Codable|UI|[mM]ock|var|XC)))|(struct(?!.*(model|Model|Codable|View)))'
+    regex: "(class(?!.*([mM]odel|Codable|[uU][iI]|[mM]ock|var|XC|Observer)))|(struct(?!.*([mM]odel|Codable|[vV]iew)))"
+#"(?!.*\\bmodel\\b)^.*(UIViewController|UIView|View|UIViewRepresentable|Codable|Observer)$"
+#    "(class|struct) (?!.*?((UI)?View(Controller|Representable)?|Codable|Observer|Model))"
+#
     message: "A new class or struct should have a reason to exist, if it isn't a model, codable, UI subclass, nor a View conformer, then there are alternative approaches instead of creating a new class or struct."
     severity: error
+
 #  unnecessary_struct:
 #    name: "Struct doesn't need to exist"
 #    regex: 'struct(?!(.*View)|(.*view)|(.*UI)|(.*model)|(.*Model)|(.*Codable))'
@@ -154,3 +158,28 @@ custom_rules:
 #    regex: '((\n)|.)*(class|struct|enum)((\n)|.)*(class|struct|enum)'
 #    message: "Please only create one type per file."
 #    severity: error
+
+#  model-naming2:
+#    name: "Model Naming Rule 2"
+#    message: "Classes and structs that aren't a subclass of UIViewController, UIView, view, UIViewRepresentable, coddle or observer must include the word 'model' in their name."
+#    severity: error
+#    regex: "(?!.*(view|ViewController|UIView|UIViewRepresentable|coddle|observer))(?!.*model).*"
+#    included: ".*\\.(swift)$"
+#  model-naming3:
+#    name: "Model Naming Rule 3"
+#    message: "Classes and structs that aren't a subclass of UIViewController, UIView, view, UIViewRepresentable, or Observer must include the word 'model' in their name."
+#    severity: error
+#    regex: "^(?!.*\\b(model|observer)\\b)(?!.*(UIViewController|UIView|view|UIViewRepresentable)).*$"
+#    included: ".*\\.(swift)$"
+  model-naming:
+    name: "Model Naming Rule 4"
+    message: "Classes and structs that aren't a subclass of UIViewController, UIView, view, UIViewRepresentable, or Observer and don't include the word 'model' in their name must throw an error."
+    severity: error
+    regex: "(?!.*(\\bmodel\\b|UIVeeiw|Bently|Observer))(?<!\\.)\\b(?!View\\b)[A-Z][a-zA-Z]*(ViewController|View|UIViewRepresentable|Codable|Observer)?$"
+#  model-naming:
+#    name: "Model Naming Rule 5"
+#    message: "Classes and structs that aren't a subclass of UIViewController, UIView, view, UIViewRepresentable, observer or do not include the word 'model' in their name must display a SwiftLint error."
+#    severity: error
+#    regex: "(?!.*(view|ViewController|UIView|UIViewRepresentable|observer))(?!.*model).*"
+#    included: ".*\\.(swift)$"
+##    included: ".*\\.(swift)$"
