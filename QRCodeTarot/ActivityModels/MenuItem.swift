@@ -14,10 +14,10 @@ enum MenuItem: CaseIterable {
 
     static var allCases: [MenuItem] {
         [
+            .tarotQRReader,
+            .tarotCards(Card.allCases),
             .activity(.magicTricks(MagicTrick.allCases)),
             .activity(.games(Game.allCases)),
-            .tarotCards(Card.allCases),
-            .tarotQRReader
         ]
     }
 
