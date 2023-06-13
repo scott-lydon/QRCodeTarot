@@ -20,7 +20,8 @@ extension UIImage {
     }
 
     static var qrCode: UIImage {
-        UIImage(named: #function)!
+        // Color changes don't work on the image.  
+        UIImage(systemName: "platter.filled.top.and.arrow.up.iphone")!
     }
 
     static var phone: UIImage {

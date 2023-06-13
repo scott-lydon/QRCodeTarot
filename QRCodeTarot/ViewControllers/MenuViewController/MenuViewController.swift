@@ -84,7 +84,7 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath
     ) {
         switch menuItems[indexPath.row] {
-        case .tarotQRReader:
+        case .tarotCardReader:
             guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
             navigationController?.pushViewController(tarotViewController, animated: true)
 

@@ -10,14 +10,14 @@ import UIKit
 enum MenuItem: CaseIterable {
     case activity(Activity)
     case tarotCards([Card])
-    case tarotQRReader
+    case tarotCardReader
 
     static var allCases: [MenuItem] {
         [
-            .tarotQRReader,
+            .tarotCardReader,
             .tarotCards(Card.allCases),
-            .activity(.magicTricks(MagicTrick.allCases)),
-            .activity(.games(Game.allCases)),
+           // .activity(.magicTricks(MagicTrick.allCases)),
+           // .activity(.games(Game.allCases)),
         ]
     }
 
@@ -29,7 +29,7 @@ enum MenuItem: CaseIterable {
         switch self {
         case .activity(let activity): return activity.name
         case .tarotCards: return "Tarot Cards"
-        case .tarotQRReader: return "Tarot Reader"
+        case .tarotCardReader: return "Tarot Reader"
         }
     }
 
@@ -37,7 +37,7 @@ enum MenuItem: CaseIterable {
         switch self {
         case .activity(let activity): return activity.image
         case .tarotCards: return .gameCards
-        case .tarotQRReader: return .qrCode
+        case .tarotCardReader: return .qrCode
         }
     }
 }
