@@ -11,7 +11,9 @@ import CommonExtensions
 import UIKit
 
 // MARK: - Card
-struct Card: Codable, CaseIterable {
+struct Card: Codable, CaseIterable, Identifiable, Hashable {
+
+    var id: String { name_short }
     let type: Importance
     let name_short: String
     let name: String
@@ -23,6 +25,10 @@ struct Card: Codable, CaseIterable {
     let suit: Suit?
     let evolved: String?
     let unevolved: String?
+
+    var random: Card! {
+        Card.allCases.randomElement()
+    }
 
     var hasNoEvolutionContent: Bool {
         evolved.isEmpty && unevolved.isEmpty

@@ -48,6 +48,7 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
               // Also prevents the transition to the wrong card after multiple.
               !pendingNavigation else { return }
         pendingNavigation = true
+        CardPickEvent(card: card).save()
         dispatcher.async { [weak self] in
             self?.navigationController?.pushViewController(
                 UIHostingController(rootView: CardDetailView(card: card)),

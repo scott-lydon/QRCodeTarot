@@ -24,6 +24,14 @@ extension UIImage {
         UIImage(systemName: "platter.filled.top.and.arrow.up.iphone")!
     }
 
+    static var digitalPicker: UIImage {
+        UIImage(systemName: "rectangle.grid.3x2")!
+    }
+
+    static var history: UIImage {
+        UIImage(systemName: "calendar.badge.clock")!
+    }
+
     static var phone: UIImage {
         UIImage(named: #function)!
     }

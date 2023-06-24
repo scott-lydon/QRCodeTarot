@@ -11,11 +11,15 @@ enum MenuItem: CaseIterable {
     case activity(Activity)
     case tarotCards([Card])
     case tarotCardReader
+    case pickDigitalCard([Card])
+    case history
 
     static var allCases: [MenuItem] {
         [
             .tarotCardReader,
             .tarotCards(Card.allCases),
+            .history,
+            .pickDigitalCard(Card.allCases),
            // .activity(.magicTricks(MagicTrick.allCases)),
            // .activity(.games(Game.allCases)),
         ]
@@ -30,6 +34,8 @@ enum MenuItem: CaseIterable {
         case .activity(let activity): return activity.name
         case .tarotCards: return "Tarot Cards"
         case .tarotCardReader: return "Tarot Reader"
+        case .pickDigitalCard: return "Digital picker"
+        case .history: return "History"
         }
     }
 
@@ -38,6 +44,8 @@ enum MenuItem: CaseIterable {
         case .activity(let activity): return activity.image
         case .tarotCards: return .gameCards
         case .tarotCardReader: return .qrCode
+        case .pickDigitalCard(_): return .digitalPicker
+        case .history: return .history
         }
     }
 }
