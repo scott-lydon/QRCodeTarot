@@ -20,13 +20,11 @@ enum MenuItem: CaseIterable {
             .tarotCards(Card.allCases),
             .history,
             .pickDigitalCard(Card.allCases),
-           // .activity(.magicTricks(MagicTrick.allCases)),
-           // .activity(.games(Game.allCases)),
         ]
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name, image: image)
+        .init(text: name, image: image, tintColor: self.tintColor)
     }
 
     var name: String {
@@ -36,6 +34,16 @@ enum MenuItem: CaseIterable {
         case .tarotCardReader: return "Tarot Reader"
         case .pickDigitalCard: return "Digital picker"
         case .history: return "History"
+        }
+    }
+
+    var tintColor: UIColor? {
+        switch self {
+        case .activity: return nil
+        case .tarotCards: return nil
+        case .tarotCardReader: return .gentleGray
+        case .pickDigitalCard: return .gentleYellow
+        case .history: return .gentlePink
         }
     }
 

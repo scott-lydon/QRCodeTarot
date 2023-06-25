@@ -30,8 +30,8 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
         guard KeychainWrapper.standard.integer(forKey: hasDeckKey) != 1 else { return }
         // Show the alert
         let alertController = UIAlertController(
-            title: "Scan the deck 🔍",
-            message: "This app can scan Pointy Hat Tarot cards 🃏.",
+            title: "Scan 🔍 a card",
+            message: "This app can scan and read Pointy Hat Tarot cards 🃏.",
             preferredStyle: .alert
         )
         let actions: [UIAlertAction] = [
