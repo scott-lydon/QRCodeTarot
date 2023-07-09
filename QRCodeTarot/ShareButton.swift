@@ -27,6 +27,8 @@ struct ShareButton: View {
                     animated: true
                 )
         } label: {
+            Text("Share")
+                .foregroundColor(Color.white)
             Image(systemName: "square.and.arrow.up")
                 .resizable()
                 .aspectRatio(contentMode: .fit)

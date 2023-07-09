@@ -27,58 +27,67 @@ struct CardDetailView: View {
                     .edgesIgnoringSafeArea(.all)
                 ScrollView {
                     VStack {
-                        Text(card.name.capitalized)
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                            .padding(.bottom, 30)
-                            .padding(.top, 5)
-                        Image(uiImage: card.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 200)
-                            .cornerRadius(12.0)
-                            .padding(.bottom, 20)
-                        HStack {
-                            Text("Description")
-                                .font(.title)
+                        VStack {
+                            // Included to get around the 10 argument for view builder issue
+                            Text(card.name.capitalized)
+                                .font(.largeTitle)
                                 .foregroundColor(.white)
-                            Spacer()
-                            ShareButton(
-                                activityItems: card.activityItems,
-                                color: .white
-                            )
-                        }
-                        .padding(.bottom, 5)
-                        if #available(iOS 15.0, *) {
-                            Text(card.desc)
-                                .lineLimit(readMoreShow ? 4 : nil)
-                                .font(ui: .inter(size: 17).dynamic)
-                                .lineSpacing(6.0)
-                                .foregroundColor(Color(uiColor: .gentleText))
+                                .padding(.bottom, 30)
+                                .padding(.top, 5)
+                            Image(uiImage: card.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 200)
+                                .cornerRadius(12.0)
                                 .padding(.bottom, 20)
-                        } else {
-                            Text(card.desc)
-                                .lineLimit(readMoreShow ? 4 : nil)
-                                .font(ui: .inter(size: 17).dynamic)
-                                .lineSpacing(6.0)
-                                .foregroundColor(Color.white)
-                                .padding(.bottom, 20)
-                        }
-                        if readMoreShow {
-                            Button {
-                                readMoreShow = false
-                            } label: {
-                                HStack {
-                                    Text("Read More ")
-                                        .foregroundColor(.white)
-                                    Image(systemName: "chevron.right")
-                                        .foregroundColor(.white)
-                                }
-                                .frame(width: geometry.size.width - uipaddingBoth, height: 50)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 16.0)
-                                        .stroke(.white, lineWidth: 1.0)
+                            HStack {
+                                Text("Description")
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                Spacer()
+                                ShareButton(
+                                    activityItems: card.activityItems,
+                                    color: .white
                                 )
+                            }
+                            .padding(.bottom, 5)
+                            if #available(iOS 15.0, *) {
+                                Text(card.desc)
+                                    .lineLimit(readMoreShow ? 4 : nil)
+                                    .font(ui: .inter(size: 17).dynamic)
+                                    .lineSpacing(6.0)
+                                    .foregroundColor(Color(uiColor: .gentleText))
+                                    .padding(.bottom, 20)
+                            } else {
+                                Text(card.desc)
+                                    .lineLimit(readMoreShow ? 4 : nil)
+                                    .font(ui: .inter(size: 17).dynamic)
+                                    .lineSpacing(6.0)
+                                    .foregroundColor(Color.white)
+                                    .padding(.bottom, 20)
+                            }
+                            if readMoreShow {
+                                Button {
+                                    readMoreShow = false
+                                } label: {
+                                    HStack {
+                                        Text("Read More ")
+                                            .foregroundColor(.white)
+                                        Image(systemName: "chevron.right")
+                                            .foregroundColor(.white)
+                                    }
+                                    .frame(width: geometry.size.width - uipaddingBoth, height: 50)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 16.0)
+                                            .stroke(.white, lineWidth: 1.0)
+                                    )
+                                }
+                            }
+                            if !readMoreShow {
+                                Text("PS - Your Tarot reading suggests two paths below: the recommended 'Evolved' path signals maturity, while the 'Unevolved' path warns of potential stagnation. Ultimately, the choice is yours.")
+                                    .foregroundColor(Color.white)
+                                    .font(.callout)
+                                    .italic()
                             }
                         }
                         Color.gray
@@ -107,6 +116,14 @@ struct CardDetailView: View {
                                 .lineSpacing(6.0)
                                 .font(ui: .inter(size: 17).dynamic)
                                 .foregroundColor(Color.white)
+                        }
+                        HStack {
+                            Spacer()
+                            ShareButton(
+                                activityItems: card.activityItems,
+                                color: .white
+                            )
+                            Spacer()
                         }
                     }
                     .padding([.leading, .trailing, .bottom], 25)

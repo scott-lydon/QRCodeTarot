@@ -35,11 +35,26 @@ struct Card: Codable, CaseIterable, Identifiable, Hashable {
     }
 
     var activityItems: [Any] {
-        let shareText = name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
-        if Data(shareText.utf8).count < 2_000 {
-            return [shareText]
-        }
-        return [name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "")]
+        let ending: String =
+        """
+        iOS Download: https://shorturl.at/dsxB1
+        Buy the deck: https://shorturl.at/girz0
+        """
+        return [
+            "Hey there!  Here is your Tarot reading from using Pointy Hat Tarot." +
+            "\n\n" +
+            ending +
+            "\n\n" +
+            name_short +
+            "\n" +
+            desc +
+            "\n\n" +
+            "Evolved:" +
+            "\n" +
+            (evolved ?? "") +
+            "\n\n" +
+            ending
+        ]
     }
 
     init(
