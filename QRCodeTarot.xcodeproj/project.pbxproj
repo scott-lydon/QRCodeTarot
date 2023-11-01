@@ -10,7 +10,6 @@
 		75194FD8284A5C8F0060175C /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD7284A5C8F0060175C /* Cards.swift */; };
 		75194FDA284A5CA30060175C /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FD9284A5CA30060175C /* Suit.swift */; };
 		75194FDC284A5CB90060175C /* Importance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75194FDB284A5CB90060175C /* Importance.swift */; };
-		752380F528DE24C300F24B88 /* AdapterWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F428DE24C300F24B88 /* AdapterWrapper.swift */; };
 		752380F728DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F628DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift */; };
 		752380F928DE3ACE00F24B88 /* HasViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */; };
 		752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752380FC28DE962C00F24B88 /* CardDetailView.swift */; };
@@ -27,8 +26,6 @@
 		753E4F322834948D0008623F /* CollapsableLabelLabel.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */; };
 		753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F33283499FB0008623F /* TarotSwitchView.swift */; };
 		753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3528349A060008623F /* TarotSwitchView.xib */; };
-		753E4F392834AFEB0008623F /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4F382834AFEB0008623F /* VideoView.swift */; };
-		753E4F3B2834AFF80008623F /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753E4F3A2834AFF80008623F /* VideoView.xib */; };
 		753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */; };
 		753E4FC12835DB390008623F /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC02835DB390008623F /* UIFont.swift */; };
 		753E4FC32835DEB80008623F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC22835DEB80008623F /* UILabel.swift */; };
@@ -60,8 +57,6 @@
 		757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */; };
 		757A810D28250FB600700990 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810C28250FB600700990 /* Int.swift */; };
 		757A81A8282A338D00700990 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81A7282A338D00700990 /* GradientView.swift */; };
-		757A81B2282A55C300700990 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B1282A55C300700990 /* CardImageView.swift */; };
-		757A81B4282A55D000700990 /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81B3282A55D000700990 /* CardImageView.xib */; };
 		757A81D2282B47F800700990 /* CollapsableLabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */; };
 		757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81D3282B480600700990 /* CollapsableLabelLabel.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
@@ -130,7 +125,6 @@
 		75194FD7284A5C8F0060175C /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		75194FD9284A5CA30060175C /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
 		75194FDB284A5CB90060175C /* Importance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Importance.swift; sourceTree = "<group>"; };
-		752380F428DE24C300F24B88 /* AdapterWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterWrapper.swift; sourceTree = "<group>"; };
 		752380F628DE37C300F24B88 /* CollapsableLabelLabelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabelAdapter.swift; sourceTree = "<group>"; };
 		752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasViewModelAdapter.swift; sourceTree = "<group>"; };
 		752380FC28DE962C00F24B88 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
@@ -151,8 +145,6 @@
 		753E4F312834948D0008623F /* CollapsableLabelLabel.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableLabelLabel.ViewModel.swift; sourceTree = "<group>"; };
 		753E4F33283499FB0008623F /* TarotSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.swift; sourceTree = "<group>"; };
 		753E4F3528349A060008623F /* TarotSwitchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TarotSwitchView.xib; sourceTree = "<group>"; };
-		753E4F382834AFEB0008623F /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		753E4F3A2834AFF80008623F /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
 		753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.ViewModel.swift; sourceTree = "<group>"; };
 		753E4FC02835DB390008623F /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		753E4FC22835DEB80008623F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
@@ -183,8 +175,6 @@
 		757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		757A810C28250FB600700990 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		757A81A7282A338D00700990 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		757A81B1282A55C300700990 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
-		757A81B3282A55D000700990 /* CardImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
 		757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
@@ -362,15 +352,6 @@
 			path = TarotSwitchView;
 			sourceTree = "<group>";
 		};
-		753E4F3C2834AFFD0008623F /* VideoView */ = {
-			isa = PBXGroup;
-			children = (
-				753E4F382834AFEB0008623F /* VideoView.swift */,
-				753E4F3A2834AFF80008623F /* VideoView.xib */,
-			);
-			path = VideoView;
-			sourceTree = "<group>";
-		};
 		754FE8EB2808C1D10051720E /* ImageContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,7 +402,6 @@
 				757EF67328093382000685FC /* MenuViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				758AE0F9282EC5D400C8F420 /* TarotCardsViewController */,
-				757EF67F280954EE000685FC /* DetailsViewController */,
 				757EF691280A8B57000685FC /* ContactViewController */,
 			);
 			path = ViewControllers;
@@ -473,16 +453,6 @@
 				757A80F228250A7100700990 /* static */,
 			);
 			path = Inter;
-			sourceTree = "<group>";
-		};
-		757A81B5282A55D600700990 /* CardImageView */ = {
-			isa = PBXGroup;
-			children = (
-				757A81B1282A55C300700990 /* CardImageView.swift */,
-				752380F428DE24C300F24B88 /* AdapterWrapper.swift */,
-				757A81B3282A55D000700990 /* CardImageView.xib */,
-			);
-			path = CardImageView;
 			sourceTree = "<group>";
 		};
 		757A81BF282B306500700990 /* static */ = {
@@ -537,15 +507,6 @@
 				75E302BD2A3AE48800E342FD /* CardPickEvent.swift */,
 			);
 			path = MenuViewController;
-			sourceTree = "<group>";
-		};
-		757EF67F280954EE000685FC /* DetailsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				753E4F3C2834AFFD0008623F /* VideoView */,
-				757A81B5282A55D600700990 /* CardImageView */,
-			);
-			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 		757EF691280A8B57000685FC /* ContactViewController */ = {
@@ -721,7 +682,6 @@
 				75851830289A7CD2001BF8CA /* TarotMeaning.json in Resources */,
 				757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */,
 				757A810328250A7200700990 /* README.txt in Resources */,
-				757A81B4282A55D000700990 /* CardImageView.xib in Resources */,
 				757A80FB28250A7200700990 /* Inter-Bold.ttf in Resources */,
 				757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */,
 				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
@@ -731,7 +691,6 @@
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
 				753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */,
-				753E4F3B2834AFF80008623F /* VideoView.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
 				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
@@ -803,7 +762,6 @@
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
 				75F6A67D289BB2E5002C40F7 /* Date.swift in Sources */,
 				75E302C32A3AF56A00E342FD /* PickDigitalCardView.swift in Sources */,
-				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				752ED6AD2902608300CC978C /* View.swift in Sources */,
 				7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */,
@@ -816,7 +774,6 @@
 				75194FD8284A5C8F0060175C /* Cards.swift in Sources */,
 				75DB2DF928DE226C00C8F6AA /* HasPayload.swift in Sources */,
 				75851832289AEBC8001BF8CA /* TarotMeaning.swift in Sources */,
-				753E4F392834AFEB0008623F /* VideoView.swift in Sources */,
 				757A80D7282264F200700990 /* UIColor.swift in Sources */,
 				757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */,
 				757A80EB2823B2FD00700990 /* UICollectionView.swift in Sources */,
@@ -847,7 +804,6 @@
 				75E302C52A3B02F800E342FD /* ShowAndSaveCardDetailView.swift in Sources */,
 				753E4FC32835DEB80008623F /* UILabel.swift in Sources */,
 				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
-				752380F528DE24C300F24B88 /* AdapterWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
