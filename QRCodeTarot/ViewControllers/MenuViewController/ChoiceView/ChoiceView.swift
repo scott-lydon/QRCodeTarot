@@ -9,6 +9,8 @@ import CommonUIKitExtensions
 import TableMVVM
 import UIKit
 
+// MARK: - This is a simple "sub view" listed as options. And layered over a collectionview cell. 
+
 /// Used in the MenuViewController. 
 class ChoiceView: NibView, HasViewModel {
     @IBOutlet var imageView: UIImageView!

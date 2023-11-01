@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-/// Provided to separate concerns and save the card when presenting.
+// MARK: - Provided to separate concerns and save the card when presenting.
+
 struct SaveAndShowCardDetailView: View {
     let card: Card
 
