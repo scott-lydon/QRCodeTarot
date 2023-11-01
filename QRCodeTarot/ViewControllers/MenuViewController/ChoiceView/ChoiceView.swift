@@ -18,9 +18,12 @@ class ChoiceView: NibView, HasViewModel {
 
     var viewModel: ViewModel = .fallBack {
         didSet {
-            self.imageView.image = viewModel.image
-            self.imageView.roundOrSharpenCorners(constant: viewModel.cornerRadius)
-            self.label.text = viewModel.text
+            imageView.image = viewModel.image
+            if let tint = viewModel.tintColor {
+                imageView.tintColor = tint
+            }
+            imageView.roundOrSharpenCorners(constant: viewModel.cornerRadius)
+            label.text = viewModel.text
             aspectRatio = aspectRatio.setMultiplier(multiplier: viewModel.ratio)
         }
     }

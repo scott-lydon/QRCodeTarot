@@ -1,16 +1,16 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "07_cups.png",
-      "idiom" : "universal"
+      "filename": "07_cups.heic",
+      "idiom": "universal"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   },
-  "properties" : {
-    "unit" : "inches",
-    "width" : 2.5047146401985114
+  "properties": {
+    "unit": "inches",
+    "width": 2.5047146401985114
   }
 }

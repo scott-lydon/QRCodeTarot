@@ -43,7 +43,7 @@ enum Activity {
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name, image: image)
+        .init(text: name, image: image, tintColor: nil)
     }
 
     var name: String {

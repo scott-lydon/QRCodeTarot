@@ -10,26 +10,40 @@ import UIKit
 enum MenuItem: CaseIterable {
     case activity(Activity)
     case tarotCards([Card])
-    case tarotQRReader
+    case tarotCardReader
+    case pickDigitalCard([Card])
+    case history
 
     static var allCases: [MenuItem] {
         [
-            .activity(.magicTricks(MagicTrick.allCases)),
-            .activity(.games(Game.allCases)),
+            .tarotCardReader,
             .tarotCards(Card.allCases),
-            .tarotQRReader
+            .history,
+            .pickDigitalCard(Card.allCases),
         ]
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name, image: image)
+        .init(text: name, image: image, tintColor: self.tintColor)
     }
 
     var name: String {
         switch self {
         case .activity(let activity): return activity.name
         case .tarotCards: return "Tarot Cards"
-        case .tarotQRReader: return "Tarot Reader"
+        case .tarotCardReader: return "Tarot Reader"
+        case .pickDigitalCard: return "Digital picker"
+        case .history: return "History"
+        }
+    }
+
+    var tintColor: UIColor? {
+        switch self {
+        case .activity: return nil
+        case .tarotCards: return nil
+        case .tarotCardReader: return .gentleGray
+        case .pickDigitalCard: return .gentleYellow
+        case .history: return .gentlePink
         }
     }
 
@@ -37,7 +51,9 @@ enum MenuItem: CaseIterable {
         switch self {
         case .activity(let activity): return activity.image
         case .tarotCards: return .gameCards
-        case .tarotQRReader: return .qrCode
+        case .tarotCardReader: return .qrCode
+        case .pickDigitalCard(_): return .digitalPicker
+        case .history: return .history
         }
     }
 }

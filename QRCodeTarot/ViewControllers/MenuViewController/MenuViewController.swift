@@ -8,6 +8,7 @@
 import ARKit
 import TableMVVM
 import UIKit
+import SwiftUI
 
 class MenuViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
@@ -17,6 +18,8 @@ class MenuViewController: UIViewController {
 
     @IBOutlet var stackTop: NSLayoutConstraint!
     @IBOutlet var stackBottom: NSLayoutConstraint!
+
+    @IBOutlet var buyDeckButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,12 @@ class MenuViewController: UIViewController {
         if UIScreen.main.bounds.height < 600 {
             stackTop.constant = 10
             stackBottom.constant = 10
+        }
+    }
+
+    @IBAction func buyDeckTapped(_ sender: Any) {
+        if let url = URL(string: "https://www.etsy.com/listing/1510035687/pointy-hat-tarot-and-playing-card-deck") {
+            UIApplication.shared.open(url)
         }
     }
 
@@ -84,7 +93,7 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         didSelectItemAt indexPath: IndexPath
     ) {
         switch menuItems[indexPath.row] {
-        case .tarotQRReader:
+        case .tarotCardReader:
             guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
             navigationController?.pushViewController(tarotViewController, animated: true)
 
@@ -99,6 +108,14 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
                 TarotCardsViewController.instantiate(with: cards),
                 animated: true
             )
+
+        case .history:
+            let historyViewController = UIHostingController(rootView: HistoryView(events: CardPickEvent.allEvents))
+            navigationController?.pushViewController(historyViewController, animated: true)
+
+        case .pickDigitalCard:
+            let pickDigitalCardView = UIHostingController(rootView: PickDigitalCardView())
+            navigationController?.pushViewController(pickDigitalCardView, animated: true)
         }
     }
 }

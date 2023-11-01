@@ -62,4 +62,18 @@ extension UIColor {
     static var hex9B9FAB: UIColor {
         UIColor(red: 0.61, green: 0.62, blue: 0.67, alpha: 1.00)
     }
+
+    // - Mark:  Main icons:
+
+    static var gentlePink: UIColor {
+        UIColor(red: 232 / 255.0, green: 199 / 255.0, blue: 246 / 255.0, alpha: 1)
+    }
+
+    static var gentleGray: UIColor {
+        UIColor(red: 192 / 255.0, green: 187 / 255.0, blue: 187 / 255.0, alpha: 1)
+    }
+
+    static var gentleYellow: UIColor {
+        UIColor(red: 234 / 255.0, green: 232 / 255.0, blue: 184 / 255.0, alpha: 1)
+    }
 }

@@ -12,12 +12,20 @@ extension ChoiceView {
     struct ViewModel: HasFallBack {
         var text: String
         var image: UIImage
+        var tintColor: UIColor?
         var ratio: CGFloat
         var cornerRadius: CGFloat
 
-        init(text: String, image: UIImage, ratio: CGFloat = 1, cornerRadius: CGFloat = 0) {
+        init(
+            text: String,
+            image: UIImage,
+            tintColor: UIColor?,
+            ratio: CGFloat = 1,
+            cornerRadius: CGFloat = 0
+        ) {
             self.text = text
             self.image = image
+            self.tintColor = tintColor
             self.ratio = ratio
             self.cornerRadius = cornerRadius
         }
@@ -26,13 +34,18 @@ extension ChoiceView {
             self.init(
                 text: card.name,
                 image: card.image,
+                tintColor: nil,
                 ratio: .cardRatio,
                 cornerRadius: 10
             )
         }
 
         static var fallBack: Self {
-            .init(text: "Magic Trick", image: .magicHat)
+            .init(
+                text: "Magic Trick",
+                image: .magicHat,
+                tintColor: nil
+            )
         }
     }
 }

@@ -1,16 +1,16 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "07_wands.png",
-      "idiom" : "universal"
+      "filename": "07_wands.heic",
+      "idiom": "universal"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   },
-  "properties" : {
-    "unit" : "inches",
-    "width" : 2.5034722222222223
+  "properties": {
+    "unit": "inches",
+    "width": 2.5034722222222223
   }
 }

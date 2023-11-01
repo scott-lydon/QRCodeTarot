@@ -11,7 +11,9 @@ import CommonExtensions
 import UIKit
 
 // MARK: - Card
-struct Card: Codable, CaseIterable {
+struct Card: Codable, CaseIterable, Identifiable, Hashable {
+
+    var id: String { name_short }
     let type: Importance
     let name_short: String
     let name: String
@@ -24,16 +26,35 @@ struct Card: Codable, CaseIterable {
     let evolved: String?
     let unevolved: String?
 
+    var random: Card! {
+        Card.allCases.randomElement()
+    }
+
     var hasNoEvolutionContent: Bool {
         evolved.isEmpty && unevolved.isEmpty
     }
 
     var activityItems: [Any] {
-        let shareText = name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "") + "\n\n" + "Unevolved:" + "\n" + (unevolved ?? "")
-        if Data(shareText.utf8).count < 2_000 {
-            return [shareText]
-        }
-        return [name_short + "\n" + desc + "\n\n" + "Evolved:" + "\n" + (evolved ?? "")]
+        let ending: String =
+        """
+        iOS Download: https://shorturl.at/dsxB1
+        Buy the deck: https://shorturl.at/girz0
+        """
+        return [
+            "Hey there!  Here is your Tarot reading from using Pointy Hat Tarot." +
+            "\n\n" +
+            ending +
+            "\n\n" +
+            name_short +
+            "\n" +
+            desc +
+            "\n\n" +
+            "Evolved:" +
+            "\n" +
+            (evolved ?? "") +
+            "\n\n" +
+            ending
+        ]
     }
 
     init(
@@ -72,7 +93,13 @@ struct Card: Codable, CaseIterable {
     }
 
     var choiceViewModel: ChoiceView.ViewModel {
-        .init(text: name.capitalized, image: image, ratio: .cardRatio, cornerRadius: 10)
+        .init(
+            text: name.capitalized,
+            image: image,
+            tintColor: nil,
+            ratio: .cardRatio,
+            cornerRadius: 10
+        )
     }
 
     var evolvedSwitchViewModel: EvolvedWithText.ViewModel {

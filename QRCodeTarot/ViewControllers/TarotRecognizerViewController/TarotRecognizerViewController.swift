@@ -7,10 +7,14 @@
 
 import ARKit
 import SceneKit
+import SwiftKeychainWrapper
 import SwiftUI
 import UIKit
 
 class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
+
+    private let hasDeckKey = #function
+
     var sceneView = ARSCNView.zero
     var dispatcher: CanAsync = DispatchQueue.main
     var pendingNavigation = false
@@ -19,6 +23,30 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         view.inject(view: sceneView)
         view.set(background: BackgroundView.zero.darkShade)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard KeychainWrapper.standard.integer(forKey: hasDeckKey) != 1 else { return }
+        // Show the alert
+        let alertController = UIAlertController(
+            title: "Scan 🔍 a card",
+            message: "This app can scan and read Pointy Hat Tarot cards 🃏.",
+            preferredStyle: .alert
+        )
+        let actions: [UIAlertAction] = [
+            UIAlertAction(title: "Buy Deck 🛒", style: .default) { _ in
+                if let url = URL(string: "https://www.etsy.com/listing/1510035687/pointy-hat-tarot-and-playing-card-deck") {
+                    UIApplication.shared.open(url)
+                }
+            },
+            UIAlertAction(title: "I have the deck ✅", style: .default) { _ in
+                KeychainWrapper.standard.set(1, forKey: self.hasDeckKey)
+            },
+            UIAlertAction(title: "No Thanks 🙅‍♂️", style: .cancel)
+        ]
+        actions.forEach { alertController.addAction($0) }
+        present(alertController, animated: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,6 +76,7 @@ class TarotRecognizerViewController: UIViewController, ARSCNViewDelegate {
               // Also prevents the transition to the wrong card after multiple.
               !pendingNavigation else { return }
         pendingNavigation = true
+        CardPickEvent(card: card).save()
         dispatcher.async { [weak self] in
             self?.navigationController?.pushViewController(
                 UIHostingController(rootView: CardDetailView(card: card)),
