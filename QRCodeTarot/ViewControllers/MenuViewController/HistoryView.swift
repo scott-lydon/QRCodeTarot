@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - Shows the cards you've chosen in the past, in order with info. 
+
 struct HistoryView: View {
     var events: [CardPickEvent] // Card should be your model that has the details of card and date pulled
 

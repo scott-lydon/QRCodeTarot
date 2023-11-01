@@ -34,7 +34,6 @@
 		753E4FC32835DEB80008623F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FC22835DEB80008623F /* UILabel.swift */; };
 		753E4FC62835E6A60008623F /* CommonExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC52835E6A60008623F /* CommonExtensions */; };
 		753E4FC92835E6B90008623F /* CommonUIKitExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 753E4FC82835E6B90008623F /* CommonUIKitExtensions */; };
-		753E4FCB28360FCE0008623F /* Array.TutorialStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */; };
 		756A68D027FD484C00B76CCD /* QRViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */; };
 		756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756A68D427FE1EBE00B76CCD /* CanAsync.swift */; };
 		757A808B28222EB900700990 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A808A28222EB900700990 /* BackgroundView.swift */; };
@@ -60,15 +59,9 @@
 		757A810528250A7200700990 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F828250A7200700990 /* Inter-Medium.ttf */; };
 		757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */; };
 		757A810D28250FB600700990 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A810C28250FB600700990 /* Int.swift */; };
-		757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81102825C33B00700990 /* SubMenuChoice.swift */; };
-		757A81132825C35000700990 /* SubMenuChoice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81122825C35000700990 /* SubMenuChoice.xib */; };
 		757A81A8282A338D00700990 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81A7282A338D00700990 /* GradientView.swift */; };
-		757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */; };
-		757A81AF282A3F0700700990 /* ImageLabelNoBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */; };
 		757A81B2282A55C300700990 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B1282A55C300700990 /* CardImageView.swift */; };
 		757A81B4282A55D000700990 /* CardImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81B3282A55D000700990 /* CardImageView.xib */; };
-		757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81B8282B2BF600700990 /* TutorialStepView.swift */; };
-		757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81BA282B2C0300700990 /* TutorialStepView.xib */; };
 		757A81D2282B47F800700990 /* CollapsableLabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A81D1282B47F800700990 /* CollapsableLabelLabel.swift */; };
 		757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757A81D3282B480600700990 /* CollapsableLabelLabel.xib */; };
 		757EF6612808D736000685FC /* LabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF6602808D736000685FC /* LabelLabel.swift */; };
@@ -76,10 +69,6 @@
 		757EF66C28090E11000685FC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66B28090E11000685FC /* UIImage.swift */; };
 		757EF66E28091334000685FC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF66D28091334000685FC /* MenuViewController.swift */; };
 		757EF67228092346000685FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67128092346000685FC /* Main.storyboard */; };
-		757EF67528094177000685FC /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67428094177000685FC /* SubMenuViewController.swift */; };
-		757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF678280941A0000685FC /* SubMenuViewController.storyboard */; };
-		757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF67B280954CE000685FC /* DetailsViewController.swift */; };
-		757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF67D280954E7000685FC /* DetailsViewController.storyboard */; };
 		757EF68628097871000685FC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68528097871000685FC /* UINavigationController.swift */; };
 		757EF68E28097CE7000685FC /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757EF68D28097CE7000685FC /* ContactViewController.swift */; };
 		757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757EF68F28097D23000685FC /* ContactViewController.storyboard */; };
@@ -97,11 +86,7 @@
 		759B1750284FF769006E8BB1 /* EvolvedWithText.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759B174F284FF769006E8BB1 /* EvolvedWithText.xib */; };
 		759B1753284FFFB6006E8BB1 /* EvolvedWithText.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759B1752284FFFB6006E8BB1 /* EvolvedWithText.ViewModel.swift */; };
 		759B175A28501C40006E8BB1 /* EvolvedWithTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759B175928501C3F006E8BB1 /* EvolvedWithTextTests.swift */; };
-		75BCF453282E27990066B22D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF452282E27990066B22D /* Activity.swift */; };
 		75BCF455282E28060066B22D /* Array.Of.Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF454282E28060066B22D /* Array.Of.Activities.swift */; };
-		75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF456282E281A0066B22D /* MagicTrick.swift */; };
-		75BCF459282E283A0066B22D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF458282E283A0066B22D /* Game.swift */; };
-		75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45A282E286F0066B22D /* Tutorial.swift */; };
 		75BCF45D282E28830066B22D /* CanDisplayTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */; };
 		75BD9B892852DD820026B3FD /* TarotRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD9B882852DD820026B3FD /* TarotRecognizerViewController.swift */; };
 		75BD9B8B2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BD9B8A2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard */; };
@@ -171,7 +156,6 @@
 		753E4FBE2835DB1D0008623F /* TarotSwitchView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotSwitchView.ViewModel.swift; sourceTree = "<group>"; };
 		753E4FC02835DB390008623F /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		753E4FC22835DEB80008623F /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
-		753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.TutorialStepViewModel.swift; sourceTree = "<group>"; };
 		756A68CF27FD484C00B76CCD /* QRViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewControllerTests.swift; sourceTree = "<group>"; };
 		756A68D427FE1EBE00B76CCD /* CanAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanAsync.swift; sourceTree = "<group>"; };
 		757A808A28222EB900700990 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -198,15 +182,9 @@
 		757A80F828250A7200700990 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		757A80F928250A7200700990 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
 		757A810C28250FB600700990 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		757A81102825C33B00700990 /* SubMenuChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuChoice.swift; sourceTree = "<group>"; };
-		757A81122825C35000700990 /* SubMenuChoice.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuChoice.xib; sourceTree = "<group>"; };
 		757A81A7282A338D00700990 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelNoBorder.swift; sourceTree = "<group>"; };
-		757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageLabelNoBorder.xib; sourceTree = "<group>"; };
 		757A81B1282A55C300700990 /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		757A81B3282A55D000700990 /* CardImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardImageView.xib; sourceTree = "<group>"; };
-		757A81B8282B2BF600700990 /* TutorialStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStepView.swift; sourceTree = "<group>"; };
-		757A81BA282B2C0300700990 /* TutorialStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialStepView.xib; sourceTree = "<group>"; };
 		757A81C0282B306500700990 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		757A81C1282B306500700990 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		757A81C2282B306500700990 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
@@ -230,10 +208,6 @@
 		757EF66B28090E11000685FC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		757EF66D28091334000685FC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		757EF67128092346000685FC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		757EF67428094177000685FC /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
-		757EF678280941A0000685FC /* SubMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubMenuViewController.storyboard; sourceTree = "<group>"; };
-		757EF67B280954CE000685FC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		757EF67D280954E7000685FC /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		757EF68528097871000685FC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		757EF68D28097CE7000685FC /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		757EF68F28097D23000685FC /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
@@ -250,11 +224,7 @@
 		759B174F284FF769006E8BB1 /* EvolvedWithText.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvolvedWithText.xib; sourceTree = "<group>"; };
 		759B1752284FFFB6006E8BB1 /* EvolvedWithText.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolvedWithText.ViewModel.swift; sourceTree = "<group>"; };
 		759B175928501C3F006E8BB1 /* EvolvedWithTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolvedWithTextTests.swift; sourceTree = "<group>"; };
-		75BCF452282E27990066B22D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		75BCF454282E28060066B22D /* Array.Of.Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.Of.Activities.swift; sourceTree = "<group>"; };
-		75BCF456282E281A0066B22D /* MagicTrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTrick.swift; sourceTree = "<group>"; };
-		75BCF458282E283A0066B22D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		75BCF45A282E286F0066B22D /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanDisplayTutorial.swift; sourceTree = "<group>"; };
 		75BD9B882852DD820026B3FD /* TarotRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotRecognizerViewController.swift; sourceTree = "<group>"; };
 		75BD9B8A2852DD8C0026B3FD /* TarotRecognizerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TarotRecognizerViewController.storyboard; sourceTree = "<group>"; };
@@ -338,7 +308,6 @@
 				752ED6AA29024B4000CC978C /* ShareButton.swift */,
 				756A68D427FE1EBE00B76CCD /* CanAsync.swift */,
 				752380F828DE3ACE00F24B88 /* HasViewModelAdapter.swift */,
-				753E4FCA28360FCE0008623F /* Array.TutorialStepViewModel.swift */,
 				758F5FBF2808A9AB00B37D60 /* NibView.swift */,
 				757A81A7282A338D00700990 /* GradientView.swift */,
 				758F5FC12808A9E600B37D60 /* CommonInit.swift */,
@@ -450,7 +419,6 @@
 			children = (
 				75BD9B8C2852DDD20026B3FD /* TarotRecognizerViewController */,
 				757EF67328093382000685FC /* MenuViewController */,
-				757EF67A280941BE000685FC /* SubMenuViewController */,
 				756A68D127FDF83A00B76CCD /* CardDetailViewController */,
 				758AE0F9282EC5D400C8F420 /* TarotCardsViewController */,
 				757EF67F280954EE000685FC /* DetailsViewController */,
@@ -507,24 +475,6 @@
 			path = Inter;
 			sourceTree = "<group>";
 		};
-		757A81A9282A37BF00700990 /* SubMenuChoice */ = {
-			isa = PBXGroup;
-			children = (
-				757A81102825C33B00700990 /* SubMenuChoice.swift */,
-				757A81122825C35000700990 /* SubMenuChoice.xib */,
-			);
-			path = SubMenuChoice;
-			sourceTree = "<group>";
-		};
-		757A81B0282A3F0B00700990 /* ImageLabelNoBorder */ = {
-			isa = PBXGroup;
-			children = (
-				757A81AC282A3EFE00700990 /* ImageLabelNoBorder.swift */,
-				757A81AE282A3F0700700990 /* ImageLabelNoBorder.xib */,
-			);
-			path = ImageLabelNoBorder;
-			sourceTree = "<group>";
-		};
 		757A81B5282A55D600700990 /* CardImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,15 +483,6 @@
 				757A81B3282A55D000700990 /* CardImageView.xib */,
 			);
 			path = CardImageView;
-			sourceTree = "<group>";
-		};
-		757A81BC282B2C0800700990 /* TutorialStepView */ = {
-			isa = PBXGroup;
-			children = (
-				757A81B8282B2BF600700990 /* TutorialStepView.swift */,
-				757A81BA282B2C0300700990 /* TutorialStepView.xib */,
-			);
-			path = TutorialStepView;
 			sourceTree = "<group>";
 		};
 		757A81BF282B306500700990 /* static */ = {
@@ -598,23 +539,9 @@
 			path = MenuViewController;
 			sourceTree = "<group>";
 		};
-		757EF67A280941BE000685FC /* SubMenuViewController */ = {
-			isa = PBXGroup;
-			children = (
-				757EF67428094177000685FC /* SubMenuViewController.swift */,
-				757EF678280941A0000685FC /* SubMenuViewController.storyboard */,
-				757A81BC282B2C0800700990 /* TutorialStepView */,
-				757A81B0282A3F0B00700990 /* ImageLabelNoBorder */,
-				757A81A9282A37BF00700990 /* SubMenuChoice */,
-			);
-			path = SubMenuViewController;
-			sourceTree = "<group>";
-		};
 		757EF67F280954EE000685FC /* DetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				757EF67B280954CE000685FC /* DetailsViewController.swift */,
-				757EF67D280954E7000685FC /* DetailsViewController.storyboard */,
 				753E4F3C2834AFFD0008623F /* VideoView */,
 				757A81B5282A55D600700990 /* CardImageView */,
 			);
@@ -653,11 +580,7 @@
 			isa = PBXGroup;
 			children = (
 				758AE0F3282E348500C8F420 /* MenuItem.swift */,
-				75BCF452282E27990066B22D /* Activity.swift */,
 				75BCF454282E28060066B22D /* Array.Of.Activities.swift */,
-				75BCF456282E281A0066B22D /* MagicTrick.swift */,
-				75BCF458282E283A0066B22D /* Game.swift */,
-				75BCF45A282E286F0066B22D /* Tutorial.swift */,
 				75BCF45C282E28830066B22D /* CanDisplayTutorial.swift */,
 			);
 			path = ActivityModels;
@@ -798,26 +721,21 @@
 				75851830289A7CD2001BF8CA /* TarotMeaning.json in Resources */,
 				757A810228250A7200700990 /* Inter-ExtraBold.ttf in Resources */,
 				757A810328250A7200700990 /* README.txt in Resources */,
-				757EF67E280954E7000685FC /* DetailsViewController.storyboard in Resources */,
 				757A81B4282A55D000700990 /* CardImageView.xib in Resources */,
 				757A80FB28250A7200700990 /* Inter-Bold.ttf in Resources */,
 				757A81D4282B480600700990 /* CollapsableLabelLabel.xib in Resources */,
-				757EF679280941A0000685FC /* SubMenuViewController.storyboard in Resources */,
 				757EF69028097D23000685FC /* ContactViewController.storyboard in Resources */,
 				759B1750284FF769006E8BB1 /* EvolvedWithText.xib in Resources */,
 				757EF67228092346000685FC /* Main.storyboard in Resources */,
 				7526AFF827FA70B2009C5FE8 /* LaunchScreen.storyboard in Resources */,
 				757EF6632808D73E000685FC /* LabelLabel.xib in Resources */,
 				757A80D1282250B100700990 /* ChoiceView.xib in Resources */,
-				757A81132825C35000700990 /* SubMenuChoice.xib in Resources */,
 				753E4F3628349A060008623F /* TarotSwitchView.xib in Resources */,
 				753E4F3B2834AFF80008623F /* VideoView.xib in Resources */,
 				757A810628250A7200700990 /* Inter-VariableFont_slnt,wght.ttf in Resources */,
 				757A808D28222EC200700990 /* BackgroundView.xib in Resources */,
-				757A81BB282B2C0300700990 /* TutorialStepView.xib in Resources */,
 				757A80FE28250A7200700990 /* Inter-Thin.ttf in Resources */,
 				75D0913227FB76F50037798C /* card_data.json in Resources */,
-				757A81AF282A3F0700700990 /* ImageLabelNoBorder.xib in Resources */,
 				7526AFF527FA70B2009C5FE8 /* Assets.xcassets in Resources */,
 				757A80FC28250A7200700990 /* Inter-ExtraLight.ttf in Resources */,
 				757A80FD28250A7200700990 /* Inter-Regular.ttf in Resources */,
@@ -870,15 +788,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757A81B9282B2BF600700990 /* TutorialStepView.swift in Sources */,
 				758F5FC42808AA4300B37D60 /* UIView.swift in Sources */,
 				757A80DB282268D000700990 /* ChoiceView.ViewModel.swift in Sources */,
 				75BD9B892852DD820026B3FD /* TarotRecognizerViewController.swift in Sources */,
-				753E4FCB28360FCE0008623F /* Array.TutorialStepViewModel.swift in Sources */,
 				757A80CF282250A700700990 /* ChoiceView.swift in Sources */,
 				757EF66C28090E11000685FC /* UIImage.swift in Sources */,
-				75BCF45B282E286F0066B22D /* Tutorial.swift in Sources */,
-				75BCF459282E283A0066B22D /* Game.swift in Sources */,
 				75194FDC284A5CB90060175C /* Importance.swift in Sources */,
 				75D0914427FBDE410037798C /* String.swift in Sources */,
 				75D0913E27FBD8A80037798C /* CardKey.swift in Sources */,
@@ -888,12 +802,10 @@
 				757A808B28222EB900700990 /* BackgroundView.swift in Sources */,
 				7526AFEC27FA70B0009C5FE8 /* AppDelegate.swift in Sources */,
 				75F6A67D289BB2E5002C40F7 /* Date.swift in Sources */,
-				757EF67528094177000685FC /* SubMenuViewController.swift in Sources */,
 				75E302C32A3AF56A00E342FD /* PickDigitalCardView.swift in Sources */,
 				757A81B2282A55C300700990 /* CardImageView.swift in Sources */,
 				758F5FC22808A9E600B37D60 /* CommonInit.swift in Sources */,
 				752ED6AD2902608300CC978C /* View.swift in Sources */,
-				757EF67C280954CE000685FC /* DetailsViewController.swift in Sources */,
 				7523814728DFEFF300F24B88 /* CustomSegmentedControl.swift in Sources */,
 				753E4F34283499FB0008623F /* TarotSwitchView.swift in Sources */,
 				75E302BE2A3AE48800E342FD /* CardPickEvent.swift in Sources */,
@@ -901,9 +813,7 @@
 				752ED6AB29024B4000CC978C /* ShareButton.swift in Sources */,
 				757EF68628097871000685FC /* UINavigationController.swift in Sources */,
 				752380FD28DE962C00F24B88 /* CardDetailView.swift in Sources */,
-				75BCF457282E281A0066B22D /* MagicTrick.swift in Sources */,
 				75194FD8284A5C8F0060175C /* Cards.swift in Sources */,
-				757A81112825C33B00700990 /* SubMenuChoice.swift in Sources */,
 				75DB2DF928DE226C00C8F6AA /* HasPayload.swift in Sources */,
 				75851832289AEBC8001BF8CA /* TarotMeaning.swift in Sources */,
 				753E4F392834AFEB0008623F /* VideoView.swift in Sources */,
@@ -917,7 +827,6 @@
 				757A80E72823ACFB00700990 /* CGFloat.swift in Sources */,
 				7526AFEE27FA70B0009C5FE8 /* SceneDelegate.swift in Sources */,
 				753E4FBF2835DB1D0008623F /* TarotSwitchView.ViewModel.swift in Sources */,
-				757A81AD282A3EFE00700990 /* ImageLabelNoBorder.swift in Sources */,
 				759B174E284FF725006E8BB1 /* EvolvedWithText.swift in Sources */,
 				75D0912E27FAAAB80037798C /* Card.swift in Sources */,
 				756A68D527FE1EBE00B76CCD /* CanAsync.swift in Sources */,
@@ -938,7 +847,6 @@
 				75E302C52A3B02F800E342FD /* ShowAndSaveCardDetailView.swift in Sources */,
 				753E4FC32835DEB80008623F /* UILabel.swift in Sources */,
 				758AE0F4282E348500C8F420 /* MenuItem.swift in Sources */,
-				75BCF453282E27990066B22D /* Activity.swift in Sources */,
 				752380F528DE24C300F24B88 /* AdapterWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1113,7 +1021,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MPB6X29F75;
+				DEVELOPMENT_TEAM = 8L7Z3WU967;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRCodeTarot/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to scan QR codes";
@@ -1147,7 +1055,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MPB6X29F75;
+				DEVELOPMENT_TEAM = 8L7Z3WU967;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRCodeTarot/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is needed to scan QR codes";

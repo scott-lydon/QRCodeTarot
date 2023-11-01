@@ -5,6 +5,8 @@
 //  Created by Scott Lydon on 6/14/23.
 //
 
+// MARK: - Holds data about card picking events, so that when a card was picked is recorded.
+
 import SwiftKeychainWrapper
 import Foundation
 import CommonExtensions

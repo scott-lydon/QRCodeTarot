@@ -5,6 +5,8 @@
 //  Created by Scott Lydon on 4/14/22.
 //
 
+// MARK: - Shows list of options upon start, you can confirm by looking at Main.storyboard
+
 import ARKit
 import TableMVVM
 import UIKit
@@ -96,12 +98,6 @@ extension MenuViewController: UICollectionViewDelegateFlowLayout {
         case .tarotCardReader:
             guard let tarotViewController: TarotRecognizerViewController = UIStoryboard.vc() else { return }
             navigationController?.pushViewController(tarotViewController, animated: true)
-
-        case .activity(let activity):
-            navigationController?.pushViewController(
-                SubMenuViewController.instantiate(with: activity),
-                animated: true
-            )
 
         case .tarotCards(let cards):
             navigationController?.pushViewController(

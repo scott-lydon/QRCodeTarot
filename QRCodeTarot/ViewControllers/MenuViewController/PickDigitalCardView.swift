@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - Lets users choose cards without purchasing the deck.  Displays 56 digital card backs. Tapping a card flips it. 
+
 struct PickDigitalCardView: View {
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 6)
     @State private var cardDeck: [Card] = []

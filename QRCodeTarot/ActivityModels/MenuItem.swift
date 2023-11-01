@@ -8,7 +8,7 @@
 import UIKit
 
 enum MenuItem: CaseIterable {
-    case activity(Activity)
+   // case activity(Activity)
     case tarotCards([Card])
     case tarotCardReader
     case pickDigitalCard([Card])
@@ -29,7 +29,7 @@ enum MenuItem: CaseIterable {
 
     var name: String {
         switch self {
-        case .activity(let activity): return activity.name
+      //  case .activity(let activity): return activity.name
         case .tarotCards: return "Tarot Cards"
         case .tarotCardReader: return "Tarot Reader"
         case .pickDigitalCard: return "Digital picker"
@@ -39,7 +39,7 @@ enum MenuItem: CaseIterable {
 
     var tintColor: UIColor? {
         switch self {
-        case .activity: return nil
+       // case .activity: return nil
         case .tarotCards: return nil
         case .tarotCardReader: return .gentleGray
         case .pickDigitalCard: return .gentleYellow
@@ -49,7 +49,7 @@ enum MenuItem: CaseIterable {
 
     var image: UIImage {
         switch self {
-        case .activity(let activity): return activity.image
+        //case .activity(let activity): return activity.image
         case .tarotCards: return .gameCards
         case .tarotCardReader: return .qrCode
         case .pickDigitalCard(_): return .digitalPicker

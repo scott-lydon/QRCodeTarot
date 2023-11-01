@@ -5,6 +5,10 @@
 //  Created by Scott Lydon on 6/9/22.
 //
 
+// MARK: - Augmented Reality view, that identifies cards, then transitions to the detail view.
+// There is a popup that appears the first time to let them know they need the deck to use this
+// feature. 
+
 import ARKit
 import SceneKit
 import SwiftKeychainWrapper

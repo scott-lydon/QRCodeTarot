@@ -8,6 +8,8 @@
 import TableMVVM
 import UIKit
 
+// MARK: - The model to popuplate the Choice View. Reusability comes from its initializers. 
+
 extension ChoiceView {
     struct ViewModel: HasFallBack {
         var text: String

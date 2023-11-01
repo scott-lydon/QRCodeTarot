@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - This is where we set the navigation bar appearance for the app. 
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 

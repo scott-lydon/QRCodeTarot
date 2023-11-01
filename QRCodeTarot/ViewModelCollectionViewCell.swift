@@ -5,6 +5,9 @@
 //  Created by Scott Lydon on 5/4/22.
 //
 
+// MARK: - This is a generic reusable cell that makes view models easier to work with.
+// I used this pattern before SwiftUI was available.  But now prefer swiftui.  
+
 import TableMVVM
 import UIKit
 

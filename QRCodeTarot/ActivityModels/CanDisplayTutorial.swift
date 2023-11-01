@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias CanDisplayTutorial = HasTitle & HasSubTitle & HasSummary & HasTutorial
+typealias CanDisplayTutorial = HasTitle & HasSubTitle & HasSummary// & HasTutorial
 
 protocol HasTitle {
     var title: String { get }
@@ -19,8 +19,4 @@ protocol HasSubTitle {
 
 protocol HasSummary {
     var summary: String? { get }
-}
-
-protocol HasTutorial {
-    var tutorial: Tutorial { get }
 }
